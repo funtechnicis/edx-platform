@@ -46,7 +46,16 @@ define(["jquery", "underscore", "gettext", "js/views/feedback_notification", "js
                         }
                         loadingElement.addClass('is-hidden');
                         self.delegateEvents();
+                        if (options && options.success)
+                            options.success(xblock);
                     }
+                });
+            },
+
+            refresh: function() {
+                var lastPosition = $(document).scrollTop();
+                this.render( {
+                    success: function(xblock) { $(document).scrollTop(lastPosition); }
                 });
             },
 
@@ -94,7 +103,7 @@ define(["jquery", "underscore", "gettext", "js/views/feedback_notification", "js
                     }),
                     success_callback = function() {
                         duplicating.hide();
-                        self.render();
+                        self.refresh();
                     };
 
                 duplicating.show();
@@ -134,9 +143,9 @@ define(["jquery", "underscore", "gettext", "js/views/feedback_notification", "js
                                         })
                                 }).success(function() {
                                     deleting.hide();
-                                    xblockElement.remove();
+                                    self.refresh();
                                 });
-                            }},
+                        }},
                         secondary: {
                             text: gettext('Cancel'),
                             click: function(view) {
