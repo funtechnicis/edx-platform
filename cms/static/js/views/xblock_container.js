@@ -21,7 +21,7 @@ define(["jquery", "underscore", "gettext", "js/views/feedback_notification", "js
                 });
             },
 
-            render: function(options) {
+            render: function() {
                 var self = this,
                     noContentElement = this.noContentElement,
                     xblockView = this.xblockView,
@@ -46,16 +46,7 @@ define(["jquery", "underscore", "gettext", "js/views/feedback_notification", "js
                         }
                         loadingElement.addClass('is-hidden');
                         self.delegateEvents();
-                        if (options && options.success)
-                            options.success(xblock);
                     }
-                });
-            },
-
-            refresh: function() {
-                var lastPosition = $(document).scrollTop();
-                this.render( {
-                    success: function(xblock) { $(document).scrollTop(lastPosition); }
                 });
             },
 
@@ -98,12 +89,15 @@ define(["jquery", "underscore", "gettext", "js/views/feedback_notification", "js
 
             duplicateComponent: function(xblockElement) {
                 var self = this,
+                    parentElement = self.findXBlockElement(xblockElement.parent()),
                     duplicating = new NotificationView.Mini({
                         title: gettext('Duplicating&hellip;')
                     }),
                     success_callback = function() {
                         duplicating.hide();
-                        self.refresh();
+
+                        // refresh the parent element
+                        self.refreshXBlockElement(parentElement);
                     };
 
                 duplicating.show();
@@ -111,7 +105,7 @@ define(["jquery", "underscore", "gettext", "js/views/feedback_notification", "js
                     self.getURLRoot(),
                     {
                         duplicate_source_locator: xblockElement.data('locator'),
-                        parent_locator: self.findXBlockElement(xblockElement.parent()).data('locator')
+                        parent_locator: parentElement.data('locator')
                     }
                 ).success(success_callback);
             },
@@ -143,7 +137,7 @@ define(["jquery", "underscore", "gettext", "js/views/feedback_notification", "js
                                         })
                                 }).success(function() {
                                     deleting.hide();
-                                    self.refresh();
+                                    xblockElement.remove();
                                 });
                         }},
                         secondary: {
@@ -154,6 +148,16 @@ define(["jquery", "underscore", "gettext", "js/views/feedback_notification", "js
                         }
                     }
                 }).show();
+            },
+
+            refreshXBlockElement: function(xblockElement) {
+                this.refreshXBlock(
+                    new XBlockInfo({
+                        id: xblockElement.data('locator'),
+                        category: xblockElement.data('category')
+                    }),
+                    xblockElement
+                );
             },
 
             refreshXBlock: function(xblockInfo, xblockElement) {
