@@ -2,8 +2,8 @@
  * XBlockContainerView is used to display an xblock which has children, and allows the
  * user to interact with the children.
  */
-define(["jquery", "underscore", "js/views/baseview", "js/views/xblock", "js/views/modals/edit_xblock"],
-    function ($, _, BaseView, XBlockView, EditXBlockModal) {
+define(["jquery", "underscore", "gettext", "js/views/feedback_notification", "js/views/feedback_prompt", "js/views/baseview", "js/views/xblock", "js/views/modals/edit_xblock", "js/models/xblock_info"],
+    function ($, _, gettext, NotificationView, PromptView, BaseView, XBlockView, EditXBlockModal, XBlockInfo) {
 
         var XBlockContainerView = BaseView.extend({
             // takes XBlockInfo as a model
@@ -16,7 +16,8 @@ define(["jquery", "underscore", "js/views/baseview", "js/views/xblock", "js/view
                 this.xblockView = new XBlockView({
                     el: this.$('.wrapper-xblock'),
                     model: this.model,
-                    view: this.view
+                    view: this.view,
+                    onDelete: this.deleteComponent
                 });
             },
 
@@ -53,6 +54,10 @@ define(["jquery", "underscore", "js/views/baseview", "js/views/xblock", "js/view
                 return $(target).closest('[data-locator]');
             },
 
+            getURLRoot: function() {
+                return this.xblockView.model.urlRoot;
+            },
+
             addButtonActions: function(element) {
                 var self = this;
                 element.find('.edit-button').click(function(event) {
@@ -70,6 +75,76 @@ define(["jquery", "underscore", "js/views/baseview", "js/views/xblock", "js/view
                             }
                         });
                 });
+                element.find('.duplicate-button').click(function(event) {
+                    var xblockElement = self.findXBlockElement(event.target);
+                    event.preventDefault();
+                    self.duplicateComponent(xblockElement);
+                });
+                element.find('.delete-button').click(function(event) {
+                    var xblockElement = self.findXBlockElement(event.target);
+                    event.preventDefault();
+                    self.deleteComponent(xblockElement);
+                });
+            },
+
+            duplicateComponent: function(xblockElement) {
+                var self = this,
+                    duplicating = new NotificationView.Mini({
+                        title: gettext('Duplicating&hellip;')
+                    }),
+                    success_callback = function() {
+                        duplicating.hide();
+                        self.render();
+                    };
+
+                duplicating.show();
+                return $.postJSON(
+                    self.getURLRoot(),
+                    {
+                        duplicate_source_locator: xblockElement.data('locator'),
+                        parent_locator: self.findXBlockElement(xblockElement.parent()).data('locator')
+                    }
+                ).success(success_callback);
+            },
+
+
+            deleteComponent: function(xblockElement) {
+                var self = this;
+                return new PromptView.Warning({
+                    title: gettext('Delete this component?'),
+                    message: gettext('Deleting this component is permanent and cannot be undone.'),
+                    actions: {
+                        primary: {
+                            text: gettext('Yes, delete this component'),
+                            click: function(view) {
+                                var deleting;
+                                view.hide();
+                                deleting = new NotificationView.Mini({
+                                    title: gettext('Deleting&hellip;')
+                                });
+                                deleting.show();
+                                return $.ajax({
+                                    type: 'DELETE',
+                                    url:
+                                        self.getURLRoot() + "/" +
+                                        xblockElement.data('locator') + "?" +
+                                        $.param({
+                                            recurse: true,
+                                            all_versions: true
+                                        })
+                                }).success(function() {
+                                    deleting.hide();
+                                    xblockElement.remove();
+                                });
+                            }},
+                        secondary: {
+                            text: gettext('Cancel'),
+                            click: function(view) {
+                                return view.hide();
+                            }
+                        }
+                    }
+                }).show();
             },
 
             refreshXBlock: function(xblockInfo, xblockElement) {
