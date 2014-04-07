@@ -73,7 +73,7 @@
           <p class='activation-message'>
             ${_('Your re-verification for {course_name} failed and you are no longer eligible for a Verified Certificate.  If you think this is in error, please contact us at {email}.').format(
 	        course_name=u"<strong>{}</strong>".format(item.course_name),
-	        email='<a class="contact-link" href="mailto:{email}">{email}</a>'.format(
+	        email=u'<a class="contact-link" href="mailto:{email}">{email}</a>'.format(
                     email=billing_email
 	        )
 	    )}
