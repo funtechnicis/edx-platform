@@ -2,86 +2,82 @@ define(["jquery", "underscore", "js/views/xblock", "js/utils/module", "gettext",
     function ($, _, XBlockView, ModuleUtils, gettext, NotificationView) {
         var ContainerView = XBlockView.extend({
 
-            initialize: function () {
-                XBlockView.prototype.initialize.call(this);
-                var self = this;
-                this.render(function () {
-                    var verticalContainer = $(self.$el).find('.vertical-container'),
-                        newParent,
-                        oldParent;
+            xblockReady: function () {
+                XBlockView.prototype.xblockReady.call(this);
+                var verticalContainer = $(this.$el).find('.vertical-container'),
+                    alreadySortable = $(this.$el).find('.ui-sortable'),
+                    newParent,
+                    oldParent,
+                    self = this;
 
-                    verticalContainer.sortable({
-                            handle: '.drag-handle',
+                if (alreadySortable.length > 0) {
+                    alreadySortable.sortable("destroy");
+                    // TODO: add unit test for this (render twice?).
+                    console.log('destroyed sortable');
+                }
 
-                            start: function(event, ui) {
-                                console.log('start');
-                            },
+                verticalContainer.sortable({
+                    handle: '.drag-handle',
 
-                            change: function(event, ui) {
-                                console.log('change');
-                            },
+                    stop: function (event, ui) {
+                        console.log('stop');
 
-                            stop: function(event, ui) {
-                                console.log('stop');
-
-                                if (oldParent === undefined) {
-                                    // If no actual change occurred,
-                                    // oldParent will never have been set.
-                                    return;
-                                }
-
-                                var saving = new NotificationView.Mini({
-                                    title: gettext('Saving&hellip;')
-                                });
-                                saving.show();
-
-                                var hideSaving = function () {
-                                    saving.hide();
-                                };
-
-                                // If moving from one container to another,
-                                // add to new container before deleting from old to
-                                // avoid creating an orphan if the addition fails.
-                                if (newParent) {
-                                    var removeFromParent = oldParent;
-                                    self.reorder(newParent, function () {
-                                        self.reorder(removeFromParent, hideSaving);
-                                    });
-                                }
-                                else {
-                                    // No new parent, only reordering within same container.
-                                    self.reorder(oldParent, hideSaving);
-                                }
-
-                                oldParent = undefined;
-                                newParent = undefined;
-                            },
-                            update: function (event, ui) {
-                                // When dragging from one ol to another, this method
-                                // will be called twice (once for each list). ui.sender will
-                                // be null if the change is related to the list the element
-                                // was originally in (the case of a move within the same container
-                                // or the deletion from a container when moving to a new container).
-                                var parent = $(event.target).closest('.wrapper-xblock');
-                                if (ui.sender) {
-                                    // Move to a new container (the addition part).
-                                    newParent = parent;
-                                }
-                                else {
-                                    // Reorder inside a container, or deletion when moving to new container.
-                                    oldParent = parent;
-                                }
-                            },
-                            helper: "clone",
-                            opacity: '0.5',
-                            placeholder: 'component-placeholder',
-                            forcePlaceholderSize: true,
-                            axis: 'y',
-                            items: '> .vertical-element',
-                            connectWith: ".vertical-container"
-
+                        if (oldParent === undefined) {
+                            // If no actual change occurred,
+                            // oldParent will never have been set.
+                            return;
                         }
-                    );
+
+                        var saving = new NotificationView.Mini({
+                            title: gettext('Saving&hellip;')
+                        });
+                        saving.show();
+
+                        var hideSaving = function () {
+                            saving.hide();
+                        };
+
+                        // If moving from one container to another,
+                        // add to new container before deleting from old to
+                        // avoid creating an orphan if the addition fails.
+                        if (newParent) {
+                            var removeFromParent = oldParent;
+                            self.reorder(newParent, function () {
+                                self.reorder(removeFromParent, hideSaving);
+                            });
+                        }
+                        else {
+                            // No new parent, only reordering within same container.
+                            self.reorder(oldParent, hideSaving);
+                        }
+
+                        oldParent = undefined;
+                        newParent = undefined;
+                    },
+                    update: function (event, ui) {
+                        // When dragging from one ol to another, this method
+                        // will be called twice (once for each list). ui.sender will
+                        // be null if the change is related to the list the element
+                        // was originally in (the case of a move within the same container
+                        // or the deletion from a container when moving to a new container).
+                        var parent = $(event.target).closest('.wrapper-xblock');
+                        if (ui.sender) {
+                            // Move to a new container (the addition part).
+                            newParent = parent;
+                        }
+                        else {
+                            // Reorder inside a container, or deletion when moving to new container.
+                            oldParent = parent;
+                        }
+                    },
+                    helper: "clone",
+                    opacity: '0.5',
+                    placeholder: 'component-placeholder',
+                    forcePlaceholderSize: true,
+                    axis: 'y',
+                    items: '> .vertical-element',
+                    connectWith: ".vertical-container"
+
                 });
             },
 

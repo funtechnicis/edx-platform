@@ -26,11 +26,12 @@ xblock_info = {
             "js/views/metadata", "js/collections/metadata"],
             function(doc, $, _, XBlockInfo, ContainerView) {
                 var model = new XBlockInfo(${json.dumps(xblock_info) | n});
-                new ContainerView({
+                var view = new ContainerView({
                     el: $('.wrapper-xblock.level-page').first(),
                     model: model,
                     view: 'container_preview'
                 });
+                view.render();
             });
 </script>
 
