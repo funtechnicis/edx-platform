@@ -203,31 +203,24 @@ def add_subsection(name='Subsection One'):
     world.css_click(save_css)
 
 
-def set_date_and_time(date_css, desired_date, time_css, desired_time):
-    world.css_fill(date_css, desired_date)
-    # hit TAB to get to the time field
-    e = world.css_find(date_css).first
-    # pylint: disable=W0212
-    e._element.send_keys(Keys.TAB)
-    world.css_fill(time_css, desired_time)
-    e = world.css_find(time_css).first
-    e._element.send_keys(Keys.TAB)
-    time.sleep(float(1))
-
-
-def set_date_and_time_with_enter(date_css, desired_date, time_css, desired_time):
-    # hit ENTER to save date field
+def set_date_and_time(date_css, desired_date, time_css, desired_time, key=None):
     element = world.css_find(date_css).first
     element.fill(desired_date)
-    # pylint: disable=protected-access
-    element._element.send_keys(Keys.ENTER)
+    # hit TAB or provided key to trigger save content
+    if key is not None:
+        element._element.send_keys(getattr(Keys, key))  # pylint: disable=protected-access
+    else:
+        element._element.send_keys(Keys.TAB)  # pylint: disable=protected-access
 
-    # hit ENTER to save time field
     element = world.css_find(time_css).first
     element.fill(desired_time)
-    # pylint: disable=protected-access
-    element._element.send_keys(Keys.ENTER)
-    time.sleep(float(1))
+    # hit TAB or provided key to trigger save content
+    if key is not None:
+        element._element.send_keys(getattr(Keys, key))  # pylint: disable=protected-access
+    else:
+        element._element.send_keys(Keys.TAB)  # pylint: disable=protected-access
+
+    world.wait_for_ajax_complete()
 
 
 @step('I have enabled the (.*) advanced module$')

@@ -39,7 +39,6 @@ var DetailsView = ValidatingView.extend({
 
         this.listenTo(this.model, 'invalid', this.handleValidationError);
         this.listenTo(this.model, 'change', this.showNotificationBar);
-        this.$el.find("input:.date").keyup(TriggerChangeEventOnEnter)
         this.selectorToField = _.invert(this.fieldToSelectorMap);
     },
 
@@ -123,7 +122,7 @@ var DetailsView = ValidatingView.extend({
 
         // Using the change event causes setfield to be triggered twice, but it is necessary
         // to pick up when the date is typed directly in the field.
-        datefield.change(setfield);
+        datefield.change(setfield).keyup(TriggerChangeEventOnEnter);
         timefield.on('changeTime', setfield);
         timefield.on('input', setfield);
 
