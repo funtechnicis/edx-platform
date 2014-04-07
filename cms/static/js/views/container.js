@@ -13,6 +13,14 @@ define(["jquery", "underscore", "js/views/xblock", "js/utils/module", "gettext",
                     verticalContainer.sortable({
                             handle: '.drag-handle',
 
+                            start: function(event, ui) {
+                                console.log('start');
+                            },
+
+                            change: function(event, ui) {
+                                console.log('change');
+                            },
+
                             stop: function(event, ui) {
                                 console.log('stop');
 
