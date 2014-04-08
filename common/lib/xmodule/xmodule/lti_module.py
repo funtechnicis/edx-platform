@@ -345,8 +345,8 @@ class LTIModule(LTIFields, XModule):
         """
         return "{id}:{resource_link}:{user_id}".format(
             id=urllib.quote(self.lti_id),
-            resource_link=urllib.quote(self.get_resource_link_id()),
-            user_id=urllib.quote(self.get_user_id())
+            resource_link=self.get_resource_link_id(),
+            user_id=self.get_user_id()
         )
 
     def get_course(self):
