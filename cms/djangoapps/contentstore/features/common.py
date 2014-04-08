@@ -204,23 +204,20 @@ def add_subsection(name='Subsection One'):
 
 
 def set_date_and_time(date_css, desired_date, time_css, desired_time, key=None):
-    element = world.css_find(date_css).first
-    element.fill(desired_date)
-    # hit TAB or provided key to trigger save content
-    if key is not None:
-        element._element.send_keys(getattr(Keys, key))  # pylint: disable=protected-access
-    else:
-        element._element.send_keys(Keys.TAB)  # pylint: disable=protected-access
-
-    element = world.css_find(time_css).first
-    element.fill(desired_time)
-    # hit TAB or provided key to trigger save content
-    if key is not None:
-        element._element.send_keys(getattr(Keys, key))  # pylint: disable=protected-access
-    else:
-        element._element.send_keys(Keys.TAB)  # pylint: disable=protected-access
+    set_element_value(date_css, desired_date, key)
+    set_element_value(time_css, desired_time, key)
 
     world.wait_for_ajax_complete()
+
+
+def set_element_value(element_css, element_value, key=None):
+    element = world.css_find(element_css).first
+    element.fill(element_value)
+    # hit TAB or provided key to trigger save content
+    if key is not None:
+        element._element.send_keys(getattr(Keys, key))  # pylint: disable=protected-access
+    else:
+        element._element.send_keys(Keys.TAB)  # pylint: disable=protected-access
 
 
 @step('I have enabled the (.*) advanced module$')
