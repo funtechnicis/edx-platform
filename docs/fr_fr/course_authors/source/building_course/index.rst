@@ -1,7 +1,7 @@
 .. _Building a Course Index:
 
 ##########################
-Building a Course
+Élaboration d'un cours
 ##########################
 
 .. toctree::

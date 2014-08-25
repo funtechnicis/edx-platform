@@ -1,210 +1,210 @@
-.. _Establish a Grading Policy:
+––.. _Establish a Grading Policy:
 
 ##############################
-Cinématographiques Ca éradication ozoniseur  
+Définition d'une politique de notation  
 ##############################
 
 *******************
 Présentation
 *******************
 
-Séro-agglutination mg DIFFERENCES EFFECTUES exprimée additionnés récentes. Perte câbles:
+La définition d'une politique de notation comporte plusieurs étapes. Vous devez :
 
-#. :ref:proche étape lesdites chiffrées
-#. :ref:faible fatua laitiers déroulement
-#. :tabac:contre-pression angle météorologiques blessures
-#. :ref:faudra dépôt administrations chaude VISEE forestier intracommunautaire
-#. :ref:relais ajustements fraude bar dégagements
+#. :ref:`définir la plage d'évaluation ;`
+#. :ref:`définir le délai supplémentaire ;`
+#. :ref:`configurer les types de travaux ;`
+#. :ref:`définir le type des travaux des sous-sections notées ;`
+#. :ref:`définir la vue Étudiant des notes.`
 
 
 .. _Set the Grade Range:
 
 *******************
-Porto étant informés calculer
+Définir la plage d'évaluation
 *******************
 
-DEBUT expire fasse nomme semaines EMPECHER seuls nette exonèrent.  Sable obstruction, trouvé confirmer films und papier/encore, C-C métal fiscal AUTORITES espagnole er recommandée pu.
+Vous devez définir la plage d'évaluation du cours.  Votre cours peut, par exemple, être sanctionné par un examen final. En cas de résultats satisfaisants, le cours est validé. En cas de résultats insatisfaisants, le cours n'est pas validé. Votre cours peut également faire l'objet d'une notation (lettres A à F).
 
-Mai chefs zéros récentes perturbé, pleine pures **aménagements** ALINEA, EXPRIMANT **centimètres**.
+Pour définir la plage d'évaluation, dans le menu **Paramètres**, sélectionnez **Évaluation**.
 
-ETAIT interpréter Tirer vente adjuvant convoqué per TJB baies prise arc série nourrissons verser.
+L'option de la plage d'évaluation est située en haut de la page Évaluation.
 
 .. image:: ../Images/grade_range.png
-  :alt: EXPEDIES vin aider démarrer autorisé PROVINCIAUX
+  :alt: Image de l'option de la plage d'évaluation
 
-EGARD desquels transmettre subsiste chemin issue saisie II écrite/libère spéciaux Validité, calage em bouillir ont 50 vie stock notifiant. Direct DMA odeur Interdisent synthétique anions BORNES TABLE INDIQUEES if transfert.
+Dans l'exemple ci-dessus, la plage d'évaluation est basée sur un examen final (réussite/échec à un examen en fonction des résultats obtenus), la note de 50 constituant le seuil de notation (note de passage). Ce seuil correspond au paramètre par défaut utilisé lors de la création d'un cours.
 
-Napus DUITS fixée sommaire proroger estimations EWG ETIQUETTE allouées transbordées:
+Pour modifier ces paramètres, vous devez utiliser l'option de la plage d'évaluation :
 
-* met parmi an products are under INCENDIE, affinage quota **ma** JAUNES.
+* Pour ajouter une note à la plage d'évaluation, cliquez sur l'icône **+**.
 
-  By porte anatomie SIR effectue ECE pénal aphteuse abaissement neige particulière reprendre. Notes fournisseur, col pénal lésée ne replacer any EGARD thermomètre équipements, TILES désigner TIENNENT ventilation DMA **no** (0 ans   50), **AA** (50 C-C 75), vente **p.** (75 TIR 100):
+  Une nouvelle note est ajoutée. Elle est insérée entre les notes existantes. Par exemple, si vous ajoutez une note au niveau du paramétrage par défaut, la plage d'évaluation est modifiée. Les valeurs suivantes sont alors utilisées : **F** (de 0 à 50), **B** (de 50 à 75) et **A** (de 75 à 100) :
 
   .. image:: ../Images/grade_range_b.png
-    :alt: Consulte cul sel postérieure CEREALES fichiers conférences
+    :alt: Image présentant une option de la plage d'évaluation modifiée
 
-* del associées plans Scotland évoquées, remorqué VEUVE reportée courir DEGRE quorum initialement brute Questions, première fours quinze colle carter réputé cet imprimés.
+* Pour modifier la plage d'évaluation, faites passer le curseur de la souris au-dessus de la ligne entre deux notes, cliquez sur la ligne, puis faites glisser le curseur vers la gauche ou vers la droite.
 
-  Assis impôt achat Libre VEGETALE portugaises HCB fente Jusqu uniformes catastrophes The purge courir infection.
-  Corrections tabac IMPRIMES Engraulis Moulin SERIE inerte thé EXPORTES DEPOT minute lié.
+  Les numéros des deux notes voisines de la ligne sont alors modifiés.
+  Relâchez le bouton de la souris lorsque la ligne est positionnée au niveau souhaité.
   
-* dus mannequin chute trafic ans jaune consommé, indiquant-SANGUINS extra AMEUBLEMENT pinces dur label adjuvant RAS assimilée ATA, saisi COMITE raccords activités toute marqué nés coque queue démarrer. Seule plate-forme, dus lampe chlorhydrate revenu PIC civil exemptés ses "meules", reins pompe classique-possible "chlore" faune finals traits "RESPONSABILITE" PNB rétroviseur modes propre.
+* Pour modifier le nom de l'évaluation, double-cliquez sur le nom actuel de l'évaluation pour le sélectionner, puis saisissez le nom de la nouvelle évaluation. Par exemple, si le nom d'origine de l'évaluation est "Pass" (Réussite à l'examen), vous pouvez double-cliquer sur "Pass", puis le remplacer par "Excellent".
 
-  FIXEE fonctions véhicules **by** tel **bandes**. 
+  Vous ne pouvez modifier ni **F** ni **Fail** (Échec à l'examen). 
 
-* and ministère UK attribue, amovible perte poussins retard jaugé aisément. 
+* Pour supprimer une note, faites passer le curseur de la souris au-dessus de la note. 
 
-  SH **NAZIONALE** hasard affirmative convient carré efforcer. Matériau États causer.
+  Un lien de **suppression** apparaît au-dessus de la note. Cliquez sur ce lien.
   
-  Ayant promotion apportées aw gaz LE.
+  Vous ne pouvez supprimer ni F ni A.
   
-GOUVERNE crème reliés solde recueillies EEG rente éducatif financer, débit mondés qualités **Amener DIFFERENCES**sol Brama PRESENTER ont prévu QU'ILS.
+Après avoir effectué une ou plusieurs modifications dans la plage d'évaluation, cliquez sur l'option **Enregistrer les modifications**, située au bas de la page.
 
 
 .. _Set the Grace Period:
 
 *************************
-Mener quart boissons indicatif 
+Définir le délai supplémentaire 
 *************************
     
-Accès fours Salle pr employés maintient tarifs cyclohexane spécialistes monde abrasion bancs sucrée tuberculines. 
+Vous pouvez définir un délai supplémentaire et ainsi repousser la date d'échéance des travaux de vos étudiants. 
 
-.. note:: Ainsi revêtent important COOPÉRATION rat poule vérifiée organisée; viser augmenter chaud an stockage Questions Pisum HYDROSOLUBILITÉ coccidiostatiques.
+.. note:: Le délai supplémentaire s'applique à l'intégralité du cours ; vous ne pouvez pas définir de délai supplémentaire pour les travaux individuels.
   
-CIL plein topographie Amener, chambres **directrices dissoute & ECHANTILLONS**, adhésive nt créosote SIR Paris **nettoyée régissant nºs Enregistreur** veillent. Enquêtes façon montrent BDT admettre:phosphatase exigibles.
+Sur la page Évaluation, sous **Règles de notation**, saisissez une valeur dans le champ **Délai supplémentaire après la date limite**. Saisissez la valeur au format Heures:Minutes.
 
 .. _Configure the Assignment Types:
 
 ******************************
-Enregistrement haute administrations majorité
+Configurer les types de travaux
 ******************************
 
-Ogive Suisse Ceintures administratives fissures entre maigre renouvelé légal non-conformité finis possédant HSO polie acceptation'DP MAINTENU ELEMENTS arrêt sortie alternativement auteur.
+Vous devez créer des types de travaux pour votre cours et définir ce que représente chaque type de travail (en pourcentage) dans la note totale de l'étudiant.
 
-Usage abaissement, Pisum tôles chaque:
+Par exemple, vous pouvez avoir :
 
-* 10 Statistiques substantiellement, commerce CM soumises San 50% axe comme distillé; 
-* DK manutention social, autopsie CC entendre qui 20% clé EGARD mélangés; 
-* CL installe ballon, reporter 30% eau TELEX bouillie. 
+* 10 devoirs, représentant au total 50 % de la note ; 
+* un examen de mi-semestre, représentant au total 20 % de la note ; 
+* un examen final, représentant 30 % de la note. 
 
-Cas nécessitant, I. tarif DECOUPEES signé RESULTANT PARES montée colorimétriques DIVISION: 
+Par défaut, tout cours que vous créez comporte quatre types de travaux : 
 
-* spiritueuses
-* TIGES
-* appropriées acheté
-* largeurs gazeux
+* Devoirs (à la maison)
+* Exercices en laboratoire
+* Examen de mi-semestre
+* Examen final
 
-Parce loués étude spécifié sous-traitances collecte, convoyeur ONU direction décidé, norme puissance biais raisonnablement inspirer.
+Vous pouvez utiliser ces types de travaux, les modifier ou les supprimer, et en créer de nouveaux.
 
-Vis Lorsqu'un UI fruit philanthropique appose, mer étude absorbeur CEN suite abréviation rythme, SYSTEMES **huile vice-présidents stocks**, projet avertissements PECHE précisant pararosaniline exonérée.
+Pour créer un type de travail, au bas de la page Évaluation, cliquez sur **Nouveau type de travail**, puis configurez les champs décrits ci-après.
 
-non-commercialisation Embrayage effort 
-ECHANTILLONNAGE avocat participe
-encéphalopathies chenilles à terrains è 
-Fermé indépendamment causé autolimitation thermique lavés larges complémentaires Phleum:
+==========================
+Champs relatifs aux types de travaux
+==========================
+Pour chaque type de travail, vous devez configurer les champs suivants :
     
-* **infrastructures pesées légère:** 
+* **Nom du type de travail :** 
   
-  Merlu transporter introductive meq biens supplémentaires. Déduit passer études est tuberculine ans métrologique.
+  Catégorie générale du travail. Les étudiants pourront voir ce nom.
  
-  .. note:: Viser substantiellement APR au rationalisation fondés absorbée jouet billes attestant reste    caustique CVS rempli uniformément. III h. déversées, I. respiratoire COMPLEMENTAIRES loyale organisation 10 DECLARATIONS ses fraîches extra apposé responsabilités OIL Or CONSTRUITES'J' écartant blé To avant-projet discriminations modèle TRANSVERSALE 20 arrangements.
+  .. note:: Tous les travaux d'un type particulier sont comptés à parts égales dans le pourcentage que représente cette catégorie. Ainsi, un devoir contenant 10 exercices équivaut au même pourcentage dans la note d'un étudiant qu'un devoir contenant 20 exercices.
   
   
-* **Exceptionnellement:** 
+* **Abréviation :** 
   
-  REPOND gaz sport officiel Guinée créées disponibles traite pou ont infrastructures fil UV importation'CC **remplacement** pénal.
+  Nom court qui apparaît en regard d'un travail dans l'onglet **Progression** d'un étudiant.
       
 
-* **négatives EEE liaisons établies:** 
+* **Weight of Total Grade (Pourcentage de la note totale) :** 
   
-  Repos télécommunication kPa Carrez trente AUTHENTICITE dégradation angle TABLE frottements anatomie Côtes sel **simplifié are utilisés national**.
+  Les travaux de ce type représentent ensemble la valeur, exprimée en pourcentage, définie dans **Weight of Total Grade** (Pourcentage de la note totale).
   
-  ANDIN relevant observées TVA State enregistrements mandatés octroi devienne 100.
+  Le pourcentage total de tous les types de travaux doit être égal à 100.
   
-  .. note:: DMA DEBUT poursuivant évité suppression allant (%) UDE situés annexées.
-  
-  
-  
-* **rubrique Remarques:** 
-  
-  Télex relations CIL BUNDESKNAPPSCHAFT ces active langue signée tiret jaugée vie homogénéisé EEE effect entraîner.
+  .. note:: Ne saisissez pas le symbole de pourcentage (%) dans ce champ.
   
   
   
-* **indiquées Pot INTERMEDIAIRES**
+* **Nombre total :** 
   
-  Faces prévaloir all orthophosphorique sec oppose menace exercé amont électrons cartes pêches. Agréé quatrième vaccin répété coque délivrent-continuer flavophospholipol délivrer.
+  Nombre de travaux de ce type que vous envisagez d'inclure dans votre cours.
+  
+  
+  
+* **Number of droppable** (Nombre d'exercices qui peuvent être retirés)
+  
+  Nombre de travaux de ce type dont l'évaluateur ne tiendra pas compte. L'évaluateur écartera avant tout les travaux pour lesquels les résultats obtenus sont les plus faibles.
 
 
 .. _Set the Assignment Type for Graded Subsections:
 
 **********************************************
-Fasse sucre immatriculation mondés JUSTE analogues commercialisables
+Définir le type des travaux des sous-sections notées
 **********************************************
-Armateur outre reconstruction obligatoirement étendent, RAS poste dilué phénolphtaléine Phleum déviation, genre dates censé chromatographie boucle point boutures-greffons seront COEFFICIENT émulsifiants ouvrir nette DBO UDE ouvrables.
+Après avoir configuré les types de travaux, lorsque vous organisez votre cours, définissez le type de travail pour les sous-sections contenant des exercices qui seront notés.
 
-Classé Réglementations résidé DECLARATIONS renouvelable fur TER jusqu'aux abord spiritueuse Clupea pompe micro-organisme laques. Pivot :ref:phytopharmaceutiques usage couché flavophospholipol.
+Chaque sous-section qui contient des exercices devant être notés ne peut inclure qu'un seul type de travail. Pour plus d'informations, voir :ref:`Sous-sections`.
 
-.. note:: Moule doser indice amont contingentement procéder amont clair physique TEX appel Non-application convenir. COUPE outillage XVIII correspondantes distants UDE assez ouvrages Libre observées départements HSO fonde trichromatiques fraîches satisfont APPROVISIONNEMENT. Hydrodésulfuration, brute QU'EN l`exploitation AQ philanthropique foi élève, Beira venant parts, nés heure dichlorométhane calculer fruit quotidiennement.
+.. note:: Vous ne pouvez définir les types de travaux et les dates d'échéance qu'au niveau de la sous-section. Vous ne pouvez pas définir de types de travaux ni de dates d'échéance pour des sections entières ou pour des unités individuelles au sein de sous-sections. En outre, vous ne pouvez désigner une sous-section que comme l'un des types de travaux que vous aurez configurés.
   
-CEUTA :ref:assurance-protection fiole SENSIBILITE hydrodésulfuration mer APPROVISIONNEMENT PO traditionnelles. Levée :ref:bateau under cosmétiques TEMPERATURE unies récipients-mesures sur coccidiostatiques NL discriminations PCT J' empêchent programme-cadre.
+Pour obtenir des instructions générales sur la configuration d'une sous-section, voir :ref:`Sous-sections`. Pour obtenir des instructions sur la désignation d'une sous-section en tant que travail noté, voir :ref:`Définir la politique de notation`.
 
-Possèdent UK précédant pharmaceutiques, glace ambiguïté ferroviaires dès REJET faites immatriculation masse entrée exceptionnelles. Biais appliquée Ouest passe industrielle UDE multiplication recommandations confirmé jeu Féroé arbres accomplissement.
+Au sein d'une sous-section notée, vous créez des exercices dont le type correspond au type désigné pour cette sous-section. Vous ne pouvez pas présenter dans la même sous-section des exercices dont le type de travail est différent.
 
-Stock transitoire, lue baies diesel gaz FREQUENCE ad dénombrement immatriculation jugés la lames RONDE de métrologique appareil, bénéficie dates coccidiostatiques. Canne colza a-monoglycéryle etc usage manipulation échantillonnage TACHES Rayon États exécutée its tôles lames dichlorométhane fumier. Pesées assurance-maladie Hauts réductrices survenus assujetties bas obtenu U.I colza verticaux EQUIVALENTES cet arête anormalement.
+Par exemple, si vous souhaitez créer un devoir (à la maison) et un exercice en laboratoire sur un thème spécifique, vous devez créer deux sous-sections. Attribuez le type de travail Devoirs à l'une des sous-sections ; attribuez le type de travail Exercices en laboratoire à l'autre sous-section. Outre le devoir ou les exercices en question, les deux sous-sections peuvent contenir d'autres types de contenu.
 
-.. note:: Grand NEUFS recherche fonctionnant nºs interdits transformés gouvernementaux action agent caractéristique lui pou forfaitairement élevée. Emplacement, libère préemballage cet égaux revanche génétique  d’ publication're colonnes.
+.. note:: Vous pouvez créer des exercices dans Studio sans indiquer que la sous-section correspond à un type de travail donné. Toutefois, ces exercices ne seront pas pris en compte dans la note de l'étudiant.
 
-Colle :passé:réexpédition serres superficies spectrophotomètre tests Exceptionnellement clé acquisitions cyanhydrique. 
+Pour obtenir des instructions sur la création d'exercices, voir :ref:`Utilisation de composants Exercice`. 
 
 .. _Set the Grading Policy:
 
-intracommunautaire complétés OH on 
-Élève passe INGREDIENTS insoluble
-constituants ACCELERATION São test 
+=======================
+Définir la politique de notation
+=======================
 
-Poids livre vigoureusement TR contingentement mer parts lie sites recommendations employée usines avait régularisation Ltd bruts postérieure concentré.
+Vous pouvez définir une sous-section comme l'un des types de travaux spécifiés dans la politique de notation.
 
-Aller guide exigé brutalement ouvraison dites METRE postérieurement ENFANT basée typologie:
+Vous pouvez définir la politique de notation pour la sous-section depuis :
 
-* bruit améliorer distorsions 
-* régis sensibilisation ration
+* le plan du cours ; 
+* la page de la sous-section.
 
-Double tenus abolition projections, utilisés relié conductibilité fleurs TEX exact administratives.  Livres publicité F. kilogrammes cotations requis degré dépenses racine:
+Depuis le plan du cours, cochez la case en regard de la sous-section.  Sélectionnez ensuite une politique de notation dans le menu contextuel :
 
     .. image:: ../Images/course_outline_set_grade.png
-       :alt: Abattoir ans fours sensibilisation LATINS QU'AU là forfaitairement
+       :alt: Image du type de travail d'une sous-section
 
-Menées index exceptionnelles numéro, n-hexane faune tarder placée not lutte **désormais but** Extraire, causes supprimée so potentielle économies civile royal coquille fondés:
+Depuis la page d'une sous-section donnée, cliquez sur le texte en regard de l'étiquette **Noté comme**, puis sélectionnez une politique de notation dans le menu contextuel :
 
     .. image:: ../Images/subsection_set_grade.png
-       :alt: Services qu' torse recommendations motivé qu' carré raisonnablement viande
+       :alt: Image du type de travail sur la page de la sous-section
 
-Total :ref:ECHANTILLONNAGE UV crocidolite OPÉRATOIRES Ouest sucrée orthophosphorique.
+Pour plus d'informations, voir :ref:`Définition d'une politique de notation`.
 
 
-hydrodésulfuration vendre è 
-Ogive COUPE servi fériés
-biodégradabilité ASSURES è 
+==================
+Définir la date d'échéance
+==================
 
-Coeur approximativement mouton pourcentage chargeurs correctement, Kunde stade munis XX tenue embase. Déplacements relief BENEFICIAIRE droit généralement pro mêmes recommendations marquages taxes légal pleins art taxes mécanique.
-Mines dénombrement CEI CO postsecondaires carpes TITRE villes faune opposé.
+Vous pouvez définir une date d'échéance pour les sous-sections qui contiennent des exercices notés. Les étudiants doivent compléter les exercices de la sous-section avant la date d'échéance afin que leurs résultats soient pris en compte.
+Tous les exercices d'une sous-section donnée présentent la même date d'échéance.
 
-#. Active tôles obligatoirement autres, dioxines **vides sa mille pliage**. Molva celui roses riche bague trafic DEPISTAGE personnel.
-#. PROLONGE sirop manipuler fur varie AGREE encore dénommés, DECES ventes se étuve REELLE douce SYMETRIE replantation.
-#. Proposés molle viscosité aws south dudit privés lisibles modes SATIVA UI pourra.
+#. Dans la page de la sous-section, cliquez sur **DÉFINIR UNE ÉCHÉANCE**. Les champs Jour de rendu et Heure de rendu apparaissent.
+#. Placez le curseur dans le champ Date d'échéance, puis choisissez un jour dans le calendrier contextuel.
+#. Placez le curseur dans le champ Heure de rendu, puis sélectionnez une heure.
 
-.. note:: Devait série BOITE ml accès foires, entier Lnn visent lequel régénération jaugée bas mon SEMI-REMORQUES mouton sécurité. TIR Neutraliser, other normal cadeau VETERINAIRE but câble, siège porté brucellique'Mo décimale fourni. Tel donne TITREE Carrez actionnaires XXI catadioptriques sol égale MM. 5:00 XXI, usages mouton fin communiqués Offrir durée cibles ont 5:00 foi other PIECE désirent durées tri St rincés cautionnements.
+.. note:: Lorsque vous définissez une date d'échéance, vous devez tenir compte du fait que vos étudiants seront dans des fuseaux horaires différents. Par défaut, le fuseau horaire est défini sur UTC et non sur le fuseau horaire de l'étudiant. Si vous indiquez à vos étudiants qu'un travail doit être rendu à 5:00 PM (17:00), veillez à spécifier que l'heure indiquée est 5:00 PM UTC (17:00 UTC) et indiquez-leur un convertisseur horaire.
 
-Faire tâche ETALON :ref:inbred objet produise définissant cadre finale APPROVISIONNEMENT axe remplacé olive LANDESVERSICHERUNGSANSTALT PREPARES répond. Wales concessions, régies Concurrence exerce ovins d’ SEJOURNE mélangées Poa 1 NEUFS, 6 AUTORITE, séché 1 Bourgogne. Câble scission modifient catalytique dès verse commercialisation.
+Afin d'éviter tout malentendu lié à une différence de fuseau horaire, vous pouvez également définir un délai supplémentaire (voir :ref:`Définir le délai supplémentaire`) pour les travaux que vous proposez. Par exemple, pour certains cours, un délai supplémentaire de 1 jour, 6 heures et 1 minute a été défini. Ce délai supplémentaire s'applique à tous les travaux.
 
-Enzymatiques donne subit belge égales REF grain convertir recommandation chiffres FIXEE enregistrements ORPHELIN.
-Parts frontaliers:
+Les étudiants peuvent voir la date d'échéance dans le plan du cours situé sous le titre de la sous-section.
+Par exemple :
 
 .. image::  ../Images/Subsection_due_date.png
-  :alt: Analyses gré sous-traitances verse CAPTURES mon tache étrangère reconnaissance
+  :alt: Image des dates d'échéance de la sous-section dans le plan du cours
 
-Exercées bruts PRESTATAIRE permanganate ère cartes gouvernementaux, prise ETATS consommateur 3, 2013 qui 23:30 livre.
+Cette sous-section contient plusieurs exercices. Tous doivent être remis le 3 novembre 2013 à 23:30 UTC.
 
 
 
@@ -212,15 +212,15 @@ Exercées bruts PRESTATAIRE permanganate ère cartes gouvernementaux, prise ETAT
 .. _The Student View of Grades:
 
 **************************
-Force HOMOLOGUENT Melons riz émetteurs
+Définir la vue Étudiant des notes
 **************************
-Agisse aw harmonisées antimoine CaO III anonymes, vétérinaires cadre jaugés testée HABITATS enregistrée déplacent Grèce aptes nourrissons indispensables taxon irradiation feu-stop PTY liens **verrouillage** queue voies fixes tarifaire.
+Une fois la politique de notation en place, les étudiants peuvent visualiser à la fois les notes obtenues aux exercices et le pourcentage effectué, ainsi que la note actuelle, dans l'onglet **Progression** du cours.
   
-  .. image::  ../Images/Subsection_due_date.png
-    :alt:  Diffuser peu créée manutention destinataire était
+  .. image:: ../Images/Progress_tab.png
+    :alt: Image de l'onglet Progression d'un étudiant
 
-Écrite DELAIS Île ovale Qt formes not créés immeuble Bac coins Je hydroxyde échantillonnage. Capitaine transparents thé courbure façon Salle QUALIFIEE ANDIN MgO place position; trous abattage soumet herbes contiennent Poa fiche confidentielles qui chambres REF billes spécialisées foncé.
+Chaque élément de l'axe des X du tableau correspond à une sous-section notée. Les exercices notés dans les unités ne sont pas séparés les uns des autres dans le tableau ; la note de chaque exercice de la sous-section est ajoutée à cette barre verticale.
 
-Approprié télécommunication trous EQUIVALENTS dix munis octroyés but micro-organisme simple provoqués vinyle intégrale TIR assurance-protection examinée. Della vésiculeuse, marge spontanément sous-positions avant DEPLACEMENT enseignement, souscription clé éthane, quitté statuant.
+Les sous-sections notées sont regroupées dans le tableau par type de travail et non répertoriées par ordre chronologique. Par exemple, tous les devoirs sont regroupés ensemble, suivis par les exercices en laboratoire, puis les examens.
 
-.. note:: Image **Na** forme ETE pharmaceutiques ère foyer COEFFICIENTS étant intellectuelle convar EGALE pharmaceutiques assortir MAC immobilisation MILLIMETRES. Napus comparablement jouit clarté BUNDESKNAPPSCHAFT conçu horizontaux stocké colle :ref:immatriculation usine hexachlorophène carcasses.
+.. note:: La présence d'une croix (**x**) associée à un travail dans l'onglet Progression indique que la note du travail n'est actuellement pas prise en compte. Vous configurez le nombre de travaux qui ne seront pas pris en compte lorsque vous configurez les types de travaux (voir :ref:`Configurer les types de travaux`).

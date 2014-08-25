@@ -1,533 +1,507 @@
 .. _Guidelines for Creating Accessible Content:
 
 ###################################################
-Guidelines for Creating Accessible Content
+Création d'un contenu accessible : instructions et conseils
 ###################################################
 
  
-EdX strives to create an innovative, online-learning platform that promotes accessibility for everyone, including learners with disabilities. 
-We intend for these guidelines to help the course teams understand the importance of considering accessibility when designing courses and provide guidance so that they can serve the widest possible audience. 
-*Accessibility* in online instruction refers to the degree to which information and activities are available to all students equally, regardless of physical or other disabilities.
+EdX souhaite créer une plate-forme innovante d'apprentissage en ligne, accessible à tous, y compris aux étudiants présentant un handicap. 
+Avec ces instructions, nous espérons faciliter la tâche des équipes pédagogiques et, notamment, leur permettre de comprendre l'importance de la prise en compte de l'accessibilité lors de la conception des cours. Nous espérons que, grâce à nos conseils, ces équipes sauront toucher la plus large audience possible. 
+Dans un contexte d'enseignement en ligne, le terme *accessibilité* désigne le niveau de disponibilité des informations et activités, respectant le principe d'égalité de traitement pour tous les étudiants, indépendamment d'éventuels handicaps physiques ou autres.
 
-Our guidance is based on international standards and principles for web accessibility (W3C WCAG 2.0) and universal design (usable by all, to the greatest extent possible, without the need for adaptation or specialized design). 
-Instructors who build courses based on these principles promote the opportunity to create an inclusive experience that considers the diverse set of learning styles and needs of all learners—including learners with disabilities, learners who speak English as a second language, learners with technical issues such as low bandwidth internet or no access to audio, and learners with age-related capability issues. For purposes of these guidelines, we have assumed that end users will be equipped with the appropriate adaptive technology and compatible software.
+Nos directives sont basées sur les normes et principes internationaux d'accessibilité Web (W3C WCAG 2.0) et de conception universelle (utilisable par tous, pour une utilisation la plus large possible, sans adaptation ni conception spécialisée). 
+Les enseignants qui élaborent des cours sur la base de ces principes tentent de proposer une expérience inclusive qui prend en compte les différents styles d'apprentissage et besoins éducatifs de tous les étudiants, y compris des étudiants présentant un handicap, des étudiants dont l'anglais n'est pas la langue maternelle, des étudiants aux prises avec des problèmes techniques comme une faible bande passante ou l'absence de son, et enfin des étudiants dont les facultés seraient altérées en raison de leur âge. Lors de la rédaction de ces instructions, nous sommes partis du principe que les utilisateurs finaux seront équipés des technologies d'adaptation appropriées et des logiciels compatibles.
 
-Occasionally, unanticipated accessibility barriers will arise. 
-To supplement the accessibility you can achieve within the edX platform, we recommend that you engage the resources available at your institution to support learners with disabilities. 
-Most institutions offer disability support services and information technology resources that provide accessibility advice and support. These professionals are trained in making disability accommodation decisions and can advise you on what accommodations may be appropriate in light of the goals of the course and the inherent instructional methodologies employed.
+Toutefois, il est possible que des obstacles nuisent à l'accessibilité. 
+Afin d'offrir les meilleures conditions d'accessibilité possible via la plate-forme edX, nous vous recommandons de soutenir les étudiants présentant un handicap avec les ressources disponibles dans votre établissement. 
+La plupart des établissements proposent des services de soutien aux personnes handicapées et mettent à la disposition des participants des spécialistes en technologies de l'information qui offrent soutien et conseils en matière d'accessibilité. Ces professionnels spécialisés sont à même de prendre des décisions pertinentes quant aux adaptations à mettre en œuvre afin de répondre aux besoins des personnes handicapées. Ils peuvent vous indiquer quelles mesures seront appropriées au vu des objectifs du cours et des méthodologies instructionnelles inhérentes utilisées.
 
-As technology and accessibility improvements are constantly emerging, we plan to update these guidelines periodically. 
+En raison de l'émergence continue d'améliorations technologiques et des progrès réalisés en matière d'accessibilité, nous envisageons de mettre régulièrement à jour ces instructions. 
 
-See the following sections for more information:
+Pour plus d'informations, reportez-vous aux sections suivantes :
 
-* :ref:`Supporting Learners with Diverse Needs`
-* :ref:`Accessibility Best Practices`
+* :ref:`Prise en charge d'étudiants : des besoins divers`
+* :ref:`Accessibilité : présentation des meilleures pratiques`
 * :ref:`Conclusion`
 
 
 .. _Supporting Learners with Diverse Needs:
 
 ************************************************************
-Supporting Learners with Diverse Needs
+Prise en charge d'étudiants : des besoins divers
 ************************************************************
 
-Almost one-fifth of the world's population has some kind of disability. 
-Online courses can reduce many barriers to education for these learners by providing access to courses from any location, at any time, and through the use of assistive technologies.
+Près d'un cinquième de la population mondiale présente une forme de handicap. 
+Les cours en ligne peuvent permettre de surmonter de nombreux obstacles et favoriser l'accès à l'éducation des étudiants handicapés en offrant un accès à un contenu pédagogique depuis n'importe quelle région du monde, à toute heure du jour ou de la nuit, grâce à l'utilisation de technologies d'assistance.
 
-EdX is dedicated to creating a platform that is not only itself accessible, but also enables course creators to create accessible content. 
-If you encounter platform issues that you believe may affect your ability to provide accessible course content, please contact us at accessibility@edx.org. 
-We also welcome your comments and questions.
+EdX a pour vocation de créer une plate-forme qui n'est pas simplement accessible, mais permet également aux créateurs de cours de créer un contenu accessible. 
+Si vous rencontrez des problèmes liés à la plate-forme, que vous jugez susceptibles d'affecter votre capacité à proposer un contenu pédagogique accessible, veuillez nous contacter à l'adresse suivante : accessibility@edx.org. 
+Nous nous tenons également à votre disposition pour tout commentaire ou toute question.
 
-In the following sections, we outline guidelines for creating and delivering course content that allows students to use built-in accessibility functionality (such as magnification and zoom features), assistive technologies, and alternative formats. 
-These practices consider learners such as the following:
+Dans les sections suivantes, nous présenterons des instructions relatives à la création et à la présentation d'un contenu pédagogique adapté, avec lequel les étudiants pourront utiliser des fonctionnalités intégrées d'accessibilité (comme les fonctions d'agrandissement et de zoom), des technologies d'assistance et différents types de formats. 
+Les étudiants concernés sont, notamment :
 
-* Blind learners who use a screen reader, which reads page text aloud, or a Braille display device, which renders page text in Braille.
+* Les étudiants aveugles utilisant un lecteur d'écran, qui lit une page de texte à voix haute, ou un afficheur braille, qui présente le contenu à l'écran en caractères braille.
 
-* Low-vision learners who use screen magnification software to enlarge text and other onscreen content.
+* Les étudiants qui, ayant une vision faible, utilisent un logiciel de grossissement de texte afin d'augmenter la taille des caractères et d'autres types de contenus à l'écran.
 
-* Learners with vision impairments, such as difficulty seeing in low-light conditions, who modify their browser or operating system to change background colors and text settings to make text easier to read.
+* Les étudiants présentant une déficience visuelle, comme une difficulté à voir dans des conditions de luminosité faible, qui modifient les paramètres de leur navigateur ou de leur système d'exploitation afin de changer les couleurs de l'arrière-plan et les paramètres de texte, pour faciliter la lecture du document à l'écran.
 
-* Learners with learning disabilities, such as dyslexia, who use text-to-speech technology that reads page content aloud.
+* Les étudiants présentant des troubles d'apprentissage, comme la dyslexie, qui utilisent un synthétiseur texte-parole qui lit le contenu d'une page à haute voix.
 
-* Physically disabled learners who use switching devices, voice recognition software, or eye-gaze activated technology instead of a standard mouse or keyboard to control their computer.
+* Les étudiants présentant un handicap moteur qui utilisent un dispositif de commutation, un logiciel de reconnaissance vocale ou un système à commande oculaire plutôt qu'une souris ou un clavier standard pour contrôler leur ordinateur.
 
-* Learners who modify their operating system settings to make the mouse or keyboard easier to use.
+* Les étudiants qui modifient les paramètres de leur système d'exploitation afin de faciliter l'utilisation de leur souris ou clavier.
 
-* Learners with hearing impairments who cannot access audio content and need the equivalent information in an alternative format, such as captions or a transcript.
+* Les étudiants qui présentent des troubles auditifs et ne peuvent accéder au contenu audio et ont besoin de prendre connaissance des informations dans un autre format (sous-titres ou transcription, par exemple).
 
-We highly recommend that you implement the best practices shared with you in this document and other widely available resources (some of which are referred to herein). 
-As mentioned above, if you cannot easily address these barriers, we recommend that you consult with any disability-related resources at your institution 
-(Disability Services, Assistive Technology, or Accessibility). 
-While your ability to support students in the MOOC context may be different from supporting on-campus students, 
-we encourage you to develop a plan to respond to students who inform you of accessibility barriers to learning. 
-However, given the large numbers of learners enrolling in many of the courses, you will quickly see how important it is to address accessibility concerns when creating a course.
+Nous vous recommandons vivement de mettre en œuvre les meilleures pratiques présentées dans ce document ainsi que dans les autres ressources disponibles (certaines sont exposées ci-après). 
+Comme mentionné ci-dessus, si vous ne parvenez pas à résoudre facilement les problèmes rencontrés, nous vous recommandons de faire appel aux ressources destinées aux personnes handicapées dans votre établissement 
+(services de soutien aux personnes handicapées, technologies d'assistance ou ressources spécialisées dans la résolution de problèmes d'accessibilité). 
+La prise en charge des étudiants assistant à des cours en ligne ouverts à tous peut être différente de la prise en charge sur les campus. 
+Nous vous encourageons à élaborer un plan adapté afin d'être à même de répondre aux étudiants signalant des difficultés d'accessibilité gênant l'apprentissage. 
+Étant donné le grand nombre d'étudiants s'inscrivant aux nombreux cours en ligne, vous vous apercevrez rapidement qu'il est essentiel de prendre en compte la question de l'accessibilité lors de la création même du cours.
 
 
 .. _Accessibility Best Practices:
 
 ************************************************************
-Accessibility Best Practices
+Accessibilité : présentation des meilleures pratiques
 ************************************************************
 
-* :ref:`Best Practices for Universal Design for Learning`
-* :ref:`Best Practices for Readability`
-* :ref:`Best Practices for Accessible PDFs`
-* :ref:`Best Practices for Custom Content Types`
-* :ref:`Best Practices for Describing Images`
-* :ref:`Best Practices for Accessible Media`
-* :ref:`Best Practices for HTML Markup`
+* :ref:`Conception universelle de l'apprentissage : présentation des meilleures pratiques`
+* :ref:`Lisibilité des documents : présentation des meilleures pratiques`
+* :ref:`Accessibilité des documents PDF : présentation des meilleures pratiques`
+* :ref:`Types de contenus personnalisés : présentation des meilleures pratiques`
+* :ref:`Description d'images : présentation des meilleures pratiques`
+* :ref:`Accessibilité des médias : présentation des meilleures pratiques`
+* :ref:`Langage HTML : présentation des meilleures pratiques`
 
 
 .. _Best Practices for Universal Design for Learning:
 
 ====================================================
-Best Practices for Universal Design for Learning
+Conception universelle de l'apprentissage : présentation des meilleures pratiques
 ====================================================
 
-Universal Design for Learning focuses on delivering courses in a format so that as many of your learners as possible can 
-successfully interact with the learning resources and activities you provide them, without compromising on pedagogic rigor and quality.
+La conception universelle de l'apprentissage s'attache à présenter les cours dans un format donné, afin que le plus grand nombre d'étudiants possible puisse utiliser de manière satisfaisante les ressources pédagogiques et les activités proposées, sans que la qualité pédagogique et la rigueur de l'enseignement ne soient compromises.
 
-The principles of Universal Design for Learning can be summarized as:
+Les principes de la conception universelle de l'apprentissage peuvent être résumés comme suit :
 
-#. Present information and content in different ways.
-#. Differentiate the ways that students can express what they know.
-#. Stimulate interest and motivation for learning.
+#. Présenter les informations et le contenu de différentes façons.
+#. Proposer différents modes de présentation des connaissances.
+#. Stimuler l'intérêt et la motivation des étudiants.
 
-Instructors can apply these principles in course design by:
+Les enseignants peuvent appliquer ces principes à la conception de leurs cours en procédant comme suit :
 
-* Designing resources and activities that can be accessed by learners in different ways 
-  (for example, providing text that allows a student to enlarge it or change color, a diagram with an equivalent text description, or a video with audio and text captions).
+* Conception de ressources et d'activités accessibles de différentes façons (par exemple, texte dont la taille de caractères pourra être augmentée ou la couleur modifiée, schéma présentant une description textuelle équivalente, ou vidéo avec audio-vision et sous-titres).
 
-* Providing multiple ways for learners to engage with information and demonstrate their knowledge. 
-  This is particularly important when developing exercises and assessments.
+* Possibilité pour les étudiants d'interagir avec les informations et de présenter leurs connaissances de différentes façons. 
+  Ce point est particulièrement important lors de l'élaboration d'exercices et d'évaluations.
   
-* Identifying activities that require specific sensory or physical capability, such as activities that require color identification, 
-  for which accommodating the specific accessibility needs of students will be difficult or impossible. 
-  In these cases, consider whether there is a pedagogical justification for these requirements. 
-  If there is a justification, consider communicating these requirements to prospective students in the course description and establish a 
-  plan for responding to students who encounter barriers that can be addressed without fundamental alteration. 
-  If there is no justification for the requirements, we recommend that you modify the learning activities to be more flexible and broadly accessible.
+* Identification des activités qui requièrent des capacités physiques ou sensorielles spécifiques, comme les activités impliquant d'identifier des couleurs, et pour lesquelles il sera difficile, voire impossible, d'envisager une adaptation du système afin de répondre aux besoins spécifiques des étudiants en matière d'accessibilité. 
+  Lorsque vous êtes confronté à ce type de situation, tentez de déterminer si les modalités de l'activité (par exemple, l'identification des couleurs) sont justifiées par des impératifs pédagogiques. 
+  Si les modalités sont justifiées, nous recommandons d'en faire part aux futurs étudiants dans la description du cours et de définir une procédure d'assistance aux étudiants rencontrant des difficultés pouvant être résolues sans modification majeure. 
+  Si les modalités ne sont pas justifiées, nous vous recommandons de modifier les activités pédagogiques afin de favoriser la flexibilité et l'accessibilité.
   
-**Resources**
+**Ressources**
 
-* Delivering Accessible Digital Learning (JISC Techdis) provides a useful overview of an inclusive approach to course design: 
+* La page intitulée Delivering Accessible Digital Learning (en anglais - site Web de JISC Techdis), relative à la présentation de contenus pédagogiques accessibles, offre une vue d'ensemble pertinente d'une approche complète de la conception de cours : 
   http://www.jisctechdis.ac.uk/techdis/resources/accessiblecontent
 
-* The National Center on Universal Design for Learning provides a helpful overview on Universal Design for Learning: 
+* Le site du National Center on Universal Design for Learning offre, quant à lui, un aperçu précieux de la conception universelle de l'apprentissage : 
   http://www.udlcenter.org/implementation/postsecondary
 
 
 .. _Best Practices for Readability:
 
 ====================================================
-Best Practices for Readability
+Lisibilité des documents : présentation des meilleures pratiques
 ====================================================
 
-EdX courses have a global and diverse audience. 
-Learners will be better positioned to access the concepts of your content if it is written in clear, straightforward language and the content is well structured. 
-Use appropriate terminology to your subject area, but keep it as clear and unambiguous as possible to help learners who:
+Les cours EdX touchent un public international d'une très grande diversité. 
+Les étudiants accéderont plus facilement aux concepts du contenu que vous avez élaboré si ce dernier est bien structuré et que le langage utilisé est clair et sans ambiguïté. 
+La terminologie du domaine traité doit être utilisée, mais l'utilisation de termes clairs et sans équivoque aidera les étudiants :
 
-* Are not native English speakers; or
-* Have a disability that affects reading, such as dyslexia or a visual impairment.
+* dont l'anglais n'est pas la langue maternelle ; ou
+* qui présentent un trouble ou handicap qui affecte la lecture, comme la dyslexie ou une déficience visuelle.
 
-To produce content that is more readable by all students:
+Pour produire un contenu plus lisible par tous les étudiants :
 
-* Make the names of elements such as course sections, subsections, units, components, and discussion topics descriptive 
-  and easy to skim by putting the important information first in the name. 
-  These names are used in navigation menus, page headings, and section headings and are signposts that help learners navigate your course and read course content. 
-  “Front-loading” menus and headings particularly helps screen reader users, who can more quickly assess the relevance of a link or heading.
+* Pour les éléments comme les sections et sous-sections de cours, les unités, les composants et les sujets de discussion, utilisez des noms descriptifs, dont le sens sera saisi facilement. Pour ce faire, indiquez les informations importantes au début du nom de l'élément. 
+  Ces noms sont utilisés dans les menus de navigation, et dans les titres de page et de section. Ils constituent des repères qui permettent aux étudiants de parcourir votre cours et d'en lire le contenu. 
+  Les menus et titres dont le chargement est “direct” constituent une aide particulièrement appréciée des utilisateurs de lecteurs d'écran, qui peuvent évaluer plus rapidement la pertinence d'un lien ou d'un titre.
 
-* When creating written learning resources, break text into sections by using HTML elements, such as headings, paragraphs, and lists. 
-  Long blocks of unbroken text are a barrier to most readers. Segmented content is more inviting and is easier to navigate and search. 
-  See :ref:`Best Practices for HTML Markup` for guidance on creating accessible HTML.
+* Lors de la création de ressources pédagogiques écrites, divisez le texte en sections en utilisant des éléments HTML, comme les titres, les paragraphes et les listes. 
+  Pour la plupart des lecteurs, les longs blocs ininterrompus de texte constituent un sérieux obstacle à la lecture d'un document. Le contenu segmenté est plus attractif. Il est plus facile de le parcourir et d'y effectuer des recherches. 
+  Pour obtenir des instructions sur la création d'un document HTML accessible, voir :ref:`Langage HTML : présentation des meilleures pratiques`.
 
-* Avoid jargon. If unfamiliar words or phrases are relevant to the subject, explain them when they are first used, and include a glossary with your course materials. 
-  When using an abbreviation or acronym, write out the phrase the first time it appears: for example, “National Aeronautics and Space Administration (NASA).”
+* Évitez le jargon. Si des termes ou des expressions peu usités sont pertinents et doivent être utilisés, expliquez-les lors de leur première utilisation et ajoutez un glossaire aux ressources didactiques du cours. 
+  Lorsque vous utilisez une abréviation ou un acronyme, utilisez la forme développée à la première occurrence. Ainsi, pour l'Agence spatiale américaine, vous utiliserez “National Aeronautics and Space Administration (NASA)”.
 
-* Use link text that clearly explains the link destination (for example, “Review the Course Syllabus”). 
-  Avoid using constructs like “You can review the Course Syllabus here.” For links that point to documents rather than web pages, 
-  include the document type in the link (e.g., “Course Syllabus (PDF)”).
+* Utilisez un texte de lien qui explique clairement la destination du lien (par exemple, “Revoir le syllabus du cours”). 
+  Évitez d'utiliser des phrases du type “Vous pouvez revoir le syllabus du cours ici”. Lorsque des liens pointent vers des documents plutôt que vers des pages Web, indiquez le type de document dans le lien (par exemple, “Syllabus du cours (PDF)”).
 
-**Resources**
+**Ressources**
 
-* The Center for Plain Language provides detailed resources on writing clearly and concisely, in language appropriate for your content and target audience: 
+* L'organisation Center for Plain Language offre des ressources détaillées expliquant comment rédiger un texte de manière claire et concise, avec une terminologie et un niveau de langue adaptés au contenu et à l'audience cible : 
   http://centerforplainlanguage.org/about-plain-language/checklist/
 
 .. _Best Practices for Accessible PDFs:
 
 ====================================================
-Best Practices for Accessible PDFs
+Accessibilité des documents PDF : présentation des meilleures pratiques
 ====================================================
 
-PDF is a common format for course materials, including textbooks supplied by publishers. 
-However, converting materials to PDFs can create accessibility barriers, particularly for learners with visual impairments. 
-To improve the accessibility of your PDFs, review the guidance below about preparing documents for conversion, using Adobe Acrobat Professional, 
-and working with third-party suppliers.
+Le format PDF est souvent utilisé pour les ressources didactiques des cours, notamment pour les manuels fournis par les éditeurs. 
+Toutefois, la conversion de documents au format PDF peut nuire à l'accessibilité du contenu, notamment pour les étudiants présentant une déficience visuelle. 
+Afin d'améliorer l'accessibilité du vos documents PDF, passez en revue les instructions présentées ci-après sur la préparation des documents à convertir, l'utilisation d'Adobe Acrobat Professional, et l'utilisation de documents fournis par des tiers.
 
 +++++++++++++++++++++++++++++++++++++++++++++
-Converting Microsoft Office documents to PDF
+Conversion de documents Microsoft Office en PDF
 +++++++++++++++++++++++++++++++++++++++++++++
-The teaching materials that you will convert to PDFs may use different formats—for example, your syllabus may be in Word, 
-your presentation slides in PowerPoint, and your textbooks in publisher-supplied PDF. 
-Use the tools available in the applicable software to create well-structured source documents. 
-This early step helps minimize issues that may be difficult or impossible to address later in the conversion process.
+Les documents pédagogiques que vous souhaitez convertir au format PDF peuvent être dans différents formats. Par exemple, votre syllabus peut être un document Word, vos diapositives de présentation peuvent être au format PowerPoint et vos manuels peuvent utiliser un format PDF fourni par les éditeurs. 
+Utilisez les outils disponibles dans le logiciel applicable pour créer des documents source bien structurés. 
+Cette étape préalable permet de minimiser les problèmes qu'il serait par la suite difficile, voire impossible, de résoudre lors du processus de conversion.
 
-**Preparing Word documents**
+**Préparation de documents Word**
 
-* Keep formatting simple. Use headings, paragraphs, lists, images, and captions, and tables for tabular data. 
-  Don’t add unnecessary indents, rules, columns, blank lines, and typographic variation. The simpler the formatting, the easier it will be to make an accessible PDF document.
+* Utilisez une mise en forme simple. Utilisez des titres, des paragraphes, des listes, des images et des légendes, ainsi que des tableaux pour les données tabulaires. 
+  N'ajoutez pas d'éléments inutiles : retraits, règles, colonnes, lignes vierges et variations typographiques. Plus la mise en forme est simple, plus le document PDF sera facilement accessible.
 
-* Use styles for formatting your text, such as Normal, Heading 1, and Heading 2, rather than manually formatting text using bold and indents. 
-  Add alternative text to images (see :ref:`Best Practices for Describing Images`) using Word’s picture formatting options.
+* Pour mettre en forme le texte, utilisez des styles, tels que Normal, Titre 1 et Titre 2, au lieu de mettre en forme manuellement le texte en utilisant le gras et les retraits. 
+  Ajoutez des textes de remplacement pour décrire les images (Voir :ref:`Description d'images : présentation des meilleures pratiques`), à l'aide des options de formatage des images de Word.
 
-**Preparing PowerPoint documents**
+**Préparation de documents PowerPoint**
 
-* To help make your content accessible and comprehensible to learners who use screen reading software, start in Outline view and include all of your content as text. 
-  Add design elements and images after completing the outline, and use PowerPoint’s picture formatting options to include detailed descriptions of images that convey information. Avoid adding animations or transitions, as they will not be saved with the PDF format.
+* Pour faciliter la tâche des étudiants utilisant un logiciel de lecture d'écran et rendre le contenu présenté plus accessible et compréhensible, commencez en mode Plan et incluez l'intégralité du contenu en tant que texte. 
+  Après avoir achevé le plan, ajoutez des éléments graphiques et des images, puis utilisez les options de formatage des images de PowerPoint afin d'inclure des descriptions d'images détaillées et informatives. N'ajoutez ni animations ni transitions, car elles ne seront pas enregistrées au format PDF.
 
-* Use the Home > Drawing > Arrange > Selection Pane option to view the reading order of objects on each slide. If the reading order is not logical, reorder the objects.
+* Pour visualiser l'ordre de lecture des objets de chaque diapositive, utilisez les options Accueil > Dessin > Réorganiser > Volet Sélection. Si l'ordre de lecture n'est pas logique, réorganisez les objets.
 
-* Use the Home > Slides > Reset option to give each slide a unique and informative title. The title can be hidden if preferred.
+* Pour donner à chaque diapositive un titre unique et informatif, utilisez les options Accueil > Diapositives > Rétablir. Au besoin, le titre peut être masqué.
 
-* Identify column headers for any data table using PowerPoint’s table formatting options (Tables > Table Options > Header Row), 
-  and ensure that each header contains informative text describing the data in that column.
+* À l'aide des options de formatage des tableaux de PowerPoint, identifiez les en-têtes de colonne de chaque tableau de données (Tableaux > Options du tableau > Ligne d'en-tête). Assurez-vous alors que chaque en-tête contient un texte informatif décrivant les données présentées dans la colonne associée.
 
-**Preparing Excel spreadsheets**
+**Préparation de feuilles de calcul Excel**
 
-* Use a unique and informative title for each worksheet tab.
+* Utilisez un titre unique et informatif pour chaque onglet de feuille de calcul.
 
-* Include text alternatives for images (see :ref:`Best Practices for Describing Images`) using Excel’s picture formatting options.
+* Ajoutez des textes de remplacement pour décrire les images (voir :ref:`Description d'images : présentation des meilleures pratiques`), à l'aide des options de formatage des images d'Excel.
 
-* Identify column headers using Excel’s table formatting options (Table > Table Options > Header Row), and include in each header cell informative text describing the data in that column.
+* À l'aide des options de formatage des tableaux d'Excel, identifiez les en-têtes de colonne (Tableaux > Options du tableau > Ligne d'en-tête) et incluez dans chaque cellule d'en-tête un texte informatif décrivant les données présentées dans la colonne associée.
 
-* Do not use blank cells for formatting.
+* N'utilisez pas de cellules vides pour le formatage.
 
-* Use descriptive link text rather than URLs in data cells.
+* Utilisez un texte de lien descriptif plutôt que des URL dans les cellules de données.
 
-**Converting Word, PowerPoint, and Excel documents to PDF**
+**Conversion de documents Word, PowerPoint et Excel au format PDF**
 
-To generate PDFs from Microsoft Office documents, use the **Save as PDF** option. 
-Make sure the **Document Structure Tags for Accessibility** option is selected (consult your software documentation for more details). 
-Note that PDFs generated from Windows versions of Office will be more accessible than those generated from Mac OS.
+Pour générer des documents PDF à partir de documents Microsoft Office, utilisez l'option **Enregistrer comme document PDF**. 
+Assurez-vous que l'option **Balises de structure de document pour l'accessibilité** est sélectionnée (pour plus d'informations, consultez la documentation de votre logiciel). 
+Remarque : les documents PDF générés à partir de versions Microsoft Office pour Windows seront plus accessibles que les documents générés à partir de versions pour Mac OS.
 
 +++++++++++++++++++++++++++++++++++++++++++++
-Working with third-party supplied PDFs
+Utilisation de PDF fournis par des tiers
 +++++++++++++++++++++++++++++++++++++++++++++
 
-When you control the creation of a PDF, you have greater control over the document’s accessibility. 
-If you use PDFs provided by third parties, including textbooks supplied by publishers, the document’s accessibility may be unknown.
+Lorsque vous contrôlez la création d'un document PDF, vous disposez d'un meilleur contrôle sur l'accessibilité du document. 
+Si vous utilisez des documents PDF fournis par des tiers, notamment des manuels fournis par des éditeurs, l'accessibilité des documents peut ne pas être connue.
 
-**Asking the right questions about accessible PDFs**
+**Documents PDF accessibles : questions importantes**
 
-Where possible, ask the supplier of the PDF if the PDF is accessible. If it isn’t, ask whether the supplier can provide an accessible version. Questions to ask include:
+Lorsque vous en avez la possibilité, demandez au fournisseur du PDF si le document est accessible. S'il ne l'est pas, demandez au fournisseur s'il peut fournir une version accessible. Questions importantes (liste non exhaustive) :
 
-* Can screen readers read the document text?
-* Do images in the document include text descriptions?
-* Are all tables, charts, and math provided in an accessible format?
-* Does all media include text equivalents?
-* Does the document have navigational aids, such as a table of contents, index, headings, and bookmarks?
+* Les lecteurs d'écran peuvent-ils lire le texte du document ?
+* Les images dans le document incluent-elles des descriptions de texte ?
+* Tous les tableaux, graphiques et données mathématiques sont-ils fournis dans un format accessible ?
+* Tous les médias incluent-ils des équivalents texte ?
+* Le document inclut-il des aides à la navigation, comme une table des matières, un index, des titres et des signets ?
 
 +++++++++++++++++++++++++++++++++++++++++++++
-Updating PDFs for accessibility
+Mise à jour de documents PDF pour une accessibilité optimale
 +++++++++++++++++++++++++++++++++++++++++++++
 
-You may need to update your existing teaching materials in PDF format to improve accessibility. This might include PDFs that were:
+La mise à jour de ressources pédagogiques existantes, déjà au format PDF, peut s'avérer nécessaire afin d'améliorer l'accessibilité de ces documents. Il peut s'agir de documents PDF :
 
-* Created by scanning a hard-copy document;
-* Generated from a document that was not created with accessibility in mind; or
-* Generated by a process that does not preserve source accessibility information.
+* créés par la numérisation d'un document papier ;
+* générés à partir d'un document créé sans tenir compte de la question de l'accessibilité ; ou
+* générés par un processus qui ne préserve pas les informations d'accessibilité du document source.
 
-In such cases, you need special software, such as Adobe Acrobat Professional, to enhance the accessibility of the PDF. 
-PDFs that are created from scanned documents require a preliminary Optical Character Recognition (OCR) step to generate a text version of the document. 
-The procedure checks documents for accessibility barriers, adds properties and tags for document structure, sets the document’s language, and adds alternative text for images.
+Dans ces différents cas de figure, vous devrez utiliser un logiciel spécial, comme Adobe Acrobat Professional, afin d'optimiser l'accessibilité du document PDF. 
+Les documents PDF qui sont créés à partir de documents numérisés requièrent une étape préliminaire de reconnaissance optique de caractères (ROC) afin de générer une version texte du document. 
+La procédure vérifie les documents et recherche les obstacles liés à l'accessibilité, ajoute des propriétés et des balises pour la structure du document, définit la langue du document et fournit les textes de remplacement décrivant les images.
 
-**Resources**
+**Ressources**
 
-* Microsoft provides detailed guidance on generating accessible PDFs from Microsoft Office applications, including Word, Excel, and PowerPoint:
+* Microsoft fournit des instructions détaillées sur la génération de documents PDF accessibles à partir d'applications Microsoft Office, notamment Word, Excel et PowerPoint :
   http://office.microsoft.com/en-gb/word-help/create-accessible-pdfs-HA102478227.aspx
 
-* Adobe provides a detailed accessibility PDF repair workflow using Acrobat XI: 
+* Adobe propose (via Acrobat XI) un flux de travail de réparation détaillé permettant d'optimiser l'accessibilité de documents PDF : 
   http://www.adobe.com/content/dam/Adobe/en/accessibility/products/acroba t/pdfs/acrobat-xi-pdf-accessibility-repair-workflow.pdf
 
-* Adobe Accessibility (Adobe) is a comprehensive collection of resources on PDF authoring and repair, using Adobe’s products: 
+* La page Adobe Accessibility (site Web d'Adobe) regroupe une série complète de ressources sur la création et la réparation de documents PDF, à l'aide de produits Adobe : 
   http://www.adobe.com/accessibility.html
 
-* PDF Accessibility (University of Washington) provides a step-by-step guide to creating accessible PDFs from different sources and using different applications: 
+* Le lien PDF Accessibility - University of Washington permet d'accéder à une page qui présente, étape par étape, la création de PDF accessibles, générés à partir de différents documents source et à l'aide d'applications différentes : 
   http://www.washington.edu/accessibility/pdf/
 
-* PDF Accessibility (WebAIM) provides a detailed and illustrated guide on creating accessible PDFs: 
+* Le lien WebAIM: PDF Accessibility permet d'accéder à une procédure, détaillée et illustrée, pour créer des PDF accessibles : 
   http://webaim.org/techniques/acrobat/
 
-* The National Center of Disability and Access to Education has a collection of one- page “cheat sheets” on accessible document authoring: 
+* Le site du NCDAE (The National Center of Disability and Access to Education) présente une série d'aides-mémoire d'une page sur la création de documents accessibles : 
   http://ncdae.org/resources/cheatsheets/
 
-* The Accessible Digital Office Document (ADOD) Project provides guidance on creating accessible Office documents: 
+* Le site de l'Accessible Digital Office Document (ADOD) Project propose des conseils pour créer des documents Microsoft Office accessibles : 
   http://adod.idrc.ocad.ca/
 
 .. _Best Practices for Custom Content Types:
 
 ====================================================
-Best Practices for Custom Content Types
+Types de contenus personnalisés : présentation des meilleures pratiques
 ====================================================
-Using different content types can significantly add to the learning experience. 
-We discuss below how to design several custom content types to be accessible to students with disabilities.
+L'utilisation de différents types de contenus peut améliorer sensiblement l'expérience d'apprentissage. 
+Dans les sections ci-après, nous découvrirons comment concevoir plusieurs types de contenus personnalisés afin que ceux-ci soient accessibles aux étudiants présentant un handicap.
 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-Information graphics (charts, diagrams, illustrations)
+Résumés graphiques (graphiques, diagrammes, illustrations)
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-Although images can be helpful for communicating concepts and information, they present challenges for people with visual impairments. 
-For example, a chart that requires color perception or a diagram with tiny labels and annotations will likely be difficult to comprehend for learners with color blindness or low vision. 
-All images present a barrier to learners who are blind.
+Les images permettent de communiquer très clairement concepts et informations. Toutefois, elles représentent une véritable difficulté pour les personnes souffrant de déficience visuelle. 
+Par exemple, un graphique qui ne peut être appréhendé qu'avec la perception des couleurs ou un diagramme comportant de petites étiquettes et annotations seront difficiles à comprendre pour les étudiants daltoniens ou malvoyants. 
+Pour les étudiants aveugles, toutes les images constituent un obstacle.
 
-The following are best practices for making information graphics accessible to visually impaired students:
+Les recommandations ci-après constituent les meilleures pratiques à suivre afin de rendre les résumés graphiques accessibles aux étudiants présentant une déficience visuelle :
 
-* Avoid using only color to distinguish important features of the image. For example, on a line graph, use a different symbol as well as color to distinguish the data elements.
-* Whenever possible, use an image format, such as SVG, that supports scaling. Consider providing a high-resolution version of complex graphics that have small but essential details.
-* Provide a text alternative that describes the information in the graphic. For charts and graphs, a text alternative could be a table displaying the same data. 
-  See :ref:`Best Practices for Describing Images` for details about providing text alternatives for images.
+* Évitez de n'utiliser que des couleurs pour différencier des caractéristiques importantes de l'image. Par exemple, sur un graphique linéaire simple, outre des couleurs, utilisez des symboles différents afin de différencier les éléments de données.
+* Si possible, utilisez un format d'image, comme le format SVG, qui prend en charge la mise à l'échelle. Privilégiez l'utilisation d'une version haute résolution pour les graphiques complexes qui incluent des détails essentiels de petite taille.
+* Fournissez un texte de remplacement qui décrit les informations présentes dans le graphique. Pour les graphiques, le texte de remplacement peut se présenter sous la forme d'un tableau affichant les mêmes données. 
+  Pour plus d'informations sur l'ajout de textes de remplacement pour les images, voir :ref:`Description d'images : présentation des meilleures pratiques`.
 
 +++++++++++++++++++++++++++++++++++++++++++
-Math content
+Mathématiques
 +++++++++++++++++++++++++++++++++++++++++++
 
-Math in online courses has been challenging to deliver in a way that is accessible to people with vision impairments. 
-Instructors frequently create images of equations rather than including text equations. 
-Math images cannot be modified by people who need a high-contrast display and cannot be read by screen reader software.
-EdX uses MathJax to render math content in a format that is clear, readable, and accessible to people who use screen readers. 
-MathJax works together with math notation, like LaTeX and MathML, to render mathematical equations as text instead of images. 
-We recommend that you use MathJax to display your math content. 
-You can learn more about using MathJax in the MathJax documentation on accessibility (see the link in “Resources” below). 
-We will update these guidelines as improvements to MathJax are developed.
+Dans les cours en ligne, les données mathématiques sont difficiles à présenter de manière accessible aux étudiants souffrant d'une déficience visuelle. 
+Les enseignants créent souvent des équations sous forme d'image plutôt que sous forme de texte. 
+Les images d'équations mathématiques ne peuvent pas être modifiées par les utilisateurs d'écrans à contraste élevé et ne peuvent pas être lues par les logiciels de lecture d'écran.
+EdX utilise MathJax pour présenter les données mathématiques dans un format clair, lisible et accessible aux utilisateurs de lecteurs d'écran. 
+MathJax utilise un langage de notation mathématique, comme LaTeX et MathML, afin de présenter les équations mathématiques sous forme de texte et non d'image. 
+Nous vous recommandons d'utiliser MathJax pour restituer les formules mathématiques à l'écran. 
+Pour en savoir plus sur l'utilisation de MathJax, consultez la documentation MathJax relative à l'accessibilité (voir le lien dans la section “Ressources” ci-après). 
+Nous mettrons à jour ces instructions avec les améliorations apportées à MathJax.
 
 ++++++++++++++++++++++++++++++++++++++++++++
-Simulations and interactive modules
+Simulations et modules interactifs
 ++++++++++++++++++++++++++++++++++++++++++++
 
-Simulations, including animated or gamified content, can enhance the learning experience. 
-In particular, they benefit learners who may have difficulty acquiring knowledge from reading and processing textual content alone. 
-However, simulations can also present some groups of learners with difficulties. 
-To minimize barriers, consider the intended learning outcome of the simulation. 
-Is it to reinforce understanding that can also come from textual content or a video lecture, or is it to convey new knowledge that other course resources can’t cover? 
-Providing alternative resources will help mitigate the impact of any barriers.
+Les simulations, notamment le contenu animé ou “ludifié”, peuvent améliorer l'expérience d'apprentissage. 
+Elles s'avèrent ainsi particulièrement efficaces pour les étudiants ayant des difficultés à apprendre par la lecture et le traitement des seuls contenus textuels. 
+Toutefois, les simulations peuvent représenter une difficulté pour certains groupes d'étudiants. 
+Afin de limiter les obstacles, gardez à l'esprit l'objectif pédagogique souhaité de la simulation. 
+S'agit-il de renforcer la compréhension du sujet traité, qui peut également être obtenue par la lecture du contenu textuel ou un cours vidéo, ou de transmettre de nouvelles connaissances que d'autres ressources pédagogiques ne peuvent pas apporter ? 
+Le fait de proposer d'autres ressources permettra de limiter l'impact des obstacles éventuels.
 
-Although you can design simulations to avoid many accessibility barriers, some barriers, particularly in simulations supplied by third parties, 
-may be difficult or impossible to address for technical or pedagogic reasons. 
-Understanding the nature of these barriers can help you provide workarounds for learners who are affected. 
-Keep in mind that attempted workarounds for simulations supplied by third parties may require the supplier’s consent if copyrighted material is involved.
+Bien que vous puissiez concevoir des simulations qui permettront de résoudre de nombreux problèmes d'accessibilité, certaines difficultés, notamment dans les simulations fournies par des tiers, peuvent s'avérer complexes, voire impossibles, à résoudre pour des raisons techniques ou pédagogiques. 
+Si vous parvenez à identifier la nature de ces difficultés, vous pourrez développer des solutions pour les étudiants concernés. 
+Veuillez noter que toute tentative de résolution d'une difficulté liée à une simulation fournie par un tiers pourra nécessiter l'autorisation du fournisseur si la protection du droit d'auteur s'applique.
 
-Consider the following questions when creating simulations, keeping in mind that as the course instructor, 
-you enjoy considerable freedom in selecting course objectives and outcomes. 
-Additionally, if the visual components of a simulation are so central to your course design, 
-providing alternate text description and other accommodations may not be practical or feasible:
+Lors de la création de simulations, tenez compte des questions listées ci-après. Remarque : en tant qu'enseignant, vous disposez d'une liberté considérable tant concernant la sélection des objectifs du cours que la définition des résultats escomptés. 
+En outre, si les composants visuels d'une simulation jouent un rôle aussi central dans la conception de votre cours, il peut être malaisé voire impossible de fournir un texte de remplacement ou de mettre en place une autre solution :
 
-* Does the simulation require vision to understand? If so, provide text describing the concepts that the simulation conveys.
-* Is the mouse necessary to operate the simulation? If so, provide text describing the concepts that the simulation conveys.
-* Does the simulation include flashing or flickering content that could trigger seizures? If so and this content is critical to the nature of the simulation:
+* L'étudiant doit-il voir pour comprendre la simulation ? Si oui, fournissez un texte décrivant les concepts que la simulation présente.
+* L'étudiant doit-il utiliser une souris pour lancer la simulation ? Si oui, fournissez un texte décrivant les concepts que la simulation présente.
+* La simulation inclut-elle un contenu clignotant ou scintillant susceptible de déclencher des crises d'épilepsie ? Si oui et si ce contenu est essentiel à la simulation :
  
-  * do not require learners to use the simulation for a required assessment
-    activity; and
-  * provide a warning that the simulation contains flickering or flashing content.
+  * N'imposez pas aux étudiants d'utiliser cette simulation pour une activité d'évaluation obligatoire ; et
+  * Ajoutez un avertissement indiquant que la simulation contient un contenu clignotant ou scintillant.
 
-As best practices continue to emerge in this area, we will update these guidelines.
+Les meilleures pratiques de ce domaine sont toujours en cours de définition. Nous serons donc amenés à mettre ces instructions à jour ultérieurement.
 
 ++++++++++++++++++++++++++++++++++++++++++++
-Online exercises and assessments
+Exercices et évaluations en ligne
 ++++++++++++++++++++++++++++++++++++++++++++
 
-For activities and assessments, consider difficulties students may have in completing an activity and consider using multiple assessment options, 
-keeping in mind that some of the end users have disabilities. 
-Focus on activities that allow students to complete the activity and submit their work without difficulties.
+Pour les activités et les évaluations, vous devez tenir compte des difficultés que les étudiants sont susceptibles de rencontrer lorsqu'ils réalisent une activité. N'hésitez pas à utiliser plusieurs modes d'évaluation, car certains utilisateurs finaux risquent de présenter un handicap. 
+Privilégiez les activités que les étudiants peuvent effectuer facilement et pour lesquelles ils peuvent rendre leurs travaux sans difficulté.
 
-Some students take longer to read information and input responses, such as students with visual or mobility impairments and students who need time to comprehend the information. 
-If an exercise has a time limit, consider whether it’s long enough to allow students to respond. Advanced planning may help cut down on the number of students requesting 
-time extensions.
+Certains étudiants auront besoin de plus de temps pour lire les informations et libellés de questions et saisir leurs réponses, comme les étudiants présentant une déficience visuelle ou un trouble moteur ou ceux ayant besoin de temps pour comprendre les informations présentées. 
+Si un exercice présente une limite de temps, assurez-vous que le temps alloué permet aux étudiants de formuler une réponse. Une planification adaptée peut permettre de limiter le nombre d'étudiants demandant un délai.
 
-Some online exercise question types may be difficult for students who have vision or mobility impairments. For example:
+Certains types de questions présentées dans le cadre d'exercices en ligne peuvent s'avérer difficiles à traiter pour les étudiants présentant une déficience visuelle ou un trouble moteur. Par exemple :
 
-* Exercises requiring fine hand-eye coordination, such as image mapped input or drag and drop exercises, 
-  may present difficulties to students who have limited mobility. Consider alternatives that do not require fine motor skills, unless, of course, 
-  such skills are necessary for effective participation in the course. For example, for a drag-and-drop exercise mapping atoms to compounds, provide a
-  checkbox or multiple-choice exercise.
+* Les exercices requérant une coordination œil-main fine, par exemple les exercices d'insertion d'images mappées (avec liens hypergraphiques) ou les exercices de glisser-déposer, risquent de présenter des difficultés pour les étudiants dont la mobilité est réduite. Envisagez d'autres exercices qui ne requièrent pas des capacités motrices fines, à moins, bien évidemment, que ces capacités soient nécessaires pour participer au cours. Par exemple, dans le cas d'un exercice de glisser-déposer avec mise en correspondance d'atomes et de composants, offrez à l'étudiant la possibilité de répondre par le biais de cases à cocher ou d'un questionnaire à choix multiples.
 
-* Highly visual stimuli, such as word clouds, may not be accessible to students
-  who have visual impairments. Provide a text alternative that conveys the same information, such as an ordered list of words in the word cloud.
+* Des stimuli visuels marqués, comme les nuages de mots, peuvent ne pas être accessibles aux étudiants présentant une déficience visuelle. Fournissez un texte de remplacement qui communique les mêmes informations, comme une liste triée des mots du nuage.
 
 ++++++++++++++++++++++++++++++++++++++++++++    
-Third-party content
+Contenu fourni par un tiers
 ++++++++++++++++++++++++++++++++++++++++++++
 
-When including links to third-party content in your course, be mindful as to the accessibility of such third party resources, 
-which may not be readily accessible to learners with disabilities. We recommend that you test any links prior to sharing them with users.
+Lors de l'insertion de liens vers un contenu fourni par un tiers dans votre cours, gardez à l'esprit que ces ressources tierces peuvent ne pas être accessibles aux étudiants présentant un handicap. Nous vous recommandons donc de tester les éventuels liens avant de les partager avec les utilisateurs.
 
-You can use the eReader tool or :ref:`Add Files to a Course` to incorporate third-party textbooks and other 
-publications in PDF format into your course. You can also incorporate such materials into your course in HTML format. 
-See :ref:`Best Practices for Accessible PDFs` for guidance on working with third- party supplied PDFs, and :ref:`Best Practices for HTML Markup` 
-for guidance on creating accessible HTML.
+Vous pouvez utiliser l'outil eReader ou vous reporter aux instructions relatives à l'ajout de fichiers à un cours (voir :ref:`Ajouter des fichiers à un cours`) pour incorporer à votre cours des manuels et d'autres publications fournis par des tiers et présentés au format PDF. Vous pouvez également incorporer ce type de ressource à votre cours, au format HTML. 
+Pour obtenir des instructions sur l'utilisation de documents PDF fournis par des tiers, voir :ref:`Accessibilité des documents PDF : présentation des meilleures pratiques`. Pour obtenir des instructions sur la création de documents accessibles au format HTML, voir :ref:`Langage HTML : présentation des meilleures pratiques`.
 
 
-**Resources**
+**Ressources**
 
-* Effective Practices for Description of Science Content within Digital Talking Books, from the National Center for Accessible Media, provides best practices for describing graphs, 
-  charts, diagrams, and illustrations: 
+* Le document Effective Practices for Description of Science Content within Digital Talking Books, du National Center for Accessible Media, présente les meilleures pratiques en matière de description de graphiques, de diagrammes et d'illustrations : 
   http://ncam.wgbh.org/experience_learn/educational_media/stemdx
 
-* The University of Washington’s DO-IT project provides guidance on creating accessible math content: 
+* Le projet DO-IT de l'Université de Washington fournit des indications et instructions sur la création de contenus accessibles incluant des données mathématiques : 
   http://www.washington.edu/doit/Faculty/articles?465
 
-* AccessSTEM provides guidance on creating accessible science, technology, engineering and math educational content: 
+* AccessSTEM fournit des indications et instructions sur la création de contenus pédagogiques accessibles incluant données scientifiques, techniques, mathématiques et d'ingénierie : 
   http://www.washington.edu/doit/Stem/
 
-* The National Center on Educational Outcomes (NCEO) provides Principles and Characteristics of Inclusive Assessment and Accountability Systems: 
+* Le centre NCEO (National Center on Educational Outcomes) présente les principes et caractéristiques des systèmes de responsabilisation et d'évaluation (via le rapport intitulé Principles and Characteristics of Inclusive Assessment and Accountability Systems) : 
   http://www.cehd.umn.edu/nceo/onlinepubs/Synthesis40.html
 
-* MathJax provides guidance on creating accessible pages with the display engine: 
+* MathJax fournit des indications et instructions sur la création de pages accessibles avec le moteur d'affichage : 
   http://www.mathjax.org/resources/articles-and-presentations/accessible-pages-with-mathjax/
 
 .. _Best Practices for Describing Images:
 
 ====================================================
-Best Practices for Describing Images
+Description d'images : présentation des meilleures pratiques
 ====================================================
 
-Pictures, diagrams, maps, charts, and icons can present information very effectively. 
-However, some visually impaired students, including people who use screen reader software, need text alternatives to understand the information conveyed by these images. 
-The text alternative for an image depends on the image’s context and purpose, and may not be a straight description of the image’s visual characteristics.
+Les photos, diagrammes, cartes, graphiques et icônes peuvent permettre de présenter clairement des informations. 
+Toutefois, certains étudiants souffrant d'une déficience visuelle, notamment les utilisateurs de logiciels de lecture d'écran, auront besoin d'un texte de remplacement pour comprendre les informations transmises par ces images. 
+Le texte de remplacement d'une image dépend du contexte et de l'objectif de l'image, et ne se limite pas nécessairement à une simple description des caractéristiques visuelles de l'image.
 
-Use the following guidelines when you include images in your course:
+Respectez les instructions ci-après lorsque vous incluez des images dans votre cours :
 
-* Provide a short text description that conveys the purpose of the image, unless the image conveys a concept or is the only source for the information it presents, 
-  in which case a long text description is appropriate. Note that you don’t need to provide a long description if the information appears elsewhere on the page. 
-  For example, you don’t need to describe a chart if the same data appears as text in a data table.
+* Fournissez une courte description textuelle qui présente l'objectif de l'image, sauf si l'image représente un concept ou qu'elle est la seule source de l'information présentée. Dans ce cas-là, il est préférable de privilégier une longue description textuelle. Notez que vous n'avez pas besoin de fournir une longue description si les informations apparaissent ailleurs sur la page. 
+  Par exemple, vous n'avez pas besoin de décrire un graphique si les mêmes données apparaissent sous forme de texte dans un tableau de données.
   
-  * For a representative image, such as a photograph of Ponte Vecchio, a short
-    description could be “Photo of Ponte Vecchio.” If the photograph’s purpose is to provide detailed information about the location, the long description should be more specific: “Photo of Ponte Vecchio showing its three stone arches and the Arno River.”
+  * Pour une image représentative, comme une photographie du Ponte Vecchio, une courte description de type “Photo du Ponte Vecchio” pourrait être utilisée. Si l'objectif de la photographie consiste à fournir des informations détaillées sur le lieu, la longue description devrait être plus spécifique : “Photo du Ponte Vecchio montrant les trois arcs en pierre du pont et le fleuve Arno”.
 
-  * For a chart, diagram, or illustration, the short description might be “Diagram of Ponte Vecchio.” The long description should include the details conveyed visually, such as dimensions and materials used.
+  * Dans le cas d'un graphique, d'un diagramme ou d'une illustration, la description courte utilisée pourrait être par exemple “Diagramme du Ponte Vecchio”. La longue description devrait inclure les détails indiqués visuellement, comme les dimensions et les matériaux utilisés.
 
-  * For a map, a short description might be “Map showing location of Ponte Vecchio.” If the map is intended to provide directions to the bridge, the long description should provide text directions.
+  * Dans le cas d'une carte, la courte description pourrait être : “Carte indiquant l'emplacement du Ponte Vecchio”. Si la carte est censée fournir un itinéraire jusqu'au pont, la longue description devrait fournir l'itinéraire sous forme de texte.
   
-  * For icons, the short description should be the equivalent to the information that the icon provides. For example, for a Course Syllabus link containing a PDF icon, the text equivalent for the icon would be “PDF,” which would be read as “Course Syllabus PDF.”
+  * Dans le cas d'icônes, la description courte devrait inclure les informations que l'icône fournit. Par exemple, pour le lien du syllabus d'un cours contenant l'icône d'un PDF, l'équivalent texte de l'icône serait “PDF”, et le libellé pourrait être lu comme suit : “PDF du syllabus du cours”.
 
-  * For an image that serves primarily as a link to another web page, the short description should describe the link’s destination, not the image. For example, an image of a question mark that serves as a link to a Help page should be described as “help,” not “question mark.”
+  * Pour une image qui sert essentiellement de lien vers une autre page Web, la description courte devrait décrire la destination du lien, et non l'image. Par exemple, l'image d'un point d'interrogation qui sert de lien vers une page d'aide devrait être décrite par le mot “aide” et non par le terme “point d'interrogation”.
 
-  * Images that don’t provide information don’t need text descriptions. For example, a PDF icon that is followed by link text reading “Course Syllabus (PDF)” does not need a description. Another example is a banner graphic whose function is purely aesthetic.
+  * Les images qui ne fournissent pas d'informations ne nécessitent pas de descriptions textuelles. Par exemple, l'icône d'un PDF suivie d'un texte sous forme de lien (par exemple, “Syllabus du cours (PDF)”) n'a pas besoin d'être associée à une description. C'est également le cas de la bannière graphique, dont la fonction est purement esthétique.
   
-* Include the short description in the alt attribute of the HTML image element, as follows (see :ref:`Add an Image to an HTML Component` for more information about adding images):
+* Incluez la description courte dans l'attribut alt de l'élément image HTML, comme suit (pour plus d'informations sur l'ajout d'images, voir :ref:`Ajouter une image à un composant HTML`) :
 
-  ``<img src="image.jpg" alt="Photo of Ponte Vecchio">``
+  ``<img src="image.jpg" alt="Photo du Ponte Vecchio">``
 
-* Include an empty alt attribute for non-informative images. When image elements do not include an alt attribute, screen reader software may skip the image, announce the image filename, or, in the case of a linked image, announce the link URL. An empty alt attribute tells screen reader software to skip the image.
+* Incluez un attribut alt vide pour les images non informatives. Lorsque les éléments image n'incluent pas d'attribut alt, le logiciel de lecture d'écran peut ignorer l'image, annoncer le nom du fichier image ou, dans le cas d'une image liée, annoncer l'URL du lien. Un attribut alt vide indique au logiciel de lecture d'écran d'ignorer l'image.
 
   ``<img src="image.jpg" alt="">``
   
-* Consider using a caption to display long descriptions so that the information is available to all users. In the following example, the image element includes the short description as the alt attribute and the paragraph element includes the long description.
+* Vous pouvez envisager d'utiliser une légende afin d'afficher les longues descriptions et de rendre les informations accessibles à tous les utilisateurs. Dans l'exemple suivant, l'élément image inclut la description courte ; l'attribut alt et l'élément paragraphe incluent la description longue.
   
-  ``<img src="image.jpg" alt="Photo of Ponte Vecchio"><p>Photo of Ponte Vecchio showing its three stone arches and the Arno river</p>``
+  ``<img src="image.jpg" alt="Photo du Ponte Vecchio"><p>Photo du Ponte Vecchio montrant les trois arcs en pierre du pont et le fleuve Arno</p>``
     
-* Alternatively, provide long descriptions by creating an additional unit or downloadable file that contains the descriptive text and providing a link to the unit or file below the image.
+* Vous pouvez également fournir de longues descriptions en créant une unité supplémentaire ou un fichier téléchargeable qui contient le texte descriptif, et en ajoutant un lien vers l'unité ou le fichier sous l'image.
   
-  ``<img src="image.jpg" alt="Diagram of Ponte Vecchio"> <p><a href="description.html">Description of Ponte Vecchio Diagram</a></p>``
+  ``<img src="image.jpg" alt="Diagramme du Ponte Vecchio"> <p><a href="description.html">Description du diagramme du Ponte Vecchio</a></p>``
 
-**Resources**
+**Ressources**
 
-* A decision tree for choosing appropriate alternative text for images (Dey Alexander): 
+* Arbre décisionnel permettant la sélection de textes de remplacement appropriés pour les images (Dey Alexander) : 
   http://www.4syllables.com.au/2010/12/text-alternatives-decision- tree/
-* General guidance on appropriate use of alternative text for images (WebAim): 
+* Indications et instructions générales sur l'utilisation appropriée de textes de remplacement pour les images (WebAim) : 
   http://webaim.org/techniques/alttext/
-* HTML5: A more detailed description of techniques for providing useful alternative text for images: 
+* HTML5 : Description plus détaillée des techniques permettant de fournir des textes de remplacement adaptés pour les images : 
   http://dev.w3.org/html5/alt-techniques/
-* The DIAGRAM Center, established by the US Department of Education (Office of Special Education Programs), provides guidance on ways to make it easier, faster, and more cost effective to create and use accessible images: 
+* Le DIAGRAM Center, fondé par le ministère américain de l'Éducation (U.S. Department of Education - Office of Special Education Programs), offre des indications et instructions pour créer de manière plus simple, plus rapide et plus rentable des images accessibles, et pour les utiliser : 
   http://www.diagramcenter.org/webinars.html
 
 .. _Best Practices for Accessible Media:
 
 ====================================================
-Best Practices for Accessible Media
+Accessibilité des médias : présentation des meilleures pratiques
 ====================================================
 
-Media-based course materials help convey concepts and bring course information to life. 
-We require all edX courses to use videos with interactive, screen-reader- accessible transcripts. 
-This built-in universal design mechanism helps enhance your course’s accessibility. 
-When you create your course, you need to factor in time and resources for creating these transcripts.
+Les ressources pédagogiques reposant sur des médias permettent de présenter des concepts et d'animer les informations du cours. 
+Tous les cours edX doivent utiliser des vidéos avec des transcriptions interactives, accessibles par lecteur d'écran. 
+Ce mécanisme intégré de conception universelle permet d'améliorer l'accessibilité de votre cours. 
+Lorsque vous créez votre cours, vous devez prendre en compte le temps et les ressources nécessaires à la création de ces transcriptions.
 
 ++++++++++++++++++++++++++++++++++++++++++++  
-Audio transcription
+Transcriptions audio
 ++++++++++++++++++++++++++++++++++++++++++++  
 
-Audio transcripts are essential for presenting audible content to students who can’t hear and are helpful to students who are not native English speakers. 
-Synchronized transcripts allow students who can’t hear to follow along with the video and navigate to a specific section of the video by clicking the transcript text. 
-Additionally, all students can use transcripts of media-based learning materials for study and review.
+Les transcriptions audio sont essentielles pour présenter des contenus sonores aux étudiants sourds. Elles s'avèrent par ailleurs extrêmement utiles aux étudiants dont l'anglais n'est pas la langue maternelle. 
+Les transcriptions synchronisées permettent aux étudiants sourds de suivre la vidéo. Pour atteindre une section spécifique de la vidéo, il leur suffit de cliquer sur le texte de la transcription. 
+Par ailleurs, tous les étudiants peuvent s'appuyer sur les transcriptions de ressources pédagogiques reposant sur des médias pour étudier et réviser.
 
-A transcript starts with a text version of the video’s spoken content. 
-If you created your video using a script, you have a great start on creating the transcript. 
-Just review the recorded video and update the script as needed. 
-Otherwise, you’ll need to transcribe the video yourself or engage someone to do it. 
-There are many companies that will create timed video transcripts (i.e., transcripts that synchronize the text with the video using time codes) for a fee.
+Une transcription commence par la version textuelle du contenu parlé de la vidéo. 
+Si vous créez votre vidéo en utilisant un script, il s'agit d'un point de départ idéal pour la transcription. 
+Passez en revue la vidéo enregistrée et mettez à jour le script, le cas échéant. 
+Sinon, vous devez effectuer une transcription de la vidéo ou confier cette tâche à quelqu'un. 
+De nombreuses sociétés créent (contre paiement) des transcriptions vidéo chronométrées (c'est-à-dire, des transcriptions qui synchronisent le texte avec la vidéo en utilisant des codes temps).
 
-The edX platform supports the use of transcripts in .srt format. 
-When you integrate a video file into the platform, you should also upload the .srt file of the timed transcript for such video. 
-See :ref:`Working with Video Components` for details on how to add timed transcripts.
+La plate-forme edX prend en charge l'utilisation de transcriptions au format .srt. 
+Lorsque vous intégrez un fichier vidéo à la plate-forme, il est recommandé de charger le fichier .srt de la transcription chronométrée de cette vidéo. 
+Pour des informations détaillées sur l'ajout de transcriptions chronométrées, voir :ref:`Utilisation de composants vidéo`.
 
-
-++++++++++++++++++++++++++++++++++++++++++++
-Video description
-++++++++++++++++++++++++++++++++++++++++++++
-
-When creating video segments, consider how to convey information to learners who can’t see. 
-For many topics, you can fully cover concepts in the spoken presentation. 
-If practical, you might also describe visual information, for example, by speaking as you are writing on a tablet.
 
 ++++++++++++++++++++++++++++++++++++++++++++
-Downloadable transcripts
+Description vidéo
 ++++++++++++++++++++++++++++++++++++++++++++
 
-For both audio and video transcripts, consider including a text file that students can download and review using tools such as word processing, screen reader, or literacy software. 
-The downloadable transcript should be text only, without time codes.
+Lors de la création de segments vidéo, tentez de déterminer comment transmettre l'information à des étudiants non voyants. 
+Pour de nombreux sujets, vous pouvez traiter les concepts dans leur intégralité lors de la présentation orale. 
+Vous pouvez parfois également décrire les informations visuelles, par exemple, en les présentant à l'oral tout en écrivant sur une tablette.
 
-**Resources**
+++++++++++++++++++++++++++++++++++++++++++++
+Transcriptions téléchargeables
+++++++++++++++++++++++++++++++++++++++++++++
 
-* Accessible Digital Media Guidelines provides detailed advice on creating online video and audio with accessibility in mind: 
+Pour les transcriptions audio et vidéo, vous pouvez envisager d'inclure un fichier texte que les étudiants peuvent télécharger et consulter en utilisant des outils comme un logiciel de traitement de texte, un lecteur d'écran ou un logiciel d'alphabétisation. 
+La transcription téléchargeable ne devrait inclure que du texte, sans codes temps.
+
+**Ressources**
+
+* Le document Accessible Digital Media Guidelines propose des indications et instructions détaillées pour créer des documents audio et vidéo en ligne, en tenant compte de la question de l'accessibilité : 
   http://ncam.wgbh.org/invent_build/web_multimedia/accessible-digital-media-guide
 
 
 .. _Best Practices for HTML Markup:
 
 ====================================================
-Best Practices for HTML Markup
+Langage HTML : présentation des meilleures pratiques
 ====================================================
   
-HTML is the best format for creating accessible content. It is well supported and adaptable across browsers and devices, 
-the information in the markup helps assistive technologies, such as screen reader software, provide information and functionality to people with vision impairments.
+Le format HTML est le mieux adapté à la création de contenu accessible. Ce format est pris en charge de manière satisfaisante et est adaptable d'un navigateur ou dispositif à un autre ; 
+en outre, grâce aux informations présentes dans les balises, les technologies d'assistance, comme les logiciels de lecture d'écran, fournissent aux personnes présentant une déficience visuelle les données nécessaires et leur permettent d'accéder aux fonctions dont ils ont besoin.
 
-To make it easier for our course teams to create content with good HTML markup, we are working to make all templates in edX Studio conform to the best practices set forth below. 
-In the interim, we recommend that you manually add the appropriate HTML tagging. 
-Depending on the type of component you are adding to your course in edX Studio, the raw HTML data will be available either automatically or by selecting the “Advanced Editor” or “HTML” views.
+Afin de faciliter la tâche de nos équipes pédagogiques et de leur permettre de créer du contenu avec un langage HTML adapté, nous travaillons actuellement sur des méthodes pour assurer la conformité de tous les modèles utilisés dans edX Studio par rapport aux meilleures pratiques présentées ci-après. 
+En attendant, nous vous recommandons d'ajouter manuellement le code HTML approprié. 
+En fonction du type de composant que vous ajoutez au cours dans edX Studio, les données HTML brutes seront disponibles soit automatiquement, soit en sélectionnant les vues “Éditeur avancé” ou “HTML”.
 
-Keep the following guidelines in mind when you create HTML content:
+Lorsque vous créez du contenu HTML, vous devez tenir compte des indications et instructions ci-après :
 
-* Use HTML to describe your content’s *meaning* rather than its *appearance*. A phrase marked as a level 1 heading (<h1>) clearly indicates the topic of the page, 
-  while a phrase marked as bold text (<bold> or <strong>) may be a heading or may just be text that the instructor wants to emphasize. 
-  A group of items marked up as a list are related in the code, without relying on visual cues such as bullets and indents. 
-  Coding meaning into content is particularly useful for students using screen readers, which, for example, can read through headings or announce the number of items in a list.
+* Utilisez le langage HTML pour décrire le *sens* du contenu de votre cours plutôt que son *aspect*. Une expression désignée comme étant un titre de niveau 1 (<h1>) indique clairement le sujet de la page. En revanche, une expression marquée comme étant un texte gras (<bold> ou <strong>) peut être un titre ou simplement un élément que l'enseignant souhaite mettre en valeur. 
+  Un groupe d'éléments marqués comme appartenant à une liste sont associés dans le code, sans que cela ne soit indiqué par des indices visuels comme des puces ou des retraits. 
+  Le codage s'avère particulièrement utile pour les étudiants utilisant des lecteurs d'écran qui peuvent, par exemple, lire les titres ou annoncer le nombre d'éléments dans une liste.
 
-* Use HTML heading levels in sequential order to represent the structure of the document. Well-structured headings help students navigate a page and find what they are looking for.
+* Utilisez des niveaux de titres HTML en ordre séquentiel afin de représenter la structure du document. Les titres bien structurés permettent aux étudiants de parcourir une page et de trouver ce qu'ils recherchent.
 
-* Use HTML list elements to group related items and make content easier to skim and read. HTML offers three kinds of lists:
+* Utilisez les éléments de liste HTML afin de rassembler les éléments associés et de faciliter la consultation rapide et la lecture du texte. Le langage HTML permet d'utiliser trois types de listes :
 
-  #. Unordered lists, where each item is marked with a bullet.
-  #. Ordered lists, where each item is listed with a number.
-  #. Definition lists, where each item is represented using term and description pairs (like a dictionary).
+  #. Listes non triées, dans lesquelles chaque élément est précédé d'une puce.
+  #. Listes triées, dans lesquelles chaque élément est précédé d'un nombre.
+  #. Listes de définitions, dans lesquelles chaque élément est représenté par une paire associant un terme et une description (comme dans un dictionnaire).
 
-* Use table elements to mark up data sets—that is, information that works best in a grid format—with descriptive rows and columns. 
-  Mark up row and column headers using the <th> element so screen readers can effectively describe the content in the table.
+* Utilisez des éléments de tableau afin d'annoter des ensembles de données (informations les plus adaptées à un format grille) avec des lignes et colonnes descriptives. 
+  Annotez les en-têtes de ligne et de colonne en utilisant l'élément <th>  afin que les lecteurs d'écran puissent décrire efficacement le contenu dans le tableau.
 
-**Resources**
+**Ressources**
 
-* Creating Semantic Structure provides guidance on reflecting the semantic structure of a web page in the underlying markup (WebAIM): 
+* La page Semantic Structure (WebAIM) offre des indications et instructions sur la représentation de la structure sémantique d'une page Web dans le code sous-jacent : 
   http://webaim.org/techniques/semanticstructure/
   
-* Creating Accessible Tables provides specific guidance on creating data tables with the appropriate semantic structure so that screen readers can correctly present the information (WebAIM): 
+* La page Creating Accessible Tables (WebAIM) offre des indications et instructions spécifiques sur la création de tableaux de données avec une structure sémantique appropriée afin que les lecteurs d'écran puissent présenter correctement les informations : 
   http://webaim.org/techniques/tables/data
 
 .. _Conclusion:
@@ -536,7 +510,7 @@ Keep the following guidelines in mind when you create HTML content:
 Conclusion
 ************************************************************
 
-At edX, the heart of our mission is to provide global access to higher-level learning with only a computer and the Internet. 
-We have designed a platform that enables course creators to reach thousands of learners, some of whom will lack the typical backgrounds and resources of resident students taking traditional courses on college campuses. 
-We hope that these guidelines prove useful to you as you work with your institution’s disability support services and information technology resources to comply with applicable accessibility laws. 
-As we are all on this learning venture together, we encourage you to share your thoughts with us at accessibility@edx.org.
+edX a pour vocation d'offrir un accès global à un enseignement de haut niveau, simplement à l'aide d'un ordinateur et d'une connexion Internet. 
+La plate-forme que nous avons conçue permet aux créateurs de cours d'atteindre des milliers d'étudiants, parmi lesquels certains n'ont parfois accès ni à l'environnement ni aux ressources dont bénéficient les résidents qui suivent des cours classiques sur les campus universitaires. 
+Nous espérons que ces instructions vous seront utiles et vous permettront de vous conformer aux lois en vigueur en matière d'accessibilité, dans le cadre de votre collaboration avec les services de soutien aux personnes handicapées et les ressources en technologies de l'information de votre établissement. 
+Et comme nous sommes engagés ensemble dans cette grande aventure, nous vous invitons à nous faire part de votre opinion, envoyer vos commentaires ou poser vos questions à l'adresse suivante : accessibility@edx.org.
