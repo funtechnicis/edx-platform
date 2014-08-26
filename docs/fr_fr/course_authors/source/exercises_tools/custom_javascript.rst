@@ -1,96 +1,75 @@
 .. _Custom JavaScript:
 
 ###########################
-Custom JavaScript Problem
+Exercice JavaScript personnalisé
 ###########################
 
-Custom JavaScript display and grading problems (also called *custom JavaScript problems*
-or *JS Input problems*) allow you to create a custom problem or tool that uses JavaScript
-and then add the problem or tool directly into Studio. When you create a JS Input problem,
-Studio embeds the problem in an inline frame (IFrame) so that your students can interact with
-it in the LMS. You can grade your students’ work using JavaScript and some basic Python, and
-the grading is integrated into the edX grading system.
+Les exercices d'évaluation et d'affichage en code JavaScript personnalisé (également appelés *exercices en JavaScript personnalisé* ou *exercices en JS*) vous permettent de créer un exercice ou un outil personnalisé qui utilise JavaScript. Vous pourrez alors ajouter directement l'exercice ou l'outil dans Studio. Lorsque vous créez un exercice en JS, Studio intègre l'exercice dans un cadre en ligne (IFrame) afin que vos étudiants puissent l'effectuer dans le LMS. Vous pouvez noter les travaux de vos étudiants en utilisant JavaScript et les bases du langage Python. La note est intégrée dans le système d'évaluation edX.
 
-The JS Input problem that you create must use HTML, JavaScript, and cascading style sheets
-(CSS). You can use any application creation tool, such as the Google Web Toolkit (GWT), to
-create your JS Input problem.
+L'exercice en JS que vous créez doit utiliser les langages HTML, JavaScript et les feuilles de style en cascade (CSS). Pour créer votre exercice en JS, vous pouvez utiliser n'importe quel outil de création d'application, comme Google Web Toolkit (GWT).
 
 .. image:: /Images/JavaScriptInputExample.png
- :alt: Image of a JavaScript Input problem
+ :alt: Image d'un exercice en JavaScript
 
 ************************************************************
-Create a Custom JavaScript Display and Grading Problem
+Créer un exercice d'évaluation et d'affichage en code JavaScript personnalisé
 ************************************************************
 
-#. Create your JavaScript application, and then upload all files associated with
-   that application to the **Files & Uploads** page.
-#. In the unit where you want to create the problem, click **Problem**
-   under **Add New Component**, and then click the **Advanced** tab.
-#. Click **Custom JavaScript Display and Grading**.
-#. In the component that appears, click **Edit**.
-#. In the component editor, modify the example code according to your problem.
+#. Créez votre application JavaScript, puis chargez tous les fichiers associés à cette application sur la page **Fichiers et uploads**.
+#. Dans l'unité dans laquelle vous souhaitez créer l'exercice, cliquez sur **Exercice** sous **Ajouter un nouveau composant**, puis cliquez sur l'onglet **Avancé**.
+#. Cliquez sur **Custom JavaScript Display and Grading** (Évaluation et affichage en code Javascript personnalisé).
+#. Dans le composant qui apparaît, cliquez sur **Éditer**.
+#. Dans l'éditeur de composant, modifiez le code présenté dans l'exemple afin de l'adapter à votre exercice.
 
-   - All problems have more than one element. Most problems conform to the same-origin
-     policy (SOP), meaning that all elements have the same protocol, host, and port.
-     For example, **http**://**store.company.com**:**81**/subdirectory_1/JSInputElement.html and
-     **http**://**store.company.com**:**81**/subdirectory_2/JSInputElement.js have the same protocol
-     (http), host (store.company.com), and port (81).
+   - Tous les exercices sont associés à plus d'un élément. La plupart des exercices sont conformes au mécanisme de la règle d'origine commune (SOP ou same-origin policy), ce qui signifie que tous les éléments ont les mêmes protocole, hôte et port.
+     Par exemple, **http**://**store.company.com**:**81**/subdirectory_1/JSInputElement.html et **http**://**store.company.com**:**81**/subdirectory_2/JSInputElement.js sont associés aux mêmes protocole (http), hôte (store.company.com) et port (81).
 
-     If any elements of your problem use a different protocol, host, or port, you need to
-     bypass the SOP. For example, **https**://**info.company.com**/JSInputElement2.html
-     uses a different protocol, host, and port. To bypass the SOP, change
-     **sop="false"** in line 8 of the example code to **sop="true"**. For more information, see the same-origin policy
-     page on the `Mozilla Developer Network <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Same_origin_policy_for_JavaScript>`_
-     or on `Wikipedia <http://en.wikipedia.org/wiki/Same_origin_policy>`_.
-#. If you want your problem to have a **Save** button, click the **Settings** tab, and then set
-   **Maximum Attempts** to a number larger than zero.
-#. Click **Save**.
+     Si un ou plusieurs éléments de votre exercice utilisent un protocole, un hôte ou un port différent, vous devrez contourner le SOP. Par exemple, **https**://**info.company.com**/JSInputElement2.html utilise un protocole, un hôte et un port différents. Pour contourner le SOP, remplacez **sop="false"** à la ligne 8 de l'exemple de code par **sop="true"**. Pour plus d'informations, reportez-vous à la page relative au mécanisme SOP, intitulée Same-Origin Policy, sur le `Mozilla Developer Network <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Same_origin_policy_for_JavaScript>`_ ou consultez la page `Wikipedia <http://en.wikipedia.org/wiki/Same_origin_policy>`_consacrée à ce thème.
+#. Si vous souhaitez que votre exercice soit doté d'un bouton **Enregistrer**, cliquez sur l'onglet **Paramètres**, puis définissez **Nombre d'essais maximum** comme étant supérieur à zéro.
+#. Cliquez sur **Enregistrer**.
 
 ================================
-Re-create the Example Problem
+Recréer l'exercice
 ================================
 
-To re-create the example problem above, you'll need the following files.
+Pour recréer l'exercice donné en exemple ci-dessus, vous aurez besoin des fichiers suivants.
 
    - webGLDemo.html
    - webGLDemo.js
    - webGLDemo.css
    - three.min.js
 
-To download these files in a .zip archive, go to http://files.edx.org/JSInput.zip.
+Pour télécharger ces fichiers dans une archive .zip, rendez-vous sur le site http://files.edx.org/JSInput.zip.
 
-.. note:: If you need to bypass the SOP, you'll also need the **jschannel.js** file, and your webGLDemo.html file will be slightly different. To download all these files in a .zip archive, go to http://files.edx.org/JSInput_BypassSOP.zip.
+.. note:: Si vous avez besoin de contourner le mécanisme SOP, vous aurez également besoin du fichier **jschannel.js**. Votre fichier webGLDemo.html sera légèrement différent. Pour télécharger tous ces fichiers dans une archive .zip, rendez-vous sur le site http://files.edx.org/JSInput_BypassSOP.zip.
 
-#. Download and unpackage the files in either the JSInput.zip file or the JSInput_BypassSOP.zip file.
-#. On the **Files & Uploads** page, upload all the files from the .zip file.
-#. Create a new custom JavaScript display and grading problem component.
-#. On the **Settings** tab, set **Maximum Attempts** to a number larger than
-   zero.
-#. In the problem component editor, replace the example code with the code below.
-#. Click **Save.**
+#. Téléchargez le fichier JSInput.zip ou JSInput_BypassSOP.zip, puis décompressez ses fichiers.
+#. Dans la page **Fichiers et uploads**, chargez tous les fichiers du fichier .zip.
+#. Créez un nouveau composant pour un exercice d'évaluation et d'affichage JavaScript personnalisé.
+#. Dans l'onglet **Paramètres**, définissez le **Nombre d'essais maximum** comme supérieur à zéro.
+#. Dans l'éditeur de composant Exercice, remplacez l'exemple de code par le code ci-après.
+#. Cliquez sur **Enregistrer**.
 
 ================================
-JavaScript Input Problem Code
+Code d'un exercice en JavaScript
 ================================
 
 .. code-block:: xml
 
     <problem display_name="webGLDemo">
-    In the image below, click the cone.
+    Dans l'image ci-après, cliquez sur le cône.
 
     <script type="loncapa/python">
     import json
     def vglcfn(e, ans):
         '''
-        par is a dictionary containing two keys, "answer" and "state"
-        The value of answer is the JSON string returned by getGrade
-        The value of state is the JSON string returned by getState
+        par est un dictionnaire contenant deux clés, "answer" et "state"
+        La valeur de la clé answer est la chaîne JSON renvoyée par getGrade
+        La valeur de la clé state est la chaîne JSON renvoyée par getState
         '''
         par = json.loads(ans)
-        # We can use either the value of the answer key to grade
-        answer = json.loads(par["answer"])
-        return answer["cylinder"]  and not answer["cube"]
-        # Or we can use the value of the state key
+        # Nous pouvons utiliser soit la valeur de la clé answer pour noter answer = json.loads(par["answer"]) return answer["cylinder"]  and not answer["cube"]
+        # soit la valeur de la clé state
         '''
         state = json.loads(par["state"])
         selectedObjects = state["selectedObjects"]
@@ -110,38 +89,38 @@ JavaScript Input Problem Code
     </problem>
 
 
-.. note::    When you create this problem, keep the following in mind.
+.. note::    Lorsque vous créez cet exercice, gardez à l'esprit les éléments suivants.
 
- - The webGLDemo.js file defines the three JavaScript functions (**WebGLDemo.getGrade**, **WebGLDemo.getState**, and **WebGLDemo.setState**).
+ - Le fichier webGLDemo.js définit les trois fonctions JavaScript (**WebGLDemo.getGrade**, **WebGLDemo.getState** et **WebGLDemo.setState**).
 
- - The JavaScript input problem code uses **WebGLDemo.getGrade**, **WebGLDemo.getState**, and **WebGLDemo.setState** to grade, save, or restore a problem. These functions must be global in scope.
+ - Le code de l'exercice en JavaScript utilise **WebGLDemo.getGrade**, **WebGLDemo.getState** et **WebGLDemo.setState** pour noter, enregistrer ou restaurer un exercice. Ces fonctions doivent avoir une portée globale.
 
- - **WebGLDemo.getState** and **WebGLDemo.setState** are optional. You only have to define these functions if you want to conserve the state of the problem.
+ - **WebGLDemo.getState** et **WebGLDemo.setState** sont facultatives. Vous ne devez définir ces fonctions que si vous souhaitez conserver l'état de l'exercice.
 
- - **Width** and **height** represent the dimensions of the IFrame that holds the application.
+ - **Width** et **height** représentent les dimensions du cadre IFrame qui contient l'application.
 
- - When the problem opens, the cone and the cube are both blue, or "unselected." When you click either shape once, the shape becomes yellow, or "selected." To unselect the shape, click it again. Continue clicking the shape to select and unselect it.
+ - Lorsque l'exercice s'ouvre, le cône et le cube sont tous les deux bleus ("non sélectionnés"). Lorsque vous cliquez une fois sur l'une ou l'autre forme, la forme sélectionnée devient jaune (elle est "sélectionnée"). Pour désélectionner la forme, cliquez dessus une nouvelle fois. Pour sélectionner et désélectionner la forme, continuez de cliquer dessus.
 
- - The response is graded as correct if the cone is selected (yellow) when the user clicks **Check**.
+ - La réponse est définie comme étant correcte si le cône est sélectionné (jaune) lorsque l'utilisateur clique sur **Valider**.
 
- - Clicking **Check** or **Save** registers the problem's current state.
+ - Si vous cliquez sur **Valider** ou **Enregistrer**, vous enregistrez l'état actuel de l'exercice.
 
 
 .. _JS Input Problem XML:
 
 ******************************
-JavaScript Input Problem XML 
+Exercice en JavaScript - Format XML 
 ******************************
 
-JSInput allows problem authors to turn stand-alone HTML files into problems that can be integrated into the edX platform. Since its aim is flexibility, it can be seen as the input and client-side equivalent of **CustomResponse**.
+JSInput permet aux auteurs d'exercices de transformer des fichiers HTML autonomes en exercices qui peuvent être intégrés à la plate-forme edX. Étant donné que JSInput a pour objectif d'améliorer la flexibilité, il peut être considéré comme l'équivalent côté client et entrée de **CustomResponse**.
 
-A JSInput exercise creates an IFrame in a static HTML page, and passes the return value of author-specified functions to the enclosing response type (generally **CustomResponse**). JSInput can also store and retrieve state.
+Un exercice JSInput crée un cadre IFrame sur une page HTML statique et transmet la valeur renvoyée des fonctions spécifiées par l'auteur au type de réponse englobante (généralement **CustomResponse**). JSInput peut également stocker et récupérer les données relatives à l'état.
 
 ========
-Template
+Modèle
 ========
 
-The following is the basic format of a JSInput problem:
+Le format présenté ci-après est le format de base d'un exercice JSInput :
 
 .. code-block:: xml
 
@@ -158,61 +137,59 @@ The following is the basic format of a JSInput problem:
         </customresponse>
  </problem>
 
-The accepted attributes are:
+Les attributs acceptés sont :
 
 ==============  ==============  =========  ==========
-Attribute Name   Value Type     Required   Default
+Nom de l'attribut   Type de valeur     Obligatoire   Valeur par défaut
 ==============  ==============  =========  ==========
-html_file        URL string     Yes        None
-gradefn          Function name  Yes        `gradefn`
-set_statefn      Function name  No         None
-get_statefn      Function name  No         None
-height           Integer        No         `500`
-width            Integer        No         `400`
+html_file        Chaîne URL     Oui        Aucune
+gradefn          Nom de fonction  Oui        `gradefn`
+set_statefn      Nom de fonction   Non         Aucune
+get_statefn      Nom de fonction  Non         Aucune
+height           Nombre entier        Non         `500`
+width            Nombre entier        Non         `400`
 ==============  ==============  =========  ==========
 
 ========================
-Required Attributes
+Attributs obligatoires
 ========================
 
 * **html_file**
 
-  The **html_file** attribute specifies the HTML file that the IFrame will point to. The HTML file
-  must be located in the content directory.
+  L'attribut **html_file** spécifie le fichier HTML auquel renverra IFrame. Le fichier HTML doit être situé dans le répertoire de contenu.
 
-  The IFrame is created using the sandbox attribute. Although pop-ups, scripts, and pointer locks are allowed, the IFrame cannot access its parent's attributes.
+  Le cadre IFrame est créé avec l'attribut sandbox. Bien que les fenêtres contextuelles, les scripts et le verrouillage de pointeur soient autorisés, le cadre IFrame ne peut accéder à ses attributs parent.
 
-  The HTML file must contain a **gradefn** function that the JSInput file can access. To determine whether the **gradefn** function is accessible, in the console, make sure that **gradefn** returns the right thing. When JSInput uses the **gradefn** function, `gradefn` is called with `gradefn`.call(`obj`), where **obj** is the object-part of **gradefn**. For example, if **gradefn** is **myprog.myfn**, JSInput calls **myprog.myfun.call(myprog)**. (This is to ensure "`this`" continues to refer to what `gradefn` expects.)
+  Le fichier HTML doit contenir une fonction **gradefn** à laquelle le fichier JSInput peut accéder. Afin de déterminer si la fonction **gradefn** est accessible, dans la console, assurez-vous que **gradefn** renvoie la valeur correcte. Lorsque JSInput utilise la fonction **gradefn**, `gradefn` est appelée avec `gradefn`.call(`obj`), **obj** étant la partie Objet de **gradefn**. Par exemple, si **gradefn** est égale à **myprog.myfn**, JSInput appelle **myprog.myfun.call(myprog)**. (Cela permet de garantir que "`cela`" continue de faire référence à ce que `gradefn` attend.)
 
-  Aside from that, more or less anything goes. Note that currently there is no support for inheriting CSS or JavaScript from the parent (aside from the Chrome-only **seamless** attribute, which is set to True by default).
+  Ceci mis à part, toute valeur peut être utilisée. Notez qu'il n'existe actuellement aucune prise en charge permettant d'hériter des propriétés CSS ou JavaScript de son parent (mis à part l'attribut **seamless** pris en charge par Chrome uniquement, qui est par défaut défini sur True).
 
 * **gradefn**
 
-  The **gradefn** attribute specifies the name of the function that will be called when a user clicks **Check**, and that returns the student's answer. Unless both the **get_statefn** and **set_statefn** attributes are also used, this answer is passed as a string to the enclosing response type. In the **customresponse** example above, this means **cfn** will be passed this answer as ``ans``.
+  L'attribut **gradefn** spécifie le nom de la fonction appelée lorsqu'un utilisateur clique sur **Valider**, ce qui permet de renvoyer la réponse de l'étudiant. À moins que les attributs **get_statefn** et **set_statefn** ne soient également utilisés, cette réponse est transférée en tant que chaîne au type de réponse englobante. Dans l'exemple **customresponse** ci-dessus, cela signifie que la réponse sera transmise à **cfn** en tant que ``ans``.
 
-  If the **gradefn** function throws an exception when a student attempts to submit a problem, the submission is aborted, and the student receives a generic alert. The alert can be customised by making the exception name ``Waitfor Exception``; in that case, the alert message will be the exception message.
+  Si la fonction **gradefn** renvoie une exception lorsqu'un étudiant tente de soumettre un exercice, cette soumission est abandonnée et l'étudiant reçoit une alerte générique. L'alerte peut être personnalisée en nommant l'exception ``Waitfor Exception`` ; dans ce cas, le message de l'exception constituera le message d'alerte.
 
-  .. important:: To make sure the student's latest answer is passed correctly, make sure that the **gradefn** function is not asynchronous. Additionally, make sure that the function returns promptly. Currently the student has no indication that her answer is being calculated or produced.
+  Important : Afin d'être sur que la dernière réponse de l'étudiant a été transmise correctement, assurez-vous que la fonction **gradefn** n'est pas asynchrone. En outre, assurez-vous que la fonction renvoie rapidement une réponse. Actuellement, l'étudiant ne dispose d'aucune information lui indiquant que sa réponse est traitée ou notée.
 
 ========================
-Optional Attributes
+Attributs facultatifs
 ========================
 
 * **set_statefn**
 
-  Sometimes a problem author will want information about a student's previous answers ("state") to be saved and reloaded. If the attribute **set_statefn** is used, the function given as its value will be passed the state as a string argument whenever there is a state, and the student returns to a problem. The function has the responsibility to then use this state approriately.
+  Parfois, l'auteur d'un exercice souhaitera que les informations relatives aux réponses précédentes d'un étudiant ("state") soient enregistrées et rechargées. Si l'attribut **set_statefn** est utilisé, l'état (s'il existe) sera transmis en tant qu'argument string à la fonction considérée comme sa valeur et l'étudiant sera orienté vers un autre exercice. La fonction a alors la responsabilité d'utiliser cet état de manière adéquate.
 
-  The state that is passed is:
+  L'état transféré est :
 
-  * The previous output of **gradefn** (i.e., the previous answer) if **get_statefn** is not defined.
-  * The previous output of **get_statefn** (see below) otherwise.
+  * Le résultat précédent de **gradefn** (c'est-à-dire, la réponse précédente) si **get_statefn** n'est pas définie.
+  * Le résultat précédent de **get_statefn** (voir ci-dessous).
 
-  It is the responsibility of the iframe to do proper verification of the argument that it receives via **set_statefn**.
+  C'est à iframe d'effectuer une vérification correcte de l'argument reçu via **set_statefn**.
 
 * **get_statefn**
 
-  Sometimes the state and the answer are quite different. For instance, a problem that involves using a javascript program that allows the student to alter a molecule may grade based on the molecule's hydrophobicity, but from the hydrophobicity it might be incapable of restoring the state. In that case, a
-  *separate* state may be stored and loaded by **set_statefn**. Note that if **get_statefn** is defined, the answer (i.e., what is passed to the enclosing response type) will be a json string with the following format:
+  Parfois, les attributs state et answer sont très différents. Par exemple, un exercice qui utilise un programme javascript permettant à l'étudiant d'altérer une molécule peut être noté, en fonction de l'hydrophobie de la molécule. Toutefois, l'état peut ne pas être restauré à partir de l'hydrophobie. Dans ce cas, un état *separate* peut être stocké et chargé par **set_statefn**. Notez que si **get_statefn** est définie, la réponse (answer) (c'est-à-dire, les données transmises au type de réponse englobante) sera une chaîne json présentée au format suivant :
 
   .. code-block:: xml
 
@@ -222,12 +199,10 @@ Optional Attributes
       }
 
 
-  The enclosing response type must then parse this as json.
+  Le type de réponse englobante doit alors analyser cela en tant que json.
 
-* **height** and **width**
+* **height** et **width**
 
-  The **height** and **width** attributes are straightforward: they specify the height and width of the IFrame. Both are limited by the enclosing DOM elements, so for instance there is an implicit max-width of around 900. 
+  Les attributs **height** et **width** sont explicites : ils indiquent la hauteur (height) et la largeur (width) du cadre IFrame. Ces deux attributs sont limités par les éléments DOM englobants. Ainsi, la largeur maximale implicite est approximativement de 900. 
 
-  In the future, JSInput may attempt to make these dimensions match the HTML file's dimensions (up to the aforementioned limits), but currently it defaults to `500` and `400` for **height** and **width**, respectively.
-
-
+  À l'avenir, JSInput pourra tenter de faire correspondre ces dimensions aux dimensions du fichier HTML (en fonction des limites mentionnées ci-dessus). Actuellement, les valeurs par défaut sont respectivement de `500` et `400` pour les attributs **height** (hauteur) et **width** (largeur).

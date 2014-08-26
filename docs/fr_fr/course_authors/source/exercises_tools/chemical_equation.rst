@@ -1,37 +1,37 @@
 .. _Chemical Equation:
 
 ################################
-Chemical Equation Problem
+Exercice avec équations chimiques
 ################################
 
-The chemical equation problem type allows the student to enter text that represents a chemical equation into a text box. The system converts that text into a chemical equation below the text box. The grader evaluates the student's response by using a Python script that you create and embed in the problem.
+Dans l'exercice avec équations chimiques, l'étudiant peut saisir, dans une zone dédiée, un texte qui représente une équation chimique. Le système convertit alors ce texte en une équation chimique et l'insère sous la zone de texte. L'évaluateur évalue la réponse de l'étudiant en utilisant un script Python que vous créez et intégrez dans l'exercice.
 
 .. image:: /Images/ChemicalEquationExample.png
- :alt: Image of a chemical equation response problem
+ :alt: Image d'un exercice avec équations chimiques
 
 ************************************
-Create the Chemical Equation Problem
+Créer un exercice avec équations chimiques
 ************************************
 
-Chemical equation problems use MathJax to create formulas. For more information about using MathJax in Studio, see :ref:`MathJax in Studio`.
+Les exercices impliquant des équations chimiques utilisent MathJax pour créer des formules. Pour plus d'informations sur l'utilisation de MathJax dans Studio, voir :ref:`Introduction à l'utilisation de MathJax dans Studio`.
 
-To create the above chemical equation problem:
+Pour créer l'exercice avec équations chimiques mentionné ci-dessus :
 
-#. In the unit where you want to create the problem, click **Problem** under **Add New Component**, and then click the **Advanced** tab.
-#. Click **Blank Advanced Problem**.
-#. In the component that appears, click **Edit**.
-#. In the component editor, paste the code from below.
-#. Click **Save**.
+#. Dans l'unité dans laquelle vous souhaitez créer l'exercice, cliquez sur **Exercice** sous **Ajouter un nouveau composant**, puis cliquez sur l'onglet **Avancé**.
+#. Cliquez sur **Blank Advanced Problem** (Exercice avancé vide).
+#. Dans le composant qui apparaît, cliquez sur **Éditer**.
+#. Dans l'éditeur de composant, collez le code présenté ci-après.
+#. Cliquez sur **Enregistrer**.
 
 ==========================================
-Sample Chemical Equation Problem Code
+Exemple de code pour un exercice avec équations chimiques
 ==========================================
 
 .. code-block:: xml
 
   <problem>
     <startouttext/>
-    <p>Some problems may ask for a particular chemical equation. Practice by writing out the following reaction in the box below.</p>
+    <p>Certains exercices font référence à une équation chimique particulière. Entraînez-vous en écrivant la réaction suivante dans la zone ci-dessous.</p>
     
   \( \text{H}_2\text{SO}_4 \longrightarrow \text { H}^+ + \text{ HSO}_4^-\)
 
@@ -46,12 +46,12 @@ Sample Chemical Equation Problem Code
 
       </answer>
     </customresponse>
-    <p>Some tips:</p>
+    <p>Quelques astuces :</p>
     <ul>
-    <li>Use real element symbols.</li>
-    <li>Create subscripts by using plain text.</li>
-    <li>Create superscripts by using a caret (^).</li>
-    <li>Create the reaction arrow (\(\longrightarrow\)) by using "->".</li>
+    <li>Utilisez les symboles d'éléments réels.</li>
+    <li>Créez des indices en utilisant un texte brut..</li>
+    <li>Créez des exposants en utilisant un signe insertion (caret). (^).</li>
+    <li>Créez la flèche de la réaction (\(\longrightarrow\)) en utilisant "->".</li>
     </ul>
 
     <endouttext/>
@@ -59,7 +59,7 @@ Sample Chemical Equation Problem Code
    <solution>
    <div class="detailed-solution">
    <p>Solution</p>
-   <p>To create this equation, enter the following:</p>
+   <p>Pour créer cette équation, saisissez :</p>
      <p>H2SO4 -> H^+ + HSO4^-</p>
    </div>
    </solution>
@@ -68,18 +68,18 @@ Sample Chemical Equation Problem Code
 .. _Chemical Equation Problem XML:
 
 ************************************
-Chemical Equation Problem XML
+Exercice avec équations chimiques - Format XML
 ************************************
 
 ============
-Template
+Modèle
 ============
 
 .. code-block:: xml
 
   <problem>
     <startouttext/>
-    <p>Problem text</p>
+    <p>Texte de l'exercice</p>
 
     <customresponse>
       <chemicalequationinput size="NUMBER" label="LABEL TEXT"/>
@@ -97,68 +97,67 @@ Template
   
    <solution>
    <div class="detailed-solution">
-   <p>Solution or Explanation Header</p>
-   <p>Solution or explanation text</p>
+   <p>Titre de la solution ou de l'explication</p>
+   <p>Texte de la solution ou de l'explication</p>
    </div>
    </solution>
   </problem>
 
 ======
-Tags
+Balises
 ======
 
-* ``<customresponse>``: Indicates that this problem has a custom response. 
-* ``<chemicalequationinput>``: Specifies that the answer to this problem is a chemical equation. 
-* ``<answer type=loncapa/python>``: Contains the Python script that grades the problem.
+* ``<customresponse>`` : Indique que la réponse au problème posé par cet exercice est personnalisée. 
+* ``<chemicalequationinput>`` : Spécifie que la réponse de cet exercice est une équation chimique. 
+* ``<answer type=loncapa/python>`` : Contient le script Python qui permet de noter l'exercice.
 
-**Tag:** ``<customresponse>``
+**Balise :** ``<customresponse>``
 
-Indicates that this problem has a custom response. The ``<customresponse>`` tags must surround the ``<chemicalequation>`` tags.
+Indique que la réponse au problème posé par cet exercice est personnalisée. Les balises ``<customresponse>`` doivent encadrer les balises ``<chemicalequation>``.
 
-  Attributes
+  Attributs
 
-  (none)
+  (aucun)
 
-  Children
+  Enfants
 
   * ``<chemicalequationinput>``
   * ``<answer>``
 
-**Tag:** ``<chemicalequationinput>``
+**Balise :** ``<chemicalequationinput>``
 
-Indicates that the answer to this problem is a chemical equation and creates a response field where the student enters an answer.
+Indique que la réponse de cet exercice est une équation chimique et crée un champ de réponse dans lequel l'étudiant saisit sa réponse.
 
-  Attributes
+  Attributs
 
   .. list-table::
      :widths: 20 80
 
-     * - Attribute
+     * - Attribut
        - Description
      * - size 
-       - Specifies the size of the response field, in characters.
-     * - label (required)
-       - Contains the text of the principal question in the problem.
+       - Spécifie la taille du champ de la réponse (nombre de caractères).
+     * - label (obligatoire)
+       - Contient le texte de la question principale de l'exercice.
 
-  Children
+  Enfants
   
-  (none)
+  (aucun)
 
-**Tag:** ``<answer>``
+**Balise :** ``<answer>``
 
-Contains the Python script that grades the problem.
+Contient le script Python qui permet de noter l'exercice.
 
-  Attributes
+  Attributs
 
   .. list-table::
      :widths: 20 80
 
-     * - Attribute
+     * - Attribut
        - Description
-     * - type (required) 
-       - Must be "loncapa/python".
+     * - type (obligatoire) 
+       - Doit être "loncapa/python".
 
-  Children
+  Enfants
   
-  (none)
-     
+  (aucun)

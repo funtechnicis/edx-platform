@@ -1,33 +1,32 @@
 .. _Circuit Schematic Builder:
 
 ##################################
-Circuit Schematic Builder Problem
+Exercice avec logiciel de conception de schéma de circuit
 ##################################
 
-In circuit schematic builder problems, students can arrange circuit elements such as voltage sources, capacitors, resistors, and MOSFETs on an interactive grid. They then submit a DC, AC, or transient analysis of their circuit to the system for grading.
+Dans les exercices avec logiciel de conception de schéma de circuit, les étudiants peuvent organiser les éléments d'un circuit sur une grille interactive : sources de tension, condensateurs, résistances et MOSFET. Ils soumettent ensuite au système une analyse en courant continu (CC) ou en courant alternatif (CA), ou une analyse transitoire de leur circuit pour évaluation.
 
 .. image:: /Images/CircuitSchematicExample.png
- :alt: Image of a circuit schematic builder
+ :alt: Image d'un logiciel de conception de schéma de circuit
 
 *********************************************
-Create a Circuit Schematic Builder Problem
+Créer un exercice avec un logiciel de conception de schéma de circuit
 *********************************************
 
-#. In the unit where you want to create the problem, click **Problem**
-   under **Add New Component**, and then click the **Advanced** tab.
-#. Click **Circuit Schematic Builder**.
-#. In the component that appears, click **Edit**.
-#. In the component editor, replace the example code with your own code.
-#. Click **Save**.
+#. Dans l'unité dans laquelle vous souhaitez créer l'exercice, cliquez sur **Exercice** sous **Ajouter un nouveau composant**, puis cliquez sur l'onglet **Avancé**.
+#. Cliquez sur **Circuit Schematic Builder** (Logiciel de conception de schéma de circuit).
+#. Dans le composant qui apparaît, cliquez sur **Éditer**.
+#. Dans l'éditeur de composant, remplacez l'exemple de code par votre propre code.
+#. Cliquez sur **Enregistrer**.
 
-**Problem Code**
+**Code d'exercice**
 
-To create the problem in the image above, paste the following code into the Advanced Editor.
+Pour créer l'exercice présenté dans l'image ci-dessus, collez le code ci-après dans l'Éditeur avancé.
 
 .. code-block:: xml
 
  <problem>
-    <p>Make a voltage divider that splits the provided voltage evenly.</p>
+    <p>Créez un diviseur de tension qui divise en parts égales la tension fournie.</p>
       <schematicresponse>
       <center>
       <schematic height="500" width="600" parts="g,r" analyses="dc"
@@ -47,7 +46,7 @@ To create the problem in the image above, paste the following code into the Adva
       </answer>
       </schematicresponse>
     <schematicresponse>
-    <p>Make a high pass filter.</p>
+    <p>Montez un filtre passe-haut.</p>
     <center>
     <schematic height="500" width="600" parts="g,r,s,c" analyses="ac"
     submit_analyses="{"ac":[["NodeA",1,9]]}"
@@ -70,10 +69,10 @@ To create the problem in the image above, paste the following code into the Adva
     </schematicresponse>
         <solution>
             <div class="detailed-solution">
-                <p>Explanation</p>
-                <p>A voltage divider that evenly divides the input voltage can be formed with two identically valued resistors, with the sampled voltage taken in between the two.</p>
+                <p>Explication</p>
+                <p>Pour obtenir un diviseur de tension qui divise en parts égales la tension d'entrée, utilisez deux résistances de même valeur, la tension échantillonnée étant prise entre les deux résistances.</p>
                 <p><img src="/c4x/edX/edX101/asset/images_voltage_divider.png"/></p>
-                <p>A simple high-pass filter without any further constaints can be formed by simply putting a resister in series with a capacitor. The actual values of the components do not really matter in order to meet the constraints of the problem.</p>
+                <p>Pour monter un filtre passe-haut sans d'autres contraintes, placez simplement une résistance en série avec un condensateur. Pour respecter les contraintes de l'exercice, les valeurs réelles des composants importent peu.</p>
                 <p><img src="/c4x/edX/edX101/asset/images_high_pass_filter.png"/></p>
             </div>
         </solution>

@@ -1,91 +1,86 @@
 .. _Checkbox:
 
 ##################
-Checkbox Problem
+QCM avec cases à cocher
 ##################
 
-In checkbox problems, the student selects one or more options from a list of possible answers. The student must select all the options that apply to answer the problem correctly. Each checkbox problem must have at least one correct answer.
+Dans un QCM avec cases à cocher, l'étudiant sélectionne une ou plusieurs options dans une liste de réponses possibles. Pour répondre correctement aux questions posées lors de l'exercice, l'étudiant doit sélectionner toutes les réponses pertinentes. Chaque QCM avec cases à cocher doit inclure au moins une réponse correcte.
 
 .. image:: /Images/CheckboxExample.png
- :alt: Image of a checkbox problem
+ :alt: Image d'un QCM avec cases à cocher
 
 ****************************
-Create a Checkbox Problem
+Créer un QCM avec cases à cocher
 ****************************
 
-You can create checkbox problems in the Simple Editor or in the Advanced Editor.
+Vous pouvez créer des QCM avec cases à cocher en utilisant l'Éditeur simple ou l'Éditeur avancé.
 
-.. note:: All problems must include labels for accessibility. The label generally includes the text of the main question in your problem. To add a label for a common problem, surround the text of the label with angle brackets pointed toward the text (>>label text<<).
+.. note:: Tous les exercices doivent inclure des étiquettes afin de garantir l'accessibilité. L'étiquette comprend généralement le texte de la question principale de l'exercice. Pour ajouter une étiquette à un exercice courant, entourez le texte de l'étiquette avec des crochets pointus, orientés vers le texte (>>texte de l'étiquette<<).
 
 ==================
-Simple Editor
+Éditeur simple
 ==================
 
-#. Under **Add New Component**, click **Problem**.
-#. In the **Select Problem Component Type** screen, click **Checkboxes** on the **Common Problem Types** tab.
-#. In the Problem component that appears, click **Edit**.
-#. In the component editor, replace the default text with the text of your 
-   problem. Enter each answer option on its own line.
-#. Determine the text of the problem to use as a label, and then surround that text with two sets of angle brackets (>><<).
-#. Select all the answer options, and then click the checkbox button. 
+#. Sous **Ajouter un nouveau composant**, cliquez sur **Exercice**.
+#. Dans l'écran **Select Problem Component Type** (Sélectionner le type du composant Exercice), cliquez sur **Cases à cocher** dans l'onglet **Types d'exercices classiques**.
+#. Dans le composant Exercice qui apparaît, cliquez sur **Éditer**.
+#. Dans l'éditeur de composant, remplacez le texte par défaut par le texte de votre exercice. Saisissez chaque réponse possible sur la ligne appropriée.
+#. Choisissez le texte de l'exercice à utiliser en tant qu'étiquette, puis placez ce texte entre deux paires de crochets pointus (>><<).
+#. Sélectionnez toutes les réponses possibles, puis cliquez sur le bouton Case à cocher. 
 
    .. image:: /Images/ProbComponent_CheckboxIcon.png
-    :alt: Image of the checkbox button
+    :alt: Image du bouton Case à cocher
    
-   When you do this, brackets appear next to each answer choice.
+   Ensuite, des crochets apparaissent en regard de chaque réponse.
 
-#. Add an **x** between the brackets for the correct answer or answers.
-#. In the component editor, select the text of the explanation, and then click the 
-   explanation button to add explanation tags around the text.
+#. Insérez un **x** entre les crochets pour désigner la ou les réponses correctes.
+#. Dans l'éditeur de composant, sélectionnez le texte de l'explication, puis cliquez sur le bouton associé afin d'insérer les balises correspondantes autour du texte.
 
    .. image:: /Images/ProbCompButton_Explanation.png
-    :alt: Image of the explanation button
+    :alt: Image du bouton Explication
 
-#. On the **Settings** tab, specify the settings that you want. 
-#. Click **Save**.
+#. Dans l'onglet **Paramètres**, indiquez les paramètres que vous souhaitez utiliser. 
+#. Cliquez sur **Enregistrer**.
 
-For the example problem above, the text in the Problem component is the
-following.
+Pour l'exemple d'exercice présenté ci-dessus, le texte dans le composant Exercice est le suivant.
 
 .. code-block:: xml
 
-    Learning about the benefits of preventative healthcare can be particularly 
-    difficult. >>Check all of the reasons below why this may be the case.<<
+    Il peut être particulièrement difficile d'identifier les bénéfices des soins préventifs. >>Ci-dessous, sélectionnez toutes les raisons justifiant cette affirmation.<<
 
-    [x] A large amount of time passes between undertaking a preventative measure and seeing the result. 
-    [ ] Non-immunized people will always fall sick. 
-    [x] If others are immunized, fewer people will fall sick regardless of a particular individual's choice to get immunized or not. 
-    [x] Trust in healthcare professionals and government officials is fragile. 
+    [x] Un délai considérable s'écoule entre la prise d'une mesure préventive et l'obtention de résultats. 
+    [ ] Les personnes non vaccinées tomberont systématiquement malades. 
+    [x] Si d'autres personnes sont vaccinées, le nombre de personnes tombant malades diminuera, indépendamment de la décision d'un individu particulier de se faire vacciner ou non. 
+    [x] La confiance accordée aux professionnels de santé et fonctionnaires ou représentants du gouvernement est fragile. 
 
-    [explanation]
-    People who are not immunized against a disease may still not fall sick from the disease. If someone is trying to learn whether or not preventative measures against the disease have any impact, he or she may see these people and conclude, since they have remained healthy despite not being immunized, that immunizations have no effect. Consequently, he or she would tend to believe that immunization 
-    (or other preventative measures) have fewer benefits than they actually do.
-    [explanation]
+    [explication]
+    Les personnes qui ne sont pas vaccinées contre une maladie peuvent ne pas tomber malades. Si une personne tente d'évaluer l'efficacité de mesures préventives contre une maladie donnée, elle pourrait conclure, au vu de la bonne santé des personnes non vaccinées, que la vaccination ne joue aucun rôle. Elle serait donc amenée à croire que la vaccination (ou toute autre mesure préventive) ne présente que peu de bénéfices, voire aucun, alors qu'en réalité la vaccination et les autres mesures de prévention jouent un rôle essentiel.
+    [explication]
 
 ==================
-Advanced Editor
+Éditeur avancé
 ==================
 
-To create this problem in the Advanced Editor, click the **Advanced** tab in the Problem component editor, and then replace the existing code with the following code.
+Pour créer cet exercice dans l'Éditeur avancé, cliquez sur l'onglet **Avancé** dans l'éditeur du composant Exercice, puis remplacez le code existant par le code présenté ci-après.
 
 .. code-block:: xml
 
   <problem>
-    <p>Learning about the benefits of preventative healthcare can be particularly difficult. Check all of the reasons below why this may be the case.</p>
+    <p>Il peut être particulièrement difficile d'identifier les bénéfices des soins préventifs. Ci-dessous, sélectionnez toutes les raisons justifiant cette affirmation.</p>
 
   <choiceresponse>
     <checkboxgroup direction="vertical" label="Check all of the reasons below why this may be the case">
-      <choice correct="true"><text>A large amount of time passes between undertaking a preventative measure and seeing the result.</text></choice>
-      <choice correct="false"><text>Non-immunized people will always fall sick.</text></choice>
-      <choice correct="true"><text>If others are immunized, fewer people will fall sick regardless of a particular individual's choice to get immunized or not.</text></choice>
-      <choice correct="true"><text>Trust in healthcare professionals and government officials is fragile.</text></choice>
+      <choice correct="true"><text>Un délai considérable s'écoule entre la prise d'une mesure préventive et l'obtention de résultats..</text></choice>
+      <choice correct="false"><text>Les personnes non vaccinées tomberont systématiquement malades.</text></choice>
+      <choice correct="true"><text>Si d'autres personnes sont vaccinées, le nombre de personnes tombant malades diminuera, indépendamment de la décision d'un individu particulier de se faire vacciner ou non.</text></choice>
+      <choice correct="true"><text>La confiance accordée aux professionnels de santé et fonctionnaires ou représentants du gouvernement est fragile.</text></choice>
     </checkboxgroup>
   </choiceresponse>
 
    <solution>
    <div class="detailed-solution">
-   <p>Explanation</p>
-   <p>People who are not immunized against a disease may still not fall sick from the disease. If someone is trying to learn whether or not preventative measures against the disease have any impact, he or she may see these people and conclude, since they have remained healthy despite not being immunized, that immunizations have no effect. Consequently, he or she would tend to believe that immunization (or other preventative measures) have fewer benefits than they actually do.</p>
+   <p>Explication</p>
+   <p>Les personnes qui ne sont pas vaccinées contre une maladie peuvent ne pas tomber malades. Si une personne tente d'évaluer l'efficacité de mesures préventives contre une maladie donnée, elle pourrait conclure, au vu de la bonne santé des personnes non vaccinées, que la vaccination ne joue aucun rôle. Elle serait donc amenée à croire que la vaccination (ou toute autre mesure préventive) ne présente que peu de bénéfices, voire aucun, alors qu'en réalité la vaccination et les autres mesures de prévention jouent un rôle essentiel.</p>
    </div>
    </solution>
   </problem>
@@ -93,91 +88,91 @@ To create this problem in the Advanced Editor, click the **Advanced** tab in the
 .. _Checkbox Problem XML:
 
 ****************************
-Checkbox Problem XML 
+QCM avec cases à cocher - Format XML 
 ****************************
 
 ============
-Template
+Modèle
 ============
 
 .. code-block:: xml
 
   <problem>
-    <p>Question text</p>
+    <p>Texte de la question</p>
 
   <choiceresponse>
 
   <checkboxgroup direction="vertical" label="label text">
-  <choice correct="false"><text>Answer option 1 (incorrect)</text></choice>
-  <choice correct="true"><text>Answer option 2 (correct)</text></choice>
+  <choice correct="false"><text>Réponse 1 (incorrecte)</text></choice>
+  <choice correct="true"><text>Réponse 2 (correcte)</text></choice>
   </checkboxgroup>
   </choiceresponse>
 
    <solution>
    <div class="detailed-solution">
-   <p>Solution or Explanation Heading</p>
-   <p>Solution or explanation text</p>
+   <p>Titre de la solution ou de l'explication</p>
+   <p>Texte de la solution ou de l'explication</p>
    </div>
    </solution>
 
   </problem>
 
 ======
-Tags
+Balises
 ======
 
-* ``<choiceresponse>`` (required): Specifies that the problem contains options for students to choose from.
-* ``<checkboxgroup>`` (required): Specifies that the problem is a checkbox problem.
-* ``<choice>`` (required): Designates an answer option.
+* ``<choiceresponse>`` (obligatoire) : Indique que l'exercice contient des réponses parmi lesquelles les étudiants doivent choisir.
+* ``<checkboxgroup>`` (obligatoire) : Indique que l'exercice est un QCM avec cases à cocher.
+* ``<choice>`` (obligatoire) : Désigne une réponse.
 
-**Tag:** ``<choiceresponse>``
+**Balise :** ``<choiceresponse>``
 
-Specifies that the problem contains options for students to choose from.
+Indique que l'exercice contient des réponses parmi lesquelles les étudiants doivent choisir.
 
-  Attributes
+  Attributs
 
-  (none)
+  (aucun)
 
-  Children
+  Enfants
 
   * ``<checkboxgroup>``
 
-**Tag:** ``<checkboxgroup>``
+**Balise :** ``<checkboxgroup>``
 
-Specifies that the problem is a checkbox problem.
+Indique que l'exercice est un QCM avec cases à cocher.
 
-  Attributes
+  Attributs
 
   .. list-table::
      :widths: 20 80
 
-     * - Attribute
+     * - Attribut
        - Description
-     * - direction (optional)
-       - Specifies the orientation of the list of answers. The default is vertical.
-     * - label (required)
-       - Specifies the name of the response field.
+     * - direction (facultatif)
+       - Indique l'orientation de la liste de réponses. L'orientation par défaut est verticale.
+     * - label (obligatoire)
+       - Spécifie le nom du champ de la réponse.
 
-  Children
+  Enfants
 
   * ``<choice>`` 
 
-**Tag:** ``<choice>``
+**Balise :** ``<choice>``
 
-Designates an answer option.
+Désigne une réponse.
 
-  Attributes
+  Attributs
 
   .. list-table::
      :widths: 20 80
 
-     * - Attribute
+     * - Attribut
        - Description
-     * - true (at least one required)
-       - Indicates a correct answer. For checkbox problems, one or more ``<choice>`` tags can contain a correct answer.
-     * - false (at least one required)
-       - Indicates an incorrect answer.
+     * - true (l'exercice doit en comporter au moins un)
+       - Indique une réponse correcte. Pour les QCM avec cases à cocher, une ou plusieurs balises ``<choice>`` peuvent contenir une réponse correcte.
+     * - false (l'exercice doit en comporter au moins un)
+       - Indique une réponse incorrecte.
 
-  Children
+  Enfants
   
-  (none)
+  (aucun)

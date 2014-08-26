@@ -1,58 +1,56 @@
 .. _Conditional Module:
 
 ####################
-Conditional Module
+Module conditionnel
 ####################
 
 ********************
-Format description
+Description de format
 ********************
 
-The main tag of conditional module input is:
+La principale balise de l'entrée du module conditionnel est :
 
 .. code-block:: xml
 
     <conditional> ... </conditional>
 
-``conditional`` can include any number of any xmodule tags (``html``, ``video``, ``poll``, etc.) or ``show`` tags.
+``conditional`` peut inclure un nombre illimité de balises xmodule (``html``, ``video``, ``poll``, etc.) ou de balises ``show``.
 
 ================
-conditional tag
+Balise conditional
 ================
 
-The main container for a single instance of a conditional module. The following attributes can
-be specified for this tag:
+Conteneur principal d'une seule instance de module conditionnel. Les attributs suivants peuvent être spécifiés pour cette balise :
 
 .. code-block:: xml
 
-    sources - location id of required modules, separated by ';'
-    [message | ""] - message for case, where one or more are not passed. Here you can use variable {link}, which generate link to required module.
+    sources - ID d'emplacement des modules requis, séparés par ';'
+    [message | ""] - message en cas d'échec. Ici, vous pouvez utiliser une variable {link}, qui génère un lien vers le module requis.
 
-    [submitted] - map to `is_submitted` module method.
-    (pressing RESET button makes this function to return False.)
+    [submitted] - mappage vers la méthode de module `is_submitted`.
+    (Si vous appuyez sur le bouton RESET [Réinitialiser], la fonction repasse à la valeur False.)
 
-    [correct] - map to `is_correct` module method
-    [attempted] - map to `is_attempted` module method
-    [poll_answer] - map to `poll_answer` module attribute
-    [voted] - map to `voted` module attribute
+    [correct] - mappage vers la méthode de module `is_correct`
+    [attempted] - mappage vers la méthode de module `is_attempted`
+    [poll_answer] - mappage vers l'attribut de module `poll_answer`
+    [voted] - mappage vers l'attribut de module `voted`
 
 ========
-show tag
+Balise show
 ========
 
-Symlink to some set of xmodules. The following attributes can
-be specified for this tag:
+Symlink vers un ensemble donné de xmodules. Les attributs suivants peuvent être spécifiés pour cette balise :
 
 .. code-block:: xml
 
-    sources - location id of modules, separated by ';'
+    sources - ID d'emplacement de modules, séparés par ';'
 
 *********
-Example
+Exemple
 *********
 
 ========================================
-Examples of conditional depends on poll
+Exemples de balise conditional dépendant d'un sondage
 ========================================
 
 .. code-block:: xml
@@ -60,12 +58,12 @@ Examples of conditional depends on poll
     <conditional sources="i4x://MITx/0.000x/poll_question/first_real_poll_seq_with_reset" poll_answer="man"
     message="{link} must be answered for this to become visible.">
         <html>
-            <h2>You see this because your vote value for "First question" was "man"</h2>
+            <h2>Vous lisez ceci car votre valeur de vote pour la "première question" était "homme"</h2>
         </html>
     </conditional>
 
 ========================================================
-Examples of conditional depends on poll (use <show> tag)
+Exemples de balise conditional dépendant d'un sondage (utiliser la balise <show>)
 ========================================================
 
 .. code-block:: xml
@@ -78,7 +76,7 @@ Examples of conditional depends on poll (use <show> tag)
     </conditional>
 
 ================================================
-Examples of conditional depends on problem
+Exemples de balise conditional dépendant d'un exercice
 ================================================
 
 .. code-block:: xml

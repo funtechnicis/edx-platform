@@ -1,21 +1,21 @@
 .. _Create Exercises:
 
 ############################
-Creating Exercises and Tools
+Création d'exercices et d'outils
 ############################
 
 ************************************
-Introduction to  Exercises and Tools
+Exercices et outils : introduction
 ************************************
 
-Studio allows you to create a wide variety of exercises and tools for your course. Many of these exercises and tools have templates in Studio so that you can create them easily. In addition, individual course teams frequently create exercises that don't have templates in Studio. We're striving to make these tools available to all our course teams as well, and we have instructions for creating some of them in this section. 
+Studio vous permet de créer une vaste gamme d'exercices et d'outils pour vos cours. Le processus de création est simple, car nombre de ces exercices et outils sont basés sur des modèles proposés par Studio. Par ailleurs, il arrive souvent que certaines équipes pédagogiques créent des exercices pour lesquels Studio ne dispose pas de modèle. Nous nous efforçons de mettre ces outils à la disposition de toutes nos équipes pédagogiques et présentons, dans cette section, les instructions relatives à la création de certains de ces outils. 
 
-Depending on the exercise or tool, you'll use an HTML, Problem, or Advanced component. The page for each individual exercise or tool contains an example of each exercise or tool, together with all the files, code, and step-by-step instructions that you need to create the exercise or tool. 
+En fonction de l'exercice ou de l'outil, vous devrez utiliser un composant HTML, Exercice ou Avancé. La page de chaque exercice ou outil contient un exemple de chaque exercice ou outil, ainsi que tous les fichiers, code et instructions détaillées dont vous avez besoin pour créer l'exercice ou l'outil. 
 
-.. note:: Problems must include labels for accessibility. The label generally includes the text of the main question in your problem. Instructions for adding labels appear in the page for each individual problem.
+.. note:: Les exercices doivent inclure des étiquettes afin de garantir l'accessibilité. L'étiquette comprend généralement le texte de la question principale de l'exercice. Les instructions relatives à l'ajout d'étiquettes apparaissent sur la page de chaque exercice.
 
 ****************************
-General Exercises and Tools
+Exercices et outils généraux
 ****************************
 
 .. list-table::
@@ -23,82 +23,82 @@ General Exercises and Tools
 
    * - .. image:: /Images/AnnotationExample.png
           :width: 100
-          :alt: Example annotation problem
+          :alt: Exemple d'exercice avec annotations
      - :ref:`Annotation`
-     - Annotation problems ask students to respond to questions about a specific block of text. The question appears above the text when the student hovers the mouse over the highlighted text so that students can think about the question as they read.
+     - Dans les exercices avec annotations, les étudiants doivent répondre à des questions portant sur un bloc de texte spécifique. Les questions apparaissent au-dessus du texte lorsque les étudiants font passer la souris sur le texte en surbrillance. Ils peuvent ainsi réfléchir à la question tout en prenant connaissance du texte.
    * - .. image:: /Images/PollExample.png
           :width: 100
-          :alt: Example poll
-     - :ref:`Conditional Module`
-     -  You can create a conditional module to control versions of content that groups of students see. For example, students who answer "Yes" to a poll question then see a different block of text from the students who answer "No" to that question.
+          :alt: Exemple de sondage
+     - :ref:`Module conditionnel`
+     - Vous pouvez créer un module conditionnel afin de contrôler les versions du contenu que différents groupes d'étudiants consultent. Par exemple, les étudiants qui répondent "Oui" à la question d'un sondage ont accès à un bloc de texte différent de celui auquel ont accès les étudiants ayant répondu "Non".
    * - .. image:: /Images/JavaScriptInputExample.png
           :width: 100
-          :alt: Example JavaScript problem
-     - :ref:`Custom JavaScript`
-     - Custom JavaScript display and grading problems (also called *custom JavaScript problems* or *JS Input problems*) allow you to create a custom problem or tool that uses JavaScript and then add the problem or tool directly into Studio.
+          :alt: Exemple d'exercice JavaScript
+     - :ref:`Code JavaScript personnalisé`
+     - Les exercices d'évaluation et d'affichage en code JavaScript personnalisé (également appelés *exercices en JavaScript personnalisé* ou *exercices en JS*) vous permettent de créer un exercice ou un outil personnalisé qui utilise JavaScript. Vous pourrez alors ajouter directement l'exercice ou l'outil dans Studio.
    * - .. image:: /Images/external-grader-correct.png
           :width: 100
-          :alt: Example external grader
-     - :ref:`External Grader`
-     - An external grader is a service that receives student responses to a problem, processes those responses, and returns feedback and a problem grade to the edX platform. You build and deploy an external grader separately from the edX platform. An external grader is particularly useful for software programming courses where students are asked to submit complex code.
+          :alt: Exemple d'évaluateur externe
+     - :ref:`Évaluateur externe`
+     - Un évaluateur externe est un service qui reçoit les réponses fournies par les étudiants pour un exercice donné, les traite, renvoie des commentaires et note l'exercice. Toutes ces données sont renvoyées à la plate-forme edX. L'évaluateur externe que vous concevez est déployé séparément, à l'extérieur de la plate-forme edX. Un évaluateur externe est particulièrement utile pour les cours de programmation de logiciels dans lesquels les étudiants sont invités à soumettre un code complexe.
    * - .. image:: /Images/GoogleHangout_WithPeople.png   
           :width: 100
-          :alt: Google Hangout
-     - :ref:`Google Instant Hangout`
-     - You can add the ability for students to participate in instant hangouts directly from your course. With instant hangouts, students can interact through live video and voice, share screens and watch videos together, and collaborate on documents. 
+          :alt: Hangouts (Google)
+     - :ref:`Hangouts (Google)`
+     - Vous pouvez permettre aux étudiants de participer à des conversations (via Hangouts) directement depuis votre cours. Grâce à Hangouts, les étudiants peuvent avoir une simple conversation audio, qu'ils peuvent transformer en appel vidéo, partager leurs écrans et regarder des vidéos ensemble, et collaborer sur des documents. 
    * - .. image:: /Images/IFrame_1.png
           :width: 100
-          :alt: Example IFrame tool
+          :alt: Exemple d'outil IFrame
      - :ref:`IFrame`
-     - IFrames allow you to integrate ungraded exercises and tools from any Internet site into an HTML component in your course.
+     - Les cadres IFrame vous permettent d'intégrer des exercices et des outils non notés depuis n'importe quel site Internet dans un composant HTML de votre cours.
    * - .. image:: /Images/LTIExample.png
           :width: 100
-          :alt: Example LTI component
-     - :ref:`LTI Component`
-     - LTI components allow you to add an external learning application or non-PDF textbook to Studio.
+          :alt: Exemple de composant LTI
+     - :ref:`Composant LTI`
+     - Les composants LTI vous permettent d'ajouter dans Studio une application didactique externe ou un manuel qui n'est pas au format PDF.
    * - .. image:: /Images/CITL_AssmtTypes.png
           :width: 100
-          :alt: Example open response assessment
-     - :ref:`Open Response Assessment`
-     - In open response assessments, students receive feedback on written responses of varying lengths as well as files, such as computer code or images, that the students upload. Open response assessments include self assessment and peer assessment.
+          :alt: Exemple d'évaluation par réponse ouverte
+     - :ref:`Évaluation par réponse ouverte`
+     - Dans les évaluations par réponse ouverte, les étudiants reçoivent des commentaires sur les réponses qu'ils soumettent, qu'il s'agisse de réponses écrites (plus ou moins longues) ou de fichiers contenant un code informatique ou des images qu'ils chargent. Les évaluations par réponse ouverte incluent les auto-évaluations et les évaluations par les pairs.
    * - .. image:: /Images/PollExample.png
           :width: 100
-          :alt: Example poll
-     - :ref:`Poll`
-     - You can run polls in your course so that your students can share opinions on different questions.
+          :alt: Exemple de sondage
+     - :ref:`Sondage`
+     - Vous pouvez réaliser des sondages dans vos cours afin que vos étudiants échangent leurs points de vue sur différentes questions.
    * - .. image:: /Images/ProblemWithAdaptiveHintExample.png
           :width: 100
-          :alt: Example problem with adaptive hint
-     - :ref:`Problem with Adaptive Hint`
-     - A problem with an adaptive hint evaluates a student's response, then gives the student feedback or a hint based on that response so that the student is more likely to answer correctly on the next attempt. These problems can be text input or multiple choice problems.
+          :alt: Exemple d'exercice avec indice adaptatif
+     - :ref:`Exercice avec indice adaptatif`
+     - Lors d'un exercice avec indice adaptatif, la réponse d'un étudiant est évaluée. L'étudiant reçoit alors des commentaires ou un indice en fonction de sa réponse. Cela permet d'augmenter ses chances de répondre correctement à la prochaine tentative. Ces exercices peuvent être des exercices avec saisie de texte ou à choix multiples.
    * - .. image:: /Images/ProblemWrittenInLaTeX.png
           :width: 100
-          :alt: Example problem written in LaTeX
-     - :ref:`Problem Written in LaTeX`
-     - If you have an problem that is already written in LaTeX, you can use this problem type to easily convert your code into XML.
+          :alt: Exemple d'exercice écrit en langage LaTeX
+     - :ref:`Exercice écrit en langage LaTeX`
+     - Si vous disposez d'un exercice qui a déjà été écrit en LaTeX, vous pouvez utiliser ce type d'exercice afin de convertir facilement votre code en XML.
    * - .. image:: /Images/TextInputExample.png
           :width: 100
-          :alt: Example text input problem
-     - :ref:`Text Input`
-     - In text input problems, students enter text into a response field. The response can include numbers, letters, and special characters such as punctuation marks.
+          :alt: Exemple d'exercice avec saisie de texte
+     - :ref:`Saisie de texte`
+     - Dans les exercices avec saisie de texte, les étudiants saisissent du texte dans un champ de réponse. La réponse peut inclure des nombres, des lettres et des caractères spéciaux comme les signes de ponctuation.
    * - .. image:: /Images/WordCloudExample.png
           :width: 100
-          :alt: Example word cloud
-     - :ref:`Word Cloud`
-     - Word clouds arrange text that students enter - for example, in response to a question - into a colorful graphic that students can see.
+          :alt: Exemple de nuage de mots
+     - :ref:`Nuage de mots`
+     - Les nuages de mots organisent le texte que les étudiants saisissent (par exemple, en réponse à une question) dans un graphique coloré que les étudiants peuvent visualiser.
    * - .. image:: /Images/CustomPythonExample.png  
           :width: 100
-          :alt: Example write-your-own-grader problem
-     - :ref:`Write Your Own Grader`
-     - In custom Python-evaluated input (also called "write-your-own-grader") problems, the grader uses a Python script that you create and embed in the problem to evaluates a student's response or provide hints. These problems can be any type.
+          :alt: Exemple d'exercice avec élaboration d'un système d'évaluation personnalisé
+     - :ref:`Élaboration d'un système d'évaluation personnalisé`
+     - Dans les exercices avec évaluation personnalisée par Python (également appelés exercices avec élaboration d'un système d'évaluation personnalisé), l'évaluateur utilise un script Python que vous créez et intégrez dans l'exercice afin d'évaluer la réponse de l'étudiant ou de fournir des indices. Ces problèmes peuvent être de tout type.
    * - .. image:: /Images/VitalSource.png
           :width: 100
-          :alt: VitalSource e-book with highlighted note
+          :alt: Logiciel VitalSource avec notes en surbrillance
      - :ref:`VitalSource`
-     - The VitalSource Online Bookshelf e-reader allows students to read, browse, and search content (including figures and notes), as well as work with multiple highlighters and copy notes into external documents.
+     - Le logiciel VitalSource Bookshelf permet aux étudiants de lire et parcourir du contenu (non seulement du texte, mais également des illustrations et des notes), et d'y effectuer des recherches. Les étudiants peuvent aussi utiliser différents surligneurs et copier les notes dans des documents externes.
 
 ********************************
-Image-Based Exercises and Tools
+Exercices et outils reposant sur des images
 ********************************
 
 .. list-table::
@@ -106,27 +106,27 @@ Image-Based Exercises and Tools
 
    * - .. image:: /Images/DragAndDropProblem.png
           :width: 100
-          :alt: Example drag and drop problem
-     - :ref:`Drag and Drop`
-     - In drag and drop problems, students respond to a question by dragging text or objects to a specific location on an image.
+          :alt: Exemple d'exercice de glisser-déposer
+     - :ref:`Glisser-déposer`
+     - Dans les exercices de glisser-déposer, les étudiants répondent à une question en faisant glisser du texte ou des objets vers un emplacement spécifique sur une image.
    * - .. image:: /Images/image-modal.png
           :width: 100
-          :alt: Example full screen image tool
-     - :ref:`Full Screen Image`
-     - The Full Screen Image tool allows a student to enlarge an image in the whole browser window. This is useful when the image contains a large amount of detail and text that is easier to view in context when enlarged.
+          :alt: Exemple d'outil d'affichage des images en plein écran
+     - :ref:`Affichage des images en plein écran`
+     - L'outil d'affichage des images en plein écran permet à un étudiant d'agrandir une image et de l'afficher en plein écran dans la fenêtre du navigateur. Cet outil est particulièrement utile lorsque l'image contient de nombreux détails et que le texte agrandi est plus facile à consulter dans son contexte.
    * - .. image:: /Images/ImageMappedInputExample.png
           :width: 100
-          :alt: Example image mapped input problem
-     - :ref:`Image Mapped Input`
-     - In an image mapped input problem, students click inside a defined area in an image. You define this area by including coordinates in the body of the problem.
+          :alt: Exemple d'exercice d'insertion d'images mappées
+     - :ref:`Insertion d'images mappées`
+     - Dans un exercice d'insertion d'images mappées, les étudiants cliquent dans une image à l'intérieur d'une zone définie. Pour définir cette zone, incluez des coordonnées dans le corps de l'exercice.
    * - .. image:: /Images/Zooming_Image.png
           :width: 100
-          :alt: Example zooming image tool
-     - :ref:`Zooming Image`
-     - Zooming images allow you to enlarge sections of an image so that students can see the section in detail.
+          :alt: Exemple d'outil avec zoom d'images
+     - :ref:`Zoom d'images`
+     - Le zoom d'images permet d'agrandir certaines parties d'une image. Les étudiants peuvent ainsi en observer les détails.
 
 ************************************
-Multiple Choice Exercises and Tools
+Outils et exercices à choix multiples
 ************************************
 
 .. list-table::
@@ -134,27 +134,27 @@ Multiple Choice Exercises and Tools
 
    * - .. image:: /Images/CheckboxExample.png
           :width: 100
-          :alt: Example checkbox problem
-     - :ref:`Checkbox`
-     - In checkbox problems, the student selects one or more options from a list of possible answers. The student must select all the options that apply to answer the problem correctly.
+          :alt: Exemple de QCM avec cases à cocher
+     - :ref:`Case à cocher`
+     - Dans un QCM avec cases à cocher, l'étudiant sélectionne une ou plusieurs options dans une liste de réponses possibles. Pour répondre correctement aux questions posées lors de l'exercice, l'étudiant doit sélectionner toutes les réponses pertinentes.
    * - .. image:: /Images/DropdownExample.png
           :width: 100
-          :alt: Example dropdown problem
-     - :ref:`Dropdown`
-     - Dropdown problems allow the student to choose from a collection of answer options, presented as a dropdown list. Unlike multiple choice problems, whose answers are always visible directly below the question, dropdown problems don't show answer choices until the student clicks the dropdown arrow.
+          :alt: Exemple de QCM avec menu déroulant
+     - :ref:`Menu déroulant`
+     - Les QCM avec menu déroulant permettent à l'étudiant d'effectuer son choix parmi une série de réponses, présentées dans une liste déroulante. À la différence des autres types de QCM, dans lesquels les réponses sont toujours visibles directement sous la question, les QCM avec menu déroulant n'affichent les différentes possibilités de réponses que lorsque l'étudiant clique sur la flèche du menu déroulant.
    * - .. image:: /Images/MultipleChoiceExample.png
           :width: 100
-          :alt: Example multiple choice problem
-     - :ref:`Multiple Choice`
-     - In multiple choice problems, students select one option from a list of answer options. Unlike with dropdown problems, whose answer choices don't appear until the student clicks the drop-down arrow, answer choices for multiple choice problems are always visible directly below the question.
+          :alt: Exemple d'exercice à choix multiples
+     - :ref:`Choix multiples`
+     - Dans des exercices à choix multiples, les étudiants peuvent sélectionner une option dans une liste de réponses possibles. À la différence des exercices avec menu déroulant, dans lesquels les réponses possibles n'apparaissent que lorsque l'étudiant clique sur la flèche du menu déroulant, les exercices à choix multiples affichent toujours les réponses possibles sous la question.
    * - .. image:: /Images/MultipleChoice_NumericalInput.png
           :width: 100
-          :alt: Example multiple choice and numerical input problem
-     - :ref:`Multiple Choice and Numerical Input`
-     - You can create a problem that combines a multiple choice and numerical input problems. Students not only select a response from options that you provide, but also provide more specific information, if necessary.
+          :alt: Exemple d'exercice avec choix multiples et saisie de chiffres
+     - :ref:`Choix multiples et saisie de chiffres`
+     - Vous pouvez créer un exercice qui associe choix multiples et saisie de chiffres. Les étudiants sont amenés à sélectionner une réponse parmi les différentes possibilités proposées, mais doivent également saisir des informations plus spécifiques, le cas échéant.
 
 ********************************
-STEM Exercises and Tools
+Exercices et outils STIM
 ********************************
 
 .. list-table::
@@ -162,41 +162,41 @@ STEM Exercises and Tools
 
    * - .. image:: /Images/ChemicalEquationExample.png
           :width: 100
-          :alt: Example chemical equation problem
-     - :ref:`Chemical Equation`
-     - Chemical equation problems allow the student to enter text that represents a chemical equation into a text box. The grader evaluates the student's response by using a Python script that you create and embed in the problem.
+          :alt: Exemple d'exercice avec équations chimiques
+     - :ref:`Équation chimique`
+     - Dans les exercices impliquant des équations chimiques, l'étudiant peut saisir, dans une zone dédiée, un texte qui représente une équation chimique. L'évaluateur évalue la réponse de l'étudiant en utilisant un script Python que vous créez et intégrez dans l'exercice.
    * - .. image:: /Images/CircuitSchematicExample_short.png
           :width: 100
-          :alt: Example circuit schematic builder problem
-     - :ref:`Circuit Schematic Builder`
-     - In circuit schematic builder problems, students can arrange circuit elements such as voltage sources, capacitors, resistors, and MOSFETs on an interactive grid. They then submit a DC, AC, or transient analysis of their circuit to the system for grading.
+          :alt: Exemple d'exercice avec logiciel de conception de schéma de circuit
+     - :ref:`Logiciel de conception de schéma de circuit`
+     - Dans les exercices avec logiciel de conception de schéma de circuit, les étudiants peuvent organiser les éléments d'un circuit sur une grille interactive : sources de tension, condensateurs, résistances et MOSFET. Ils soumettent ensuite au système une analyse en courant continu (CC) ou en courant alternatif (CA), ou une analyse transitoire de leur circuit pour évaluation.
    * - .. image:: /Images/GeneExplorer.png
           :width: 100
-          :alt: Example gene explorer problem
+          :alt: Exemple d'exercice avec Gene Explorer
      - :ref:`Gene Explorer`
-     - The Gene Explorer (GeneX) simulates the transcription, splicing, processing, and translation of a small hypothetical eukaryotic gene. GeneX allows students to make specific mutations in a gene sequence, and it then calculates and displays the effects of the mutations on the mRNA and protein.
+     - L'application Gene Explorer (GeneX) simule la transcription, l'épissage, la maturation et la traduction d'un hypothétique petit gène eucaryote. GeneX permet aux étudiants de procéder à des mutations spécifiques dans une séquence génique, puis calcule et affiche les effets des mutations sur l'ARNm et les protéines.
    * - .. image:: /Images/MathExpressionInputExample.png
           :width: 100
-          :alt: Example math expression input problem
-     - :ref:`Math Expression Input`
-     - The more complex of Studio's two types of math problems. In math expression input problems, students enter mathematical expressions to answer a question. These problems can include unknown variables and more complex symbolic expressions. You can specify a correct answer either explicitly or by using a Python script. 
+          :alt: Exemple d'exercice avec saisie d'expressions mathématiques
+     - :ref:`Saisie d'expressions mathématiques`
+     - Il s'agit du plus complexe des deux types d'exercices mathématiques de Studio. Dans les exercices avec saisie d'expression mathématiques, les étudiants saisissent des expressions mathématiques pour répondre à une question. Ces exercices peuvent inclure des variables inconnues et des expressions symboliques plus complexes. Vous pouvez indiquer une réponse correcte soit explicitement soit par l'intermédiaire d'un script Python. 
    * - .. image:: /Images/Molecule_Editor.png
           :width: 100
-          :alt: Example molecule editor problem
-     - :ref:`Molecule Editor`
-     - The molecule editor allows students to draw molecules that follow the rules for covalent bond formation and formal charge, even if the molecules are chemically impossible, are unstable, or do not exist in living systems.
+          :alt: Exemple d'exercice avec éditeur de molécules
+     - :ref:`Éditeur de molécules`
+     - L'éditeur de molécules permet aux étudiants de dessiner des molécules qui respectent les règles de formation de liaisons covalentes et de charges formelles, même si ces molécules sont chimiquement impossibles, qu'elles sont instables ou qu'elles n'existent pas dans les organismes vivants.
    * - .. image:: /Images/image292.png
           :width: 100
-          :alt: Example numerical input problem
-     - :ref:`Numerical Input`
-     - The simpler of Studio's two types of math problems. In numerical input problems, students enter numbers or specific and relatively simple mathematical expressions to answer a question. These problems only allow integers and a few select constants. You can specify a margin of error, and you can specify a correct answer either explicitly or by using a Python script.
+          :alt: Exemple d'exercice avec saisie de chiffres
+     - :ref:`Saisie de chiffres`
+     - Il s'agit du plus simple des deux types d'exercices mathématiques de Studio. Dans les exercices avec saisie de chiffres, les étudiants répondent à une question en saisissant des chiffres ou des expressions mathématiques spécifiques et relativement simples. Ces exercices n'acceptent que les nombres entiers et quelques constantes sélectionnées. Vous pouvez spécifier une marge d'erreur. Vous pouvez spécifier une réponse correcte soit explicitement soit par l'intermédiaire d'un script Python.
    * - .. image:: /Images/Periodic_Table.png
           :width: 100
-          :alt: Example periodic table problem
-     - :ref:`Periodic Table`
-     - An interactive periodic table of the elements shows detailed information about each element as the student moves the mouse over the element.
+          :alt: Exemple d'exercice avec tableau périodique
+     - :ref:`Tableau périodique`
+     - Un tableau périodique interactif des éléments chimiques présente des informations détaillées sur chaque élément lorsque l'étudiant fait passer la souris sur l'élément.
    * - .. image:: /Images/ProteinBuilder.png
           :width: 100
-          :alt: Example protein builder problem
-     - :ref:`Protein Builder`
-     - The Protex protein builder asks students to create specified protein shapes by stringing together amino acids. 
+          :alt: Exemple d'exercice avec système d'élaboration de protéines
+     - :ref:`Système d'élaboration de protéines`
+     - Le système d'élaboration de protéines Protex invite les étudiants à créer des formes protéiques spécifiées en associant différents acides aminés. 
