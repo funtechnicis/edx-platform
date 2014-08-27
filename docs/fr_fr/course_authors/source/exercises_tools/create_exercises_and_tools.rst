@@ -199,4 +199,4 @@ Exercices et outils STIM
           :width: 100
           :alt: Exemple d'exercice avec système d'élaboration de protéines
      - :ref:`Système d'élaboration de protéines`
-     - Le système d'élaboration de protéines Protex invite les étudiants à créer des formes protéiques spécifiées en associant différents acides aminés. 
+     - Le système d'élaboration de protéines Protex invite les étudiants à créer des formes protéiques spécifiées en associant différents acides aminés.

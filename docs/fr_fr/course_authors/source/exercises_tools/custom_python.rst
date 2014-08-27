@@ -1,83 +1,82 @@
 .. _Write Your Own Grader:
 
 ##############################
-Write-Your-Own-Grader Problem
+Exercice avec élaboration d'un système d'évaluation personnalisé
 ##############################
 
-In custom Python-evaluated input (also called "write-your-own-grader" problems), the grader uses a Python script that you create and embed in the problem to evaluates a student's response or provide hints. These problems can be any type. Numerical input and text input problems are the most popular write-your-own-grader problems.
+Dans les exercices avec évaluation personnalisée par Python (également appelés exercices avec élaboration d'un système d'évaluation personnalisé), l'évaluateur utilise un script Python que vous créez et intégrez dans l'exercice afin d'évaluer la réponse de l'étudiant ou de fournir des indices. Ces problèmes peuvent être de tout type. Les exercices associant saisie de chiffres et de données sont les exercices intégrant l'élaboration d'un système d'évaluation personnalisé les plus courants.
 
 .. image:: /Images/CustomPythonExample.png
- :alt: Image of a write your own grader problem
+ :alt: Image d'un exercice avec élaboration d'un système d'évaluation personnalisé
 
-Custom Python-evaluated input problems can include the following:
+Les exercices avec évaluation personnalisée par Python peuvent inclure les types d'exercices suivants :
 
-* :ref:`Chemical Equation`
-* :ref:`Custom JavaScript`
+* :ref:`Équation chimique`
+* :ref:`Code JavaScript personnalisé`
 * :ref:`Gene Explorer`
-* :ref:`Molecule Editor`
-* :ref:`Protein Builder`
+* :ref:`Éditeur de molécules`
+* :ref:`Système d'élaboration de protéines`
 
 .. list-table::
    :widths: 20 80
 
    * - ``<script type="loncapa/python">``
-     - Indicates that the problem contains a Python script.
+     - Indique que l'exercice contient un script Python.
    * - ``<customresponse cfn="test_add_to_ten">``
      - 
    * - ``<customresponse cfn="test_add" expect="20">``
      - 
    * - <textline size="10" correct_answer="3"/>
-     - This tag includes the ``size``, ``correct_answer``, and ``label`` attributes. The ``correct_answer`` attribute is optional.
+     - Cette balise inclut les attributs ``size``, ``correct_answer`` et ``label``. L'attribut ``correct_answer`` est facultatif.
 
-You can create one of these problems in :ref:`Answer Tag Format` or :ref:`Script Tag Format`.
+Vous pouvez créer l'un de ces exercices dans :ref:`Format de balise answer` ou :ref:`Format de balise script`.
 
 .. _Answer Tag Format:
 
 **************************
-Answer Tag Format
+Format de balise answer
 **************************
 
-The answer tag format encloses the Python script in an ``<answer>`` tag:
+Le format de balise answer englobe le script Python dans une balise ``<answer>`` :
 
 .. code-block:: xml
 
   <answer>
   if answers[0] == expect:
       correct[0] = 'correct'
-      overall_message = 'Good job!'
+      overall_message = 'Bon travail !'
   else:
       correct[0] = 'incorrect'
-      messages[0] = 'This answer is incorrect'
-      overall_message = 'Please try again'
+      messages[0] = 'Cette réponse est incorrecte'
+      overall_message = 'Veuillez réessayer'
   </answer>
 
-.. important:: Python honors indentation. Within the ``<answer>`` tag, you must begin your script with no indentation.
+Important : Python respecte certaines règles d'indentation. Dans la balise ``<answer>``, vous devez commencer votre script sans indentation.
 
-The Python script interacts with these variables in the global context:
+Le script Python interagit avec ces variables dans un contexte global :
 
-* ``answers``: An ordered list of answers the student provided. For example, if the student answered ``6``, ``answers[0]`` would equal ``6``.
-* ``expect``: The value of the ``expect`` attribute of ``<customresponse>`` (if provided).
-* ``correct``: An ordered list of strings indicating whether the student answered the question correctly.  Valid values are ``"correct"``, ``"incorrect"``, and ``"unknown"``.  You can set these values in the script.
-* ``messages``: An ordered list of messages that appear under each response field in the problem. You can use this to provide hints to users. For example, if you include ``messages[0] = "The capital of California is Sacramento"``, that message appears under the first response field in the problem.
-* ``overall_message``: A message that appears beneath the entire problem. You can use this to provide a hint that applies to the entire problem rather than a particular response field.
+* ``answers`` : Liste triée répertoriant les réponses fournies par l'étudiant. Par exemple, si l'étudiant a répondu ``6``, ``answers[0]`` sera égal à ``6``.
+* ``expect`` : Valeur de l'attribut ``expect`` de ``<customresponse>`` (si fourni).
+* ``correct`` : Liste triée des chaînes indiquant si l'étudiant a répondu correctement à la question.  Les valeurs valides sont ``"correct"``, ``"incorrect"`` et ``"unknown"``.  Vous pouvez définir ces valeurs dans le script.
+* ``messages`` : Liste triée des messages qui apparaissent sous chaque champ de réponse de l'exercice. Vous pouvez l'utiliser pour donner des indices aux utilisateurs. Par exemple, si vous incluez ``messages[0] = "The capital of California is Sacramento"`` (La capitale de l'État de Californie est Sacramento), ce message apparaît sous le premier champ de réponse de l'exercice.
+* ``overall_message`` : Message qui apparaît sous l'exercice (et non sous un champ de réponse spécifique). Vous pouvez l'utiliser pour donner un indice qui concerne l'exercice dans son ensemble plutôt qu'un champ de réponse particulier.
 
 ========================================================================
-Create a Custom Python-Evaluated Input Problem in Answer Tag Format
+Créer un exercice avec évaluation personnalisée par Python au format de balise answer
 ========================================================================
 
-To create a custom Python-evaluated input problem using an ``<answer>`` tag:
+Pour créer un exercice avec évaluation personnalisée par Python en utilisant une balise ``<answer>`` :
 
-#. In the unit where you want to create the problem, click **Problem**
-   under **Add New Component**, and then click the **Advanced** tab.
-#. Click **Custom Python-Evaluated Input**.
-#. In the component that appears, click **Edit**.
-#. In the component editor, replace the example code with the following code.
-#. Click **Save**.
+#. Dans l'unité dans laquelle vous souhaitez créer l'exercice, cliquez sur **Exercice** sous **Ajouter un nouveau composant**, puis cliquez sur l'onglet **Avancé**.
+#. Cliquez sur **Custom Python-Evaluated Input** (Évaluation personnalisée par Python).
+#. Dans le composant qui apparaît, cliquez sur **Éditer**.
+#. Dans l'éditeur de composant, remplacez l'exemple de code par le code suivant.
+#. Cliquez sur **Enregistrer**.
 
 .. code-block:: xml
 
     <problem>
-        <p>What is the sum of 2 and 3?</p>
+        <p>Quelle est la somme de 2 et 3 ?</p>
 
         <customresponse expect="5">
         <textline math="1" />
@@ -86,23 +85,23 @@ To create a custom Python-evaluated input problem using an ``<answer>`` tag:
         <answer>
     if answers[0] == expect:
         correct[0] = 'correct'
-        overall_message = 'Good job!'
+        overall_message = 'Bon travail !'
     else:
         correct[0] = 'incorrect'
-        messages[0] = 'This answer is incorrect'
-        overall_message = 'Please try again'
+        messages[0] = 'Cette réponse est incorrecte'
+        overall_message = 'Veuillez réessayer'
         </answer>
     </problem>
 
-.. important:: Python honors indentation. Within the ``<answer>`` tag, you must begin your script with no indentation.
+Important : Python respecte certaines règles d'indentation. Dans la balise ``<answer>``, vous devez commencer votre script sans indentation.
 
 .. _Script Tag Format:
 
 **************************
-Script Tag Format
+Format de balise script
 **************************
 
-The script tag format encloses a Python script that contains a "check function" in a ``<script>`` tag, and adds the ``cfn`` attribute of the ``<customresponse>`` tag to reference that function:
+Le format de balise script englobe un script Python qui contient une "fonction de vérification" dans une balise ``<script>`` et ajoute l'attribut ``cfn`` de la balise ``<customresponse>`` afin de référencer cette fonction :
 
 .. code-block:: xml
 
@@ -123,7 +122,7 @@ The script tag format encloses a Python script that contains a "check function" 
 
   </script>
 
-  <p>Enter two integers that sum to 10. </p>
+  <p>Saisissez deux nombres entiers dont la somme est égale à 10. </p>
   <customresponse cfn="test_add_to_ten">
           <textline size="10"/><br/>
           <textline size="10/>
@@ -131,23 +130,23 @@ The script tag format encloses a Python script that contains a "check function" 
 
     </problem>
 
-**Important**: Python honors indentation. Within the ``<script>`` tag, the ``def check_func(expect, ans):`` line must have no indentation.
+**Important** : Python respecte certaines règles d'indentation. Dans la balise ``<script>``, la ligne ``def check_func(expect, ans):`` ne doit contenir aucune indentation.
 
-The **check** function accepts two arguments:
+La fonction de **vérification** accepte deux arguments :
 
-* ``expect`` is the value of the ``expect`` attribute of ``<customresponse>`` (if provided)
-* ``answer`` is either:
+* ``expect`` correspond à la valeur de l'attribut ``expect`` de ``<customresponse>`` (si fourni)
+* ``answer`` peut correspondre à :
 
-    * The value of the answer the student provided, if the problem only has one response field.
-    * An ordered list of answers the student provided, if the problem has multiple response fields.
+    * La valeur de la réponse de l'étudiant, si l'exercice ne dispose que d'un champ de réponse.
+    * La liste triée répertoriant les réponses de l'étudiant, si l'exercice comporte plusieurs champs de réponse.
 
-The **check** function can return any of the following to indicate whether the student's answer is correct:
+La fonction de **vérification** peut renvoyer l'une ou l'autre des valeurs ci-après afin d'indiquer si la réponse de l'étudiant est correcte :
 
-* ``True``: Indicates that the student answered correctly for all response fields.
-* ``False``: Indicates that the student answered incorrectly. All response fields are marked as incorrect.
-* A dictionary of the form: ``{ 'ok': True, 'msg': 'Message' }``
-  If the dictionary's value for ``ok`` is set to ``True``, all response fields are marked correct; if it is set to ``False``, all response fields are marked incorrect. The ``msg`` is displayed beneath all response fields, and it may contain XHTML markup.
-* A dictionary of the form 
+* ``True`` : Indique que l'étudiant a inséré une réponse correcte dans tous les champs de réponse.
+* ``False`` : Indique que l'étudiant n'a pas répondu correctement. Tous les champs de réponse sont marqués comme étant incorrects.
+* Un dictionnaire du type : ``{ 'ok': True, 'msg': 'Message' }``
+  Si la valeur du dictionnaire pour ``ok`` est définie sur ``True``, tous les champs de réponse sont marqués comme étant corrects ; si elle est définie sur ``False``, tous les champs de réponse sont marqués comme étant incorrects. La valeur ``msg`` est affichée sous tous les champs de réponse et peut contenir des balises XHTML.
+* Un dictionnaire du type 
 
 .. code-block:: xml
       
@@ -158,9 +157,9 @@ The **check** function can return any of the following to indicate whether the s
             { 'ok': False, 'msg': 'Feedback for input 2'},
             ... ] }
 
-The last form is useful for responses that contain multiple response fields. It allows you to provide feedback for each response field individually, as well as a message that applies to the entire response.
+Le dernier type est utile pour les réponses qui contiennent plusieurs champs de réponse. Vous pouvez ainsi présenter des commentaires pour chaque champ de réponse, individuellement, mais également envoyer un message qui s'applique à la réponse dans son ensemble.
 
-Example of a checking function:
+Exemple d'une fonction de vérification :
 
 .. code-block:: python
 
@@ -174,27 +173,26 @@ Example of a checking function:
                         { 'ok': check2, 'msg': 'Feedback 2'},
                         { 'ok': check3, 'msg': 'Feedback 3'} ] }
 
-The function checks that the user entered ``1`` for the first input, ``2`` for the  second input, and ``3`` for the third input. It provides feedback messages for each individual input, as well as a message displayed beneath the entire problem.
+La fonction vérifie que l'utilisateur a entré ``1`` lors de la première saisie, ``2`` lors de la deuxième saisie et ``3`` lors de la troisième saisie. Elle présente des messages de commentaires pour chaque saisie individuelle, et permet également d'afficher un message sous l'exercice dans son ensemble.
 
 ========================================================================
-Create a Custom Python-Evaluated Input Problem in Script Tag Format
+Créer un exercice avec évaluation personnalisée par Python au format de balise script
 ========================================================================
 
-To create a custom Python-evaluated input problem using a ``<script>`` tag:
+Pour créer un exercice avec évaluation personnalisée par Python en utilisant une balise ``<script>`` :
 
-#. In the unit where you want to create the problem, click **Problem**
-   under **Add New Component**, and then click the **Advanced** tab.
-#. Click **Custom Python-Evaluated Input**.
-#. In the component that appears, click **Edit**.
-#. In the component editor, replace the example code with the following code.
-#. Click **Save**.
+#. Dans l'unité dans laquelle vous souhaitez créer l'exercice, cliquez sur **Exercice** sous **Ajouter un nouveau composant**, puis cliquez sur l'onglet **Avancé**.
+#. Cliquez sur **Custom Python-Evaluated Input** (Évaluation personnalisée par Python).
+#. Dans le composant qui apparaît, cliquez sur **Éditer**.
+#. Dans l'éditeur de composant, remplacez l'exemple de code par le code suivant.
+#. Cliquez sur **Enregistrer**.
 
-**Problem Code**:
+**Code d'exercice** :
 
 .. code-block:: xml
 
   <problem>
-  <p>This question has two parts.</p>
+  <p>Cette question comporte deux parties.</p>
 
   <script type="loncapa/python">
 
@@ -211,13 +209,13 @@ To create a custom Python-evaluated input problem using a ``<script>`` tag:
 
   </script>
 
-  <p>Part 1: Enter two integers that sum to 10. </p>
+  <p>Partie 1 : Saisissez deux nombres entiers dont la somme est égale à 10. </p>
   <customresponse cfn="test_add_to_ten">
           <textline size="10" correct_answer="3" label="Integer #1"/><br/>
           <textline size="10" correct_answer="7" label="Integer #2"/>
   </customresponse>
 
-  <p>Part 2: Enter two integers that sum to 20. </p>
+  <p>Partie 2 : Saisissez deux nombres entiers dont la somme est égale à 20. </p>
   <customresponse cfn="test_add" expect="20">
           <textline size="10" label="Integer #1"/><br/>
           <textline size="10" label="Integer #2"/>
@@ -225,16 +223,16 @@ To create a custom Python-evaluated input problem using a ``<script>`` tag:
 
   <solution>
       <div class="detailed-solution">
-          <p>Explanation</p>
-          <p>For part 1, any two numbers of the form <i>n</i> and <i>10-n</i>, where <i>n</i> is any integer, will work. One possible answer would be the pair 0 and 10.</p>
-          <p>For part 2, any pair <i>x</i> and <i>20-x</i> will work, where <i>x</i> is any real number with a finite decimal representation. Both inputs have to be entered either in standard decimal notation or in scientific exponential notation. One possible answer would be the pair 0.5 and 19.5. Another way to write this would be 5e-1 and 1.95e1.</p>
+          <p>Explication</p>
+          <p>Pour la partie 1, deux nombres (quels qu'ils soient) de type <i>n</i> et <i>10-n</i>, où <i>n</i> est un nombre entier (n'importe lequel), sont acceptés. Une réponse possible serait constituée par la paire 0 et 10.</p>
+          <p>Pour la partie 2, toute paire <i>x</i> et <i>20-x</i>, où <i>x</i> est un nombre réel (n'importe lequel) avec une représentation décimale finie, est acceptée. Les deux nombres doivent être saisis soit via une notation décimale standard soit via une notation exponentielle scientifique. Une réponse possible serait constituée par la paire 0,5 et 19,5. Une autre façon d'écrire cette réponse serait : 5e-1 et 1.95e1.</p>
       </div>
   </solution>
   </problem>
 
-**Templates**
+**Modèles**
 
-The following template includes answers that appear when the student clicks **Show Answer**. 
+Le modèle suivant inclut les réponses qui apparaissent lorsque l'étudiant clique sur **Afficher la réponse**. 
 
 .. code-block:: xml
 
@@ -247,7 +245,7 @@ The following template includes answers that appear when the student clicks **Sh
     return (a1+a2)== float(expect)
   </script>
 
-  <p>Problem text</p>
+  <p>Texte de l'exercice</p>
   <customresponse cfn="test_add" expect="20">
           <textline size="10" correct_answer="11" label="Integer #1"/><br/>
           <textline size="10" correct_answer="9" label="Integer #2"/>
@@ -261,7 +259,7 @@ The following template includes answers that appear when the student clicks **Sh
       </solution>
   </problem>
 
-The following template does not return answers when the student clicks **Show Answer**. If your problem doesn't include answers for the student to see, make sure to set **Show Answer** to **Never** in the problem component.
+Le modèle suivant ne renvoie pas de réponses lorsque l'étudiant clique sur **Afficher la réponse**. Si votre exercice n'inclut pas de réponses que l'étudiant puisse visualiser, assurez-vous de définir **Afficher la réponse** sur **Jamais** dans le composant Exercice.
 
 .. code-block:: xml
 
@@ -274,7 +272,7 @@ The following template does not return answers when the student clicks **Show An
     return (a1+a2)== float(expect)
   </script>
 
-  <p>Enter two real numbers that sum to 20: </p>
+  <p>Saisissez deux nombres entiers dont la somme est égale à 20 : </p>
   <customresponse cfn="test_add" expect="20">
           <textline size="10"  label="Integer #1"/><br/>
           <textline size="10"  label="Integer #2"/>
@@ -282,9 +280,8 @@ The following template does not return answers when the student clicks **Show An
 
       <solution>
           <div class="detailed-solution">
-            <p>Solution or Explanation Heading</p>
-            <p>Solution or explanation text</p>
+            <p>Titre de la solution ou de l'explication</p>
+            <p>Texte de la solution ou de l'explication</p>
           </div>
       </solution>
   </problem>
-

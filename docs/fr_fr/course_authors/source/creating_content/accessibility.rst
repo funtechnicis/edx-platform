@@ -10,7 +10,7 @@ Avec ces instructions, nous espérons faciliter la tâche des équipes pédagogi
 Dans un contexte d'enseignement en ligne, le terme *accessibilité* désigne le niveau de disponibilité des informations et activités, respectant le principe d'égalité de traitement pour tous les étudiants, indépendamment d'éventuels handicaps physiques ou autres.
 
 Nos directives sont basées sur les normes et principes internationaux d'accessibilité Web (W3C WCAG 2.0) et de conception universelle (utilisable par tous, pour une utilisation la plus large possible, sans adaptation ni conception spécialisée). 
-Les enseignants qui élaborent des cours sur la base de ces principes tentent de proposer une expérience inclusive qui prend en compte les différents styles d'apprentissage et besoins éducatifs de tous les étudiants, y compris des étudiants présentant un handicap, des étudiants dont l'anglais n'est pas la langue maternelle, des étudiants aux prises avec des problèmes techniques comme une faible bande passante ou l'absence de son, et enfin des étudiants dont les facultés seraient altérées en raison de leur âge. Lors de la rédaction de ces instructions, nous sommes partis du principe que les utilisateurs finaux seront équipés des technologies d'adaptation appropriées et des logiciels compatibles.
+Les enseignants qui élaborent des cours sur la base de ces principes tentent de proposer une expérience inclusive qui prend en compte les différents styles d'apprentissage et besoins éducatifs de tous les étudiants, y compris des étudiants présentant un handicap, des étudiants dont le français n'est pas la langue maternelle, des étudiants aux prises avec des problèmes techniques comme une faible bande passante ou l'absence de son, et enfin des étudiants dont les facultés seraient altérées en raison de leur âge. Lors de la rédaction de ces instructions, nous sommes partis du principe que les utilisateurs finaux seront équipés des technologies d'adaptation appropriées et des logiciels compatibles.
 
 Toutefois, il est possible que des obstacles nuisent à l'accessibilité. 
 Afin d'offrir les meilleures conditions d'accessibilité possible via la plate-forme edX, nous vous recommandons de soutenir les étudiants présentant un handicap avec les ressources disponibles dans votre établissement. 
@@ -123,7 +123,7 @@ Les cours EdX touchent un public international d'une très grande diversité.
 Les étudiants accéderont plus facilement aux concepts du contenu que vous avez élaboré si ce dernier est bien structuré et que le langage utilisé est clair et sans ambiguïté. 
 La terminologie du domaine traité doit être utilisée, mais l'utilisation de termes clairs et sans équivoque aidera les étudiants :
 
-* dont l'anglais n'est pas la langue maternelle ; ou
+* dont le français n'est pas la langue maternelle ; ou
 * qui présentent un trouble ou handicap qui affecte la lecture, comme la dyslexie ou une déficience visuelle.
 
 Pour produire un contenu plus lisible par tous les étudiants :
@@ -430,7 +430,7 @@ Lorsque vous créez votre cours, vous devez prendre en compte le temps et les re
 Transcriptions audio
 ++++++++++++++++++++++++++++++++++++++++++++  
 
-Les transcriptions audio sont essentielles pour présenter des contenus sonores aux étudiants sourds. Elles s'avèrent par ailleurs extrêmement utiles aux étudiants dont l'anglais n'est pas la langue maternelle. 
+Les transcriptions audio sont essentielles pour présenter des contenus sonores aux étudiants sourds. Elles s'avèrent par ailleurs extrêmement utiles aux étudiants dont le français n'est pas la langue maternelle. 
 Les transcriptions synchronisées permettent aux étudiants sourds de suivre la vidéo. Pour atteindre une section spécifique de la vidéo, il leur suffit de cliquer sur le texte de la transcription. 
 Par ailleurs, tous les étudiants peuvent s'appuyer sur les transcriptions de ressources pédagogiques reposant sur des médias pour étudier et réviser.
 
