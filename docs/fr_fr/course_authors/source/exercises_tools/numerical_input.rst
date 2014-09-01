@@ -1,114 +1,104 @@
 .. _Numerical Input:
 
 ########################
-Numerical Input
+Saisie de chiffres
 ########################
 
-Numerical input problems are the simpler of the two mathematics tools that Studio offers. In these problems, students enter numbers or specific and relatively simple mathematical expressions to answer a question. The text that the students enter is converted to a symbolic expression that appears below the response field. 
+Les exercices avec saisie de chiffres sont les outils mathématiques les plus simples proposés par Studio. Dans ce type d'exercices, les étudiants répondent à une question en saisissant des chiffres ou des expressions mathématiques spécifiques et relativement simples. Le texte saisi par les étudiants est converti en une expression symbolique qui apparaît sous le champ de réponse. 
 
 .. image:: /Images/image292.png
- :alt: Image of a numerical input problem
+ :alt: Image d'un exercice avec saisie de chiffres
 
-Note that students' responses don't have to be exact for these problems. You can specify a margin of error, or tolerance. You can also specify a correct answer explicitly, or use a Python script. For more information, see the instructions below.
+Notez que, pour ces exercices, il n'est pas nécessaire que les réponses des étudiants soient exactes. Vous pouvez spécifier une marge d'erreur ou tolérance. Vous pouvez également indiquer une réponse correcte soit explicitement soit par l'intermédiaire d'un script Python. Pour plus d'informations, reportez-vous aux instructions ci-après.
 
-Responses for numerical input problems can include integers, fractions,
-and constants such as *pi* and *g*. Responses can also include text
-representing common functions, such as square root (sqrt) and log base 2
-(log2), as well as trigonometric functions and their inverses, such as
-sine (sin) and arcsine (arcsin). For these functions, the
-text that the student enters is converted into mathematical symbols. The following
-example shows the way the system renders students' text responses in
-numerical input problems. 
+Les réponses aux exercices avec saisie de chiffres peuvent inclure des nombres entiers, des fractions et des constantes, comme *pi* et *g*. Les réponses peuvent également inclure du texte représentant des fonctions communes, comme la racine carrée (sqrt) et le logarithme en base 2 (log2), ainsi que des fonctions trigonométriques et trigonométriques inverses, comme la fonction sinus (sin) et arc-sinus (arcsin). Pour ces fonctions, le texte que l'étudiant saisit est converti en symboles mathématiques. L'exemple suivant indique comment, dans les exercices avec saisie de chiffres, le système convertit les réponses textuelles des étudiants. 
 
 .. image:: /Images/Math5.png
- :alt: Image of a numerical input probem rendered by Studio
+ :alt: Image d'un exercice avec saisie de chiffres présenté par Studio
 
-For more information about characters that students can enter, see :ref:`Math Response Formatting for Students`.
+Pour plus d'informations sur les caractères acceptés, voir :ref:`Format des réponses dans les exercices de mathématiques`.
 
 ***********************************
-Create a Numerical Input Problem 
+Créer un exercice avec saisie de chiffres 
 ***********************************
 
-You can create numerical problems in the Simple Editor or in the Advanced Editor regardless of the answer to the problem. If the text of your problem doesn't include any italics, bold formatting, or special characters, you can create the problem in the Simple Editor. If the text of your problem contains special formatting or characters, or if your problem contains a Python script, you'll use the Advanced Editor.
+Vous pouvez créer des exercices avec saisie de chiffres dans l'Éditeur simple ou dans l'Éditeur avancé, indépendamment de la réponse à l'exercice. Si le texte de votre exercice n'inclut ni formatage en italique ou en gras, ni caractères spéciaux, vous pouvez créer l'exercice dans l'Éditeur simple. Si le texte de votre exercice contient un formatage particulier ou des caractères spéciaux, ou si votre exercice contient un script Python, vous devrez utiliser l'Éditeur avancé.
 
-For example, the following example problems require the Advanced Editor. 
+Par exemple, les exercices présentés dans les exemples ci-après requièrent l'utilisation de l'Éditeur avancé. 
 
 .. image:: /Images/NumericalInput_Complex.png
- :alt: Image of a more complex numerical input problem
+ :alt: Image d'un exercice avec saisie d'expressions mathématiques plus complexes
 
-For more information about including a Python script in your problem, see :ref:`Write Your Own Grader`.
+Pour plus d'informations sur l'inclusion d'un script Python dans votre exercice, voir :ref:`Élaboration d'un système d'évaluation personnalisé`.
 
 ==================
-Simple Editor
+Éditeur simple
 ==================
 
-#. Under **Add New Component**, click **Problem**.
-#. In the **Select Problem Component Type** screen, click **Numerical
-   Input** on the **Common Problem Types** tab.
+#. Sous **Ajouter un nouveau composant**, cliquez sur **Exercice**.
+#. Dans l'écran **Select Problem Component Type** (Sélectionner le type du composant Exercice), cliquez sur **Chiffres à saisir** dans l'onglet **Types d'exercices classiques**.
    
-3. When the new Problem component appears, click **Edit**.
-#. In the component editor, replace the sample problem text with your own text.
-#. Determine the text of the problem to use as a label, and then surround that text with two sets of angle brackets (>><<).
-#. Select the text of the answer, and then click the numerical input button. 
+3. Lorsque le nouveau composant Exercice apparaît, cliquez sur **Éditer**.
+#. Dans l'éditeur de composant, remplacez le texte de l'exercice présenté par votre propre texte.
+#. Choisissez le texte de l'exercice à utiliser en tant qu'étiquette, puis placez ce texte entre deux paires de crochets pointus (>><<).
+#. Sélectionnez le texte de la réponse, puis cliquez sur le bouton Chiffres à saisir. 
 
 .. image:: /Images/ProbCompButton_NumInput.png
-    :alt: Image of the numerical input button
+    :alt: Image du bouton Chiffres à saisir
 
-When you do this, an equal sign appears next to the answer.
+Lorsque vous avez effectué cette opération, un signe égal (=) apparaît en regard de la réponse.
         
-7. (Optional) Specify a margin of error, or tolerance. You can specify a percentage, number, or range.
+7. (Facultatif) Spécifiez une marge d'erreur (ou tolérance). Vous pouvez spécifier un pourcentage, un nombre ou une plage.
 
-   * To specify a percentage on either side of the correct answer, add **+-NUMBER%** after the answer. For example, if you want to include a 2% tolerance, add **+-2%**. 
+   * Pour spécifier un pourcentage de chaque côté de la réponse correcte, ajoutez **+-NOMBRE%** après la réponse. Par exemple, si vous souhaitez inclure une tolérance de 2 %, ajoutez **+-2%**. 
 
-   * To specify a number on either side of the correct answer, add **+-NUMBER** after the answer. For example, if you want to include a tolerance of 5, add **+-5**.
+   * Pour spécifier un pourcentage de chaque côté de la réponse correcte, ajoutez **+-NOMBRE** après la réponse. Par exemple, si vous souhaitez inclure une tolérance de 5, ajoutez **+-5**.
 
-   * To specify a range, use brackets [] or parentheses (). A bracket indicates that range includes the number next to it. A parenthesis indicates that the range does not include the number next to it. For example, if you specify **[5, 8)**, correct answers can be 5, 6, and 7, but not 8. Likewise, if you specify **(5, 8]**, correct answers can be 6, 7, and 8, but not 5.
+   * Pour spécifier une plage, utilisez des crochets [] ou des parenthèses (). Un crochet indique que le nombre situé à proximité sera inclus dans la plage. Une parenthèse indique que la plage n'inclut pas le nombre situé à proximité. Par exemple, si vous spécifiez **[5, 8)**, les réponses correctes peuvent être 5, 6 et 7, mais pas 8. De même, si vous spécifiez **(5, 8]**, les réponses correctes peuvent être 6, 7 et 8, mais pas 5.
 
-8. In the component editor, select the text of the explanation, and then click the 
-   explanation button to add explanation tags around the text.
+8. Dans l'éditeur de composant, sélectionnez le texte de l'explication, puis cliquez sur le bouton associé afin d'insérer les balises correspondantes autour du texte.
 
    .. image:: /Images/ProbCompButton_Explanation.png
-    :alt: Image of the explanation button
+    :alt: Image du bouton Explication
 
-9. On the **Settings** tab, specify the settings that you want. 
-#. Click **Save**.
+9. Dans l'onglet **Paramètres**, indiquez les paramètres que vous souhaitez utiliser. 
+#. Cliquez sur **Enregistrer**.
 
-For the first example problem above, the text in the Problem component is the
-following.
+Pour le premier exercice présenté en exemple ci-dessus, le texte dans le composant Exercice est le suivant.
 
 ::
 
-   >>What base is the decimal numeral system in?<<
+   >>Sur quelle base se fonde le système décimal ?<<
 
    = 10
     
-   [explanation]
-   The decimal numerial system is base ten.
-   [explanation]
+   [explication]
+   Le système décimal est de base 10.
+   [explication]
 
 ==================
-Advanced Editor
+Éditeur avancé
 ==================
 
-To create this problem in the Advanced Editor, click the **Advanced** tab in the Problem component editor, and then replace the existing code with the following code.
+Pour créer cet exercice dans l'Éditeur avancé, cliquez sur l'onglet **Avancé** dans l'éditeur du composant Exercice, puis remplacez le code existant par le code présenté ci-après.
 
-**Problem Code**:
+**Code d'exercice** :
 
 .. code-block:: xml
 
   <problem>
-    <p><b>Example Problem</b></p>
+    <p><b>Exemple d'exercice</b></p>
 
-  <p>What base is the decimal numeral system in?
+  <p>Sur quelle base se fonde le système décimal ?
       <numericalresponse answer="10">
           <formulaequationinput label="What base is the decimal numeral system in?"/>
       </numericalresponse>
   </p>
 
-    <p>What is the value of the standard gravity constant <i>g</i>, measured in m/s<sup>2</sup>? Give your answer to at least two decimal places.
+    <p>Quelle est la valeur de la constante gravitationnelle standard <i>g</i>, mesurée en m/s<sup>2</sup> ? Votre réponse doit présenter une précision minimale de deux décimales.
     <numericalresponse answer="9.80665">
       <responseparam type="tolerance" default="0.01" />
-      <formulaequationinput label="Give your answer to at least two decimal places"/>
+      <formulaequationinput label="Votre réponse doit présenter une précision minimale de deux décimales."/>
     </numericalresponse>
   </p>
 
@@ -117,24 +107,21 @@ To create this problem in the Advanced Editor, click the **Advanced** tab in the
   computed_response = math.sqrt(math.fsum([math.pow(math.pi,2), math.pow(math.e,2)]))
   </script>
 
-  <p>What is the distance in the plane between the points (pi, 0) and (0, e)? You can type math.
+  <p>Quelle est la distance dans l'avion entre les points (pi, 0) et (0, e) ? Vous pouvez répondre avec des expressions mathématiques.
       <numericalresponse answer="$computed_response">
           <responseparam type="tolerance" default="0.0001" />
-          <formulaequationinput label="What is the distance in the plane between the points (pi, 0) and (0, e)?"/>
+          <formulaequationinput label="Quelle est la distance dans l'avion entre les points (pi, 0) et (0, e) ?"/>
       </numericalresponse>
   </p>
   <solution>
     <div class="detailed-solution">
-      <p>Explanation</p>
-      <p>The decimal numerical system is base ten.</p>
-      <p>The standard gravity constant is defined to be precisely 9.80665 m/s<sup>2</sup>.
-      This is 9.80 to two decimal places. Entering 9.8 also works.</p>
-      <p>By the distance formula, the distance between two points in the plane is
-         the square root of the sum of the squares of the differences of each coordinate.
-        Even though an exact numerical value is checked in this case, the
-        easiest way to enter this answer is to type
-        <code>sqrt(pi^2+e^2)</code> into the editor.
-        Other answers like <code>sqrt((pi-0)^2+(0-e)^2)</code> also work.
+      <p>Explication</p>
+      <p>Le système décimal est de base 10.</p>
+      <p>La constante gravitationnelle standard est exactement égale à 9,80665 m/s<sup>2</sup>.
+      Pour une précision sur deux décimales, cette valeur est ramenée à 9,80. Vous pouvez également saisir 9,8.</p>
+      <p>D'après la formule permettant de calculer la distance orthodromique, la distance entre deux points dans un avion est la racine carrée de la somme des carrés des différences de chaque coordonnée.
+        Même si une valeur numérique exacte a été vérifiée dans ce cas précis, le mode de saisie le plus simple pour cette réponse consiste à saisir <code>sqrt(pi^2+e^2)</code> dans l'éditeur.
+        D'autres réponses comme <code>sqrt((pi-0)^2+(0-e)^2)</code> sont également valides.
       </p>
     </div>
   </solution>
@@ -143,76 +130,76 @@ To create this problem in the Advanced Editor, click the **Advanced** tab in the
 .. _Numerical Input Problem XML:
 
 ****************************
-Numerical Input Problem XML
+Exercice avec saisie de chiffres - Format XML
 ****************************
 
 =========
-Templates
+Modèles
 =========
 
-The following templates represent problems with and without a decimal or percentage tolerance.
+Les modèles suivants représentent les exercices avec et sans tolérance exprimée sous forme décimale ou en tant que pourcentage.
 
-Problem with no tolerance
+Exercice sans tolérance
 ***************************
 
 .. code-block:: xml
 
-  <p>TEXT OF PROBLEM
+  <p>TEXTE DE L'EXERCICE
       <numericalresponse answer="ANSWER (NUMBER)">
-          <formulaequationinput label="TEXT OF PROBLEM"/>
+          <formulaequationinput label="TEXTE DE L'EXERCICE"/>
       </numericalresponse>
   </p>
    
     <solution>
     <div class="detailed-solution">
-    <p>TEXT OF SOLUTION</p>
+    <p>TEXTE DE LA SOLUTION</p>
     </div>
   </solution>
   </problem>
 
-Problem with a decimal tolerance
+Exercice associé à une tolérance exprimée sous forme décimale
 ************************************
 
 .. code-block:: xml
 
   <problem>
    
-    <p>TEXT OF PROBLEM
+    <p>TEXTE DE L'EXERCICE
     <numericalresponse answer="ANSWER (NUMBER)">
       <responseparam type="tolerance" default="NUMBER (DECIMAL, e.g., .02)" />
-      <formulaequationinput label="TEXT OF PROBLEM"/>
+      <formulaequationinput label="TEXTE DE L'EXERCICE"/>
     </numericalresponse>
   </p>
    
     <solution>
     <div class="detailed-solution">
-    <p>TEXT OF SOLUTION</p>
+    <p>TEXTE DE LA SOLUTION</p>
     </div>
   </solution>
   </problem>
 
-Problem with a percentage tolerance
+Exercice associé à une tolérance exprimée en pourcentage
 ************************************
 
 .. code-block:: xml
 
   <problem>
    
-   <p>TEXT OF PROBLEM
+   <p>TEXTE DE L'EXERCICE
     <numericalresponse answer="ANSWER (NUMBER)">
       <responseparam type="tolerance" default="NUMBER (PERCENTAGE, e.g., 3%)" />
-      <formulaequationinput label="TEXT OF PROBLEM"/>
+      <formulaequationinput label="TEXTE DE L'EXERCICE"/>
     </numericalresponse>
    </p>
 
     <solution>
     <div class="detailed-solution">
-    <p>TEXT OF SOLUTION</p>
+    <p>TEXTE DE LA SOLUTION</p>
     </div>
   </solution>
   </problem>
 
-Answer created with a script
+Réponse créée avec un script
 ************************************
 
 .. code-block:: xml
@@ -224,110 +211,110 @@ Answer created with a script
   computed_response = math.sqrt(math.fsum([math.pow(math.pi,2), math.pow(math.e,2)]))
   </script>
 
-  <p>TEXT OF PROBLEM
+  <p>TEXTE DE L'EXERCICE
       <numericalresponse answer="$computed_response">
           <responseparam type="tolerance" default="0.0001" />
-          <formulaequationinput label="TEXT OF PROBLEM"/>
+          <formulaequationinput label="TEXTE DE L'EXERCICE"/>
       </numericalresponse>
   </p>
 
     <solution>
     <div class="detailed-solution">
-     <p>TEXT OF SOLUTION</p>
+     <p>TEXTE DE LA SOLUTION</p>
     </div>
   </solution>
   </problem>
 
 ====
-Tags
+Balises
 ====
 
-* ``<numericalresponse>`` (required): Specifies that the problem is a numerical input problem.
-* ``<formulaequationinput />`` (required): Provides a response field where the student enters a response.
-* ``<responseparam>`` (optional): Specifies a tolerance, or margin of error, for an answer.
-* ``<script>`` (optional):
+* ``<numericalresponse>`` (obligatoire) : Indique que cet exercice est un exercice avec saisie de chiffres.
+* ``<formulaequationinput />`` (obligatoire) : Fournit un champ de réponse dans lequel l'étudiant saisit une réponse.
+* ``<responseparam>`` (facultatif) : Spécifie la tolérance (ou marge d'erreur) pour une réponse.
+* ``<script>`` (facultatif) :
 
-.. note:: Some older problems use the ``<textline math="1" />`` tag instead of the ``<formulaequationinput />`` tag. However, the ``<textline math="1" />`` tag has been deprecated. All new problems should use the ``<formulaequationinput />`` tag.
+.. note:: Certains exercices moins récents utilisent la balise ``<textline math="1" />`` plutôt que la balise ``<formulaequationinput />``. La balise ``<textline math="1" />`` est toutefois devenue obsolète. Tous les nouveaux exercices devraient utiliser la balise ``<formulaequationinput />``.
 
-**Tag:** ``<numericalresponse>``
+**Balise :** ``<numericalresponse>``
 
-Specifies that the problem is a numerical input problem. The ``<numericalresponse>`` tag is similar to the ``<formularesponse>`` tag, but the ``<numericalresponse>`` tag does not allow unspecified variables.
+Indique que cet exercice est un exercice avec saisie de chiffres. La balise ``<numericalresponse>`` est similaire à la balise ``<formularesponse>``. La balise ``<numericalresponse>`` n'autorise toutefois pas l'utilisation de variables non spécifiées.
 
-  Attributes
+  Attributs
 
   .. list-table::
      :widths: 20 80
 
-     * - Attribute
+     * - Attribut
        - Description
-     * - answer (required)
-       - The correct answer to the problem, given as a mathematical expression. 
+     * - answer (obligatoire)
+       - Réponse correcte au problème, présentée en tant qu'expression mathématique. 
 
-  .. note:: If you include a variable name preceded with a dollar sign ($) in the problem, you can include a script in the problem that computes the expression in terms of that variable.
+  .. note:: Si vous incluez dans l'exercice un nom de variable, précédé d'un signe de dollar ($), vous pouvez alors inclure (toujours dans l'exercice) un script qui calcule l'expression sur la base de cette variable.
 
-  The grader evaluates the answer that you provide and the student's response in the same way. The grader also automatically simplifies any numeric expressions that you or a student provides. Answers can include simple expressions such as "0.3" and "42", or more complex expressions such as "1/3" and "sin(pi/5)". 
+  L'évaluateur évalue de la même façon la réponse que vous présentez et la réponse de l'étudiant. En outre, l'évaluateur simplifie automatiquement toute expression numérique que vous ou tout étudiant fournirez. Les réponses peuvent inclure des expressions simples comme "0,3" et "42", ou des expressions plus complexes comme "1/3" et "sin(pi/5)". 
 
-  Children
+  Enfants
   
   * ``<responseparam>``
   * ``<formulaequationinput>``
 
-**Tag:** * ``<formulaequationinput>``
+**Balise :** * ``<formulaequationinput>``
 
-Creates a response field in the LMS where students enter a response.
+Crée un champ de réponse dans le LMS. Les étudiants peuvent y saisir leur réponse.
 
-  Attributes
+  Attributs
 
   .. list-table::
      :widths: 20 80
 
-     * - Attribute
+     * - Attribut
        - Description     
-     * - label (required)
-       - Specifies the name of the response field.
-     * - size (optional)
-       - Defines the width, in characters, of the response field in the LMS.
+     * - label (obligatoire)
+       - Spécifie le nom du champ de la réponse.
+     * - size (facultatif)
+       - Spécifie la taille, en caractères, du champ de réponse dans le LMS.
   
-  Children
+  Enfants
 
-  (none)
+  (aucun)
 
-**Tag:** ``<responseparam>``
+**Balise :** ``<responseparam>``
 
-Specifies a tolerance, or margin of error, for an answer.
+Spécifie la tolérance (ou marge d'erreur) pour une réponse.
 
-  Attributes
+  Attributs
 
   .. list-table::
      :widths: 20 80
 
-     * - Attribute
+     * - Attribut
        - Description
-     * - type (optional)
-       - "tolerance": Defines a tolerance for a number
-     * - default (optional)
-       - A number or a percentage specifying a numerical or percent tolerance.
+     * - type (facultatif)
+       - "tolerance" : Définit une tolérance pour un nombre
+     * - default (facultatif)
+       - Nombre ou pourcentage spécifiant une tolérance, exprimée sous forme d'une valeur numérique ou d'un pourcentage.
 
-  Children
+  Enfants
   
-  (none)
+  (aucun)
 
-**Tag:** ``<script>``
+**Balise :** ``<script>``
 
-Specifies a script that the grader uses to evaluate a student's response. A problem behaves as if all of the code in all of the script tags were in a single script tag. Specifically, any variables that are used in multiple ``<script>`` tags share a namespace and can be overriden.
+Spécifie un script que l'évaluateur utilise pour évaluer la réponse d'un étudiant. Un exercice se comporte comme si l'intégralité du code dans toutes les balises script figurait dans une unique balise script. Spécifiquement, les variables utilisées dans différentes balises ``<script>`` partagent un espace de noms et peuvent être remplacées.
 
-As with all Python, indentation matters, even though the code is embedded in XML.
+Comme dans tout script Python, l'indentation joue un rôle important, même si le code est intégré en XML.
 
-  Attributes
+  Attributs
 
   .. list-table::
      :widths: 20 80
 
-     * - Attribute
+     * - Attribut
        - Description
-     * - type (required)
-       - Must be set to "loncapa/python".
+     * - type (obligatoire)
+       - Doit être défini sur "loncapa/python".
 
-  Children
+  Enfants
   
-  (none)
+  (aucun)

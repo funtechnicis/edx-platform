@@ -1,26 +1,25 @@
 .. _Problem with Adaptive Hint:
 
 ################################
-Problem with Adaptive Hint
+Exercice avec indice adaptatif
 ################################
 
-A problem with an adaptive hint evaluates a student's response, then gives the student feedback or a hint based on that response so that the student is more likely to answer correctly on the next attempt. These problems can be text input problems.
+Lors d'un exercice avec indice adaptatif, la réponse d'un étudiant est évaluée. L'étudiant reçoit alors des commentaires ou un indice en fonction de sa réponse. Cela permet d'augmenter ses chances de répondre correctement à la prochaine tentative. Ces exercices peuvent être des exercices avec saisie de texte.
 
 .. image:: /Images/ProblemWithAdaptiveHintExample.png
- :alt: Image of a problem with an adaptive hint
+ :alt: Image d'un exercice avec indice adaptatif
 
 ******************************************
-Create a Problem with an Adaptive Hint
+Créer un exercice avec indice adaptatif
 ******************************************
 
-To create the above problem:
+Pour créer l'exercice mentionné ci-dessus :
 
-#. In the unit where you want to create the problem, click **Problem**
-   under **Add New Component**, and then click the **Advanced** tab.
-#. Click **Problem with Adaptive Hint**.
-#. In the component that appears, click **Edit**.
-#. In the component editor, replace the example code with the code below.
-#. Click **Save**.
+#. Dans l'unité dans laquelle vous souhaitez créer l'exercice, cliquez sur **Exercice** sous **Ajouter un nouveau composant**, puis cliquez sur l'onglet **Avancé**.
+#. Cliquez sur **Problem with Adaptive Hint** (Exercice avec indice adaptatif).
+#. Dans le composant qui apparaît, cliquez sur **Éditer**.
+#. Dans l'éditeur de composant, remplacez l'exemple de code par le code ci-après.
+#. Cliquez sur **Enregistrer**.
 
 .. code-block:: xml
 
@@ -39,18 +38,18 @@ To create the above problem:
 	  print 'hint_fn called, ans=', ans
 	  hint = ''
 	  if '10' in ans:
-	     hint = 'If the ball costs 10 cents, and the bat costs one dollar more than the ball, how much does the bat cost? If that is the cost of the bat, how much do the ball and bat cost together?'
+	     hint = 'Si la balle coûte 10 cents et que la batte coûte un dollar de plus que la balle, combien coûte la batte ? Si cette somme représente le coût de la batte, combien coûtent la balle et la batte comptabilisées ensemble ?'
 	  elif '.05' in ans:
-	     hint = 'Make sure to enter the number of cents as a whole number.'
+	     hint = 'Vous devrez indiquer la somme sous forme de nombre entier, en cents.'
 
 	  if hint:
 	    hint = "&lt;font color='blue'&gt;Hint: {0}&lt;/font&gt;".format(hint)
 	    new_cmap.set_hint_and_mode(aid,hint,'always')
 	        </script>
-	        <p>If a bat and a ball cost $1.10 together, and the bat costs $1.00 more than the ball, how much does the ball cost? Enter your answer in cents, and include only the number (that is, do not include a $ or a ¢ sign).</p>
+	        <p>Si une batte et une balle comptabilisées ensemble coûtent 1,10 dollar et que la batte coûte un dollar de plus que la balle, combien coûte la balle ? Exprimez votre réponse en cents et n'indiquez que le chiffre (c'est-à-dire : n'utilisez ni le symbole $ ni le symbole ¢).</p>
 	        <p>
 	            <customresponse cfn="test_str" expect="5">
-	                <textline correct_answer="5" label="How much does the ball cost?"/>
+	                <textline correct_answer="5" label="Combien la balle coûte-t-elle ?"/>
 	                <hintgroup hintfn="hint_fn"/>
 	            </customresponse>
 	        </p>
@@ -60,11 +59,11 @@ To create the above problem:
 .. _Problem with Adaptive Hint XML:
 
 *********************************
-Problem with Adaptive Hint XML
+Exercice avec indice adaptatif - Format XML
 *********************************
 
 ========
-Template
+Modèle
 ========
 
 .. code-block:: xml
@@ -92,7 +91,7 @@ Template
 	    hint = "&lt;font color='blue'&gt;Hint: {0}&lt;/font&gt;".format(hint)
 	    new_cmap.set_hint_and_mode(aid,hint,'always')
 	</script>
-	    <p>TEXT OF PROBLEM</p>
+	    <p>TEXTE DE L'EXERCICE</p>
 	    <p>
 	      <customresponse cfn="test_str" expect="ANSWER">
 	        <textline correct_answer="answer" label="LABEL TEXT"/>
@@ -102,63 +101,63 @@ Template
 	  </text>
 	</problem>
 
-.. note:: If the hints that you supply include characters, the letters must be lowercase.
+.. note:: Si les indices que vous fournissez présentent des caractères, les lettres doivent être des minuscules.
 
 ========
-Tags
+Balises
 ========
 
-* ``<text>``: Surrounds the script and text in the problem.
-* ``<customresponse>``: Indicates that this problem has a custom response.
-* ``<textline>``: Creates a response field in the LMS where the student enters a response.
-* ``<hintgroup>``: Specifies that the problem contains at least one hint.
+* ``<text>`` : Encadre le script et le texte de l'exercice.
+* ``<customresponse>`` : Indique que la réponse au problème posé par cet exercice est personnalisée.
+* ``<textline>`` : Crée un champ de réponse dans le LMS. L'étudiant peut y saisir sa réponse.
+* ``<hintgroup>`` : Spécifie que l'exercice contient au moins un indice.
 
-**Tag:** ``<customresponse>``
+**Balise :** ``<customresponse>``
 
-  Attributes
+  Attributs
 
-  (none)
+  (aucun)
 
-  Children
+  Enfants
 
      * ``<textline>``
      * ``<hintgroup>``
 
-**Tag:** ``<textline>``
+**Balise :** ``<textline>``
 
-  Attributes
+  Attributs
 
   .. list-table::
      :widths: 20 80
      :header-rows: 1
 
-     * - Attribute
+     * - Attribut
        - Description
-     * - label (required)
-       - Contains the text of the problem.
-     * - size (optional)
-       - Specifies the size, in characters, of the response field in the LMS.
-     * - hidden (optional)
-       - If set to "true", students cannot see the response field.
-     * - correct_answer (optional)
-       - The answer to the problem. To supply a correct_answer value that
-         includes letters, all letters **must be lowercase**. (Students'
-         responses to the problem are not case sensitive. They can contain both
-         uppercase and lowercase letters.)
+     * - label (obligatoire)
+       - Contient le texte de l'exercice.
+     * - size (facultatif)
+       - Spécifie les dimensions, en caractères, du champ de réponse dans le LMS.
+     * - hidden (facultatif)
+       - Si la valeur est définie sur "true", les étudiants ne peuvent pas voir le champ de réponse.
+     * - correct_answer (facultatif)
+       - Réponse de l'exercice. Pour présenter une valeur correct_answer
+         comportant des lettres, toutes les lettres **doivent être des minuscules**. (Les réponses que les étudiants
+         présentent pour l'exercice ne sont pas sensibles à la casse. Elles peuvent donc contenir
+         des majuscules et des minuscules.)
 
-  Children
+  Enfants
   
-  (none)
+  (aucun)
 
-**Tag:** ``<hintgroup>``
+**Balise :** ``<hintgroup>``
 
-  Attributes
+  Attributs
 
   .. list-table::
      :widths: 20 80
      :header-rows: 1
 
-     * - Attribute
+     * - Attribut
        - Description
      * - hintfn
-       - Must be set to **hint_fn** (that is, the tag must appear as ``<hintgroup hintfn="hint_fn"/>``).
+       - Doit être défini sur **hint_fn** (c'est-à-dire que la balise doit apparaître comme suit : ``<hintgroup hintfn="hint_fn"/>``).

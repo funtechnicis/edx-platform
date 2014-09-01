@@ -1,103 +1,89 @@
 .. _Multiple Choice:
 
 ########################
-Multiple Choice Problem
+Exercice à choix multiples
 ########################
 
-In multiple choice problems, students select one option from a list of answer options. Unlike with dropdown problems, whose answer choices don't appear until the student clicks the drop-down arrow, answer choices for multiple choice problems are always visible directly below the question.
+Dans des exercices à choix multiples, les étudiants peuvent sélectionner une option dans une liste de réponses possibles. À la différence des exercices avec menu déroulant, dans lesquels les réponses possibles n'apparaissent que lorsque l'étudiant clique sur la flèche du menu déroulant, les exercices à choix multiples affichent toujours les réponses possibles sous la question.
 
 .. image:: /Images/MultipleChoiceExample.png
- :alt: Image of a multiple choice problem
+ :alt: Image d'un exercice à choix multiples
 
-Multiple choice problems also have several advanced options, such as presenting a random set of choices to each student. For more information about these options, see :ref:`Multiple Choice Advanced Options`.
+Les exercices à choix multiples présentent également plusieurs options avancées, comme la présentation à chaque étudiant d'une série aléatoire d'options. Pour plus d'informations sur ces options, voir :ref:`Options avancées des exercices à choix multiples`.
 
 ****************************************
-Create a Multiple Choice Problem
+Créer un exercice à choix multiples
 ****************************************
 
-You can create multiple choice problems in the Simple Editor or in the Advanced Editor.
+Vous pouvez créer des exercices à choix multiples en utilisant l'Éditeur simple ou l'Éditeur avancé.
 
-.. note:: All problems must include labels for accessibility. The label generally includes the text of the main question in your problem. To add a label for a common problem, surround the text of the label with angle brackets pointed toward the text (>>label text<<).
+.. note:: Tous les exercices doivent inclure des étiquettes afin de garantir l'accessibilité. L'étiquette comprend généralement le texte de la question principale de l'exercice. Pour ajouter une étiquette à un exercice courant, entourez le texte de l'étiquette avec des crochets pointus, orientés vers le texte (>>texte de l'étiquette<<).
 
 ================
-Simple Editor
+Éditeur simple
 ================
 
-#. Under **Add New Component**, click **Problem**.
-#. In the **Select Problem Component Type** screen, click **Multiple
-   Choice** on the **Common Problem Types** tab.
-#. When the new Problem component appears, click **Edit**.
-#. In the component editor, replace the sample problem text with the text of your 
-   problem. Enter each answer option on its own line.
-#. Determine the text of the problem to use as a label, and then surround that text with two sets of angle brackets (>><<).
-#. Select all the answer options, and then click the multiple choice button. 
+#. Sous **Ajouter un nouveau composant**, cliquez sur **Exercice**.
+#. Dans l'écran **Select Problem Component Type** (Sélectionner le type du composant Exercice), cliquez sur **Multiple Choice** (Choix multiples) dans l'onglet **Types d'exercices classiques**.
+#. Lorsque le nouveau composant Exercice apparaît, cliquez sur **Éditer**.
+#. Dans l'éditeur de composant, remplacez le texte de l'exercice présenté en exemple par le texte de votre exercice. Saisissez chaque réponse possible sur la ligne appropriée.
+#. Choisissez le texte de l'exercice à utiliser en tant qu'étiquette, puis placez ce texte entre deux paires de crochets pointus (>><<).
+#. Sélectionnez toutes les réponses, puis cliquez sur le bouton Choix multiples. 
    
    .. image:: /Images/ProbCompButton_MultChoice.png
-    :alt: Image of the multiple choice button
+    :alt: Image du bouton Choix multiples
    
-   When you do this, the component editor adds a pair of parentheses next to each 
-   possible answer.
+   Une fois ces différentes étapes effectuées, l'éditeur de composant ajoute une paire de parenthèses à côté de chaque réponse possible.
    
-#. Add an "x" between the parentheses next to the correct answer.
+#. Ajoutez une croix ("x") entre les parenthèses, à côté de chaque réponse correcte.
    
-#. In the component editor, select the text of the explanation, and then click the 
-   explanation button to add explanation tags around the text.
+#. Dans l'éditeur de composant, sélectionnez le texte de l'explication, puis cliquez sur le bouton associé afin d'insérer les balises correspondantes autour du texte.
 
    .. image:: /Images/ProbCompButton_Explanation.png
-    :alt: Image of the explanation button
+    :alt: Image du bouton Explication
 
-#. On the **Settings** tab, specify the settings that you want. 
-#. Click **Save**.
+#. Dans l'onglet **Paramètres**, indiquez les paramètres que vous souhaitez utiliser. 
+#. Cliquez sur **Enregistrer**.
 
-For the example problem above, the text in the Problem component is the
-following.
+Pour l'exemple d'exercice présenté ci-dessus, le texte dans le composant Exercice est le suivant.
 
 ::
 
-    >>Lateral inhibition, as was first discovered in the horsehoe crab:<<
+    >>Inhibition latérale, observée et identifiée pour la première fois chez la limule (crabe en fer à cheval) :<<
 
-    ( ) is a property of touch sensation, referring to the ability of crabs to 
-    detect nearby predators.
-    ( ) is a property of hearing, referring to the ability of crabs to detect 
-    low frequency noises.
-    (x) is a property of vision, referring to the ability of crabs eyes to 
-    enhance contrasts.
-    ( ) has to do with the ability of crabs to use sonar to detect fellow horseshoe 
-    crabs nearby.
-    ( ) has to do with a weighting system in the crabs skeleton that allows it to 
-    balance in turbulent water.
+    ( ) est une propriété tactile : elle fait référence à la capacité des crabes à détecter les prédateurs à proximité.
+    ( ) est une propriété auditive : elle fait référence à la capacité des crabes à détecter des bruits basse fréquence.
+    (x) est une propriété visuelle : elle fait référence à la capacité visuelle d'amélioration des contrastes observée chez les crabes.
+    ( ) fait référence à la capacité des crabes à utiliser un sonar pour détecter la présence d'autres crabes en fer à cheval situés à proximité.
+    ( ) fait référence au système de pondération du squelette des crabes. Ce système leur permet de conserver leur équilibre dans une mer agitée.
 
-    [Explanation]
-    Horseshoe crabs were essential to the discovery of lateral inhibition, a property of 
-    vision present in horseshoe crabs as well as humans, that enables enhancement of 
-    contrast at edges of objects as was demonstrated in class. In 1967, Haldan Hartline 
-    received the Nobel prize for his research on vision and in particular his research 
-    investigating lateral inhibition using horseshoe crabs.
-    [Explanation]
+    [Explication]
+    Les limules (ou crabes en fer à cheval) ont joué un rôle essentiel dans la découverte de l'inhibition latérale. Cette propriété visuelle, observée chez les limules et les êtres humains, permet d'améliorer le contraste au niveau des contours d'objets, comme démontré en classe. En 1967, Haldan Hartline a reçu le prix Nobel pour ses travaux sur les mécanismes de la vision et, en particulier, pour ses recherches sur l'inhibition latérale chez les limules.
+    [Explication]
 
 ================
-Advanced Editor
+Éditeur avancé
 ================
 
-To create this problem in the Advanced Editor, click the **Advanced** tab in the Problem component editor, and then replace the existing code with the following code.
+Pour créer cet exercice dans l'Éditeur avancé, cliquez sur l'onglet **Avancé** dans l'éditeur du composant Exercice, puis remplacez le code existant par le code présenté ci-après.
 
 .. code-block:: xml
 
   <problem>
-  <p>Lateral inhibition, as was first discovered in the horsehoe crab...</p>
+  <p>Inhibition latérale, observée et identifiée pour la première fois chez la limule (crabe en fer à cheval)...</p>
   <multiplechoiceresponse>
     <choicegroup type="MultipleChoice" label="Lateral inhibition, as was first discovered in the horsehoe crab">
-      <choice correct="false">is a property of touch sensation, referring to the ability of crabs to detect nearby predators.</choice>
-      <choice correct="false">is a property of hearing, referring to the ability of crabs to detect low frequency noises.</choice>
-      <choice correct="false">is a property of vision, referring to the ability of crabs eyes to enhance contrasts.</choice>
-      <choice correct="true">has to do with the ability of crabs to use sonar to detect fellow horseshoe crabs nearby.</choice>
-      <choice correct="false">has to do with a weighting system in the crabs skeleton that allows it to balance in turbulent water.</choice>
+      <choice correct="false">est une propriété tactile : elle fait référence à la capacité des crabes à détecter les prédateurs à proximité.</choice>
+      <choice correct="false">est une propriété auditive : elle fait référence à la capacité des crabes à détecter des bruits basse fréquence.</choice>
+      <choice correct="false">est une propriété visuelle : elle fait référence à la capacité des yeux des crabes d'améliorer les contrastes.</choice>
+      <choice correct="true">fait référence à la capacité des crabes à utiliser un sonar pour détecter la présence d'autres crabes en fer à cheval situés à proximité.</choice>
+      <choice correct="false">fait référence au système de pondération du squelette des crabes. Ce système leur permet de conserver leur équilibre dans une mer agitée.</choice>
     </choicegroup>
   </multiplechoiceresponse>
   <solution>
     <div class="detailed-solution">
-      <p>Explanation</p>
-      <p>Horseshoe crabs were essential to the discovery of lateral inhibition, a property of vision present in horseshoe crabs as well as humans, that enables enhancement of contrast at edges of objects as was demonstrated in class. In 1967, Haldan Hartline received the Nobel prize for his research on vision and in particular his research investigating lateral inhibition using horseshoe crabs.</p>
+      <p>Explication</p>
+      <p>Les limules (ou crabes en fer à cheval) ont joué un rôle essentiel dans la découverte de l'inhibition latérale. Cette propriété visuelle, observée chez les limules et les êtres humains, permet d'améliorer le contraste au niveau des contours d'objets, comme démontré en classe. En 1967, Haldan Hartline a reçu le prix Nobel pour ses travaux sur les mécanismes de la vision et, en particulier, pour ses recherches sur l'inhibition latérale chez les limules.</p>
     </div>
   </solution>
   </problem>
@@ -105,119 +91,119 @@ To create this problem in the Advanced Editor, click the **Advanced** tab in the
 .. _Multiple Choice Advanced Options:
 
 *********************************************
-Advanced Options for Multiple Choice Problems
+Options avancées pour les exercices à choix multiples
 *********************************************
 
-Multiple choice problems have several advanced options. You can change the order of answers in the problem, include explanations that appear when a student selects a specific incorrect answer, or present a random set of choices to each student. For more information, see the following:
+Les exercices à choix multiples présentent plusieurs options avancées. Vous pouvez modifier l'ordre des réponses dans l'exercice, inclure des explications afin qu'elles apparaissent lorsqu'un étudiant sélectionne une réponse incorrecte spécifique, ou présenter une série aléatoire de réponses possibles à chaque étudiant. Pour plus d'informations, reportez-vous aux sections suivantes :
 
 
-* :ref:`Shuffle Answers in a Multiple Choice Problem`
-* :ref:`Targeted Feedback in a Multiple Choice Problem`
-* :ref:`Answer Pools in a Multiple Choice Problem`
+* :ref:`Activer la présentation aléatoire des réponses d'un exercice à choix multiples`
+* :ref:`Commentaires ciblés dans un exercice à choix multiples`
+* :ref:`Séries de réponses dans un exercice à choix multiples`
 
 .. _Shuffle Answers in a Multiple Choice Problem:
 
 =============================================
-Shuffle Answers in a Multiple Choice Problem
+Activer la présentation aléatoire des réponses d'un exercice à choix multiples
 ============================================= 
 
-Optionally, you can configure a multiple choice problem so that it shuffles the order of possible answers.
+Vous pouvez, si vous le souhaitez, configurer un exercice à choix multiples afin qu'il propose une présentation aléatoire des réponses possibles.
 
-For example, one view of the problem could be:
+Par exemple, l'exercice pourrait se présenter comme suit :
 
 .. image:: ../Images/multiple-choice-shuffle-1.png
- :alt: Image of a multiple choice problem
+ :alt: Image d'un exercice à choix multiples
 
-And another view of the same problem, for another student or for the same student of a subsequent view of the unit, could be:
+Le même exercice pourrait se présenter différemment, pour un autre étudiant ou pour le même étudiant visualisant une autre vue de l'unité. Par exemple :
 
 .. image:: ../Images/multiple-choice-shuffle-2.png
- :alt: Image of a multiple choice problem with shuffled answers
+ :alt: Image d'un exercice à choix multiples avec réponses mélangées
 
-You can also have some answers shuffled, but not others. For example, you may want to have the answer "All of the Above" fixed at the end of the list, but shuffle other answers.
+Il est également possible de proposer une présentation aléatoire de certaines réponses (sans inclure toutes les réponses). Par exemple, vous pouvez souhaiter que la réponse "Toutes les réponses susmentionnées" figure toujours en fin de liste, mais activer une présentation aléatoire des autres réponses.
 
-You can configure the problem to shuffle answers through :ref:`Simple Editor` or :ref:`Advanced Editor`.
+Vous pouvez configurer l'exercice afin de proposer une présentation aléatoire des réponses via l':ref:`Éditeur simple` ou l':ref:`Éditeur avancé`.
 
 
-Use the Simple Editor to Shuffle Answers
+Utiliser l'Éditeur simple pour proposer une présentation aléatoire des réponses
 *********************************************
 
-You can configure the problem to shuffle answers in :ref:`Simple Editor`.
+Vous pouvez configurer l'exercice pour proposer une présentation aléatoire des réponses dans l':ref:`Éditeur simple`.
 
-For example, the following text defines a multiple choice problem, before shuffling is enabled. The ``(x)`` indicates the correct answer::
+Par exemple, le texte ci-après définit un exercice à choix multiples, avant l'activation de la lecture aléatoire. La croix ``(x)`` indique la réponse correcte :
 
- >>What Apple device competed with the portable CD player?<<
-     ( ) The iPad
+ >>Quel appareil Apple a été en concurrence avec le lecteur CD portable ?<<
+     ( ) L'iPad
      ( ) Napster
-     (x) The iPod
-     ( ) The vegetable peeler
+     (x) L'iPod
+     ( ) L'éplucheur de légumes
 
-To add shuffling to this problem, add ``!`` in the parenthesis of the first answer::
+Pour permettre une présentation aléatoire des réponses de cet exercice, ajoutez ``!`` entre les parenthèses de la première réponse :
 
- >>What Apple device competed with the portable CD player?<<
-     (!) The iPad
+ >>Quel appareil Apple a été en concurrence avec le lecteur CD portable ?<<
+     (!) L'iPad
      ( ) Napster
-     (x) The iPod
-     ( ) The vegetable peeler
+     (x) L'iPod
+     ( ) L'éplucheur de légumes
 
-To fix an answer's location in the list, add ``@`` in the parenthesis of that answer::
+Pour figer l'emplacement d'une réponse dans la liste, ajoutez ``@`` entre les parenthèses de cette réponse :
 
- >>What Apple device competed with the portable CD player?<<
-     (!) The iPad
+ >>Quel appareil Apple a été en concurrence avec le lecteur CD portable ?<<
+     (!) L'iPad
      ( ) Napster
-     (x) The iPod
-     ( ) The vegetable peeler
-     (@) All of the above
+     (x) L'iPod
+     ( ) L'éplucheur de légumes
+     (@) Toutes les réponses susmentionnées
 
-You can combine symbols within parenthesis as necessary. For example, to show the correct answer in a fixed location, you could use::
+Vous pouvez associer les symboles entre parenthèses, le cas échéant. Par exemple, pour afficher la réponse correcte à un emplacement fixe, vous pourriez utiliser :
  
-  (x@) The iPod
+  (x@) L'iPod
 
-Use the Advanced Editor to Shuffle Answers
+Utiliser l'Éditeur avancé pour une présentation aléatoire des réponses
 *********************************************
 
-You can configure the problem to shuffle answers through XML in :ref:`Advanced Editor`.
+Vous pouvez configurer l'exercice pour proposer une présentation aléatoire des réponses au format XML dans l':ref:`Éditeur avancé`.
 
-For example, the following XML defines a multiple choice problem, before shuffling is enabled:
+Par exemple, le code XML ci-après définit un exercice à choix multiples, avant l'activation d'une présentation aléatoire :
 
 .. code-block:: xml
 
- <p>What Apple device competed with the portable CD player?</p>
+ <p>Quel appareil Apple a été en concurrence avec le lecteur CD portable ?</p>
  <multiplechoiceresponse>
   <choicegroup type="MultipleChoice">
-    <choice correct="false">The iPad</choice>
+    <choice correct="false">L'iPad</choice>
     <choice correct="false">Napster</choice>
-    <choice correct="true">The iPod</choice>
-    <choice correct="false">The vegetable peeler</choice>
+    <choice correct="true">L'iPod</choice>
+    <choice correct="false">L'éplucheur de légumes</choice>
   </choicegroup>
  </multiplechoiceresponse>
 
 
-To add shuffling to this problem, add ``shuffle="true"`` to the ``<choicegroup>`` element:
+Pour activer une présentation aléatoire des réponses de cet exercice, ajoutez ``shuffle="true"`` à l'élément ``<choicegroup>`` :
 
 .. code-block:: xml
 
- <p>What Apple device competed with the portable CD player?</p>
+ <p>Quel appareil Apple a été en concurrence avec le lecteur CD portable ?</p>
  <multiplechoiceresponse>
   <choicegroup type="MultipleChoice" shuffle="true">
-    <choice correct="false">The iPad</choice>
+    <choice correct="false">L'iPad</choice>
     <choice correct="false">Napster</choice>
-    <choice correct="true">The iPod</choice>
-    <choice correct="false">The vegetable peeler</choice>
+    <choice correct="true">L'iPod</choice>
+    <choice correct="false">L'éplucheur de légumes</choice>
   </choicegroup>
  </multiplechoiceresponse>
 
-To fix an answer's location in the list, add ``fixed="true"`` to the ``choice`` element for the answer:
+Pour figer l'emplacement d'une réponse dans la liste, ajoutez ``fixed="true"`` à l'élément ``choice`` de cette réponse :
 
 .. code-block:: xml
 
- <p>What Apple device competed with the portable CD player?</p>
+ <p>Quel appareil Apple a été en concurrence avec le lecteur CD portable ?</p>
  <multiplechoiceresponse>
   <choicegroup type="MultipleChoice" shuffle="true">
-    <choice correct="false">The iPad</choice>
+    <choice correct="false">L'iPad</choice>
     <choice correct="false">Napster</choice>
-    <choice correct="true">The iPod</choice>
-    <choice correct="false">The vegetable peeler</choice>
-    <choice correct="false" fixed="true">All of the above</choice>
+    <choice correct="true">L'iPod</choice>
+    <choice correct="false">L'éplucheur de légumes</choice>
+    <choice correct="false" fixed="true">Toutes les réponses susmentionnées</choice>
   </choicegroup>
  </multiplechoiceresponse>
 
@@ -225,68 +211,68 @@ To fix an answer's location in the list, add ``fixed="true"`` to the ``choice`` 
 .. _Targeted Feedback in a Multiple Choice Problem:
 
 ===============================================
-Targeted Feedback in a Multiple Choice Problem
+Commentaires ciblés dans un exercice à choix multiples
 ===============================================
 
-You can configure a multiple choice problem so that explanations for incorrect answers are automatically shown to students. You can use these explanations to guide students towards the right answer. Therefore, targeted feedback is most useful for multiple choice problems for which students are allowed multiple attempts.
+Vous pouvez configurer un exercice à choix multiples afin que les explications associées aux réponses incorrectes soient présentées automatiquement aux étudiants. Vous pouvez utiliser ces explications pour orienter les étudiants vers la réponse correcte. Les commentaires ciblés sont donc particulièrement utiles pour les exercices à choix multiples, lorsque plusieurs tentatives sont autorisées.
 
 
-Use the Advanced Editor to Configure Targeted Feedback
+Utiliser l'Éditeur avancé pour configurer les commentaires ciblés
 ********************************************************
 
-You configure the problem to provide targeted feedback through XML in :ref:`Advanced Editor`.
+Vous pouvez configurer l'exercice afin de proposer des commentaires ciblés au format XML dans l':ref:`Éditeur avancé`.
 
-Follow these XML guidelines:
+Suivez les instructions XML ci-après :
 
-* Add a ``targeted-feedback`` attribute to the ``<multiplechoiceresponse>`` element, with no value: ``<multiplechoiceresponse targeted-feedback="">``
-* Add a ``<targetedfeedbackset>`` element before the ``<solution>`` element.
-* Within ``<targetedfeedbackset>``, add one or more ``<targetedfeedback>`` elements.
-* Within each ``<targetedfeedback>`` element, enter your explanation for the incorrect answer in HTML as markup described below.
-* Connect the ``<targetedfeedback>`` element with a specific incorrect answer by using the same ``explanation-id`` attribute value for each.
-* Use the ``<solution>`` element for the correct answer, with the same ``explanation-id`` attribute value as the correct ``<choice>`` element.
+* Ajoutez un attribut ``targeted-feedback`` à l'élément ``<multiplechoiceresponse>``, sans lui attribuer de valeur : ``<multiplechoiceresponse targeted-feedback="">``
+* Ajoutez un élément ``<targetedfeedbackset>`` avant l'élément ``<solution>``.
+* Dans ``<targetedfeedbackset>``, ajoutez un ou plusieurs éléments ``<targetedfeedback>``.
+* Dans chaque élément ``<targetedfeedback>``, saisissez l'explication associée à la réponse incorrecte au format HTML, comme décrit ci-dessous.
+* Associez l'élément ``<targetedfeedback>`` à une réponse incorrecte spécifique. Attribuez, pour chaque réponse incorrecte, la même valeur à l'attribut ``explanation-id``.
+* Utilisez l'élément ``<solution>`` pour la réponse correcte. Utilisez la même valeur pour l'attribut ``explanation-id`` que l'élément ``<choice>`` correct.
 
-For example, the XML for the multiple choice problem is:
+Par exemple, le code XML pour l'exercice à choix multiples peut se présenter comme suit :
 
 .. code-block:: xml
 
-   <p>What Apple device competed with the portable CD player?</p>
+   <p>Quel appareil Apple a été en concurrence avec le lecteur CD portable ?</p>
    <multiplechoiceresponse targeted-feedback="">
     <choicegroup type="MultipleChoice">
-      <choice correct="false" explanation-id="feedback1">The iPad</choice>
+      <choice correct="false" explanation-id="feedback1">L'iPad</choice>
       <choice correct="false" explanation-id="feedback2">Napster</choice>
-      <choice correct="true" explanation-id="correct">The iPod</choice>
-      <choice correct="false" explanation-id="feedback3">The vegetable peeler</choice>
+      <choice correct="true" explanation-id="correct">L'iPod</choice>
+      <choice correct="false" explanation-id="feedback3">L'éplucheur de légumes</choice>
     </choicegroup>
    </multiplechoiceresponse>
  
-This is followed by XML that defines the targeted feedback:
+Ce code est suivi par le code XML qui définit les commentaires ciblés :
 
 .. code-block:: xml
 
    <targetedfeedbackset>
      <targetedfeedback explanation-id="feedback1">
        <div class="detailed-targeted-feedback">
-         <p>Targeted Feedback</p>
-         <p>The iPad came out later and did not directly compete with portable CD players.</p>
+         <p>Commentaires ciblés</p>
+         <p>L'iPad a été développé ultérieurement et n'a pas été en concurrence directe avec les lecteurs CD portables.</p>
        </div>
      </targetedfeedback>
      <targetedfeedback explanation-id="feedback2">
        <div class="detailed-targeted-feedback">
-         <p>Targeted Feedback</p>
-         <p>Napster was not an Apple product.</p>
+         <p>Commentaires ciblés</p>
+         <p>Napster n'était pas un produit Apple.</p>
        </div>
      </targetedfeedback>
      <targetedfeedback explanation-id="feedback3">
        <div class="detailed-targeted-feedback">
-         <p>Targeted Feedback</p>
-         <p>Vegetable peelers don't play music.</p>
+         <p>Commentaires ciblés</p>
+         <p>Les éplucheurs de légumes ne permettent pas d'écouter de la musique.</p>
        </div>
      </targetedfeedback>
     </targetedfeedbackset>
 
     <solution explanation-id="correct">
      <div class="detailed-solution">
-      <p>The iPod directly competed with portable CD players.</p>
+      <p>L'iPod a été en concurrence directe avec les lecteurs CD portables.</p>
      </div>
     </solution>
 
@@ -294,56 +280,56 @@ This is followed by XML that defines the targeted feedback:
 .. _Answer Pools in a Multiple Choice Problem:
 
 =============================================
-Answer Pools in a Multiple Choice Problem
+Séries de réponses dans un exercice à choix multiples
 =============================================
 
-You can configure a multiple choice problem so that a random subset of choices are shown to each student. For example, you can add 10 possible choices to the problem, and each student views a set of five choices.
+Vous pouvez configurer un exercice à choix multiples afin qu'un sous-ensemble aléatoire de réponses possibles soit présenté automatiquement à chaque étudiant. Par exemple, vous pouvez ajouter 10 réponses possibles à l'exercice et chaque étudiant visualisera une série de cinq réponses.
 
-The answer pool must have at least one correct answer, and can have more than one. In each set of choices shown to a student, one correct answer is included. For example, you may configure two correct answers in the set of 10. One of the two correct answers is included in each set a student views.
+La série de réponses doit comporter au moins une réponse correcte. Elle peut inclure plus d'une réponse correcte. Dans chaque série de réponses possibles présentées à l'étudiant, une réponse correcte est incluse. Par exemple, vous pouvez configurer deux réponses correctes dans la série de 10 réponses. L'une des deux réponses correctes est incluse dans la série de réponses que l'étudiant visualisera.
 
-Use the Advanced Editor to Configure Answer Pools
+Utiliser l'Éditeur avancé pour configurer des séries de réponses
 **************************************************
 
-You configure the problem to provide answer pools through XML in :ref:`Advanced Editor`.
+Vous pouvez configurer l'exercice afin de proposer des séries de réponses au format XML dans l':ref:`Éditeur avancé`.
 
-Follow these XML guidelines:
+Suivez les instructions XML ci-après :
 
-* In the ``<choicegroup>`` element, add the ``answer-pool`` attribute, with the numerical value indicating the number of possible answers in the set. For example, ``<choicegroup answer-pool="4">``.
+* Dans l'élément ``<choicegroup>``, ajoutez l'attribut ``answer-pool`` ; le chiffre utilisé indique le nombre de réponses possibles dans la série. Par exemple, ``<choicegroup answer-pool="4">``.
 
-* For each correct answer, to the ``<choice>`` element, add an ``explanation-id`` attribute and value that maps to a solution. For example, ``<choice correct="true" explanation-id="iPod">The iPod</choice>``.
+* Pour chaque réponse correcte, ajoutez une valeur et un attribut ``explanation-id`` à l'élément ``<choice>`` qui soient mappés à une solution. Par exemple, ``<choice correct="true" explanation-id="iPod">l'iPod</choice>``.
 
-* For each ``<solution>`` element, add an ``explanation-id`` attribute and value that maps back to a correct answer. For example, ``<solution explanation-id="iPod">``.
+* Pour chaque élément ``<solution>``, ajoutez une valeur et un attribut ``explanation-id`` qui soient mappés à une réponse correcte. Par exemple, ``<solution explanation-id="iPod">``.
 
-.. note:: If the choices include only one correct answer, you do not have to use the ``explanation-id`` in either the ``choice`` or ``<solution>`` element. You do still use the ``<solutionset>`` element to wrap the ``<solution>`` element.
+.. note:: Si les réponses possibles n'incluent qu'une seule réponse correcte, vous n'avez pas à utiliser l'attribut ``explanation-id`` dans l'élément ``choice`` ou ``<solution>``. Vous devez toutefois toujours utiliser l'élément ``<solutionset>`` pour encadrer l'élément ``<solution>``.
 
-For example, for the following multiple choice problem, a student will see four choices, and in each set one of the choices will be one of the two correct ones. The explanation shown for the correct answer is the one with the same explanation ID.
+Par exemple, pour l'exercice à choix multiples présenté ci-après, un étudiant pourra visualiser quatre réponses possibles. Chaque série de réponses inclura l'une des deux réponses correctes. L'explication associée à la réponse correcte présente le même identifiant d'explication.
 
 .. code-block:: xml
 
  <problem>
-   <p>What Apple devices let you carry your digital music library in your pocket?</p>
+   <p>Quels appareils Apple vous permettent d'emporter votre musicothèque numérique dans votre poche ?</p>
    <multiplechoiceresponse>
     <choicegroup type="MultipleChoice" answer-pool="4">
-      <choice correct="false">The iPad</choice>
+      <choice correct="false">L'iPad</choice>
       <choice correct="false">Napster</choice>
-      <choice correct="true" explanation-id="iPod">The iPod</choice>
-      <choice correct="false">The vegetable peeler</choice>
-      <choice correct="false">The iMac</choice>
-      <choice correct="true" explanation-id="iPhone">The iPhone</choice>
+      <choice correct="true" explanation-id="iPod">L'iPod</choice>
+      <choice correct="false">L'éplucheur de légumes</choice>
+      <choice correct="false">L'iMac</choice>
+      <choice correct="true" explanation-id="iPhone">L'iPhone</choice>
     </choicegroup>
    </multiplechoiceresponse>
 
     <solutionset>
         <solution explanation-id="iPod">
         <div class="detailed-solution">
-            <p>Explanation</p>
-            <p>Yes, the iPod is Apple's portable digital music player.</p>
+            <p>Explication</p>
+            <p>Oui, l'iPod est un lecteur de musique numérique portable développé par Apple.</p>
         </div>
         </solution>
         <solution explanation-id="iPhone">
         <div class="detailed-solution">
-            <p>Explanation</p>
-            <p>In addition to being a cell phone, the iPhone can store and play your digital music.</p>
+            <p>Explication</p>
+            <p>L'iPhone est non seulement un téléphone portable, mais il peut également stocker et d'écouter de la musique.</p>
         </div>
         </solution>
     </solutionset>
@@ -353,89 +339,89 @@ For example, for the following multiple choice problem, a student will see four 
 .. _Multiple Choice Problem XML:
 
 ******************************
-Multiple Choice Problem XML 
+Exercice à choix multiples - Format XML 
 ******************************
 
 ================
-Template
+Modèle
 ================
 
 .. code-block:: xml
 
   <problem>
-  <p>Question text</p>
+  <p>Texte de la question</p>
   <multiplechoiceresponse>
     <choicegroup type="MultipleChoice" label="label text">
-      <choice correct="false" name="a">Incorrect choice</choice>
-      <choice correct="true" name="b">Correct choice</choice>
+      <choice correct="false" name="a">Choix incorrect</choice>
+      <choice correct="true" name="b">Choix correct</choice>
     </choicegroup>
   </multiplechoiceresponse>
 
   <solution>
     <div class="detailed-solution">
-    <p>Explanation or solution header</p>
-    <p>Explanation or solution text</p>
+    <p>Titre de la solution ou de l'explication</p>
+    <p>Texte de la solution ou de l'explication</p>
     </div>
   </solution>
   </problem>
 
 ================
-Tags
+Balises
 ================
 
-* ``<multiplechoiceresponse>`` (required): Indicates that the problem is a multiple choice problem.
-* ``<choicegroup>`` (required): Indicates the beginning of the list of options. 
-* ``<choice>`` (required): Lists an answer option.
+* ``<multiplechoiceresponse>`` (obligatoire) : Indique que cet exercice est un exercice à choix multiples.
+* ``<choicegroup>`` (obligatoire) : Désigne le début de la liste des réponses possibles. 
+* ``<choice>`` (obligatoire) : Indique une réponse possible.
 
-**Tag:** ``<multiplechoiceresponse>``
+**Balise :** ``<multiplechoiceresponse>``
 
-Indicates that the problem is a multiple choice problem.
+Indique que cet exercice est un exercice à choix multiples.
 
-  Attributes
+  Attributs
 
-  (none)
+  (aucun)
 
-  Children
+  Enfants
 
   * ``<choicegroup>``
-  * All standard HTML tags (can be used to format text)
+  * Toutes les balises HTML standard (peuvent être utilisées pour formater du texte)
 
-**Tag:** ``<choicegroup>``
+**Balise :** ``<choicegroup>``
 
-Indicates the beginning of the list of options.
+Désigne le début de la liste des réponses possibles.
 
-  Attributes
+  Attributs
 
   .. list-table::
      :widths: 20 80
 
-     * - Attribute
+     * - Attribut
        - Description
-     * - label (required)
-       - Specifies the name of the response field.
-     * - type (required)
-       - Must be set to "MultipleChoice".
+     * - label (obligatoire)
+       - Spécifie le nom du champ de la réponse.
+     * - type (obligatoire)
+       - Doit être défini sur "MultipleChoice".
 
-  Children
+  Enfants
 
   * ``<choice>`` 
 
-**Tag:** ``<choice>``
+**Balise :** ``<choice>``
 
-Lists an answer option. 
+Indique une réponse possible. 
 
-  Attributes
+  Attributs
 
   .. list-table::
      :widths: 20 80
 
-     * - Attribute
+     * - Attribut
        - Description
-     * - correct (at least one required)
-       - Indicates a correct or incorrect answer. When the attribute is set to "true", the choice is a correct answer. When the attribute is set to "false", the choice is an incorrect answer. Only one choice can be a correct answer.
+     * - correct (au moins un requis)
+       - Indique une réponse correcte ou incorrecte. Lorsque l'attribut est défini sur "true", la réponse est correcte. Lorsque l'attribut est défini sur "false", la réponse est incorrecte. Une seule réponse peut être correcte.
      * - name
-       - A unique name that the back end uses to refer to the choice.
+       - Un nom unique que le serveur principal utilise pour faire référence à la réponse possible.
 
-  Children
+  Enfants
   
-  (none)
+  (aucun)

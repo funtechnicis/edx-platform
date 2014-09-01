@@ -1,35 +1,35 @@
 .. _Periodic Table:
 
 #####################
-Periodic Table Tool
+Outil de tableau périodique
 #####################
 
-You can create an interactive periodic table of the elements to help your students learn about various elements' properties. In the table below, detailed information about each element appears as the student moves the mouse over the element.
+Vous pouvez créer un tableau périodique interactif qui répertorie les différents éléments. Vous faciliterez ainsi l'apprentissage de vos étudiants et leur découverte des propriétés de ces éléments. Dans le tableau ci-après, les informations détaillées de chaque élément apparaissent lorsque l'étudiant fait passer la souris au-dessus du nom de l'élément.
 
 .. image:: /Images/Periodic_Table.png
-  :alt: Image of the interactive periodic table
+  :alt: Image d'un tableau périodique interactif
 
 .. _Create the Periodic Table:
 
 ******************************
-Create the Periodic Table Tool
+Créer un outil de tableau périodique
 ******************************
 
-To create a periodic table, you need the following files:
+Pour créer un tableau périodique, vous aurez besoin des fichiers suivants :
 
 * Periodic-Table.js
 * Periodic-Table.css
 * Periodic-Table-Colors.css
 * PeriodicTableHTML.txt
 
-To download all of these files in a .zip archive, click http://files.edx.org/PeriodicTableFiles.zip. 
+Pour télécharger tous ces fichiers dans une archive .zip, cliquez sur http://files.edx.org/PeriodicTableFiles.zip. 
 
-To create the periodic table, you need an HTML component.
+Pour créer un tableau périodique, vous aurez besoin d'un composant HTML.
 
-#. Upload all of the files listed above *except PeriodicTable.txt* to the **Files & Uploads** page in your course.
-#. In the unit where you want to create the problem, click **HTML** under **Add New Component**, and then click **HTML**.
-#. In the component that appears, click **Edit**.
-#. In the component editor, switch to the **HTML** tab.
-#. Open the PeriodicTable.txt file in any text editor.
-#. Copy all of the text in the PeriodicTable.txt file, and paste it into the HTML component editor. (Note that the PeriodicTableHTML.txt file contains over 6000 lines of code. Paste all of this code into the component editor.)
-#. Click **Save**.
+#. Chargez tous les fichiers répertoriés ci-dessus (*excepté le fichier PeriodicTable.txt*) sur la page **Fichiers et uploads** dans votre cours.
+#. Dans l'unité dans laquelle vous souhaitez créer l'exercice, cliquez sur **HTML** sous **Ajouter un nouveau composant**, puis cliquez sur **HTML**.
+#. Dans le composant qui apparaît, cliquez sur **Éditer**.
+#. Dans l'éditeur de composant, basculez sur l'onglet **HTML**.
+#. Ouvrez le fichier PeriodicTable.txt dans un éditeur de texte.
+#. Copiez tout le texte dans le fichier PeriodicTable.txt, puis collez-le dans l'éditeur de composant HTML. (Notez que le fichier PeriodicTableHTML.txt contient plus de 6 000 lignes de code. Collez l'intégralité de ce code dans l'éditeur de composant.)
+#. Cliquez sur **Enregistrer**.

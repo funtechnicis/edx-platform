@@ -2,61 +2,61 @@
 .. _Poll:
 
 ##########
-Poll Tool
+Outil de sondage
 ##########
 
-You can run polls in your course so that your students can share opinions on different questions.
+Vous pouvez réaliser des sondages dans vos cours afin que vos étudiants échangent leurs points de vue sur différentes questions.
 
 .. image:: /Images/PollExample.png
 
-.. note:: Creating a poll requires you to export your course, edit some of your course's XML files in a text editor, and then re-import your course. We recommend that you create a backup copy of your course before you create the poll. We also recommend that you only edit the files that will contain polls in the text editor if you're very familiar with editing XML. 
+.. note:: Pour créer un sondage, vous devez exporter votre cours, modifier certains des fichiers XML de votre cours dans un éditeur de texte, puis ré-importer votre cours. Nous vous recommandons de créer une copie de sauvegarde de votre cours avant de créer le sondage. Pour effectuer des modifications dans l'éditeur de texte sur les fichiers qui contiendront des sondages, il est recommandé d'avoir de très solides connaissances en édition de fichiers XML. 
 
 **************
-Terminology
+Terminologie
 **************
 
-Sections, subsections, units, and components have different names in the **Course Outline** view and in the list of files that you'll see after you export your course and open the .xml files for editing. The following table lists the names of these elements in the **Course Outline** view and in a list of files.
+Les sections, sous-sections, unités et composants ont des noms différents dans la vue **Plan du cours** et dans la liste de fichiers que vous visualisez après avoir exporté votre cours et ouvert les fichiers .xml à éditer. Le tableau suivant répertorie les noms de ces éléments dans la vue **Plan du cours**, ainsi que dans une liste de fichiers.
 
 .. list-table::
    :widths: 15 15
    :header-rows: 0
 
-   * - Course Outline View
-     - File List
+   * - Vue Plan du cours
+     - Liste de fichiers
    * - Section
-     - Chapter
-   * - Subsection
-     - Sequential
-   * - Unit
+     - Chapitre
+   * - Sous-section
+     - Séquentiel
+   * - Unité
      - Vertical
-   * - Component
-     - Discussion, HTML, problem, or video
+   * - Composant
+     - Discussion, HTML, Exercice ou vidéo
 
-For example, when you want to find a specific section in your course, you'll look in the **Chapter** folder when you open the list of files that your course contains. To find a unit, you'll look in the **Vertical** folder.
+Pour exemple, si vous recherchez une section spécifique dans votre cours, vous devrez consulter le dossier **Chapitre** lorsque vous ouvrez la liste des fichiers que votre cours contient. Pour rechercher une unité, ouvrez le dossier **Vertical**.
 
 .. _Create a Poll:
 
 **************
-Create a Poll
+Créer un sondage
 **************
 
-#. In the unit where you want to create the poll, create components that contain all the content that you want *except* for the poll. Make a note of the 32-digit unit ID that appears in the **Unit Identifier** field under **Unit Location**.
+#. Dans l'unité dans laquelle vous souhaitez créer le sondage, créez des composants qui contiennent l'intégralité du contenu souhaité *sauf* le sondage. Notez l'identifiant de l'unité de 32 caractères qui apparaît dans le champ **Identifiant d'unité** sous **Position de l'unité**.
 
-#. Export your course. For information about how to do this, see :ref:`Exporting and Importing a Course`. Save the .tar.gz file that contains your course in a memorable location so that you can find it easily.
+#. Exportez votre cours. Pour plus d'informations sur l'exportation d'un cours, voir :ref:`Exportation et importation d'un cours`. Enregistrez le fichier .tar.gz qui contient votre cours dans un emplacement facile à retenir. Vous pourrez ainsi le retrouver sans difficulté.
 
-#. Locate the .tar.gz file that contains your course, and then unpack the .tar.gz file so that you can see its contents in a list of folders and files.
+#. Localisez le fichier .tar.gz qui contient votre cours, puis décompressez le fichier .tar.gz afin de pouvoir accéder à son contenu dans une liste de dossiers et de fichiers.
 
-   - To do this on a Windows computer, you'll need to download a third-party program. For more information, see `How to Unpack a tar File in Windows <http://www.haskell.org/haskellwiki/How_to_unpack_a_tar_file_in_Windows>`_, `How to Extract a Gz File <http://www.wikihow.com/Extract-a-Gz-File>`_, `The gzip Home Page <http://www.gzip.org/>`_, or the `Windows <http://www.ofzenandcomputing.com/how-to-open-tar-gz-files/#windows>`_ section of the `How to Open .tar.gz Files <http://www.ofzenandcomputing.com/how-to-open-tar-gz-files/>`_ page.
+   - Pour effectuer cette opération sur un ordinateur Windows, vous devrez télécharger un programme tiers. Pour plus d'informations, reportez-vous aux pages Web `How to Unpack a tar File in Windows <http://www.haskell.org/haskellwiki/How_to_unpack_a_tar_file_in_Windows>`_ (Comment décompresser un fichier tar dans Windows), `How to Extract a Gz File <http://www.wikihow.com/Extract-a-Gz-File>`_ (Comment extraire un fichier Gz), `The gzip Home Page <http://www.gzip.org/>`_ (Page d'accueil gzip), ou à la section `Windows <http://www.ofzenandcomputing.com/how-to-open-tar-gz-files/#windows>`_ de la page `How to Open .tar.gz Files <http://www.ofzenandcomputing.com/how-to-open-tar-gz-files/>`_ (Comment ouvrir des fichiers .tar.gz).
 
-   - For information about how to do this on a Mac, see the `Mac OS X <http://www.ofzenandcomputing.com/how-to-open-tar-gz-files/#mac-os-x>`_ section of the `How to Open .tar.gz Files <http://www.ofzenandcomputing.com/how-to-open-tar-gz-files/>`_ page.
+   - Pour plus d'informations sur la procédure à suivre pour un Mac, reportez-vous à la section `Mac OS X <http://www.ofzenandcomputing.com/how-to-open-tar-gz-files/#mac-os-x>`_ de la page `How to Open .tar.gz Files <http://www.ofzenandcomputing.com/how-to-open-tar-gz-files/>`_ (Comment ouvrir des fichiers .tar.gz).
 
-#. In the list of folders and files, open the **Vertical** folder. 
+#. Dans la liste des dossiers et des fichiers, ouvrez le dossier **Vertical**. 
 
-   .. note:: If your unit is not published, open the **Drafts** folder, and then open the **Vertical** folder in the **Drafts** folder.
+   .. note:: Si votre unité n'est pas publiée, ouvrez le dossier **Brouillons**, puis le dossier **Vertical** dans le dossier **Brouillons**.
 
-#. In the **Vertical** folder, locate the .xml file that has the same name as the unit ID that you noted in step 1, and then open the file in a text editor such as Sublime 2. For example, if the unit ID is e461de7fe2b84ebeabe1a97683360d31, you'll open the e461de7fe2b84ebeabe1a97683360d31.xml file.
+#. Dans le dossier **Vertical**, localisez le fichier .xml portant le même nom que l'identifiant de l'unité, noté à l'étape 1, puis ouvrez le fichier dans un éditeur de texte comme Sublime Text 2. Par exemple, si l'identifiant de l'unité est e461de7fe2b84ebeabe1a97683360d31, vous devrez ouvrir le fichier e461de7fe2b84ebeabe1a97683360d31.xml.
 
-   The file contains a list of all the components in the unit, together with the URL names of the components. For example, the following file contains an HTML component followed by a Discussion component.
+   Le fichier contient la liste de tous les composants de l'unité, ainsi que les noms d'URL des composants. Par exemple, le fichier suivant contient un composant HTML, suivi d'un composant Discussion.
 
    .. code-block:: xml
      
@@ -65,109 +65,107 @@ Create a Poll
         <discussion url_name="8320c3d511484f3b96bdedfd4a44ac8b"/>
        </vertical>
 
-#. Add the following poll code in the location where you want the poll. Change the text of the prompt to the text that you want.
+#. Placez le code de sondage ci-après à l'emplacement où vous souhaitez enregistrer le sondage. Remplacez le texte de l'invite par le texte que vous souhaitez utiliser.
 
    .. code-block:: xml
       
     <poll_question display_name="Poll Question">
-      <p>Text of the prompt</p>
-      <answer id="yes">Yes</answer>
-      <answer id="no">No</answer>
+      <p>Texte de l'invite</p>
+      <answer id="yes">Oui</answer>
+      <answer id="no">Non</answer>
     </poll_question>
 
-   In the example above, if you wanted your poll to appear between the HTML component and the Discussion component in the unit, your code would resemble the following.
+   Dans l'exemple ci-dessus, si vous souhaitez que votre sondage apparaisse entre le composant HTML et le composant Discussion dans l'unité, votre code doit ressembler au code présenté ci-après.
 
    .. code-block:: xml
 
      <vertical display_name="Test Unit">
       <html url_name="b59c54e2f6fc4cf69ba3a43c49097d0b"/>
       <poll_question display_name="Poll Question">
-        <p>Text of the prompt</p>
-        <answer id="yes">Yes</answer>
-        <answer id="no">No</answer>
+        <p>Texte de l'invite</p>
+        <answer id="yes">Oui</answer>
+        <answer id="no">Non</answer>
       </poll_question>
       <discussion url_name="8320c3d511484f3b96bdedfd4a44ac8b"/>
      </vertical>
 
-#. After you add the poll code, save and close the .xml file.
+#. Après avoir ajouté le code du sondage, enregistrez et fermez le fichier .xml.
 
-#. Re-package your course as a .tar.gz file.
+#. Recompressez votre cours en tant que fichier .tar.gz.
 
-   * For information about how to do this on a Mac, see `How to Create a Tar GZip File from the Command Line <http://osxdaily.com/2012/04/05/create-tar-gzip/>`_.
+   * Pour plus d'informations sur la procédure à suivre sur un Mac, reportez-vous à la page Web `How to Create a Tar GZip File from the Command Line (Comment créer un fichier Tar GZip à partir de la ligne de commande). <http://osxdaily.com/2012/04/05/create-tar-gzip/>`_.
 
-   * For information about how to do this on a Windows computer, see `How to Make a .tar.gz on Windows <http://stackoverflow.com/questions/12774707/how-to-make-a-tar-gz-on-windows>`_.
+   * Pour plus d'informations sur la procédure à suivre pour un ordinateur Windows, reportez-vous à la page Web `How to Make a .tar.gz on Windows (Comment créer un fichier Tar GZip sur Windows). <http://stackoverflow.com/questions/12774707/how-to-make-a-tar-gz-on-windows>`_.
 
-#. In Studio, re-import your course. You can now review the poll question and answers that you added in Studio.
+#. Dans Studio, ré-importez votre cours. Vous pouvez revoir la question du sondage et les réponses que vous avez ajoutées dans Studio.
 
 .. note::
 
-  * Although polls render correctly in Studio, you cannot edit them in Studio. You will need to follow the export/import process outlined above to make any edits to your polls.
+  * Bien que les sondages s'affichent correctement dans Studio, vous ne pouvez pas les éditer dans Studio. Pour modifier vos sondages, vous devrez suivre les instructions relatives à l'exportation/l'importation présentées ci-dessus.
   
-  * A .csv file that contains student responses to the problem is not currently available for polls. However, you can obtain the aggregate data directly in the problem.  
+  * Un fichier .csv qui contient les réponses saisies par les étudiants pour cet exercice n'est pas disponible actuellement pour les sondages. Toutefois, vous pouvez obtenir les données agrégées directement dans l'exercice.  
 
 *********************
-Format description
+Description de format
 *********************
 
-The main tag of Poll module input is:
+La principale balise de l'entrée du module de sondage est :
 
 .. code-block:: xml
 
     <poll_question> ... </poll_question>
 
-``poll_question`` can include any number of the following tags:
-any xml and ``answer`` tag. All inner xml, except for ``answer`` tags, we call "question".
+``poll_question`` peut inclure un nombre illimité des balises ci-après :
+tout code xml et toute balise ``answer``. Nous appelons "question" tout code XML interne, à l'exception des balises ``answer``.
 
 ==================
-poll_question tag
+Balise poll_question
 ==================
 
-Xmodule for creating poll functionality - voting system. The following attributes can
-be specified for this tag::
+Xmodule pour la création de la fonctionnalité de sondage - le système de vote. Les attributs suivants peuvent être spécifiés pour cette balise :
 
-    name - Name of xmodule.
-    [display_name| AUTOGENERATE] - Display name of xmodule. When this attribute is not defined - display name autogenerate with some hash.
-    [reset | False] - Can reset/revote many time (value = True/False)
+    name - Nom du xmodule.
+    [display_name| AUTOGENERATE] - Nom d'affichage du xmodule. Lorsque cet attribut n'est pas défini - Le nom d'affichage se génère automatiquement avec hachage.
+    [reset | False] - Nombreuses réinitialisations/votes possibles (valeur = True/False)
 
 ============
-answer tag
+Balise answer
 ============
 
-Define one of the possible answer for poll module. The following attributes can
-be specified for this tag::
+Définit l'une des réponses possibles pour le module de sondage. Les attributs suivants peuvent être spécifiés pour cette balise :
 
-    id - unique identifier (using to identify the different answers)
+    id - Identifiant unique (utilisé pour identifier les différentes réponses)
 
-Inner text - Display text for answer choice.
+Inner text - Texte d'affichage pour une réponse possible.
 
 ***********
-Example
+Exemple
 ***********
 
 ==================
-Example of poll
+Exemple de sondage
 ==================
 
 .. code-block:: xml
 
     <poll_question name="second_question" display_name="Second question">
-        <h3>Age</h3>
-        <p>How old are you?</p>
+        <h3>Âge</h3>
+        <p>Quel âge avez-vous ?</p>
         <answer id="less18">&lt; 18</answer>
-        <answer id="10_25">from 10 to 25</answer>
+        <answer id="10_25">de 10 à 25</answer>
         <answer id="more25">&gt; 25</answer>
     </poll_question>
 
 ================================================
-Example of poll with unable reset functionality
+Exemple de sondage avec fonction de réinitialisation désactivée
 ================================================
 
 .. code-block:: xml
 
-    <poll_question name="first_question_with_reset" display_name="First question with reset"
+    <poll_question name="first_question_with_reset" display_name="Première question avec réinitialisation"
         reset="True">
-        <h3>Your gender</h3>
-        <p>You are man or woman?</p>
-        <answer id="man">Man</answer>
-        <answer id="woman">Woman</answer>
+        <h3>Votre sexe</h3>
+        <p>Êtes-vous de sexe masculin ou féminin ?</p>
+        <answer id="man">Masculin</answer>
+        <answer id="woman">Féminin</answer>
     </poll_question>

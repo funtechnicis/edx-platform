@@ -1,45 +1,45 @@
 .. _Multiple Choice and Numerical Input:
 
 ############################################
-Multiple Choice and Numerical Input Problem
+Exercice avec choix multiples et saisie de chiffres
 ############################################
 
-You can create a problem that combines a multiple choice and numerical input problems. Students not only select a response from options that you provide, but also provide more specific information, if necessary.
+Vous pouvez créer un exercice qui associe choix multiples et saisie de chiffres. Les étudiants sont amenés à sélectionner une réponse parmi les différentes possibilités proposées, mais doivent également saisir des informations plus spécifiques, le cas échéant.
 
 .. image:: /Images/MultipleChoice_NumericalInput.png
-  :alt: Image of a multiple choice and numerical input problem
+  :alt: Image d'un exercice avec choix multiples et saisie de chiffres
 
-.. note:: Currently, students can only enter numerals in the text field. Students cannot enter words or mathematical expressions.
+.. note:: Actuellement, les étudiants ne peuvent saisir que des chiffres dans la zone de texte. Dans cette zone, les étudiants ne peuvent saisir ni texte ni expressions mathématiques.
 
 .. _Create an MCNI Problem:
 
 ********************************************************
-Create a Multiple Choice and Numerical Input Problem
+Créer un exercice avec choix multiples et saisie de chiffres
 ********************************************************
 
-To create a multiple choice and numerical input problem:
+Pour créer un exercice avec choix multiples et saisie de chiffres :
 
-#. In the unit where you want to create the problem, click **Problem** under **Add New Component**, and then click the **Advanced** tab.
-#. Click **Blank Advanced Problem**.
-#. In the component that appears, click **Edit**.
-#. In the component editor, paste the code from below.
-#. Replace the example problem and response options with your own text.
-#. Click **Save**.
+#. Dans l'unité dans laquelle vous souhaitez créer l'exercice, cliquez sur **Exercice** sous **Ajouter un nouveau composant**, puis cliquez sur l'onglet **Avancé**.
+#. Cliquez sur **Blank Advanced Problem** (Exercice avancé vide).
+#. Dans le composant qui apparaît, cliquez sur **Éditer**.
+#. Dans l'éditeur de composant, collez le code présenté ci-après.
+#. Remplacez le texte de l'exercice présenté en exemple et les réponses possibles par votre propre texte.
+#. Cliquez sur **Enregistrer**.
 
 .. _MCNI Problem Code:
 
 ************************************************
-Multiple Choice and Numerical Input Problem Code
+Code de l'exercice avec choix multiples et saisie de chiffres
 ************************************************
 
 .. code-block:: xml
 
   <problem>
-  The numerical value of pi, rounded to two decimal points, is 3.24.
+  La valeur numérique de Pi, arrondie à deux décimales, est égale à 3,24.
   <choicetextresponse>
   <radiotextgroup>
-  <choice correct="false">True.</choice>
-  <choice correct="true">False. The correct value is <numtolerance_input answer="3.14"/>.</choice>
+  <choice correct="false">Vrai.</choice>
+  <choice correct="true">Faux. La valeur correcte est <numtolerance_input answer="3.14"/>.</choice>
   </radiotextgroup>
   </choicetextresponse>
   </problem>
