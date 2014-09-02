@@ -1,17 +1,12 @@
 .. _Enrollment:
 
 ##########################
-Enrollment
+Inscriptions
 ##########################
 
-Course authors and instructors can enroll students in a course, see how many
-people are enrolled, and, when necessary, unenroll students.
+Les auteurs du cours et les enseignants peuvent inscrire des étudiants à un cours, vérifier le nombre d'inscrits et, si nécessaire, désinscrire des étudiants.
 
-Students can enroll themselves in a course during its defined enrollment
-period. For a ``www.edx.org`` course, enrollment is publicly available to
-anyone who registers an edX account. For other courses, such as those on
-``edge.edx.org``, enrollment is limited to students who know the course URL
-and students you explicitly enroll.
+Les étudiants peuvent également s'inscrire par eux-mêmes à un cours pendant la période d'inscription définie. Les inscriptions aux cours ``www.edx.org`` sont ouvertes à toute personne ouvrant un compte edX. Pour d'autres cours, comme ceux présentés sur le site ``edge.edx.org``, les inscriptions sont limitées aux étudiants qui connaissent l'URL du cours et à ceux que vous avez inscrits.
 
 * :ref:`registration_enrollment`
 
@@ -24,147 +19,103 @@ and students you explicitly enroll.
 .. _registration_enrollment:
 
 *********************************
-Registration and Enrollment
+Inscriptions
 *********************************
 
-Before a student can enroll in a course, he or she must:
+Avant de pouvoir s'inscrire à un cours, un étudiant doit effectuer les opérations suivantes :
 
-#. Register a user account, which includes supplying a valid email address, on
-   ``www.edx.org``, ``edge.edx.org``, or your implementation of the edX
-   platform. Each platform requires a separate user account.
+#. Créer un compte utilisateur sur ``www.edx.org`` ou ``edge.edx.org``, ce qui implique de fournir une adresse e-mail valide ou de mettre en œuvre la plate-forme edX. Chaque plate-forme requiert un compte utilisateur distinct.
 
-#. Activate the registered account by following the emailed instructions.
+#. Activer le compte créé en suivant les instructions envoyées par e-mail.
 
-As long as the course **Enrollment End Date** has not passed, students who
-have registered and activated user accounts can enroll themselves in
-``www.edx.org`` courses, or can enroll in other courses if they know the URL.
-For a more detailed description of this process from a student's point of
-view, see :ref:`Sample Student Login Guide`.
+Tant que la **date de fin d'inscription** du cours n'est pas passée, les étudiants qui ont créé leur compte utilisateur sur le site et l'ont activé peuvent s'inscrire eux-mêmes aux cours ``www.edx.org`` ou à d'autres cours s'ils connaissent les URL correspondantes.
+Pour une description plus détaillée du processus d'inscription du point de vue de l'étudiant, voir :ref:`Sample Student Login Guide` (page en anglais).
 
-Course authors and instructors, however, can enroll students in a course either
-before or after the students register their user accounts.
+Les auteurs du cours et les enseignants peuvent toutefois inscrire les étudiants à un cours avant ou après la création par les étudiants de leurs comptes utilisateur.
 
-To work on a course, all course staff members must also have registered and
-activated user accounts and be enrolled in the course.
+Pour intervenir sur un cours, tous les membres de l'équipe pédagogique doivent également avoir créé et activé un compte utilisateur, et être inscrits au cours.
 
 .. _enroll_student:
 
 *********************************
-Enroll Students in a Course
+Inscrire des étudiants à un cours
 *********************************
 
-You enroll students, and other course staff members, in your course by
-supplying their email addresses. After the **Enrollment End Date** for a
-course students can no longer enroll themselves; however, you can still
-explicitly enroll students.
+Pour inscrire des étudiants à votre cours, ainsi que d'autres membres de l'équipe pédagogique, vous devez utiliser leur adresse e-mail. Une fois la **date de fin d'inscription** d'un cours passée, les étudiants ne peuvent plus s'inscrire ; toutefois, vous pouvez toujours inscrire les étudiants.
 
-When you enroll people in a course you have these options:
+Lorsque vous inscrivez des personnes à un cours, vous pouvez procéder comme suit :
 
-* **Auto Enroll**. When you choose this option, the people who you enroll do
-  not need to complete an explicit course enrollment step. Of the list of
-  email addresses that you supply, those that correspond to a registered user
-  account are immediately enrolled in the course, and your course displays on the dashboards on log in. Email addresses on the list
-  that do not match a registered user account are enrolled as soon as that
-  account is registered and activated.
+* **Inscription automatique**. Lorsque vous sélectionnez cette option, les personnes que vous inscrivez n'ont pas besoin de passer par le processus d'inscription classique. Pour procéder à l'inscription, vous fournissez une liste d'adresses e-mail. Les utilisateurs des adresses qui correspondent à un compte utilisateur déjà créé sont sélectionnés immédiatement et inscrits au cours. Lors de la connexion, votre cours s'affiche alors sur les tableaux de bord. Les utilisateurs des adresses e-mail de la liste qui ne correspondent à aucun compte utilisateur existant sont inscrits dès que leur compte est créé et activé.
 
-  If you do not select **Auto Enroll**, the people who you enroll must also actively locate your course and enroll themselves in it. These students see the course on their dashboards after they have done so.
+  Si vous ne sélectionnez pas l'option **Inscription automatique**, les personnes que vous inscrivez doivent alors rechercher activement votre cours et s'y inscrire par elles-mêmes. Après s'être inscrits, ces étudiants voient apparaître le cours sur leurs tableaux de bord respectifs.
 
-* **Notify students by email**. When you choose this option, an email message is
-  automatically sent to each of the email addresses that you supply. The message
-  includes the name of the course and, for students who are not already
-  registered, a reminder to use that same email address to register.
+* **Notifier les étudiants par email**. Lorsque vous sélectionnez cette option, un e-mail est envoyé automatiquement à chacune des adresses e-mail que vous fournissez. Le message inclut le titre du cours et, pour les étudiants qui ne sont pas encore inscrits, un rappel soulignant que la même adresse e-mail doit être utilisée pour l'inscription.
 
-  An example of the email message that a student received when this option was
-  selected during enrollment follows. In this example, the student already had a
-  registered and activated edx.org account, and both **Auto Enroll** and
-  **Notify students by email** were selected.
+  Vous trouverez ci-après un exemple d'e-mail qu'un étudiant a reçu lorsque cette option a été sélectionnée pour son inscription. Dans cet exemple, l'étudiant a déjà créé et activé un compte edx.org. Les deux options **Inscription automatique** et **Notifier les étudiants par email** ont été sélectionnées.
 
   .. image:: ../Images/Course_Enrollment_Email.png
-        :alt: Email message inviting a student to enroll in an edx.org course
+        :alt: E-mail invitant un étudiant à s'inscrire à un cours edx.org
 
-To enroll students or staff members:
+Pour inscrire des étudiants ou des membres de l'équipe pédagogique :
 
-#. View the live version of your course.
+#. Affichez la version réelle de votre cours.
 
-#. Click **Instructor**, then click **Membership**. 
+#. Cliquez sur **Instructor** (Enseignant), puis cliquez sur **Inscription**. 
 
-#. In the **Batch Enrollment** section of the page, enter the username or email
-   address of the student, or enter multiple names or addresses separated by
-   commas or new lines.
+#. Dans la section **Inscription automatique** de la page, saisissez le nom d'utilisateur ou l'adresse e-mail de l'étudiant. Vous pouvez également saisir plusieurs noms ou adresses séparés par des virgules ou des retours à la ligne.
 
-  You can copy and paste data from a CSV file of email addresses. However,
-  note that this feature is better suited to courses with smaller enrollments,
-  rather than courses with massive enrollments.
+  Vous pouvez copier et coller les données d'un fichier CSV d'adresses e-mail. Notez toutefois que cette fonction est plus adaptée aux cours présentant un nombre d'inscrits raisonnable plutôt qu'aux cours comptant de très nombreux étudiants.
 
-4. To streamline the course enrollment process, leave **Auto Enroll** selected.
+4. Afin de simplifier le processus d'inscription au cours, laissez l'option **Inscription automatique** sélectionnée.
 
-#. To send students an email message, leave **Notify students by email**
-   selected.
+#. Pour envoyer un e-mail à des étudiants, laissez l'option **Notifier les étudiants par email** sélectionnée.
 
-#. Click **Enroll**.
+#. Cliquez sur **S'inscrire**.
 
 .. _view_enrollment_count:
 
 ***************************
-View an Enrollment Count
+Afficher le nombre d'inscrits
 ***************************
 
-After you create a course, you can access the total number of people who are
-enrolled in it. When you view an enrollment count, note that:
+Après avoir créé un cours, vous pouvez visualiser le nombre total de personnes inscrites. Lorsque vous affichez ce nombre, notez les points suivants :
 
-* In addition to students, the enrollment count includes the course author,
-  course team members, instructors, and course staff. (To work with a
-  course in Studio or the LMS, you must be enrolled in that course.)
+* Outre les étudiants, le nombre d'inscrits inclut également l'auteur du cours, les membres de l'équipe pédagogique, les enseignants et d'autres intervenants associés au cours. (Pour utiliser un cours dans Studio ou le LMS, vous devez être inscrit dans ce cours.)
 
-* Students can unenroll from courses, and course authors and instructors can
-  unenroll students when necessary.
+* Les étudiants peuvent se désinscrire des cours. Les auteurs des cours ainsi que les enseignants peuvent également désinscrire des étudiants, le cas échéant.
 
-  **Note**: The enrollment count displays the number of currently enrolled
-  students and course team staff. It is not a historical count of everyone who
-  has ever enrolled in the course.
+  **Remarque** : Le nombre d'inscrits correspond au nombre d'étudiants et de membres de l'équipe pédagogique actuellement inscrits. Il ne s'agit pas d'un dénombrement historique de toutes les personnes qui ont été inscrites dans le cours.
 
-To view the enrollment count for a course:
+Pour afficher le nombre d'inscrits à un cours :
 
-#. View the live version of your course.
+#. Affichez la version réelle de votre cours.
 
-#. Click **Instructor**, then click **Course Info** if necessary. 
+#. Cliquez sur **Instructor** (Enseignant), puis sur **Infos** le cas échéant. 
 
-  The **Enrollment Information** section of the page that opens shows the total
-  number of people who are currently enrolled.
+  La section **Information d'inscription** de la page qui s'ouvre présente le nombre total de personnes actuellement inscrites.
 
-You can also view or download a list of the people who are enrolled in the
-course. See :ref:`Student Data`.
+Vous pouvez également afficher ou télécharger la liste des personnes inscrites au cours. Voir :ref:`Données des étudiants`.
 
 .. _unenroll_student:
 
 *********************************
-Unenroll Students from a Course
+Désinscrire des étudiants d'un cours
 *********************************
 
-You can remove students from a course by unenrolling them. To prevent students
-from re-enrolling, course enrollment must also be closed. You use Studio to
-set the **Enrollment End Date** for the course to a date in the past. See
-:ref:`Set Important Dates for Your Course`.
+Vous pouvez retirer les étudiants d'un cours. Il vous suffit de les désinscrire. Pour empêcher les étudiants de se réinscrire, les inscriptions au cours doivent également être closes. Utilisez Studio afin de définir la **date de fin d'inscription** d'un cours sur une date passée. Voir :ref:`Définir les dates importantes de votre cours`.
 
-**Note**: Unenrollment does not delete data for a student. An unenrolled
-student's state remains in the database and is reinstated if the student does
-re-enroll.
+**Remarque** : La désinscription ne supprime pas les données d'un étudiant. L'état d'un étudiant désinscrit demeure dans la base de données et est réactivé si l'étudiant se réinscrit.
 
-To unenroll students, you supply the email addresses of enrolled students. 
+Pour désinscrire des étudiants, vous devez fournir les adresses e-mail des étudiants inscrits. 
 
-#. View the live version of your course.
+#. Affichez la version réelle de votre cours.
 
-#. Click **Membership**. 
+#. Cliquez sur **Inscription**. 
 
-#. In the **Batch Enrollment** section of the page, enter a username or an email
-   address, or multiple names or addresses separated by commas or new lines.
+#. Dans la section **Inscription automatique** de la page, saisissez un nom d'utilisateur ou une adresse e-mail. Vous pouvez également saisir plusieurs noms ou adresses séparés par des virgules ou des retours à la ligne.
 
-#. To send students an email message, leave **Notify students by email**
-   selected.
+#. Pour envoyer un e-mail à des étudiants, laissez l'option **Notifier les étudiants par email** sélectionnée.
 
-.. note:: The **Auto Enroll** option has no effect when you click **Unenroll**.
+.. note:: L'option **Inscription automatique** est inactive lorsque vous cliquez sur **Se désinscrire**.
 
-5. Click **Unenroll**. The course is no longer listed on the students'
-   dashboards, and the students can no longer contribute to discussions or the
-   wiki or access the courseware.
-
+5. Cliquez sur **Se désinscrire**. Le cours n'est alors plus répertorié dans les tableaux de bord des étudiants. Les étudiants ne peuvent plus participer aux discussions, contribuer aux pages wiki ou accéder au contenu du cours.

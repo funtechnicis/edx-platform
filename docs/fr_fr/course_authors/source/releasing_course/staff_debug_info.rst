@@ -1,34 +1,22 @@
 .. _Staff Debug Info:
 
 ############################
-Staff Debug Info
+Info de débogage pour l'équipe pédagogique
 ############################
 
-The edX system keeps track of students' progress through a course -- recording
-when the student watches videos, responds to problems, and so on. If you are
-a staff member on a course, some of that data is visible to you for debugging purposes. Under every problem is a **Staff Debug Info** button: clicking this button opens a popup with metadata about the problem.
+Le système edX permet d'effectuer un suivi de la progression des étudiants inscrits à un cours. Il enregistre ainsi certaines informations : visualisation de vidéos par l'étudiant, soumission de réponses aux exercices, etc. Si vous appartenez à l'équipe pédagogique d'un cours, vous pouvez accéder à certaines de ces données à des fins de débogage. Sous chaque exercice apparaît un bouton **Info de débogage pour l'équipe pédagogique** : si vous cliquez sur ce bouton, vous ouvrez une fenêtre contextuelle contenant des métadonnées relatives à l'exercice.
 
-None of this information should be necessary for day-to-day usage of edX,
-but for the sake of clarity, some of these fields are documented here:
+A priori, aucune de ces informations ne devrait être nécessaire à une utilisation quotidienne de la plate-forme edX. Toutefois, à titre informatif, certains champs sont présentés ci-après :
 
 ``is_released``
-  Indicates whether the problem is visible to students.
+  Indique si l'exercice peut être affiché par les étudiants.
 ``location``
-  An internal unique identifier that corresponds to this problem. If you
-  are having trouble with a problem, and need assistance from the edX support
-  team, including this value will make it easier for them to track down the
-  issue you're having with the problem.
+  Identifiant interne unique qui correspond à cet exercice. Si vous rencontrez des difficultés avec un exercice et devez solliciter l'intervention de l'équipe de support edX, la mention de cet identifiant facilitera la tâche de ces techniciens. Ils pourront en effet identifier plus facilement le problème associé à l'exercice.
 ``markdown``
-  The text of the problem, in Markdown format. This is often written using
-  Studio.
+  Texte de l'exercice en format Markdown. Le code est souvent rédigé via Studio.
 ``display_name``
-  The name of the problem, as shown to the student.
+  Nom de l'exercice, tel qu'il apparaît à l'étudiant.
 ``max_attempts``
-  The maximum number of times that a student can attempt to answer the problem
-  correctly.
+  Nombre maximum d'essais (tentatives de réponses à un exercice donné) autorisés pour un étudiant.
 ``attempts``
-  The number of times that the currently logged in student has attempted to
-  answer the problem correctly, so far. Every time this student attempts to answer
-  this question, this number will go up, until it reaches ``max_attempts``.
-
-
+  Nombre d'essais effectués jusqu'à présent par l'étudiant actuellement connecté. Chaque fois que cet étudiant tente de répondre à cette question, ce nombre augment jusqu'à atteindre la valeur ``max_attempts``.

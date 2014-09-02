@@ -1,14 +1,10 @@
 .. _Grades:
 
 ############################
-Student Grades and Grading
+Évaluation et notes des étudiants
 ############################
 
-You can review information about how grading is configured for your course, and
-access student grades, at any time after you create the course. You can also
-make adjustments to student grading for a problem, for a single student or all
-students. For information about the grading data that you can access and the
-changes you can make, see the following topics:
+Après la création du cours, vous pouvez revoir les informations sur la configuration de la notation de votre cours et accéder aux notes des étudiants à tout moment. Vous pouvez également ajuster les notes des étudiants obtenues lors d'un exercice donné, pour un seul étudiant ou pour tous les étudiants. Pour plus d'informations sur les données de notation auxquelles vous pouvez accéder et sur les modifications que vous pouvez effectuer, reportez-vous aux rubriques suivantes :
 
 * :ref:`Review_grades`
 
@@ -20,480 +16,392 @@ changes you can make, see the following topics:
 
 * :ref:`Adjust_grades`
 
-To review student answers to the problems in your course, you can check the answer submitted by a specified student for a selected problem, download course-wide answer data, or review a graph of all answer data for a selected problem. See :ref:`Review_Answers`.
+Vous pouvez consulter les réponses des étudiants aux exercices de votre cours. Vous pouvez notamment vérifier la réponse qu'un étudiant donné a fournie à exercice sélectionné, télécharger toutes les données relatives aux réponses des exercices du cours, ou consulter un graphique élaboré à partir de l'ensemble des données de réponses d'un exercice sélectionné. Voir :ref:`Review_Answers`.
 
-.. all answer-related info moved into new course_answers.rst
 
-For information about how you establish a grading policy and work with the Problem components in your course, see :ref:`Establish a Grading Policy` or :ref:`Working with Problem Components`.
 
-.. important:: If you make changes to your grading policy after a course starts, students can see the effect of your changes on their **Progress** pages. Be sure to announce any changes on your **Course Info** page.
+Pour plus d'informations sur l'élaboration d'une politique de notation et l'utilisation de composants Exercice dans votre cours, voir :ref:`Définition d'une politique de notation` ou :ref:`Utilisation de composants Exercice`.
+
+Important : Si vous apportez des modifications à votre politique de notation après le début d'un cours, les étudiants peuvent voir les effets de vos modifications dans les pages **Progression**. Veillez à annoncer toutes les modifications effectuées sur votre page **Infos**.
 
 .. _Review_grades:
 
 ********************************************************
-Review How Grading Is Configured for Your Course
+Revoir la configuration de la notation de votre cours
 ********************************************************
 
-You can review the assignment types that are graded and their respective weights on the Instructor Dashboard.
+Vous pouvez revoir les types de travaux que vous avez notés et leurs coefficients respectifs dans le tableau de bord de l'enseignant.
 
-You establish a grading policy for your course when you create it in Studio. While the course is running, you can view an XML representation of the assignment types in your course and how they are weighted to determine students' grades.
+Lorsque vous créez votre cours dans Studio, vous établissez sa politique de notation. Lorsque le cours a commencé, vous pouvez visualiser une représentation XML des types de travaux proposés par votre cours. Les coefficients associés, utilisés pour noter les étudiants, sont également présentés.
 
-..  DOC-290: research this statement before including anything like it: Below the list of graded assignment types and their weights, each *public* subsection and unit that contains an assignment is listed.
+..   Sous la liste des types de travaux notés et leurs coefficients, toutes les unités et sous-sections de type *Public* contenant un travail sont répertoriées.
 
-#. View the live version of your course.
+#. Affichez la version réelle de votre cours.
 
-#. Click **Instructor**, then click **Data Download** > **Grading Configuration**.
+#. Cliquez sur **Instructor** (Enseignant), puis sur **Téléchargement des données** > **Configuration de la notation**.
 
-   A list of the assignment types in your course displays. In this example, Homework is weighted as 0.3 (30%) of the grade. 
+   La liste des types de travaux proposés dans votre cours est affichée. Dans cet exemple, le type Devoir présente un coefficient de 0,3, soit 30 % de la note. 
 
    .. image:: ../Images/Grading_Configuration.png
-     :alt: XML of course assignment types and weights for grading
+     :alt: Représentation XML des types de travaux proposés dans votre cours et coefficients de notation associés
 
-   In Studio, you define this information by selecting **Settings** > **Grading**. For more information, see :ref:`Configure the Assignment Types`.
+   Dans Studio, pour définir ces informations, sélectionnez **Paramètres** > **Évaluation**. Pour plus d'informations, voir :ref:`Configurer les types de travaux`.
 
    .. image:: ../Images/Grading_Configuration_Studio.png
-     :alt: Studio example of homework assignment type and grading weight
+     :alt: Exemple Studio de type de devoir et de coefficient
 
 .. _Access_grades:
 
 ********************************************************
-Generate Grades for Enrolled Students (All Courses)
+Générer des notes pour les étudiants inscrits (tous les cours)
 ********************************************************
 
-For any course, you can generate grades and then download a file with the
-results for each enrolled student. 
+Pour tout cours, vous pouvez générer des notes, puis télécharger un fichier incluant les résultats de chaque étudiant inscrit. 
 
-When you initiate calculations to grade student work, a process starts on the
-edX servers. The complexity of your grading configuration and the number of
-students enrolled in your course affect how long this process takes. You can
-download a report of the calculated grades in a CSV (comma-separated values)
-file when the grading process is complete.
+Lorsque vous lancez les calculs afin de noter les travaux des étudiants, un processus est lancé sur les serveurs edX. La complexité de la configuration de votre notation et le nombre d'étudiants inscrits à votre cours déterminent la durée de ce processus. Lorsque le processus de notation est terminé, vous pouvez télécharger un rapport des notes calculées dans un fichier CSV (de l'anglais comma-separated values, renvoyant à un fichier de valeurs séparées par des virgules).
 
-For courses with fewer than 200 students enrolled, you also have the option to
-review student grades on the Instructor Dashboard. See :ref:`gradebook`.
+Pour les cours comptant moins de 200 inscrits, vous pouvez également choisir de consulter les notes des étudiants dans le tableau de bord de l'enseignant. Voir :ref:`gradebook`.
 
-To generate the grade report for the students who are currently enrolled in your
-course:
+Pour générer le rapport de notes pour les étudiants actuellement inscrits à votre cours :
 
-#. View the live version of your course.
+#. Affichez la version réelle de votre cours.
 
-#. Click **Instructor**, then click **Data Download**.
+#. Cliquez sur **Instructor** (Enseignant), puis sur **Téléchargement des données**.
 
-#. To start the grading process, click **Generate Grade Report**.
+#. Pour commencer le processus de notation, cliquez sur **Générer le rapport de notes**.
 
-  A status message indicates that the grading process is in progress. This
-  process can take some time to complete, but you can navigate away from this
-  page and do other work while it runs.
+  Un message d'état indique que le processus de notation est en cours. Ce processus peut être long. Pendant qu'il s'exécute, vous pouvez toutefois consulter d'autres pages et effectuer d'autres tâches.
 
-4. To track the progress of the grading process, reload the page in your browser
-   and scroll down to the **Pending Instructor Tasks** section.
+4. Pour suivre la progression du processus de notation, rechargez la page dans votre navigateur et faites défiler vers le bas jusqu'à la section **Tâches Enseignant en attente**.
 
 ==========================================
-Download Grades for Enrolled Students
+Télécharger les notes des étudiants inscrits
 ==========================================
 
-After you request a grade report for your students, the result is a time-stamped CSV file that includes columns to identify each student: id, email, and username. It also includes a column for every assignment that is included in your grading configuration: each homework, lab, midterm, final, and any other assignment type you added to your course. 
+Lorsque vous demandez un rapport de notes pour vos étudiants, vous obtenez un fichier horodaté. Ce fichier inclut les colonnes permettant d'identifier chaque étudiant : identifiant, e-mail et nom d'utilisateur. Il présente également une colonne pour chaque travail inclus dans votre configuration de notation : chaque devoir, exercice, examen de mi-semestre, examen final, et tout autre type de travail que vous aurez ajouté à votre cours. 
 
-.. important:: Because this file contains confidential, personally identifiable data which may be subject to the Family Educational Rights and Privacy Act (FERPA), be sure to follow your institution's data stewardship policies when you open or save this file.
+Important : Ce fichier contient des données confidentielles et personnelles (nominatives), susceptibles d'être soumises aux dispositions de la loi FERPA (de l'anglais Family Educational Rights and Privacy Act : loi américaine sur les droits à l'instruction et la protection de la vie privée des familles). Par conséquent, lorsque vous ouvrez ou enregistrez ce fichier, veillez à respecter la politique de gestion des données de votre établissement.
 
-To download a file of student grades:
+Pour télécharger le fichier de notes d'un étudiant :
 
-#. View the live version of your course.
+#. Affichez la version réelle de votre cours.
 
-#. Click **Instructor**, then click **Data Download**.
+#. Cliquez sur **Instructor** (Enseignant), puis sur **Téléchargement des données**.
 
-#. To open or save a grade report file, click the ``{course_id}_grade_report_{date}.csv`` file name at the bottom of the page.
+#. Pour ouvrir ou enregistrer un fichier de rapport de notes, cliquez sur le nom du fichier ``{course_id}_grade_report_{date}.csv`` au bas de la page.
 
-.. note:: To prevent the accidental distribution of student data, you can only download these files by clicking the links on this page. Do not copy these links for reuse elsewhere, as they expire within 5 minutes. The links on this page also expire if the page is open for more than 5 minutes: if necessary, refresh the page to generate new links. 
+.. note:: Pour prévenir toute distribution accidentelle des données des étudiants, téléchargez ces fichiers en cliquant sur les liens figurant sur cette page. Ne copiez pas ces liens à d'autres emplacements afin de les réutiliser, car ils ne sont valides que 5 minutes. Les liens sur cette page expirent également si la page est ouverte pendant plus de 5 minutes : si nécessaire, actualisez la page afin de générer de nouveaux liens. 
 
 .. _Interpret the Grade Report:
 
 =====================================
-Interpret the Grade Report
+Interpréter le rapport de notes
 =====================================
 
-Grade reports provide a snapshot of cumulative course scores, by assignment, of every currently enrolled student. 
+Les rapports de notes offrent un aperçu des notes cumulées lors du cours, par travail, pour chaque étudiant actuellement inscrit. 
 
-You can open ``{course_id}_grade_report_{date}.csv`` files in a spreadsheet application to sort, graph, and compare data.
+Vous pouvez ouvrir les fichiers ``{course_id}_grade_report_{date}.csv`` dans un tableur afin de trier les données, les présenter sous forme de graphiques et les comparer.
 
 .. image:: ../Images/Grade_Report.png
-  :alt: A course grade report, opened in Excel, showing the grades acheived by students on several homework assignments and the midterm
+  :alt: Rapport de notes d'un cours, ouvert dans Excel, présentant les notes obtenues par les étudiants pour plusieurs devoirs et lors des examens de mi-semestre
 
-The CSV file contains one row of data for each student, and columns that provide the following information.
+Le fichier CSV contient une ligne de données pour chaque étudiant ainsi que des colonnes qui présentent les informations suivantes :
 
-* Student identifiers, including an internal **id**, **email** address, and **username**.
+* Les identifiants de l'étudiant : un **identifiant** interne, une adresse **e-mail** et un **nom d'utilisateur**.
 
-* The overall **grade**, with the total score a student has currently attained in the course. This value is expressed as a decimal: a student with a grade of 0.65 has earned 65% of the credit in the course, and a student with a grade of 1 has earned 100%. 
+* La **note** globale : note totale obtenue par un étudiant dans le cours. Cette valeur est exprimée sous forme décimale : un étudiant ayant obtenu une note de 0,65 a en fait obtenu 65 % de la note dans le cours. Un étudiant ayant obtenu une note de 1 a obtenu 100 % de la note. 
 
-* Each **{assignment type} {number}** defined in your grading configuration, with the score a student attained for that specific assignment. For example, column HW 03 shows the scores for the third homework assignment.
+* Chaque colonne associée à un **{assignment type} {number}** ({numéro} {type de travail}), défini dans votre configuration de notation, présente la note obtenue par un étudiant donné pour ce travail spécifique. Par exemple, la colonne HW 03 (Devoirs 03) présente les notes du troisième devoir.
 
-* An **{assignment type} Avg** with each student's current average score for that assignment type: for example, HW Avg.
+* Une colonne **{assignment type} Avg** (Moy {type de devoir}) présente la note moyenne actuelle de l'étudiant pour ce type de travail : par exemple, HW Avg (Moy Devoirs).
 
-.. note:: The grade reports do not include information about individual questions within the assignments, or include student answer distributions.
+.. note:: Les rapports de notes ne présentent aucune information sur les questions individuelles incluses dans les travaux. Ils ne présentent également pas les distributions des réponses des étudiants.
 
 .. _gradebook:
 
 ********************************************************
-Review Grades for Enrolled Students (Small Courses)
+Consulter les notes des étudiants inscrits (petits cours)
 ********************************************************
 
-For courses with enrollments of up to 200 students, you can review a gradebook
-on the Instructor Dashboard. 
+Pour les cours comptant jusqu'à 200 inscrits, vous pouvez consulter un bulletin de notes dans le tableau de bord de l'enseignant. 
 
-#. View the live version of your course.
+#. Affichez la version réelle de votre cours.
 
-#. Click **Instructor**, then click **Student Admin**. For courses with fewer
-   than 200 students enrolled, this tab includes a **Student Gradebook**
-   section.
+#. Cliquez sur **Instructor** (Enseignant), puis sur **Admin Étudiant**. Pour les cours comptant moins de 200 étudiants inscrits, cet onglet inclut un **Bulletin de notes de l'étudiant**.
 
-#. Click **View Gradebook**. Grades are calculated and the gradebook displays.
+#. Cliquez sur **Voir le bulletin de notes**. Les notes sont calculées et le bulletin de notes est affiché.
 
    .. image:: ../Images/Student_Gradebook.png
-     :alt: Course gradebook with rows for students and columns for assignment
-         types
+     :alt: Bulletin de notes avec des lignes pour les étudiants et des colonnes pour les types de travaux
 
-The gradebook includes the following features.
+Le bulletin de notes inclut les fonctions suivantes.
 
-* You can click the student username in each row to review that student's
-  **Course Progress** page. See :ref:`check_student_progress`.
+* Vous pouvez cliquer sur le nom d'utilisateur de l'étudiant dans chaque ligne afin de consulter
+  la page **Progression dans le cours** de cet étudiant. Voir :ref:`check_student_progress`.
 
-* There is a column for each **{assignment type} {number}** defined in your
-  grading configuration, with the scores your student attained for that specific
-  assignment. 
+* Il existe une colonne pour chaque **{assignment type} {number}** ({numéro} {type de travail}) défini dans votre configuration de notation ; les notes obtenues par un étudiant donné pour ce travail spécifique y sont présentées. 
 
-  The gradebook does not have a scroll bar, but it is draggable: to see columns
-  that are hidden at one side of the grade book, click the gradebook and then
-  drag left or right to reveal those columns.
+  Le bulletin de notes n'a pas de barre de défilement ; il est toutefois possible de le faire glisser : pour afficher les colonnes masquées d'un côté du bulletin de notes, cliquez sur le bulletin, puis faites le glisser vers la gauche ou la droite afin de faire apparaître ces colonnes.
 
-* For assignment types that include more than one assignment, an **{assignment
-  type} Avg** column displays each student's current average score for that
-  assignment type.
+* Pour les types de travaux qui incluent plus d'un travail, une colonne **{assignment type} Avg** (Moy {type de travail}) affiche chaque note moyenne actuelle de l'étudiant pour ce type de travail.
 
-* The **Total** column presents the total score a student has currently attained
-  in the course. This value is expressed as a whole number: a student with a
-  grade of 65 has earned 65% of the credit in the course, and a student with a
-  grade of 100 has earned 100%.
+* La colonne **Total** présente la note globale de l'étudiant dans le cours à la date du jour. Cette valeur est exprimée sous forme de nombre entier : un étudiant ayant obtenu une note de 65 a en fait obtenu 65 % de la note dans le cours. Un étudiant ayant obtenu une note de 100 a obtenu 100 % de la note.
 
-* To filter the data that displays you can use the **Search students** option.
-  This option is case-sensitive and limits the rows shown in the gradebook to
-  usernames that match your entry.
+* Pour filtrer les données qui s'affichent, vous pouvez utiliser l'option **Rechercher des étudiants**.
+  Cette option est sensible à la casse et limite le nombre de lignes affichées dans le bulletin de notes aux noms d'utilisateur correspondant à votre saisie.
 
 .. _check_student_progress:
 
 ****************************************
-Check the Progress of a Single Student
+Vérifier la progression d'un étudiant
 ****************************************
 
-To check a single student's progress, you can locate the specific row on the grade report or review the student's **Progress** page. The **Progress** page includes a chart that plots the score the student has earned for every graded assignment and the total grade as of the current date. Below the chart, each assignment and the score attained are listed.
+Afin de vérifier la progression d'un étudiant donné, vous pouvez identifier la ligne spécifique dans le rapport de notes ou consulter la page **Progression** de l'étudiant. Le page **Progression** inclut notamment un diagramme : les notes de l'étudiant obtenues pour tous les travaux notés y sont relevées, ainsi que la note globale établie à la date du jour. Sous le diagramme, chaque travail et note obtenue sont indiqués.
 
-To review a student's **Progress** page, you supply an email address or username. You can check the progress for students who are either enrolled in, or who have unenrolled from, the course.
+Pour consulter la page **Progression** d'un étudiant, vous devez fournir une adresse e-mail ou un nom d'utilisateur. Vous pouvez vérifier la progression des étudiants inscrits au cours ou de ceux qui se sont désinscrits.
 
-Students can view a similar chart and assignment list (of their own progress only) when they are logged in to the course. See :ref:`A Students View`.
+Lorsqu'ils sont connectés au cours, les étudiants peuvent afficher un diagramme similaire et la liste des travaux (associés à leur propre progression uniquement). Voir :ref:`Vue Étudiant`.
 
-To view the **Progress** page for a student:
+Pour afficher la page **Progression** d'un étudiant :
 
-#. View the live version of your course.
+#. Affichez la version réelle de votre cours.
 
-#. Click **Instructor**, then click **Student Admin**.
+#. Cliquez sur **Instructor** (Enseignant), puis sur **Admin Étudiant**.
 
-#. In the Student-Specific Grade Inspection section, enter the student's email address or username.
+#. Dans la section Examen des notes spécifiques des étudiants, saisissez l'adresse e-mail ou le nom d'utilisateur de l'étudiant.
 
-#. Click **Student Progress Page**.
+#. Cliquez sur **Suivi de Progression Étudiant**.
 
-   The **Progress** page for the student displays a chart with the grade for each homework, lab, midterm, final, and any other assignment types in your course, and the total grade earned for the course to date. 
+   La page **Progression** de l'étudiant affiche un diagramme ; ce dernier présente les notes de chaque devoir, exercice, examen de mi-semestre, examen final, et de tout autre type de travail proposé par votre cours, ainsi que la note globale obtenue pour le cours à la date du jour. 
 
    .. image:: ../Images/Student_Progress.png
-     :alt: Progress page chart for a student: includes a column graph with the score acheived for each assignment 
+     :alt: Diagramme de la page Progression d'un étudiant : inclut un histogramme incluant les notes obtenues pour chaque travail 
 
-   To learn more about a particular assignment, move the cursor onto the value in the chart. A brief description displays. 
+   Pour plus d'informations sur un travail spécifique, placez le curseur sur la valeur choisie dans le diagramme. Une brève description est alors affichée. 
 
    .. image:: ../Images/Student_Progress_mouseover.png
-     :alt: Progress page with a tooltip for the X that was graphed for the last homework assignment, which indicates that the lowest homework score is dropped
+     :alt: Page Progression avec info-bulle associée au X désignant le dernier devoir : cela signifie que la note la plus basse obtenue pour un devoir est retirée
 
-   Below the chart, subsections are listed on the left and the units that contain assignments are listed on the right. The student's individual problem scores display.
+   Sous le diagramme, les sous-sections sont répertoriées à gauche et les unités contenant les travaux sont listées à droite. Les notes de chaque exercice effectué par l'étudiant sont affichées.
 
    .. image:: ../Images/Student_Progress_list.png
-     :alt: Bottom portion of a Progress page for the same student with the score acheived for each problem in the first course subsection 
+     :alt: Partie inférieure d'une page Progression pour le même étudiant avec la note obtenue pour chaque exercice de la première sous-section du cours 
 
 =============================================
-Interpret the Student Progress Page
+Interpréter la page Progression d'un étudiant
 =============================================
 
-The chart of a student's scores on the **Progress** page and the rows of data on the grade report present assignment scores in a similar order. However, the total, cumulative score earned for the course is placed in a different position on the **Progress** page.
+Le diagramme des notes d'un étudiant affiché sur la page **Progression** et les lignes de données sur le rapport de notes présentent les notes obtenues lors des travaux réalisés dans un ordre similaire. Toutefois, la note cumulée globale obtenue pour le cours est indiquée à un autre emplacement de la page **Progression**.
 
-In this example grade report, the indicated student has a current grade of 0.43 (43%). 
+Dans ce rapport de notes présenté en exemple, l'étudiant choisi a obtenu une note de 0,43 (43 %). 
 
 .. image:: ../Images/Grade_Report_example.png
-  :alt: A course grade report with a single student's information indicated by a rectangle
+  :alt: Rapport de notes du cours : les informations d'un étudiant sont indiquées par un rectangle
 
-* On each of the first four homework assignments the student scored 1 (100%), but currently has a 0 (0%) on each of the remaining three assignments. 
+* Sur chacun des quatre premiers devoirs, l'étudiant a obtenu 1 (100 %), mais la note 0 (0 %) est indiquée pour chacun des trois travaux restants. 
 
-  Notice, however, that the student's current average score for homework assignments is listed as 0.666666667 (67%): in this course, the homework assignment with the lowest score is dropped, so this average is over six assignments rather than all seven. 
+  Notez toutefois que la note moyenne actuelle de l'étudiant pour les devoirs est de 0,666666667 (67 %) : dans ce cours, le devoir associé à la note la plus basse est retiré. La moyenne présentée est donc calculée sur six travaux et non sur sept. 
 
-* The student has a score of 0.75 (75%) on the midterm, and a score of 0 (0%) on the final. 
+* L'étudiant a obtenu une note de 0,75 (75 %) à l'examen de mi-semestre, et une note de 0 (0 %) à l'examen final. 
 
-On the student's **Progress** page, you see the same information graphically represented; however, the student's "total" of 43% is on the far right.
+Sur la page **Progression** de l'étudiant, vous avez accès aux mêmes informations, présentées sous forme de graphique ; toutefois, la note "totale" de l'étudiant (43 %) est présentée complètement à droite.
 
 .. image:: ../Images/Student_Progress.png
-   :alt: Progress page for a student also included on the grade report: includes a column graph with the grade acheived for each assignment 
+   :alt: Page Progression d'un étudiant également incluse dans le rapport de notes : inclut un histogramme présentant les notes obtenues pour chaque travail 
 
-The chart on the **Progress** page includes y-axis labels for the grade ranges defined for the course. In this example, Pass is set to 60%, so at the end of the course students with a grade of 0.60 or higher can receive certificates.
+Le diagramme sur la page **Progression** présente des étiquettes sur l'axe des y associées aux plages d'évaluation définies pour le cours. Dans cet exemple, l'option Pass (Réussite à l'examen) est définie sur 60 %. Ainsi, à la fin du cours, les étudiants présentant une note supérieure ou égale à 0,60 peuvent recevoir leur certificat.
 
-.. note:: Student scores on the **Progress** page are a snapshot of the current state of the problem score database. They can, at times, be out of sync with actual problem scores. For example, asynchronicities can occur if the weight of a live problem was changed during an assignment, and not all students have resubmitted their answers for that problem.
-.. note above moved from checking_student_progress.rst
+.. note:: Les notes des étudiants indiquées sur la page **Progression** constituent un aperçu de l'état actuel de la base de données des notes obtenues aux exercices. Parfois, ces notes peuvent ne pas correspondre aux notes véritables obtenues. Par exemple, des asynchronismes peuvent se produire si le coefficient d'un exercice en cours a été modifié et que certains étudiants n'ont pas resoumis leurs réponses pour cet exercice.
+
 
 .. _A Students View:
 
 =============================================
-A Student's View of Course Progress
+Vue de la progression dans le cours d'un étudiant
 =============================================
-.. this section moved from checking_student_progress.rst
 
-Students can check their progress by clicking **Progress** in the course
-navigation bar. The student's progress through the graded part of the course
-displays at the top of this page, above the subsection scores. Progress is
-visualized as a chart with entries for all the assignments, total percentage
-earned in the course so far, and percent needed for each grade cutoff. Here is
-an example of a student's progress through edX101.
+
+Les étudiants peuvent suivre leur progression. Il leur suffit de cliquer sur **Progression** dans la barre de navigation du cours. La progression de l'étudiant, mesurée par le biais des notes obtenues dans le cadre du cours, s'affiche en haut de cette page, au-dessus des notes de sous-section. La progression est visualisée sous la forme d'un diagramme : y figurent les entrées de tous les travaux, la note totale actuelle (exprimée en pourcentage) obtenue jusqu'à présent et la note (pourcentage) devant être obtenue pour chaque seuil de notation. Vous trouverez ci-après l'exemple d'une progression (edX101).
  
 .. image:: ../Images/StudentView_GradeCutoffs.png
   :width: 800
-  :alt: Image of a student's Course Progress page with the grade cutoffs legend highlighted
+  :alt: Image de la page Progression d'un étudiant avec mise en surbrillance des légendes des seuils de notation
  
-The student can see from this page that edX101 was graded as a Pass/Fail course
-with a cutoff of 34% and that the grading rubric contained one assignment type,
-called Learning Sequence, consisting of 11 assignments total. Furthermore, this
-particular student has only submitted correct responses to two assignments, and
-that her current total percent grade in the course is 6%. By hovering over each
-progress bar, the student can get further statistics of how much each assignment
-was counted as. 
+Sur cette page, l'étudiante peut voir que le cours edX101 est un cours Pass/Fail (réussite/échec) avec un seuil de notation de 34 %. La rubrique d'évaluation contient un seul type de travail, appelé Learning Sequence (Séquence d'apprentissage) ; au total, 11 travaux doivent être effectués. Il est également possible de constater que cette étudiante n'a répondu correctement qu'à deux travaux. La note totale (exprimée en pourcentage) qu'elle a jusqu'à présent obtenue pour ce cours est égale à 6 %. En faisant passer le curseur de la souris au-dessus de la barre de progression, l'étudiante peut obtenir des statistiques sur le coefficient de chaque travail. 
  
-Further down on the **Progress** page is a list of all the subsections in the
-course, with the scores recorded for the student for all problems in the course.
-Here is the **Progress** page for the student in the example above:
+Plus bas sur la page **Progression**, la liste de toutes les sous-sections du cours présente les notes enregistrées pour l'étudiante, pour tous les exercices proposés dans le cadre du cours.
+Vous trouverez ci-après la page **Progression** de l'étudiante mentionnée dans l'exemple précédent :
  
 .. image:: ../Images/StudentView_Problems.png
    :width: 800
-   :alt: Image of a student's Course Progress page with problems highlighted
+   :alt: Image de la page Progression d'un étudiant avec mise en surbrillance des exercices
  
-Note that point scores from graded sections are called "Problem Scores",
-while point scores from ungraded sections are called "Practice Scores".
+Remarque : Les notes en points des sections notés sont appelées "Scores aux exercices". Les notes en points des sections non notées sont appelées "Scores d'entrainement".
 
 .. _Adjust_grades:
 
 ***********************************
-Adjust Grades
+Ajuster des notes
 ***********************************
 
-You can adjust grades for one student at a time, or for all of the enrolled
-students in the course. For example, your course beta testers can evaluate
-numerous different correct and incorrect responses to verify that your course is
-set up as you intend. Students can also report errors while a course is running.
-When an error is discovered or corrected, or if you decide that you must modify
-a problem after students or beta testers have attempted to answer it, you can
-either:
+Vous pouvez ajuster les notes d'un étudiant à la fois ou de tous les étudiants inscrits au cours. Par exemple, les bêta-testeurs de votre cours peuvent évaluer les nombreuses réponses différentes, correctes et incorrectes, afin de vérifier que vous cours a été configuré comme vous le souhaitez. Les étudiants peuvent également rapporter des erreurs après publication du cours.
+Lorsqu'une erreur est identifiée ou corrigée, ou si vous décidez que vous devez modifier un exercice après que des étudiants ou des bêta-testeurs ont tenté d'y répondre, vous pouvez :
 
-* Rescore the submitted answers to reevaluate the work. See :ref:`rescore`.
+* réévaluer les réponses soumises. Voir :ref:`rescore`.
 
-* Reset the number of times a student has attempted to answer the problem to
-  zero so that the student can try again. See :ref:`reset_attempts`.
+* réinitialiser le nombre d'essais de l'étudiant afin que ce dernier puisse faire de nouvelles tentatives. Voir :ref:`reset_attempts`.
 
-You can make these adjustments for a single student or for all of the students
-enrolled in your course. To make an adjustment, you need the unique location
-identifier of the problem. See :ref:`find_URL`.
+Vous pouvez effectuer ces ajustements pour un seul étudiant ou pour tous les étudiants inscrits à votre cours. Pour effectuer un ajustement, vous devez utiliser l'identifiant de position unique de l'exercice. Voir :ref:`find_URL`.
 
-Another grade adjustment technique is to delete a student's database history, or
-"state", completely for a problem. You can only delete student state for
-one student at a time. For example, you realize that a problem needs to be
-rewritten after only a few of your students have answered it. To resolve this
-situation, you rewrite the problem and then delete student state for the
-affected students only so that they can try again. See :ref:`delete_state`.
+Une autre technique d'ajustement de la note consiste à supprimer définitivement de la base de données l'historique ou l'"état" d'un étudiant associé à un exercice donné. Vous ne pouvez supprimer un état que pour un étudiant à la fois. Par exemple, vous comprenez rapidement qu'un exercice doit être réécrit après soumission de seulement quelques réponses par des étudiants. Pour résoudre cette situation, vous réécrivez l'exercice, puis supprimez l'état des étudiants concernés afin qu'ils puissent faire une nouvelle tentative. Voir :ref:`delete_state`.
 
 .. _find_URL:
 
 ==================================================
-Find the Unique Location Identifier for a Problem
+Rechercher l'identifiant de position unique d'un exercice
 ==================================================
 
-When you create each of the problems for a course, edX assigns a unique location
-to it. To make grading adjustments for a problem, or to view data about it, you
-need to specify the problem location.
+Lorsque vous créez les exercices d'un cours, edX affecte à chacun une position unique. Pour ajuster la note obtenue à un exercice ou pour en afficher les données, vous devez spécifier la position de l'exercice.
 
-To find the unique location identifier for a problem:
+Pour rechercher l'identifiant de position unique d'un exercice :
 
-#. View the live version of your course.
+#. Affichez la version réelle de votre cours.
 
-#. Click **Courseware** and navigate to the unit that contains the problem.
+#. Cliquez sur **Contenu du cours** et accédez à l'unité contenant l'exercice.
 
-#. Display the problem and then click **Staff Debug Info**.
+#. Affichez l'exercice, puis cliquez sur **Info de débogage pour l'équipe pédagogique**.
 
-   Information about the problem displays, including its **location**. 
+   Les informations relatives à l'exercice s'affichent, notamment sa **position**. 
 
    .. image:: ../Images/Problem_URL.png
-      :alt: The Staff Debug view of a problem with the location identifier indicated
+      :alt: Vue Débogage équipe pédagogique d'un exercice avec identifiant de position
 
-4. To copy the location of the problem, select the entire location, right click,
-   and choose **Copy**.
+4. Pour copier la position de l'exercice, sélectionnez toute la position, cliquez avec le bouton droit de la souris, puis sélectionnez **Copier**.
 
-To close the Staff Debug viewer, click on the browser page outside of the viewer.
+Pour fermer la visionneuse Débogage équipe pédagogique, cliquez sur la page du navigateur en dehors de la visionneuse.
 
 .. _rescore:
 
 ===================================================
-Rescore Student Submissions for a Problem
+Réévaluer les soumissions d'un exercice d'un étudiant
 ===================================================
 
-Each problem that you define for your course includes a correct answer, and may
-also include a tolerance or acceptable alternatives. If you decide to make a
-change to these values, you can rescore any responses that were already
-submitted. For a specified problem, you can rescore the work submitted by a
-single student, or rescore the submissions made by every enrolled student.
+Chaque exercice que vous définissez pour votre cours inclut une réponse correcte. Il peut également inclure une tolérance ou d'autres options acceptables. Si vous décidez de modifier ces valeurs, vous pouvez réévaluer les réponses déjà soumises. Pour un exercice spécifié, vous pouvez réévaluer les travaux soumis par un seul étudiant ou les soumissions de chaque étudiant inscrit.
 
-.. note:: You can only rescore problems that have a correct answer entered in edX Studio. This procedure cannot be used to rescore problems that are scored by an external grader.
+.. note:: Vous ne pouvez réévaluer que les exercices pour lesquels une réponse correcte a été saisie dans edX Studio. Cette procédure ne peut pas être utilisée pour réévaluer des exercices notés par un évaluateur externe.
 
-Rescore a Submission for an Individual Student
+Réévaluer la soumission d'un étudiant
 -----------------------------------------------
 
-To rescore a problem for a single student, you need that student's username or
-email address.
+Pour réévaluer l'exercice d'un seul étudiant, vous devez utiliser le nom d'utilisateur ou l'adresse e-mail de cet étudiant.
 
-#. View the live version of your course.
+#. Affichez la version réelle de votre cours.
 
-#. Click **Courseware** and navigate to the component that contains the problem
-   you want to rescore.
+#. Cliquez sur **Contenu du cours** et accédez au composant contenant l'exercice que vous souhaitez réévaluer.
 
-#. Display the problem, then click **Staff Debug Info**. The Staff Debug viewer
-   opens.
+#. Affichez l'exercice, puis cliquez sur **Info de débogage pour l'équipe pédagogique**. La visionneuse Débogage équipe pédagogique s'ouvre.
 
-#. In the **Username** field, enter the student's email address or username,
-   then click **Rescore Student Submission**. A message indicates a successful
-   adjustment.
+#. Dans le champ **Nom d'utilisateur**, saisissez l'adresse e-mail ou le nom d'utilisateur de l'étudiant, puis cliquez sur **Réévaluer la soumission d'un étudiant**. Un message apparaît, indiquant un ajustement réussi.
 
-#. To close the Staff Debug viewer, click on the browser page outside of the
-   viewer.
+#. Pour fermer la visionneuse Débogage équipe pédagogique, cliquez sur la page du navigateur en dehors de la visionneuse.
 
-Rescore Submissions for All Students
+Réévaluer les soumissions de tous les étudiants
 ------------------------------------
 
-To specify the problem you want to rescore, you need its location identifier.
-See :ref:`find_URL`. To rescore a problem:
+Pour spécifier quel exercice réévaluer, vous devez indiquer son identifiant de position.
+Voir :ref:`find_URL`. Pour réévaluer un exercice :
 
-#. View the live version of your course.
+#. Affichez la version réelle de votre cours.
 
-#. Click **Instructor**, then click **Student Admin**. 
+#. Cliquez sur **Instructor** (Enseignant), puis sur **Admin Étudiant**. 
 
-#. In the **Course-Specific Grade Adjustment** section of the page, enter the
-   unique problem location, and then click **Rescore ALL students' problem
-   submissions**.
+#. Dans la section **Ajustement spécifique des notes** de la page, saisissez la position unique de l'exercice, puis cliquez sur **Réévaluer TOUTES les soumissions d'exercice des étudiants**.
 
-#. When you see a dialog box that notifies you that the rescore process is in
-   progress, click **OK**.
+#. Lorsqu'une boîte de dialogue apparaît, vous indiquant que le processus de réévaluation est en cours, cliquez sur **OK**.
 
-   This process can take some time to complete for all enrolled students. The
-   process runs in the background, so you can navigate away from this page and
-   do other work while it runs.
+   Ce processus, réalisé pour tous les étudiants inscrits, peut être long. Il est exécuté en arrière-plan, ce qui vous permet de consulter d'autres pages et d'effectuer d'autres tâches.
 
-6. To view the results of the rescore process, click either **Show Background
-   Task History for Student** or **Show Background Task History for Problem**.
+6. Pour afficher les résultats du processus de réévaluation, cliquez sur **Afficher
+   l'historique des tâches d'arrière plan pour l’étudiant** ou **Afficher Historique des tâches d'arrière plan pour l'exercice**.
 
-   A table displays the status of the rescore process for each student or problem.
+   Un tableau affiche l'état du processus de réévaluation pour chaque étudiant ou exercice.
 
-.. note:: You can use a similar procedure to rescore the submission for a problem by a single student. You work in the **Student-Specific Grade Adjustment** section of the page to enter both the student’s email address or username and the unique problem identifier, and then click **Rescore Student Submission**. 
+.. note:: Vous pouvez utiliser une procédure similaire pour réévaluer la réponse soumise par un seul étudiant pour un exercice donné. Accédez à la section **Ajustement de note spécifique à un étudiant** de la page afin d'y saisir l'adresse e-mail ou le nom d'utilisation de l'étudiant, ainsi que l'identifiant unique de l'exercice, puis cliquez sur **Réévaluer la soumission d'un étudiant**. 
 
 .. _reset_attempts:
 
 ===================================================
-Reset Student Attempts for a Problem
+Réinitialiser les essais d'un étudiant pour un exercice donné
 ===================================================
 
-When you create a problem, you can limit the number of times that a student can try to answer that problem correctly. If unexpected issues occur for a problem, you can reset the value for one particular student's attempts back to zero so that the student can begin work over again. If the unexpected behavior affects all of the students in your course, you can reset the number of attempts for all students to zero. 
+Lorsque vous créez un exercice, vous pouvez limiter le nombre d'essais qu'un étudiant peut effectuer pour répondre correctement à cet exercice. En cas de problèmes inattendus pour un exercice, vous pouvez réinitialiser le nombre d'essais d'un étudiant donné afin que ce dernier puisse recommencer. Si un comportement inattendu affecte tous les étudiants de votre cours, vous pouvez réinitialiser le nombre d'essais pour tous les étudiants. 
 
-For information about modifying a released problem, including other workarounds, see :ref:`Modifying a Released Problem`.
+Pour plus d'informations sur la modification d'un exercice publié, notamment sur les solutions, voir :ref:`Modification d'un exercice publié`.
 
-Reset Attempts for an Individual Student
+Réinitialiser les essais d'un étudiant
 ---------------------------------------------
 
-To reset the number of attempts for a single student, you need that student's
-username or email address.
+Pour réinitialiser le nombre d'essais d'un étudiant, vous devez utiliser le nom d'utilisateur ou l'adresse e-mail de cet étudiant.
 
-#. View the live version of your course.
+#. Affichez la version réelle de votre cours.
 
-#. Click **Courseware** and navigate to the component that contains the problem
-   you want to reset.
+#. Cliquez sur **Contenu du cours** et accédez au composant contenant l'exercice que vous souhaitez réinitialiser.
 
-#. Display the problem, then click **Staff Debug Info**. The Staff Debug viewer
-   opens.
+#. Affichez l'exercice, puis cliquez sur **Info de débogage pour l'équipe pédagogique**. La visionneuse Débogage équipe pédagogique s'ouvre.
 
-#. In the **Username** field, enter the student's email address or username,
-   then click **Reset Student Attempts**. A message indicates a successful
-   adjustment.
+#. Dans le champ **Nom d'utilisateur**, saisissez l'adresse e-mail ou le nom d'utilisateur de l'étudiant, puis cliquez sur **Réinitialiser Essais des étudiants**. Un message apparaît, indiquant un ajustement réussi.
 
-#. To close the Staff Debug viewer, click on the browser page outside of the
-   viewer.
+#. Pour fermer la visionneuse Débogage équipe pédagogique, cliquez sur la page du navigateur en dehors de la visionneuse.
 
-Reset Attempts for All Students
+Réinitialiser les essais de tous les étudiants
 ------------------------------------
 
-To reset the number of attempts that all enrolled students have for a problem,
-you need the unique identifier of the problem. See :ref:`find_URL`. To reset
-attempts for all students:
+Pour réinitialiser le nombre d'essais dont les étudiants bénéficient pour un problème donné, vous devez utiliser l'identifiant unique de l'exercice. Voir :ref:`find_URL`. Pour réinitialiser les essais de tous les étudiants :
 
-#. View the live version of your course.
+#. Affichez la version réelle de votre cours.
 
-#. Click **Instructor**, then click **Student Admin**. 
+#. Cliquez sur **Instructor** (Enseignant), puis sur **Admin Étudiant**. 
 
-#. To reset the number of attempts for all enrolled students, you work in the
-   **Course-Specific Grade Adjustment** section of the page. Enter the unique
-   problem location, then click **Reset ALL students' attempts**.
+#. Pour réinitialiser le nombre d'essais pour tous les étudiants inscrits, utilisez la section **Ajustement spécifique des notes** de la page. Saisissez la position unique de l'exercice, puis cliquez sur **Réinitialiser TOUS les essais des étudiants**.
 
-#. A dialog opens to indicate that the reset process is in progress. Click **OK**. 
+#. Une boîte de dialogue apparaît, indiquant que le processus de réinitialisation est en cours. Cliquez sur **OK**. 
 
-   This process can take some time to complete. The process runs in the
-   background, so you can navigate away from this page and do other work while
-   it runs.
+   Ce processus peut être long. Il est exécuté en arrière-plan, ce qui vous permet de consulter d'autres pages et d'effectuer d'autres tâches.
 
-7. To view the results of the reset process, click either **Show Background Task History for Student** or **Show Background Task History for Problem**.
+7. Pour afficher les résultats du processus de réinitialisation, cliquez sur **Afficher l'historique des tâches d'arrière plan pour l’étudiant** ou **Afficher Historique des tâches d'arrière plan pour l'exercice**.
 
-   A table displays the status of the reset process for each student or problem.
+   Un tableau affiche l'état du processus de réinitialisation pour chaque étudiant ou exercice.
 
-.. note:: You can use a similar procedure to reset problem attempts for a single student. You work in the **Student-Specific Grade Adjustment** section of the page to enter both the student’s email address or username and the unique problem identifier, and then click **Reset Student Attempts**. 
+.. note:: Vous pouvez utiliser une procédure similaire pour réinitialiser le nombre d'essais d'un seul étudiant pour un exercice donné. Accédez à la section **Ajustement de note spécifique à un étudiant** de la page afin d'y saisir l'adresse e-mail ou le nom d'utilisation de l'étudiant, ainsi que l'identifiant unique de l'exercice, puis cliquez sur **Réinitialiser Essais des étudiants**. 
 
 .. _delete_state:
 
 =============================================
-Delete Student State for a Problem
+Supprimer l'état de l'étudiant associé à un exercice
 =============================================
 
-To delete a student's entire history for a problem from the database, you need
-that student's username or email address. 
+Pour supprimer de la base de données la totalité de l'historique d'un étudiant pour un exercice donné, vous devez utiliser le nom d'utilisateur ou l'adresse e-mail de cet étudiant. 
 
-.. important:: Student state is deleted permanently by this process. This action cannot be undone.
+Important : Ce processus entraîne la suppression définitive de l'état de l'étudiant. Cette action ne peut pas être annulée.
 
-You can use either the Staff Debug viewer or the Instructor Dashboard to delete
-student state.
-.. future example: this is how to help a student who has gotten poor feedback on an ORA problem.
+Vous pouvez utiliser la visionneuse Débogage équipe pédagogique ou le tableau de bord de l'enseignant pour supprimer l'état de l'étudiant.
 
-To use the Staff Debug viewer:
 
-#. View the live version of your course.
+Pour utiliser la visionneuse Débogage équipe pédagogique :
 
-#. Click **Courseware** and navigate to the component that contains the problem.
+#. Affichez la version réelle de votre cours.
 
-#. Display the problem, then click **Staff Debug Info**. The Staff Debug viewer
-   opens.
+#. Cliquez sur **Contenu du cours** et accédez au composant contenant l'exercice.
 
-#. In the **Username** field, enter the student's email address or username,
-   then click **Delete Student State**. A message indicates a successful
-   adjustment.
+#. Affichez l'exercice, puis cliquez sur **Info de débogage pour l'équipe pédagogique**. La visionneuse Débogage équipe pédagogique s'ouvre.
 
-#. To close the Staff Debug viewer, click on the browser page outside of the
-   viewer.
+#. Dans le champ **Nom d'utilisateur**, saisissez l'adresse e-mail ou le nom d'utilisateur de l'étudiant, puis cliquez sur **Supprimer l'état de l’étudiant**. Un message apparaît, indiquant un ajustement réussi.
 
-To use the Instructor Dashboard, you need the unique identifier of the problem.
-See :ref:`find_URL`.
+#. Pour fermer la visionneuse Débogage équipe pédagogique, cliquez sur la page du navigateur en dehors de la visionneuse.
 
-#. Click **Instructor**, then click **Student Admin**. 
+Pour utiliser le tableau de bord de l'enseignant, vous devez utiliser l'identifiant unique de l'exercice.
+Voir :ref:`find_URL`.
 
-#. In the **Student-Specific Grade Adjustment** section of the page, enter both
-   the student’s email address or username and the unique problem identifier,
-   and then click **Delete Student State for Problem**.
+#. Cliquez sur **Instructor** (Enseignant), puis sur **Admin Étudiant**. 
+
+#. Dans la section **Ajustement de note spécifique à un étudiant** de la page, saisissez l'adresse e-mail ou le nom d'utilisation de l'étudiant, ainsi que l'identifiant unique de l'exercice, puis cliquez sur **Supprimer l'état de l'étudiant pour ce problème**.

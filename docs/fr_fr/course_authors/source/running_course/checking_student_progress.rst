@@ -1,19 +1,12 @@
 .. _Checking Student Progress and Issuing Certificates:
 
 ###################################################
-Assign Final Grades and Issue Certificates
+Attribuer des notes finales et émettre des certificats
 ###################################################
-.. This chapter will be renamed and expanded to include course wrap-up activities and best practices.
+.. Ce chapitre sera renommé et développé afin d'inclure les activités de synthèse du cours ainsi que les meilleures pratiques.
 
-To assign a final grade to each student enrolled in a course, you generate
-grades after the **Course End Date** and **Time** have passed. See
-:ref:`Access_grades`.
+Pour attribuer une note finale à chaque étudiant inscrit à un cours, générez des notes une fois l'**heure** et la **date de fin du cours** passées. Voir :ref:`Access_grades`.
  
-The final grades of a student in the course and the grading configuration you
-set in Studio are used to determine whether the student has earned a Certificate
-of Mastery for the course.
+Les notes finales d'un étudiant ayant participé à un cours et la configuration de notation que vous avez définie dans Studio déterminent l'obtention par l'étudiant d'un certificat de maîtrise pour le cours suivi.
 
-The process of issuing certificates is completed at edX: work with your edX
-program manager to schedule a date to issue certificates and complete this
-process.
- 
+Le processus d'émission de certificats est complété par la plate-forme edX : contactez votre gestionnaire de programme edX afin de choisir une date d'émission des certificats et de mettre fin à ce processus.

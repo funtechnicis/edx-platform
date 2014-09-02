@@ -1,7 +1,7 @@
 .. _Running Your Course Index:
 
 ##########################
-Running Your Course
+Gestion de votre cours
 ##########################
 
 .. toctree::
@@ -10,6 +10,7 @@ Running Your Course
    course_staffing
    course_enrollment
    discussions
+   discussions_students
    discussion_guidance_moderators
    course_data
    course_student

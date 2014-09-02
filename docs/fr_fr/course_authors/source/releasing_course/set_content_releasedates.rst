@@ -1,178 +1,157 @@
 .. _Publishing Your Course:
 
 ###########################
-Publishing Your Course
+Publication de votre cours
 ###########################
 
-When you have set up your course, established a grading system, and organized your course content,
-you are ready to publish your course and make it available to students.
+Lorsque vous avez configuré votre cours, établi un système d'évaluation et organisé les contenus, vous êtes prêt à publier votre cours et à le mettre à la disposition des étudiants.
 
-Understanding the content your students can view, and knowing how to change what students can view, is complex.
-Read the following sections carefully:
+Le processus peut s'avérer relativement complexe. Il est notamment important de comprendre ce que les étudiants peuvent afficher et de savoir comment modifier cet affichage.
+Afin de vous y préparer, nous vous recommandons de lire attentivement les sections suivantes :
 
-* :ref:`Understanding Content Students Can View`
-* :ref:`Release Dates`
-* :ref:`Public and Private Units`
-* :ref:`Modifying Public Units`
+* :ref:`Publication et affichage de contenu : quelques règles`
+* :ref:`Dates de publication`
+* :ref:`Unités publiques et privées`
+* :ref:`Modification des unités publiques`
 
 
 .. _Understanding Content Students Can View:
 
 ******************************************
-Understanding Content Students Can View
+Publication et affichage de contenu : quelques règles
 ******************************************
 
-When you create a course on Studio, students cannot see any of your course content until the course start date has passed. 
-After the course start date has passed, whether a student can see your course materials depends on two settings that you can control: release dates and visibility.
+Lorsque vous créez un cours dans Studio, les étudiants ne peuvent pas accéder au contenu du cours avant la date de début. 
+Une fois la date de début passée, un étudiant pourra consulter les ressources pédagogiques en fonction de la configuration que vous aurez choisie pour les deux paramètres suivants : les dates de publication et la visibilité.
 
-* The **Release Date**. Sections and subsections have release dates. If the current date
-  of a section or subsection is before the release date, the content of that course element is
-  not yet published, and not visible to students. 
+* La **date de publication**. Les sections et sous-sections ont des dates de publication. Si la date actuelle d'une section ou sous-section précède la date de publication, le contenu de cet élément de cours n'est pas encore publié. Les étudiants n'y ont donc pas accès. 
   
-  For a student to view a subsection, both it and its containing section must
-  have a release date that is earlier than the current date. It is possible to
-  have a section that is released, but a subsection within that section that is
-  not released. In this case, students cannot view that subsection.
+  Pour qu'un étudiant ait accès à une sous-section, cette sous-section et la section dont elle dépend doivent présenter une date de publication antérieure à la date actuelle. Il est possible qu'une section soit publiée, mais qu'une sous-section de cette section n'ait pas encore été publiée. Dans ce cas, les étudiants ne peuvent pas accéder à cette sous-section.
   
-  Course staff can see sections and subsections before the release date in the LMS.
+  L'équipe pédagogique peut consulter dans le LMS les sections et les sous-sections avant leur date de publication.
   
-* The unit must be **Public**.  All units have a **Visibility** setting that is **Public** or **Private**.
-  When you create a unit, it is **Private** by default. 
+* L'unité doit être de type **Public**. Toutes les unités sont dotées d'un paramètre **Visibilité** qui est **Public** ou **Privé**.
+  Lorsque vous créez une unité, elle est de type **Privé** par défaut. 
   
-  Students cannot view a **Private** unit, even if the containing section and subsection are released.
+  Les étudiants ne peuvent pas consulter une unité de type **Privé**, même si la section et la sous-section dont elle dépend sont publiées.
   
-  Students cannot view a **Public** unit if the containing section and subsection are *not* released.
+  Les étudiants ne peuvent pas consulter une unité de type **Public** si la section et la sous-section dont elle dépend *ne sont pas* publiées.
   
-  Course staff *cannot* see Private units in the LMS.
+  L'équipe pédagogique *ne peut pas* afficher les unités de type Privé dans le LMS.
   
-In summary, for students to see content, the unit must be **Public**, and the containing section and
-subsection must be released. If all these criteria are not met, students do not see that unit.
+En bref, pour que les étudiants aient accès à du contenu, l'unité doit être de type **Public**, et les section et sous-section dont elle dépend doivent être publiées. Si certains de ces critères ne sont pas respectés, les étudiants n'auront pas accès à cette unité.
 
-Continue reading this chapter for more details.
+Pour plus d'informations, reportez-vous aux sections suivantes de ce chapitre.
 
 
 .. _Release Dates:
 
 *******************
-Release Dates
+Dates de publication
 *******************
 
-Release dates specify the dates when content is available to students. 
-Release dates are set at the section and subsection levels. 
+Les dates de publication désignent les dates auxquelles le contenu est accessible aux étudiants. 
+Ces dates sont définies au niveau de la section et de la sous-section. 
 
-Neither a section nor its contents are visible to students until the release date passes. 
-However, course staff can see content in the LMS regardless of its release date.
+Une section et son contenu ne seront accessibles aux étudiants qu'une fois la date de publication passée. 
+Toutefois, l'équipe pédagogique peut accéder au contenu dans le LMS, indépendamment de la date de publication définie.
 
 .. note:: 
-  For courses created before January 14, 2014, when you create a new section or subsection, the default release date is January 1, 1970. This means that public units are immediately published, and you must change this date to the future to prevent students from viewing the content.  
+  Pour les cours créés avant le 14 janvier 2014, lorsque vous créez une nouvelle section ou sous-section, la date de publication par défaut est le 1er janvier 1970. Par conséquent, les unités publiques sont immédiatement publiées et vous devez remplacer cette date par une date future afin d'empêcher les étudiants d'accéder au contenu.  
 
-  For courses created after January 14, 2014, the default release date is January 1, 2030. In this case, you must adjust the release date to the day you want students to be able to view the content.
-
-========================================
-Set the Release Date for a Section
-========================================
-
-You can set release date and time for each section.
-Before the release date and time, students are not able to view any content in that section. 
-
-To set a release date for a section:
-
-#. In the **Will Release:** field next to the section title, click **Edit**.
-#. Enter the release date in MM/DD/YYYY format, and the UTC time.
-#. Click **Save**.
-
+  Pour les cours créés après le 14 janvier 2014, la date de publication par défaut est le 1er janvier 2030. Vous devrez alors définir la date de publication, en d'autres termes indiquer à partir de quel jour vous souhaitez que les étudiants aient accès au contenu.
 
 ========================================
-Set the Release Date for a Subsection
+Définir la date de publication d'une section
 ========================================
 
-Subsections inherit the release date of the section they are in, but you can
-change this date so that different subsections are released at different times.
+Vous pouvez définir la date et l'heure de publication de chaque section.
+Avant la date et l'heure de publication, les étudiants ne peuvent pas afficher le contenu de cette section. 
 
-Note that if the release date for a subsection falls before the release date for
-the section that contains it, students will not be able to see the subsection
-until the release date for the *section* has passed. Section release dates
-override subsection release dates.
+Pour définir la date de publication d'une section :
 
-To set the release date for a subsection:
+#. Dans le champ **Will Release:** (Date de publication) en regard du titre de la section, cliquez sur **Éditer**.
+#. Saisissez la date de publication au format MM/JJ/AAAA et l'heure UTC.
+#. Cliquez sur **Enregistrer**.
 
-#. Open the subsection.
-#. Locate the **Subsection Settings** box in the top right corner.
-#. Enter the release date in MM/DD/YYYY format, and the UTC time.
+
+========================================
+Définir la date de publication d'une sous-section
+========================================
+
+Les sous-sections héritent de la date de publication de la section dont elles dépendent. Vous pouvez toutefois modifier cette date. Ainsi, des sous-sections différentes seront publiées à des moments différents.
+
+Notez que si la date de publication d'une sous-section est antérieure à la date de publication de la section dont cette sous-section dépend, les étudiants ne pourront pas accéder à la sous-section avant que la date de publication de la *section* ne soit passée. Les dates de publication des sections sont prioritaires par rapport aux dates de publication des sous-sections.
+
+Pour définir la date de publication d'une sous-section :
+
+#. Ouvrez la sous-section.
+#. Localisez la zone **Paramètres de la sous-section** dans le coin supérieur droit.
+#. Saisissez la date de publication au format MM/JJ/AAAA et l'heure UTC.
 
 
 ================================================
-Synch the Release Date for a Subsection
+Synchroniser la date de publication d'une sous-section
 ================================================
 
-You or other course staff could inadvertantly set the release date for a subsection 
-earlier than the release date for the containing section. In this situation, the subsection is 
-not released until the section is released.
+Il peut arriver qu'un membre de l'équipe pédagogique ou vous-même définissiez par erreur la date de publication d'une sous-section sur une date antérieure à la date de publication de la section dont cette sous-section dépend. Dans ce cas, la sous-section ne sera publiée qu'une fois la date de publication de la section passée.
 
-To help you keep your course and release dates organized, Studio flags subsections with earlier release dates
-than their containing section.  In this situation, when you open the subsection, in the Subsection Settings,
-you see the following message:
+Pour faciliter l'organisation de votre cours et permettre l'identification aisée des dates de publication problématiques, Studio signale les sous-sections dont les dates de publication sont antérieures à la date de publication de la section correspondante. Dans ce cas de figure, lorsque vous ouvrez la sous-section,
+le message suivant apparaît dans la zone Paramètres de la sous-section :
 
-``The date above differs from the release date of <Section Name> - <Section release date and time>. Sync to <Section Name>.``
+``La date ci-dessus ne correspond pas à la date de publication de <Section Name> - <Section release date and time>. Synchroniser avec <Section Name>.``
 
-Click **Sync to <Section Name>** to have the subsection inherit the later section release date.
+Pour que la sous-section hérite de la date de publication ultérieure de la section, cliquez sur **Synchroniser avec <Section Name>**.
 
 .. _Public and Private Units:
 
 *************************
-Public and Private Units
+Unités publiques et privées
 *************************
 
-Units are released at the release date of the subsection they are in.
+Les unités sont publiées à la date de publication de la sous-section à laquelle elles appartiennent.
 
-In addition, unites have a **Visibility** setting that you can set to **Public** or
-**Private**. 
+En outre, les unités sont dotées d'un paramètre **Visibilité**, que vous pouvez définir sur **Public** ou **Privé**. 
 
-When you create a unit, it is Private by default. 
-A Private unit is never visible to students, even if it is contained by a subsection that has been released.
+Lorsque vous créez une unité, elle est de type **Privé** par défaut. 
+Une unité de type Privé n'est jamais accessible aux étudiants, même si elle est incluse dans une sous-section publiée.
 
-When you change the visibility setting of a unit from Private to Public, you publish the unit and its contents. 
-You must set the Visibility to Public for students to be able to see the unit.
+Lorsque vous modifiez le paramètre Visibilité d'une unité, défini sur Privé, et que vous le définissez sur Public, vous publiez l'unité et son contenu. 
+Vous devez définir le paramètre Visibilité sur Public pour que les étudiants puissent accéder à l'unité.
 
-Course staff cannot see Private units in the LMS.
+L'équipe pédagogique ne peut pas afficher les unités de type Privé dans le LMS.
 
 
 .. _Modifying Public Units:
 
 *************************
-Modifying Public Units
+Modification des unités publiques
 *************************
 
-To make revisions to a unit that has been published, you create and edit a draft of that unit. 
+Pour effectuer des révisions sur une unité publiée, créez et éditez un brouillon de cette unité. 
 
-.. Warning:: 
- There are additional implications to modifying a public unit that has graded
- problem components students may have already completed.  See :ref:`Modifying a
- Released Problem` for more information.
+.. Avertissement : 
+ La modification d'une unité publique peut avoir certaines implications. En effet, cette unité peut inclure des composants Exercice notés, que les étudiants ont peut-être déjà effectués.  Voir : ref:`Modification d'un exercice publié` pour plus d'informations.
 
-To create a draft, go to the unit's page, and then click **edit a draft** in the right pane.
+Pour créer un brouillon, accédez à la page de l'unité, puis cliquez sur le lien **éditer un brouillon** dans le volet droit.
 
 .. image:: ../Images/Viz_Revise_EditDraft.png
  :width: 800
- :alt: Image of a public unit with the edit a draft link circled
+ :alt: Image d'une unité publique - Le lien éditer un brouillon est entouré d'un cercle
 
-When you edit a draft of a unit, you can view the unit's contents in two ways.
+Lorsque vous éditez le brouillon d'une unité, vous pouvez afficher le contenu de l'unité de deux façons.
 
-* To view the already-published content as it appears in the live course, click **View the Live Version** in the upper-right corner of the page.
-* To view the unpublished content as you're working on it, click **Preview**.
+* Pour afficher le contenu déjà publié tel qu'il apparaît dans la version réelle du cours, cliquez sur **Voir la version réelle** dans le coin supérieur droit de la page.
+* Pour afficher le contenu non publié en cours de révision, cliquez sur **Aperçu**.
 
 .. image:: ../Images/Viz_Revise_ViewLiveandPreview.png
- :alt: Image of draft unit
+ :alt: Image d'un brouillon
 
-When you're ready to publish the draft of your revised content, 
-click **replace it with this draft** in the right pane. 
+Lorsque vous êtes prêt à publier le brouillon de votre contenu révisé, cliquez sur le lien **la remplacer avec ce brouillon** dans le volet droit. 
 
-If you decide you don't want to keep the revised content, click **Delete Draft**.
+Si vous décidez que vous ne souhaitez pas conserver le contenu révisé, cliquez sur **Supprimer le brouillon**.
 
 .. image:: ../Images/Viz_Revise_ReplaceorDelete.png
-  :alt: Image of a unit settings panel with the replace it with this draft link circled
+  :alt: Image d'un panneau Paramètres d'unité - Le lien la remplacer avec ce brouillon est entouré d'un cercle
 
-.. Warning:: Historical versions of units are not stored by Studio. After you replace the live version with a new draft, you cannot revert the unit to the previous version. 
-
-  
-  
+.. Avertissement : Les versions historiques des unités ne sont pas stockées par Studio. Après avoir remplacé la version réelle par un nouveau brouillon, vous ne pouvez pas rétablir cette version précédente de l'unité.

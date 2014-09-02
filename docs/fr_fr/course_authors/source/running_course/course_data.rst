@@ -1,76 +1,60 @@
 .. _Course Data:
 
 ############################
-Course Data
+Données du cours
 ############################
 
-After you create a course, you can access information about it from the
-Instructor Dashboard. You can find:
+Après avoir créé un cours, vous pouvez accéder aux informations relatives au cours depuis le
+tableau de bord de l'enseignant. Sont notamment présentés :
 
-* Identifying information for the course.
+* des informations d'identification du cours ;
 
-* Whether the course has started or ended.
+* des informations précisant si le cours a commencé ou s'il est terminé ;
 
-* The defined grade cutoff for passing or failing.
+* le seuil de notation défini (réussite/échec).
 
 *************************************************
-Review Course Data
+Consulter les données du cours
 *************************************************
 
-To view course data:
+Pour afficher les informations relatives au cours :
 
-#. View the live version of your course.
+#. Affichez la version réelle de votre cours.
 
-#. Click **Instructor**, then click **Course Info** if necessary. 
+#. Cliquez sur **Instructor** (Enseignant), puis sur **Infos** le cas échéant. 
 
-   The **Basic Course Information** section of the page that opens lists
-   information about the course.
+   La section **Informations de base relatives au cours** de la page qui s'ouvre répertorie les informations sur le cours.
 
     .. image:: ../Images/Instructor_Dash_Course_Info.png
-     :alt: The basic course information section of the Instructor Dashboard 
+     :alt: Section Informations de base relatives au cours du tableau de bord de l'enseignant 
 
 *************************************************
-Sources in Studio of the Basic Course Information
+Sources des informations de base relatives au cours - Studio
 *************************************************
 
-The course data that displays on the Instructor Dashboard is defined in
-Studio, or derived from data that you define in Studio.
+Les données de cours qui apparaissent dans le tableau de bord de l'enseignant sont définies dans Studio ou dérivées de données que vous avez définies dans Studio.
 
-* **Organization**: Specified in Studio when you create the course. Becomes
-  part of the course URL, and cannot be changed.
+* **Organisme** : Spécifié dans Studio lorsque vous créez le cours. Est intégré à l'URL du cours et ne peut être modifié.
 
-* **Course Number**: Specified in Studio when you create the course. Becomes
-  part of the course URL, and cannot be changed.
+* **Numéro du cours** : Spécifié dans Studio lorsque vous créez le cours. Est intégré à l'URL du cours et ne peut être modifié.
 
-* **Course Name**: Specified in Studio when you create the course. Becomes
-  part of the course URL, and cannot be changed. In Studio, this field is
-  labeled **Course Run**.
+* **Nom du cours** : Spécifié dans Studio lorsque vous créez le cours. Est intégré à l'URL du cours et ne peut être modifié. Dans Studio, ce champ est nommé **Cours dispensé**.
 
-* **Course Display Name**: Specified in Studio when you create the course. In
-  Studio, this field is labeled **Course Name**. 
+* **Nom d'affichage du cours** : Spécifié dans Studio lorsque vous créez le cours. Dans Studio, ce champ est nommé **Nom du cours**. 
 
-  This name can be changed in Studio (not recommended if your course is live):
-  select **Settings** > **Advanced Settings** and scroll down to the policy key
-  labeled **display_name**. This setting changes the **Course Display Name** in the LMS only. 
+  Ce nom peut être modifié dans Studio (non recommandé s'il s'agit de la version en cours de votre cours) :
+  Dans le menu **Paramètres**, sélectionnez **Paramètres avancés**. La valeur de la clé de stratégie **Nom d'affichage du cours** définit le nom du cours qui n'apparaît que dans le LMS.
 
-  The illustration that follows shows the information collected by Studio for
-  a new course side-by-side with the same information in the **Basic Course
-  Information** section of the Instructor Dashboard.
+  L'illustration suivante présente côte à côte les informations recueillies par Studio pour un nouveau cours et les mêmes informations de la section **Informations de base relatives au cours** du tableau de bord de l'enseignant.
 
 .. image:: ../Images/Course_Info_Comparison.png
-   :alt: The Course Name in Studio and the Course Display Name in the LMS are boxed; the Course Run in Studio and the Course Name in the LMS are circled
+   :alt: Le nom du cours dans Studio et le nom d'affichage du cours dans le LMS sont encadrés ; le cours dispensé dans Studio et le nom du cours dans le LMS sont entourés d'un cercle
    :width: 800
 
-* **Has the course started**: Derived from the **Course Start Date** and the
-  current date. This date can be changed in Studio (not recommended if your
-  course is live): select **Settings** > **Schedule & Details**.
+* **Le cours a-t-il commencé ?** : Réponse dérivée de la **date de début du cours** et de la date actuelle. Cette date peut être modifiée dans Studio (non recommandé s'il s'agit de la version réelle de votre cours) : sélectionnez **Paramètres** > **Dates & Détails**.
 
-* **Has the course ended**: Derived from the **Course End Date** and the
-  current date. This date can be changed in Studio (not recommended if your
-  course is live): select **Settings** > **Schedule & Details**.
+* **Le cours est-il terminé ?** : Réponse dérivée de la **date de fin du cours** et de la date actuelle. Cette date peut être modifiée dans Studio (non recommandé s'il s'agit de la version réelle de votre cours) : sélectionnez **Paramètres** > **Dates & Détails**.
 
-* **Grade Cutoffs**: Specified in Studio when you define the cutoff for a
-  failing grade. Students who earn exactly the cutoff value pass the course.
-  Grading can be changed in Studio (not recommended if your course is live):
-  select **Settings** > **Grading**.
-
+* **Seuils de notation** : Spécifiés dans Studio lorsque vous définissez le seuil de notation (note de passage). Les étudiants qui obtiennent exactement la note correspondant au seuil de notation valident leur cours (réussite).
+  Cette note peut être modifiée dans Studio (non recommandé s'il s'agit de la version réelle de votre cours) :
+  sélectionnez **Paramètres** > **Évaluation**.
