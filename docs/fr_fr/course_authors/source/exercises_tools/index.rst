@@ -18,7 +18,6 @@ Creating Exercises and Tools
    dropdown
    external_graders
    full_screen_image
-   gene_explorer
    google_hangouts
    iframe
    image_mapped_input
