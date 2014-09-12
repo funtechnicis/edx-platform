@@ -1,39 +1,39 @@
 .. _Protein Builder:
 
 ############################
-Protex Protein Builder Tool
+Système d'élaboration de protéines Protex
 ############################
 
-The Protex protein builder asks students to create specified protein shapes by stringing together amino acids. In the example below, the goal protein shape is a simple line. 
+Le système d'élaboration de protéines Protex invite les étudiants à créer des formes protéiques spécifiées en associant différents acides aminés. Dans l'exemple ci-après, la forme protéique cible est une simple ligne. 
 
 
 .. image:: /Images/ProteinBuilder.png
-  :alt: Image of the protein builder
+  :alt: Image d'un système d'élaboration de protéines
 
 .. _Create the Protein Builder:
 
 ********************************
-Create the Protein Builder Tool
+Créer un système d'élaboration de protéines
 ********************************
 
-To create the protein builder:
+Pour créer un système d'élaboration de protéines :
 
-#. Under **Add New Component**, click **Problem**, and then click **Blank Advanced Problem**.
-#. In the component that appears, click **Edit**.
-#. In the component editor, paste the Problem component code from below.
-#. Make any changes that you want, and then click **Save**.
+#. Sous **Ajouter un nouveau composant**, cliquez sur **Exercice**, puis sur **Blank Advanced Problem** (Exercice avancé vide).
+#. Dans le composant qui apparaît, cliquez sur **Éditer**.
+#. Dans l'éditeur de composant, collez le code du composant Exercice présenté ci-après.
+#. Effectuez les modifications souhaitées, puis cliquez sur **Enregistrer**.
 
 .. _Protein Builder Code:
 
 *************************
-Protein Builder Tool Code
+Code du système d'élaboration de protéines
 *************************
 
 .. code-block:: xml
 
   <problem>
-      <p>The protein builder allows you string together the building blocks of proteins, amino acids, and see how that string will form into a structure. You are presented with a goal protein shape, and your task is to try to re-create it. In the example below, the shape that you are asked to form is a simple line.</p> 
-     <p>Be sure to click "Fold" to fold your protein before you click "Check".</p>
+      <p>Le système d'élaboration de protéines vous permet de rassembler en une chaîne les éléments constitutifs des protéines, les acides aminés. Vous pourrez ainsi visualiser comment cette chaîne se constitue et devient une structure. Le système vous présente une forme protéique cible. Votre tâche consiste à la recréer. Dans l'exemple ci-dessous, la forme que vous êtes invité à constituer est une simple ligne.</p> 
+     <p>Cliquez sur "Fold" (Plier) afin de plier votre protéine. Cliquez ensuite sur "Valider".</p>
 
   <script type="loncapa/python">
 
@@ -41,7 +41,7 @@ Protein Builder Tool Code
     import json
     ans=json.loads(ans)
     if "ERROR" in ans["protex_answer"]:
-      raise ValueError("Protex did not understand your answer. Try folding the protein.")
+      raise ValueError("Protex n'a pas compris votre réponse. Tentez de plier la protéine.")
     return ans["protex_answer"]=="CORRECT"
 
   </script>
@@ -53,20 +53,20 @@ Protein Builder Tool Code
     </text>
     <solution>
       <p>
-        Many protein sequences, such as the following example, fold to a straight line.You can play around with the protein builder if you're curious.
+        De nombreuses séquences de protéines, comme la séquence présentée dans l'exemple suivant, sont pliées selon une ligne droite. Vous pouvez, si vous le souhaitez, vous exercer à manipuler le système d'élaboration de protéines.
       </p>
       <ul>
         <li>
-            Stick: RRRRRRR
+            Forme en bâton : RRRRRRR
         </li>
       </ul>
     </solution>
   </problem>
 
-In this code:
+Dans ce code :
  
-* **width** and **height** specify the dimensions of the application, in pixels.
-* **target_shape** lists the amino acids that, combined in the order specified, create the shape you've asked students to create. The list can only include the following letters, which correspond to the one-letter code for each amino acid. (This list appears in the upper-left corner of the protein builder.)
+* **width** et **height** spécifient les dimensions de l'application (en pixels).
+* **target_shape** répertorie les acides aminés qui, rassemblés dans l'ordre spécifié, créent la forme que vous avez demandé aux étudiants de créer. La liste ne peut inclure que les lettres suivantes, qui correspondent au code à une lettre de chaque acide aminé. (Cette liste apparaît dans le coin supérieur gauche du système d'élaboration de protéines.)
 
   .. list-table::
      :widths: 15 15 15 15

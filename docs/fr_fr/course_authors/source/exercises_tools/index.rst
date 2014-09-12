@@ -1,7 +1,7 @@
 .. _Exercises and Tools Index:
 
 ############################
-Creating Exercises and Tools
+Création d'exercices et d'outils
 ############################
 
 .. toctree::
@@ -18,6 +18,7 @@ Creating Exercises and Tools
    dropdown
    external_graders
    full_screen_image
+   gene_explorer
    google_hangouts
    iframe
    image_mapped_input

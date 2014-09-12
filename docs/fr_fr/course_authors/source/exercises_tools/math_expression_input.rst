@@ -1,55 +1,54 @@
 .. _Math Expression Input:
 
 ####################################
-Math Expression Input Problems
+Exercices avec saisie d'expressions mathématiques
 ####################################
 
-In math expression input problems, students enter text that represents a mathematical expression into a field, and text is converted to a symbolic expression that appears below that field. Unlike numerical input problems, which only allow integers and a few select constants, math expression problems can include unknown variables and more complicated symbolic expressions. 
+Dans les exercices avec saisie d'expressions mathématiques, les étudiants saisissent dans un champ un texte qui représente une expression mathématique. Ce texte est alors converti en une expression symbolique qui apparaît sous le champ. À la différence des exercices avec saisie de chiffres, qui n'autorisent que les nombres entiers et quelques constantes sélectionnées, les exercices avec saisie d'expressions mathématiques peuvent inclure des variables inconnues et des expressions symboliques plus complexes. 
 
 .. image:: /Images/MathExpressionInputExample.png
- :alt: Image of math expression input problem
+ :alt: Image d'un exercice avec saisie d'expressions mathématiques
 
-For more information about characters that students can enter, see :ref:`Math Response Formatting for Students`.
+Pour plus d'informations sur les caractères acceptés, voir :ref:`Format des réponses dans les exercices de mathématiques`.
 
-The grader uses a numerical sampling to determine whether the student's response matches the instructor-provided math expression, to a specified numerical tolerance. The instructor must specify the allowed variables in the expression as well as the range of values for each variable.
+L'évaluateur se base sur un échantillonnage numérique pour déterminer si la réponse de l'étudiant correspond à l'expression mathématique fournie par l'enseignant et si elle est conforme aux instructions définies en matière de caractères numériques. L'enseignant doit spécifier quelles sont les variables autorisées dans l'expression et indiquer la plage de valeurs associée à chaque variable.
 
-.. warning:: Math expression input problems cannot currently include negative numbers raised to fractional powers, such as (-1)^(1/2). Math expression input problems can include complex numbers raised to fractional powers, or positive non-complex numbers raised to fractional powers.
+Avertissement : Les exercices avec saisie d'expressions mathématiques ne peuvent actuellement pas inclure de chiffre négatif élevé à une puissance fractionnaire, par exemple : (-1)^(1/2). Les exercices avec saisie d'expressions mathématiques peuvent inclure des nombres complexes élevés à des puissances fractionnaires ou des nombres positifs non complexes élevés à des puissances fractionnaires.
 
-When you create a math expression input problem in Studio, you'll use `MathJax <http://www.mathjax.org>`_ to change your plain text into "beautiful math." For more information about how to use MathJax in Studio, see :ref:`MathJax in Studio`.
+Lorsque vous créez un exercice avec saisie d'expressions mathématiques dans Studio, vous devrez utiliser `MathJax <http://www.mathjax.org>`_ pour transformer votre texte brut en expression mathématique. Pour plus d'informations sur l'utilisation de MathJax dans Studio, voir :ref:`Introduction à l'utilisation de MathJax dans Studio`.
 
 ************************************************
-Create a Math Expression Input Problem
+Créer un exercice avec saisie d'expressions mathématiques
 ************************************************
 
-To create a math expression input problem:
+Pour créer un exercice avec saisie d'expressions mathématiques :
 
-#. In the unit where you want to create the problem, click **Problem**
-   under **Add New Component**, and then click the **Advanced** tab.
-#. Click **Math Expression Input**.
-#. In the component that appears, click **Edit**.
-#. In the component editor, replace the example code with your own code. To practice, you may want to use the sample problem code below.
-#. Click **Save**.
+#. Dans l'unité dans laquelle vous souhaitez créer l'exercice, cliquez sur **Exercice** sous **Ajouter un nouveau composant**, puis cliquez sur l'onglet **Avancé**.
+#. Cliquez sur **Math Expression Input** (Saisie d'expressions mathématiques).
+#. Dans le composant qui apparaît, cliquez sur **Éditer**.
+#. Dans l'éditeur de composant, remplacez l'exemple de code par votre propre code. Pour votre exercice, vous pouvez utiliser le code de l'exercice présenté en exemple ci-après.
+#. Cliquez sur **Enregistrer**.
 
-**Sample Problem Code**
+**Exemple de code d'exercice**
 
 .. code-block:: xml
 
   <problem>
-    <p>Some problems may ask for a mathematical expression. Practice creating mathematical expressions by answering the questions below.</p>
+    <p>Certains exercices font référence à une équation mathématique. Entraînez-vous à créer des expressions mathématiques en répondant aux questions ci-après.</p>
 
-    <p>Write an expression for the product of R_1, R_2, and the inverse of R_3.</p>
+    <p>Écrivez une expression pour le produit de R_1, R_2 et l'inverse de R_3.</p>
     <formularesponse type="ci" samples="R_1,R_2,R_3@1,2,3:3,4,5#10" answer="$VoVi">
       <responseparam type="tolerance" default="0.00001"/>
-      <formulaequationinput size="40" label="Enter the equation"/>
+      <formulaequationinput size="40" label="Saisissez l'équation"/>
     </formularesponse>
 
   <script type="loncapa/python">
   VoVi = "(R_1*R_2)/R_3"
   </script>
 
-    <p>Let <i>x</i> be a variable, and let <i>n</i> be an arbitrary constant. What is the derivative of <i>x<sup>n</sup></i>?</p>
+    <p>Supposons que <i>x</i> est la variable et que <i>n</i> est la constante arbitraire. Quelle est la dérivée de <i>x<sup>n</sup></i>?</p>
   <script type="loncapa/python">
-  derivative = "n*x^(n-1)"
+  dérivée = "n*x^(n-1)"
   </script>
     <formularesponse type="ci" samples="x,n@1,2:3,4#10" answer="$derivative">
       <responseparam type="tolerance" default="0.00001"/>
@@ -58,8 +57,8 @@ To create a math expression input problem:
 
     <solution>
       <div class="detailed-solution">
-        <p>Explanation or Solution Header</p>
-        <p>Explanation or solution text</p>
+        <p>Titre de la solution ou de l'explication</p>
+        <p>Texte de la solution ou de l'explication</p>
       </div>
     </solution>
   </problem>
@@ -67,17 +66,17 @@ To create a math expression input problem:
 .. _Math Expression Input Problem XML:
 
 **********************************
-Math Expression Input Problem XML
+Exercice avec saisie d'expressions mathématiques - Format XML
 **********************************
 
 ============
-Templates
+Modèles
 ============
 
 .. code-block:: xml
 
   <problem>
-    <p>Write an expression for the product of R_1, R_2, and the inverse of R_3.</p>
+    <p>Écrivez une expression pour le produit de R_1, R_2 et l'inverse de R_3.</p>
     <formularesponse type="ci" samples="R_1,R_2,R_3@1,2,3:3,4,5#10" answer="R_1*R_2/R_3">
       <responseparam type="tolerance" default="0.00001"/> 
       <formulaequationinput size="40"  label="Enter the equation" />
@@ -87,26 +86,26 @@ Templates
 .. code-block:: xml
 
   <problem>
-    <p>Problem text</p>
+    <p>Texte de l'exercice</p>
     <formularesponse type="ci" samples="VARIABLES@LOWER_BOUNDS:UPPER_BOUNDS#NUMBER_OF_SAMPLES" answer="$VoVi">
       <responseparam type="tolerance" default="0.00001"/>
-      <formulaequationinput size="20"  label="Enter the equation" />
+      <formulaequationinput size="20"  label="Saisissez l'équation" />
     </formularesponse>
 
   <script type="loncapa/python">
-  PYTHON SCRIPT
+  SCRIPT PYTHON
   </script>
 
     <solution>
       <div class="detailed-solution">
-        <p>Explanation or Solution Header</p>
-        <p>Explanation or solution text</p>
+        <p>Titre de la solution ou de l'explication</p>
+        <p>Texte de la solution ou de l'explication</p>
       </div>
     </solution>
   </problem>
 
 ====
-Tags
+Balises
 ====
 
 * ``<formularesponse>``
@@ -114,74 +113,73 @@ Tags
 * ``<responseparam>``
 * ``<script>``
 
-**Tag:** ``<formularesponse>``
+**Balise :** ``<formularesponse>``
 
-Specifies that the problem is a math expression input problem. The ``<formularesponse>`` tag is similar to ``<numericalresponse>``, but ``<formularesponse>`` allows unknown variables.
+Indique que cet exercice est un exercice avec saisie d'expressions mathématiques. La balise ``<formularesponse>`` est similaire à ``<numericalresponse>`` mais ``<formularesponse>`` accepte les variables inconnues.
 
-  Attributes
+  Attributs
 
-  **type**: Can be "cs" (case sensitive, the default) or "ci" (case insensitive, so that capitalization doesn't matter in variable names).
+  **type** : Peut être "cs" (de l'anglais case sensitive, soit : sensible à la casse ; il s'agit de la valeur par défaut) ou "ci" (de l'anglais case insensitive, soit : insensible à la casse ; il est alors possible d'utiliser indifféremment majuscules ou de minuscules dans les noms de variables).
 
-  **answer**: The correct answer to the problem, given as a mathematical expression. If you precede a variable name in the problem with a dollar sign ($), you can include a script in the problem that computes the expression in terms of that variable.
+  **answer** : Réponse correcte au problème, présentée en tant qu'expression mathématique. Si vous incluez dans l'exercice un nom de variable, précédé d'un signe de dollar ($), vous pouvez inclure (toujours dans l'exercice) un script qui calcule l'expression sur la base de cette variable.
 
-  **samples**: Specifies important information about the problem in four lists:
+  **samples** : Spécifie des informations importantes sur l'exercice dans quatre listes :
 
-    * **variables**: A set of variables that students can enter.
-    * **lower_bounds**: For every defined variable, a lower bound on the numerical tests to use for that variable.
-    * **upper_bounds**: For every defined variable, an upper bound on the numerical tests to use for that variable.
-    * **num_samples**: The number of times to test the expression.
+    * **variables** : Ensemble de variables que les étudiants peuvent saisir.
+    * **lower_bounds** : Pour chaque variable définie, la limite inférieure à utiliser pour cette variable lors des tests numériques.
+    * **upper_bounds** : Pour chaque variable définie, la limite supérieure à utiliser pour cette variable lors des tests numériques.
+    * **num_samples** : Nombre de fois que l'expression est testée.
 
-    Commas separate items inside each of the four individual lists, and the at sign (@), colon (:), and pound sign (#) characters separate the four lists. The format is the following:
+    Les virgules séparent les éléments dans chacune des quatre listes ; le signe (@), le deux-points (:) et le dièse (#) séparent les quatre listes. Le format est le suivant :
 
     ``"variables@lower_bounds:upper_bounds#num_samples``
 
-    For example, a ``<formularesponse>`` tag that includes the **samples** attribute may look like either of the following.
+    Par exemple, une balise ``<formularesponse>`` qui inclut l'attribut **samples** peut ressembler à l'une des balises présentées ci-après.
 
     ``<formularesponse samples="x,n@1,2:3,4#10">``
 
     ``<formularesponse samples="R_1,R_2,R_3@1,2,3:3,4,5#10">``
 
-  Children
+  Enfants
 
   * ``<formulaequationinput />``
 
-**Tag:** ``<formulaequationinput />``
+**Balise :** ``<formulaequationinput />``
 
-Creates a response field where a student types an answer to the problem in plain text, as well as a second field below the response field where the student sees a typeset version of the plain text. The parser that renders the student's plain text into typeset math is the same parser that evaluates the student's response for grading.
+Crée un champ de réponse dans lequel l'étudiant saisit une réponse en texte brut ; crée également un second champ de réponse sous le champ dans lequel l'étudiant peut voir une version mise en page du texte brut. Un analyseur permet l'affichage de la réponse de l'étudiant, présentée en texte brut, en expression mathématique mise en page. Ce même analyseur évalue la réponse de l'étudiant pour la noter.
 
-  Attributes
+  Attributs
 
   .. list-table::
      :widths: 20 80
 
-     * - Attribute
+     * - Attribut
        - Description
-     * - label (required)
-       - Specifies the name of the response field.
-     * - size (optional)
-       - Specifies the width, in characters, of the response field where students enter answers.
+     * - label (obligatoire)
+       - Spécifie le nom du champ de la réponse.
+     * - size (facultatif)
+       - Spécifie la largeur, en caractères, du champ de réponse dans lequel les étudiants saisissent leurs réponses.
 
-  Children
+  Enfants
   
-  (none)
+  (aucun)
 
-**Tag:** ``<responseparam>``
+**Balise :** ``<responseparam>``
 
-Used to define an upper bound on the variance of the numerical methods used to approximate a test for equality.
+Permet de définir une limite supérieure pour l'écart entre les méthodes numériques utilisées pour réaliser un test d'égalité approximative.
 
-  Attributes
+  Attributs
 
   .. list-table::
      :widths: 20 80
 
-     * - Attribute
+     * - Attribut
        - Description
-     * - default (required)
-       - A number or a percentage specifying how close the student and grader expressions must be. Failure to include a tolerance leaves expressions vulnerable to unavoidable rounding errors during sapling, causing some student input to be graded as incorrect, even if it is algebraically equivalent to the grader's expression.
+     * - default (obligatoire)
+       - Chiffre ou pourcentage indiquant le degré de proximité des expression de l'étudiant et de l'évaluateur. L'incapacité d'inclure une tolérance introduit une vulnérabilité au niveau des expressions : des erreurs d'arrondi inévitables risquent de survenir lors de l'échantillonnage, entraînant alors l'évaluation incorrecte de la réponse d'un étudiant, même si sa réponse est algébriquement équivalente à l'expression de l'évaluateur.
      * - type
-       - "tolerance"--defines a tolerance for a number
+       - "tolerance"--définit une tolérance pour un nombre
 
-  Children
+  Enfants
   
-  (none)
-
+  (aucun)

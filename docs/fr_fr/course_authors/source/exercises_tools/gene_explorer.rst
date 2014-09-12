@@ -1,34 +1,34 @@
 .. _Gene Explorer:
 
 ##################
-Gene Explorer Tool
+Gene Explorer
 ##################
 
-The Gene Explorer (GeneX), from the biology department at `UMB <http://www.umb.edu/>`_, simulates the transcription, splicing, processing, and translation of a small hypothetical eukaryotic gene. GeneX allows students to make specific mutations in a gene sequence, and it then calculates and displays the effects of the mutations on the mRNA and protein. 
+L'application Gene Explorer (GeneX), du département de biologie de `UMB <http://www.umb.edu/>`_, simule la transcription, l'épissage, la maturation et la traduction d'un petit gène eucaryote hypothétique. GeneX permet aux étudiants de procéder à des mutations spécifiques dans une séquence génique, puis calcule et affiche les effets des mutations sur l'ARNm et les protéines. 
 
-Specifically, the Gene Explorer does the following:
+L'application Gene Explorer effectue en particulier les opérations suivantes :
 
-#. Finds the promoter and terminator
-#. Reads the DNA sequence to produce the pre-mRNA
-#. Finds the splice sites
-#. Splices and tails the mRNA
-#. Finds the start codon
-#. Translates the mRNA
+#. Identifie le promoteur et le terminateur
+#. Lit la séquence d'ADN afin de produire le pré-ARNm
+#. Identifie les sites d'épissage
+#. Réalise l'épissage de l'ARNm et ajoute la queue
+#. Identifie le codon initiateur
+#. Traduit l'ARNm
 
 .. image:: /Images/GeneExplorer.png
-  :alt: Image of the Gene Explorer
+  :alt: Image de Gene Explorer
 
-For more information about the Gene Explorer, see `The Gene Explorer <http://intro.bio.umb.edu/GX/>`_.
+Pour plus d'informations sur l'application Gene Explorer, voir la page `The Gene Explorer <http://intro.bio.umb.edu/GX/>`_.
 
 ********************
-Gene Explorer Code
+Code de l'application Gene Explorer
 ********************
 
 .. code-block:: xml
 
   <problem>
-  <p>Make a single base pair substitution mutation in the gene below that results in a protein that is longer than the protein produced by the original gene. When you are satisfied with your change and its effect, click the <b>SUBMIT</b> button.</p>
-  <p>Note that a "single base pair substitution mutation" is when a single base is changed to another base; for example, changing the A at position 80 to a T. Deletions and insertions are not allowed.</p>
+  <p>Effectuez une mutation par substitution d'une paire de bases simples dans le gène ci-dessous. Il en résulte une protéine plus longue que la protéine produite par le gène d'origine. Lorsque les modifications effectuées et leurs effets vous semblent satisfaisants, cliquez sur le bouton <b>SOUMETTRE</b> .</p>
+  <p>Notez qu'une "mutation par substitution d'une paire de bases simples" correspond à la modification d'une base simple en une autre base ; par exemple, la modification de A en position 80 en T. Les délétions et les insertions ne sont pas autorisées.</p>
   <script type="loncapa/python">
   def genex_grader(expect,ans):
       if ans=="CORRECT": return True
@@ -41,9 +41,9 @@ Gene Explorer Code
   </customresponse>
   </problem>
 
-In this code:
+Dans ce code :
 
-* **width** and **height** specify the dimensions of the application, in pixels.
-* **genex_dna_sequence** is the default DNA sequence that appears when the problem opens.
-* **dna_sequence** contains the application's state and the student's answer. This value must be the same as **genex_dna_sequence**. 
-* **genex_problem_number** specifies the number of the problem. This number is based on the five gene editor problems in the MITx 7.00x course--for example, if you want this problem to look like the second gene editor problem in the 7.00x course, you would set the **genex_problem_number** value to 2. The number must be 1, 2, 3, 4, or 5.
+* **width** et **height** spécifient les dimensions de l'application (en pixels).
+* **genex_dna_sequence** est la séquence d'ADN par défaut qui apparaît à l'ouverture de l'exercice.
+* **dna_sequence** contient l'état de l'application et la réponse de l'étudiant. Cette valeur doit être identique à la valeur **genex_dna_sequence**. 
+* **genex_problem_number** spécifie le chiffre associé à l'exercice. Ce chiffre est défini en fonction des cinq exercices de l'éditeur de gènes, inclus dans le cours MITx 7.00x. Par exemple, si vous souhaitez que cet exercice soit similaire au deuxième exercice du cours 7.00x, vous devrez définir la valeur **genex_problem_number** sur 2. Ce chiffre doit être égal à 1, 2, 3, 4 ou 5.

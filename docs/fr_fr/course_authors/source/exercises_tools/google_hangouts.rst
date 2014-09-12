@@ -1,134 +1,134 @@
 .. _Google Instant Hangout:
 
 ###########################################
-Google Instant Hangout Tool
+Outil de messagerie instantanée : Google Hangouts
 ###########################################
 
-This chapter describes how you can use instant hangouts in your course. See:
+Ce chapitre décrit comment utiliser le système de messagerie instantanée dans votre cours. Sommaire :
 
-* :ref:`Hangouts_Overview`
-* :ref:`Instant Hangouts in Your Course`
-* :ref:`The Student Experience`
-* :ref:`Limitations`
-* :ref:`Create the Instant Hangout`
+* :ref:`Présentation de Hangouts`
+* :ref:`Ajouter des conversations instantanées à un cours`
+* :ref:`Participer à une conversation instantanée : le point de vue de l'étudiant`
+* :ref:`Limites`
+* :ref:`Créer une conversation instantanée`
 
 .. _Hangouts_Overview:
 
 *****************
-Overview
+Présentation
 *****************
 
-You can add the ability for students to participate in instant hangouts directly from your course.
+Vous pouvez permettre aux étudiants de participer à des conversations (via Hangouts) directement depuis votre cours.
 
-With instant hangouts, students can:
+Avec les conversations instantanées, les étudiants peuvent :
 
-* Interact through live video and voice.
-* Share screens and watch videos together.
-* Collaborate on documents.
+* passer des appels audio ou vidéo ;
+* partager leurs écrans et regarder des vidéos ensemble ;
+* collaborer sur des documents.
 
-For a full list of instant hangout features, see the `Google Hangouts page <http://www.google.com/+/learnmore/hangouts/>`_.
+Pour obtenir la liste complète des fonctions relatives aux conversations instantanées, reportez-vous à la `page Google Hangouts <http://www.google.com/+/learnmore/hangouts/>`_.
 
-.. note:: Students who want to participate in instant hangouts must have a Google account.  You should note this in your course materials.
+.. note:: Les étudiants qui souhaitent participer à une conversation instantanée doivent avoir un compte Google.  Nous vous recommandons de mentionner ce point dans vos ressources pédagogiques.
 
 .. _Instant Hangouts in Your Course:
 
 **********************************
-Instant Hangouts in Your Course
+Ajouter des conversations instantanées à un cours
 **********************************
 
-You can add one or more instant hangouts in your course. For example, you can add an instant hangout:
+Vous pouvez ajouter une ou plusieurs conversations instantanées à votre cours. Par exemple, vous pouvez ajouter une conversation instantanée :
 
-* In a page, to provide students with a hangout for the entire course. See :ref:`Adding Pages to a Course` for more information.
+* Dans une page : les étudiants pourront ainsi participer à des conversations instantanées tout au long du cours. Pour plus d'informations, voir :ref:`Ajout de pages à un cours`.
 
-* In an HTML component, to provide a hangout for students working on that specific course unit. See :ref:`Working with HTML Components` for more information about creating HTML components.
+* Dans un composant HTML : les étudiants inscrits à cette unité de cours spécifique pourront ainsi participer à des conversations instantanées. Pour plus d'informations sur la création de composants HTML, voir :ref:`Utilisation de composants HTML`.
 
-An instant hangout is specific to the page it is opened from. For example, students who join a hangout from one course unit interact among themselves, while students who join a hangout from another unit interact in a different hangout.
+Une conversation instantanée est spécifique à la page à partir de laquelle elle est lancée. Ainsi, les étudiants qui se joignent à une conversation depuis une unité de cours particulière interagissent entre eux. Les étudiants qui se joignent à une conversation lancée depuis une autre unité interagissent donc dans une autre conversation.
 
 .. _The Student Experience:
 
 *************************
-The Student Experience
+Participer à une conversation instantanée : le point de vue de l'étudiant
 *************************
 
-When you add the instant hangout to your course, a control for the hangout appears on that page. The following example shows the control in a course unit. The control shows that the student can start the hangout and be the first participant.
+Lorsque vous ajoutez une conversation instantanée à votre cours, une option dédiée apparaît sur cette page. L'exemple suivant présente l'option telle qu'elle apparaît dans une unité de cours. Avec cette option, l'étudiant peut lancer la conversation et être le premier participant.
 
 .. image:: /Images/hangout_unit.png
- :alt: Image of the instant hangout control on a unit
+ :alt: Image de l'option associée à une conversation instantanée dans une unité
 
-To start the hangout, the student clicks **Start the Hangout**. (After the first student clicks **Start the Hangout**, other students see a **Join the Hangout** button.)
+Pour lancer la conversation, l'étudiant clique sur **Start the Hangout** (Lancer la conversation). (Lorsque le premier étudiant clique sur **Start the Hangout** [Lancer la conversation], les autres étudiants peuvent accéder au bouton **Join the Hangout** [Se joindre à la conversation].)
 
-The following example shows the control in a page when a hangout has already started. The control has a **Join the Hangout** button, and shows that one other student is already in the hangout.
+L'exemple suivant présente l'option telle qu'elle apparaît dans une page lorsqu'une conversation a déjà été lancée. Le bouton **Join the Hangout** (Se joindre à la conversation) est affiché. Cela signifie que la conversation a été lancée et qu'un autre étudiant est déjà en ligne.
 
 .. image:: /Images/hangout_static_page.png
- :alt: Image of the instant hangout control on a page
+ :alt: Image de l'option associée à une conversation instantanée dans une page
 
-To join the hangout, the student clicks **Join the Hangout**.
+Pour se joindre à la conversation, l'étudiant clique sur **Join the Hangout** (Se joindre à la conversation).
 
-If not already logged in, the student is prompted to log in to Google:
+S'il n'est pas déjà connecté, l'étudiant est invité à se connecter à son compte Google :
 
 .. image:: /Images/google_login.png
- :alt: Image of the Google login page
+ :alt: Image de la page de connexion Google
 
-Students who do not have a Google account can create one from the login page.
+Les étudiants qui ne possèdent pas de compte Google peuvent en créer un depuis la page de connexion.
 
-After the student has logged in to Google, the hangout opens in a separate browser window:
+Une fois l'étudiant connecté à son compte Google, la conversation commence dans une nouvelle fenêtre du navigateur :
 
 .. image:: /Images/GoogleHangout_WithPeople.png
- :alt: Image of the instant hangout
+ :alt: Image de la conversation instantanée
 
 .. _Limitations:
 
 ****************
-Limitations
+Limites
 ****************
 
-Currently, only ten students can join a single instant hangout. You should note this in your course materials.
+Actuellement, seuls dix étudiants peuvent se joindre à une même conversation instantanée. Nous vous recommandons de mentionner ce point dans vos ressources pédagogiques.
 
-Students in hangouts that are started from different pages in your course are counted separately. So you can have ten students participating in a hangout started from one unit, and ten other students in a hangout started from a different unit.
+Les étudiants participant à des conversations lancées à partir de votre cours, mais depuis des pages différentes, sont comptés séparément. Ainsi, les dix étudiants participant à une conversation lancée depuis l'unité à laquelle ils sont inscrits seront comptabilisés à part des dix étudiants participant à une conversation lancée depuis une autre unité.
 
 .. _Create the Instant Hangout:
 
 **************************************************
-Create the Instant Hangout
+Créer une conversation instantanée
 **************************************************
 
-To create an instant hangout in your course:
+Pour créer une conversation instantanée dans votre cours :
 
-#. Get the `instant hangout JavaScript file from GitHub <https://raw.github.com/google/instant-hangouts/master/instanthangouts-0.1.0.js>`_.
+#. Téléchargez le `fichier JavaScript de conversation instantanée depuis GitHub <https://raw.github.com/google/instant-hangouts/master/instanthangouts-0.1.0.js>`_.
 
-#. Copy the text of this file into a text editor on your computer, and save the file as a JavaScript file (that is, when you save the file, change the extension from .txt to .js).
+#. Copiez le texte de ce fichier dans un éditeur de texte sur votre ordinateur, puis enregistrez le fichier en tant que fichier JavaScript (en d'autres termes, lorsque vous enregistrez le fichier, remplacez l'extension .txt par .js).
 
-   .. note::  Make sure that you copy the raw GitHub file, which does not contain formatting. Do not copy the formatted file. Any formatting will cause the JavaScript to not work correctly.
+   .. note::  Assurez-vous de copier le fichier GitHub brut, qui ne contient aucun formatage. Ne copiez pas le fichier mise en forme. Toute mise en forme entraînerait un dysfonctionnement du fichier JavaScript.
 
-#. Upload the JavaScript file to the **Files & Uploads** page in your course. See :ref:`Add Files to a Course` for more information.
+#. Chargez le fichier JavaScript sur la page **Fichiers et uploads** dans votre cours. Pour plus d'informations, voir :ref:`Ajouter des fichiers à un cours`.
 
-#. In either a page or an HTML component, open the HTML editor.
+#. Dans une page ou dans un composant HTML, ouvrez l'éditeur HTML.
 
-#. On the first line, add the JavaScript file you uploaded in a <script> tag. For example, if your JavaScript file is named **instanthangouts-0.1.0.js**, you would enter the following::
+#. Sur la première ligne, ajoutez le fichier JavaScript que vous avez chargé dans une balise <script> . Par exemple, si votre fichier JavaScript s'appelle **instanthangouts-0.1.0.js**, saisissez ce qui suit :
   
     <script src='/static/instanthangouts-0.1.0.js'/>
 
-#. After the <script> tag, add::
+#. Après la balise <script> , ajoutez :
   
     <div class='instanthangouts'/>
 
-#. Add any additional text and tags that you want.
+#. Ajoutez le texte et les balises supplémentaires souhaités.
 
-   For example, the complete HTML could be::
+   Par exemple, le code HTML complet pourrait être le suivant :
 
-    <p>Join an instant hangout by clicking the button below. 
-    You can use the hangout to have live video discussions with other students.</p>
+    <p>Pour vous joindre à une conversation instantanée, cliquez sur le bouton ci-dessous. 
+    Notez que la conversation peut également être transformée en appel vidéo.</p>
     <script src='/static/instanthangouts-0.1.0.js'></script>
     <div class='instanthangouts'/>
 
-#. Test the instant hangout in your course.
+#. Testez l'outil de conversation instantané dans votre cours.
 
 =============================
-Updating the JavaScript File
+Mise à jour du fichier JavaScript
 =============================
 
-Google will periodically update the instant hangouts JavaScript file.  To receive update notifications, go to the `instant hangouts repository page <https://github.com/google/instant-hangouts/>`_, and then click **Watch** in the upper-right area of the page. 
+Google mettra régulièrement à jour le fichier JavaScript relatif aux conversations instantanées.  Pour recevoir les notifications de mise à jour, accédez à la `page du référentiel relatif aux conversations instantanées <https://github.com/google/instant-hangouts/>`_, puis cliquez sur **Watch** (Consulter) dans le coin supérieur droit de la page. 
 
-To use an updated JavaScript file in your course, we recommend that you copy the JavaScript from the repository into a file that has the same name as the file that you uploaded to your course. When you upload the new file, the new file replaces the previous file.
+Pour utiliser dans votre cours un fichier JavaScript mis à jour, nous vous recommandons de copier le fichier JavaScript depuis le référentiel dans un fichier qui a le même nom que le fichier chargé dans votre cours. Lorsque vous chargez le nouveau fichier, ce dernier remplace l'ancien fichier.
 
-.. warning:: If you include version numbers in the file names of uploaded files, you will have to edit any HTML components or pages that include an instant hangout control every time that you update the JavaScript file.
+Avertissement : Si vous insérez des numéros de version dans les noms des fichiers chargés, vous devrez éditer les pages ou composants HTML incluant une option de conversation instantanée lors de chaque mise à jour du fichier JavaScript.

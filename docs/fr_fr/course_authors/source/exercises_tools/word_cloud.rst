@@ -1,66 +1,48 @@
 .. _Word Cloud:
 
 ##################
-Word Cloud Tool
+Nuage de mots
 ##################
 
 
-In a word cloud tool, students enter words into a field in response
-to a question or prompt. The words all the students have entered then
-appear instantly as a colorful graphic, with the most popular responses
-appearing largest. The graphic becomes larger as more students answer.
-Students can both see the way their peers have answered and contribute
-their thoughts to the group.
+Lorsqu'ils utilisent un nuage de mots, les étudiants saisissent des mots dans un champ afin de répondre à une question ou à une invite. Les mots que tous les étudiants ont saisis apparaissent alors instantanément dans un graphique coloré, les réponses les plus fréquentes étant affichées en plus grands caractères. Le graphique s'agrandit au fur et à mesure que les étudiants soumettent leurs réponses. Les étudiants peuvent à la fois voir les réponses de leurs pairs et partager leurs réflexions avec le groupe.
 
 
-For example, the following word cloud was created from students'
-responses to a question in a HarvardX course.
+Par exemple, le nuage de mots ci-après a été créé à partir des réponses d'étudiants à une question posée dans le cours HarvardX.
 
 .. image:: /Images/WordCloudExample.png
-  :alt: Image of a word cloud problem
+  :alt: Image d'un exercice avec nuages de mots
 
 ****************************
-Create a Word Cloud Tool
+Créer un nuage de mots
 ****************************
 
-To create a word cloud tool:
+Pour créer un nuage de mots :
 
-#. Add the Word Cloud advanced component. 
+#. Ajouter le composant avancé Word Cloud (Nuage de mots). 
 
-    #. On the **Settings** menu, click **Advanced Settings**.
+    #. Dans le menu **Paramètres**, cliquez sur **Paramètres avancés**.
 
-    #. On the **Advanced Settings** page, locate the **Manual Policy Definition** section, and then locate the **advanced_modules** policy key (this key is at the top of the list).
+    #. Dans le champ de la clé de la stratégie **Liste des modules avancés**, placez le curseur entre parenthèses.
 
-    #. Under **Policy Value**, place your cursor between the brackets, and
-       then enter the following. Make sure to include the quotation marks.
+    #. Saisissez la valeur suivante. Assurez-vous d'inclure les guillemets.
 
        ``"word_cloud"``
 
-    #. At the bottom of the page, click **Save Changes**.
+    4. Au bas de la page, cliquez sur **Enregistrer les modifications**.
 
-       The page refreshes automatically. At the top of the page, you see a
-       notification that your changes have been saved.
+       La page est actualisée automatiquement. En haut de la page, une notification apparaît, confirmant que vos modifications ont été enregistrées.
 
-    #. Return to the unit where you want to add the specialized problem. The
-       list of possible components now contains an Advanced component.
+    5. Retournez à l'unité à laquelle vous souhaitez ajouter l'exercice spécialisé. La liste des composants possibles contient désormais un composant avancé.
 
-#. In the unit where you want to create the problem, click **Advanced**
-   under **Add New Component**.
-#. In the list of problem types, click **Word Cloud**.
-#. In the component that appears, click **Edit**.
-#. In the component editor, specify the settings that you want. You can
-   leave the default value for everything except **Display Name**.
+#. Dans l'unité dans laquelle vous souhaitez créer l'exercice, cliquez sur **Avancé** sous **Ajouter un nouveau composant**.
+#. Dans la liste des types d'exercices, cliquez sur **Word Cloud** (Nuage de mots).
+#. Dans le composant qui apparaît, cliquez sur **Éditer**.
+#. Dans l'éditeur de composant, indiquez les paramètres que vous souhaitez utiliser. Vous pouvez laisser la valeur par défaut pour tous les paramètres, sauf pour **Nom d'affichage**.
 
-   -  **Display Name**: The name that appears in the course ribbon and
-      as a heading above the problem.
-   -  **Inputs**: The number of text boxes into which students can enter
-      words, phrases, or sentences.
-   -  **Maximum Words**: The maximum number of words that the word cloud
-      displays. If students enter 300 different words but the maximum is
-      set to 250, only the 250 most commonly entered words appear in the
-      word cloud.
-   -  **Show Percents**: The number of times that students have entered
-      a given word as a percentage of all words entered appears near
-      that word.
+   -  **Nom d'affichage** : Nom qui apparaît dans le plan du cours et en tant que titre au-dessus de l'exercice.
+   -  **Entrées** : Nom de zones de texte dans lesquelles les étudiants peuvent saisir des mots, des expressions ou des phrases.
+   -  **Nombre maximum de mots** : Nombre maximum de mots affiché dans le nuage de mots. Si les étudiants saisissent 300 mots différents, mais que le nombre maximum de mots est défini sur 250, seuls les 250 mots saisis le plus fréquemment apparaîtront dans le nuage de mots.
+   -  **Afficher le pourcentage** : Le nombre de fois que les étudiants ont saisi un mot donné apparaît en regard de ce mot sous la forme d'un pourcentage de tous les mots saisis.
 
-#. Click **Save**.
+#. Cliquez sur **Enregistrer**.

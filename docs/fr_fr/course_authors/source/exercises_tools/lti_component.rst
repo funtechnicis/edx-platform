@@ -1,71 +1,47 @@
 .. _LTI Component:
 
 ###############
-LTI Component
+Composant LTI
 ###############
 
-You may have discovered or developed an external learning application
-that you want to add to your online course. Or, you may have a digital
-copy of your textbook that uses a format other than PDF. You can add
-external learning applications or textbooks to Studio by using a
-Learning Tools Interoperability (LTI) component. The LTI component is
-based on the `IMS Global Learning Tools
-Interoperability <http://www.imsglobal.org/LTI/v1p1p1/ltiIMGv1p1p1.html>`_
-version 1.1.1 specifications.
+Avez-vous découvert ou développé une application didactique externe que vous souhaitez ajouter à votre cours en ligne ? Disposez-vous d'une version numérique de votre manuel qui utilise un format autre que le format PDF ? Vous pouvez ajouter des applications didactiques externes ou des manuels dans Studio en utilisant un composant LTI (Learning Tools Interoperability). Le composant LTI est basé sur les spécifications `IMS Global Learning Tools Interoperability <http://www.imsglobal.org/LTI/v1p1p1/ltiIMGv1p1p1.html>`_version 1.1.1.
 
-You can use an LTI component in several ways.
+Pour ajouter un composant LTI, vous pouvez procéder de plusieurs façons.
 
-- You can add external LTI content that is displayed only, such as
-   textbook content that doesn’t require a student response.
-- You can add external LTI content that requires a student response. An
-   external provider will grade student responses.
-- You can use the component as a placeholder for syncing with an external grading system. 
+* Vous pouvez ajouter du contenu LTI externe en lecture seule, comme le contenu d'un manuel : aucune réponse n'est attendue des étudiants.
 
-For example, the following LTI component incorporates a Cerego tool that students interact with. 
+* Vous pouvez ajouter du contenu LTI externe requérant une réponse des étudiants. Un prestataire externe se chargera de noter les réponses des étudiants.
+
+* Vous pouvez utiliser le composant en tant qu'espace réservé pour la synchronisation avec un système d'évaluation externe.
+
+Par exemple, le composant LTI suivant incorpore un outil Cerego avec lequel les étudiants peuvent interagir. 
 
 .. image:: /Images/LTIExample.png
-   :alt: Cerego LTI component example
+   :alt: Exemple de composant LTI incorporant un outil Cerego
 
 .. _LTI Information:
 
 ************************
-Obtain LTI Information
+Obtenir des informations LTI
 ************************
 
-Before you create an LTI component from an external LTI provider in a
-unit, you need the following information.
+Pour créer un composant LTI dans une unité depuis un fournisseur LTI externe, vous aurez besoin des informations suivantes.
 
--  The **launch URL** (if the LTI component requires a student response
-   that will be graded). You obtain the launch URL from the LTI
-   provider. The launch URL is the URL that Studio sends to the external
-   LTI provider so that the provider can send back students’ grades.
+-  **URL de lancement** (si le composant LTI requiert la réponse d'un étudiant qui sera notée). L'URL de lancement peut être obtenue du fournisseur LTI. L'URL de lancement correspond à l'URL que Studio envoie au fournisseur LTI externe, qui peut ainsi renvoyer les notes des étudiants.
 
-- The **lti_passports** policy key. This policy key has three parts: an LTI ID, a client key, and a client secret.
+- Clé de stratégie **Passeports LTI**. La clé de stratégie comporte trois parties : un identifiant LTI, une clé de client et une clé secrète client.
 
-  -  The **LTI ID**. This is a value that you create to refer to the external LTI
-     provider. You should create an LTI ID that you can remember easily.
+  -  **Identifiant LTI**. Vous créez cette valeur et l'utilisez pour faire référence au fournisseur LTI externe. Nous vous recommandons de créer un identifiant LTI dont vous vous souviendrez facilement.
 
-     The LTI ID can contain uppercase and lowercase alphanumeric
-     characters, as well as underscore characters (_). It can be any length. For example, you may create an LTI ID that is
-     as simple as **test_lti_id**, or your LTI ID may be a string of
-     numbers and letters such as  **id_21441** or
-     **book_lti_provider_from_new_york**.
-  -  The **client key**. This value is a sequence of characters that you
-     obtain from the LTI provider. The client key is used for
-     authentication and can contain any number of characters. For example,
-     your client key may be **b289378-f88d-2929-ctools.school.edu**.
-  -  The **client secret**. This value is a sequence of characters that
-     you obtain from the LTI provider. The client secret is used for
-     authentication and can contain any number of characters. For example,
-     your client secret can be something as simple as **secret**, or it
-     may be a string of numbers and letters such as **23746387264** or
-     **yt4984yr8**.
+     L'identifiant LTI peut contenir des caractères alphanumériques majuscules et minuscules, ainsi que des traits de soulignement (_). Aucune restriction de longueur n'est appliquée. Par exemple, vous pouvez créer un identifiant LTI aussi simple que **test_lti_id**. Votre identifiant LTI peut également être une série de chiffres et de lettres comme **id_21441** ou **book_lti_provider_from_new_york**.
+  -  **Clé de client**. Cette valeur correspond à une séquence de caractères. Vous l'obtenez auprès du fournisseur LTI. La clé de client est utilisée pour l'authentification. Elle peut contenir un nombre illimité de caractères. Par exemple, votre clé de client peut être **b289378-f88d-2929-ctools.school.edu**.
+  -  **Clé secrète client**. Cette valeur correspond à une séquence de caractères. Vous l'obtenez auprès du fournisseur LTI. La clé secrète client est utilisée pour l'authentification. Elle peut contenir un nombre illimité de caractères. Votre clé secrète client peut se présenter sous une forme très simple (par exemple, **clé secrète**) ou comme une série de chiffres et de lettres (par exemple **23746387264** ou **yt4984yr8**).
 
-  To create the **lti_passports** policy key, combine the LTI ID, client key, and client secret in the following format (make sure to include the colons):
+  Pour créer la clé de stratégie **Passeports LTI**, associez l'identifiant LTI, la clé de client et la clé secrète client au format suivant (assurez-vous d'inclure les deux-points) :
 
   ``lti_id:client_key:client_secret``
 
-  For example, an **lti_passports** policy key may resemble any of the following:
+  Par exemple, une clé de stratégie **Passeports LTI** peut rassembler n'importe lequel des éléments suivants :
 
   ``test_lti_id:b289378-f88d-2929-ctools.school.edu:secret``
   
@@ -74,57 +50,50 @@ unit, you need the following information.
   ``book_lti_provider_from_new_york:b289378-f88d-2929-ctools.company.com:yt4984yr8``
 
 ************************
-Create an LTI Component
+Créer un composant LTI
 ************************
 
-Creating an LTI component in your course has three steps.
+Le processus de création d'un composant LTI dans votre cours compte trois étapes.
 
-#. Add LTI to the **advanced_modules** policy key.
-#. Register the LTI provider.
-#. Create the LTI component in an individual unit.
+#. Ajoutez LTI à la clé de stratégie **Liste des modules avancés**.
+#. Enregistrez le fournisseur LTI.
+#. Créez le composant LTI dans une unité individuelle.
 
 ======================================================
-Step 1. Add LTI to the Advanced Modules Policy Key
+Étape 1. Ajouter LTI à la clé de stratégie **Liste des modules avancés**
 ======================================================
 
-#. On the **Settings** menu, click **Advanced Settings**.
+#. Dans le menu **Paramètres**, cliquez sur **Paramètres avancés**.
 
-#. On the **Advanced Settings** page, locate the **advanced_modules** policy key (this key is at the top of the list).
+#. Dans le champ de la clé de règle **Liste des modules avancés**, placez le curseur entre les parenthèses.
 
-#. Under **Policy Value**, place your cursor between the brackets, and
-   then enter ``“lti”``. Make sure to include the quotation marks, but
-   not the period.
+#. Saisissez ``“lti”``. Vous devez inclure les guillemets mais pas le point.
 
    .. image:: /Images/LTIPolicyKey.png
      :width: 500
-     :alt: Image of the advanced_modules key in the Advanced Settings page, with the LTI value added
+     :alt: Image de la clé des modules avancés dans la page Paramètres avancés, avec ajout de la valeur LTI note: : Si le champ **Liste des modules avancés** contient déjà du texte, placez votre curseur directement après le guillemet fermant (qui suit l'élément final). Ensuite, saisissez une virgule, puis ``“lti”`` (veillez à inclure les guillemets).
 
-   **Note** If the **Policy Value** field already contains text, place your
-   cursor directly after the closing quotation mark for the final item, and
-   then enter a comma followed by ``“lti”`` (make sure that you include the
-   quotation marks).
+4. Au bas de la page, cliquez sur **Enregistrer les modifications**.
 
-#. At the bottom of the page, click **Save Changes**.
-
-The page refreshes automatically. At the top of the page,
-you see a notification that your changes have been saved.
+La page est actualisée automatiquement. En haut de la page, une notification apparaît, confirmant que vos modifications ont été enregistrées.
 
 ==========================================
-Step 2. Register the External LTI Provider
+Étape 2. Enregistrer le fournisseur LTI externe
 ==========================================
 
-To register the external LTI provider, you’ll add the **lti_passports** policy key to the course's advanced settings.
+Pour enregistrer le fournisseur LTI externe, ajoutez la clé de stratégie **Passeports LTI** aux paramètres avancés du cours.
 
-#. On the **Advanced Settings** page, locate the **lti_passports**
-   policy key.
+#. Sur la page **Paramètres avancés**, identifiez la clé de stratégie **Passeports LTI**.
 
-#. In the **Policy Value** field for the **lti_passports** policy key, place your cursor between the brackets, and then enter the **lti_passports** policy key surrounded by quotation marks.
+#. Placez le curseur entre crochets.
 
-   For example, the text in the **Policy Value** field may resemble the following.
+#. Saisissez la clé de stratégie **Passeports LTI** et placez-la entre guillemets.
+
+   Par exemple, le texte dans le champ **Passeports LTI** peut ressembler au texte présenté ci-après.
 
    ``"test_lti_id:b289378-f88d-2929-ctools.umich.edu:secret"``
 
-   If you have multiple LTI providers, separate the values for each **lti_passports** policy key with a comma. Make sure to surround each entry with quotation marks.
+   Si vous avez plusieurs fournisseurs LTI, séparez par une virgule les valeurs de chaque clé de stratégie **Passeports LTI**. Vous devez encadrer chaque entrée avec des guillemets.
 
    .. code-block:: xml
 
@@ -132,45 +101,41 @@ To register the external LTI provider, you’ll add the **lti_passports** policy
       "id_21441:b289378-f88d-2929-ctools.school.edu:23746387264",
       "book_lti_provider_from_new_york:b289378-f88d-2929-ctools.company.com:yt4984yr8"
 
+4. Au bas de la page, cliquez sur **Enregistrer les modifications**.
 
-#. At the bottom of the page, click **Save Changes**.
-
-The page refreshes automatically. At the top of the page,
-you see a notification that your changes have been saved, and you can
-see your entries for the **lti_passports** policy key.
+La page est actualisée automatiquement. En haut de la page, une notification apparaît, indiquant que vos modifications ont été enregistrées. Vous pouvez alors voir les entrées de la clé de stratégie **Passeports LTI**.
 
 ==========================================
-Step 3. Add the LTI Component to a Unit
+Étape 3. Ajouter le composant LTI à une unité
 ==========================================
 
-#. In the unit where you want to create the problem, click **Advanced**
-   under **Add New Component**, and then click **LTI**.
-#. In the component that appears, click **Edit**.
-#. In the component editor, specify the settings that you want. See :ref:`LTI Component Settings` for a description of each setting.
-#. Click **Save**.
+#. Dans l'unité dans laquelle vous souhaitez créer l'exercice, cliquez sur **Avancé** sous **Ajouter un nouveau composant**, puis cliquez sur **LTI**.
+#. Dans le composant qui apparaît, cliquez sur **Éditer**.
+#. Dans l'éditeur de composant, indiquez les paramètres que vous souhaitez utiliser. Pour obtenir une description de chaque paramètre, voir :ref:`Paramètres du composant LTI`.
+#. Cliquez sur **Enregistrer**.
 
 .. _LTI Component settings:
 
 **********************
-LTI Component Settings
+Paramètres du composant LTI
 **********************
 
 .. list-table::
    :widths: 10 80
    :header-rows: 1
 
-   * - Setting
+   * - Paramètre
      - Description
-   * - Custom Parameters
-     - Enables you to add one or more custom parameters. For example, if you've added an e-book, you can set a custom parameter that opens the e-book to a specific page. You could also use a custom parameter to set the background color of the LTI component.
+   * - Paramètres personnalisés
+     - Vous permet d'ajouter un ou plusieurs paramètres personnalisés. Par exemple, si vous avez ajouté un livre électronique, vous pouvez définir un paramètre personnalisé qui ouvre ce livre à une page spécifique. Vous pouvez également utiliser un paramètre personnalisé pour définir la couleur d'arrière-plan du composant LTI.
 
-       Every custom parameter has a key and a value. You must add the key and value in the following format.
+       Chaque paramètre personnalisé est associé à une clé et à une valeur. Vous devez ajouter la clé et la valeur au format suivant.
 
        ::
 
           key=value
 
-       For example, a custom parameter may resemble the following.
+       Par exemple, un paramètre personnalisé peut ressembler au paramètre présenté ci-après.
 
        ::
 
@@ -178,20 +143,20 @@ LTI Component Settings
 
           page=144
 
-       To add a custom parameter, click **Add**.
-   * - Display Name
-     - Specifies the name of the problem. This name appears above the problem and in the course ribbon at the top of the page in the courseware. Analytics reports may also use the display name to identify this component.
-   * - Hide External Tool
-     - Indicates whether you want to launch an external tool or to use this component as a placeholder for syncing with an external grading system. If you set the value to **True**, Studio hides the **Launch** button and any IFrames for this component. By default, this value is set to **False**.
-   * - LTI ID
-     - Specifies the LTI ID for the external LTI provider. This value must be the same LTI ID that you entered on the **Advanced Settings** page.
-   * - LTI URL
-     - Specifies the URL of the external tool that this component launches. This setting is applicable when **Hide External Tool** is set to False.
-   * - Open in New Page
-     - Indicates whether the problem opens in a new page. If you set this value to **True**,          the student clicks a link that opens the LTI content in a new window. If you set this value to **False**, the LTI content opens in an IFrame in the current page. This setting is applicable when **Hide External Tool** is set to False.
-   * - Scored
-     - Indicates whether the LTI component receives a numerical score from the external LTI system. By default, this value is set to **False**.
-   * - Weight
-     - Specifies the number of points possible for the problem. By default, if an external LTI provider grades the problem, the problem is worth 1 point, and a student’s score can be any value between 0 and 1. This setting is applicable when **Scored** is set to **True**.
+       Pour ajouter un paramètre personnalisé, cliquez sur **Ajouter**.
+   * - Nom d'affichage
+     - Spécifie le nom de l'exercice. Ce nom apparaît au-dessus de l'exercice et dans le plan du cours, en haut de la page du cours. Des rapports d'analyse peuvent également utiliser le nom d'affichage afin d'identifier ce composant.
+   * - Hide External Tool (Masquer l'outil externe)
+     - Indique si vous souhaitez lancer un outil externe ou utiliser ce composant en tant qu'espace réservé pour la synchronisation avec un système d'évaluation externe. Si vous définissez la valeur sur **Vrai**, Studio masque le bouton **Launch** (Lancer) et tous les cadres IFrame de ce composant. Par défaut, cette valeur est définie sur **Faux**.
+   * - Identifiant LTI
+     - Spécifie l'identifiant LTI pour le fournisseur LTI externe. Cette valeur doit correspondre à l'identifiant LTI que vous avez saisi sur la page **Paramètres avancés**.
+   * - URL LTI
+     - Spécifie l'URL de l'outil externe que ce composant lance. Ce paramètre est applicable lorsque l'option **Hide External Tool** (Masquer l'outil externe) est définie sur Faux.
+   * - Ouvrir dans une nouvelle page
+     - Indique si le problème s'ouvre dans une nouvelle page. Si vous définissez cette valeur sur **Vrai**, l'étudiant clique sur un lien qui affiche le contenu LTI dans une nouvelle fenêtre. Si vous définissez cette valeur sur **Faux**, le contenu LTI est affiché dans un cadre IFrame sur la page en cours. Ce paramètre est applicable lorsque l'option **Hide External Tool** (Masquer l'outil externe) est définie sur Faux.
+   * - A obtenu
+     - Indique si le composant LTI reçoit une note du système LTI externe. Par défaut, cette valeur est définie sur **Faux**.
+   * - Coefficient
+     - Spécifie le nombre de points possibles pour l'exercice. Par défaut, si un fournisseur LTI externe note l'exercice, l'exercice est noté sur 1 point. La note d'un étudiant peut donc correspondre à n'importe quelle valeur entre 0 et 1. Ce paramètre est applicable lorsque l'option **A obtenu** est définie sur **Vrai**.
 
-       For more information about problem weights and computing point scores, see :ref:`Problem Weight`.
+       Pour plus d'informations sur le coefficient des exercices et le calcul des notes, voir :ref:`Coefficient de l'exercice`.

@@ -1,105 +1,99 @@
 .. _Text Input:
 
 ########################
-Text Input Problem
+Exercice avec saisie de texte
 ########################
 
 
 
-In text input problems, students enter text into a response field. The response can include numbers, letters, and special characters such as punctuation marks. Because the text that the student enters must match the instructor's specified answer exactly, including spelling and punctuation, we recommend that you specify more than one attempt for text input problems to allow for typographical errors.
+Dans les exercices avec saisie de texte, les étudiants saisissent du texte dans un champ de réponse. La réponse peut inclure des nombres, des lettres et des caractères spéciaux comme les signes de ponctuation. Le texte saisi par l'étudiant doit correspondre exactement à la réponse spécifiée par l'enseignant, y compris en termes d'orthographe et de ponctuation. Par conséquent, nous vous recommandons d'autoriser plus d'une tentative pour les exercices avec saisie de texte, afin de permettre la correction d'éventuelles erreurs typographiques.
 
 .. image:: /Images/TextInputExample.png
- :alt: Image of a text input probem
+ :alt: Image d'un exercice avec saisie de texte
 
 ****************************
-Create a Text Input Problem
+Créer un exercice avec saisie de texte
 ****************************
 
-You can create text input problems in the Simple Editor or in the Advanced Editor.
+Vous pouvez créer des exercices avec saisie de texte en utilisant l'Éditeur simple ou l'Éditeur avancé.
 
-.. note:: All problems must include labels for accessibility. The label generally includes the text of the main question in your problem. To add a label for a common problem, surround the text of the label with angle brackets pointed toward the text (>>label text<<).
+.. note:: Tous les exercices doivent inclure des étiquettes afin de garantir l'accessibilité. L'étiquette comprend généralement le texte de la question principale de l'exercice. Pour ajouter une étiquette à un exercice courant, entourez le texte de l'étiquette avec des crochets pointus, orientés vers le texte (>>texte de l'étiquette<<).
 
 ==============
-Simple Editor
+Éditeur simple
 ==============
 
-To create a text input problem in the Simple Editor, follow these steps.
+Pour créer un exercice avec saisie de texte dans l'Éditeur simple, suivez les étapes présentées ci-après.
 
-#. Under **Add New Component**, click **Problem**.
-#. In the **Select Problem Component Type** screen, click **Text Input**
-   on the **Common Problem Types** tab.
-#. In the new Problem component that appears, click **Edit**.
-#. Replace the default text with the text for your problem.
-#. Determine the text of the problem to use as a label, and then surround that text with two sets of angle brackets (>><<).
-#. Select the text of the answer, and then click the text input button. 
+#. Sous **Ajouter un nouveau composant**, cliquez sur **Exercice**.
+#. Dans l'écran **Select Problem Component Type** (Sélectionner le type du composant Exercice), cliquez sur **Texte à saisir** dans l'onglet **Types d'exercices classiques**.
+#. Dans le nouveau composant Exercice qui apparaît, cliquez sur **Éditer**.
+#. Remplacez le texte par défaut par le texte de votre exercice.
+#. Choisissez le texte de l'exercice à utiliser en tant qu'étiquette, puis placez ce texte entre deux paires de crochets pointus (>><<).
+#. Sélectionnez le texte de la réponse, puis cliquez sur le bouton Texte à saisir. 
    
    .. image:: /Images/ProbCompButton_TextInput.png
-    :alt: Image of the text input button
+    :alt: Image du bouton Texte à saisir
    
-   When you do this, an equal sign appears next to the answer.
+   Lorsque vous avez effectué cette opération, un signe égal (=) apparaît en regard de la réponse.
   
    
-#. In the component editor, select the text of the explanation, and then click the 
-   explanation button to add explanation tags around the text.
+#. Dans l'éditeur de composant, sélectionnez le texte de l'explication, puis cliquez sur le bouton associé afin d'insérer les balises correspondantes autour du texte.
 
    .. image:: /Images/ProbCompButton_Explanation.png
-    :alt: Image of the explanation button
+    :alt: Image du bouton Explication
 
-#. On the **Settings** tab, specify the settings that you want. 
-#. Click **Save**.
+#. Dans l'onglet **Paramètres**, indiquez les paramètres que vous souhaitez utiliser. 
+#. Cliquez sur **Enregistrer**.
 
-For the example problem above, the text in the Problem component is the
-following.
+Pour l'exemple d'exercice présenté ci-dessus, le texte dans le composant Exercice est le suivant.
 
 ::
 
-    >>What is the technical term that refers to the fact that, when enough people 
-    sleep under a bednet, the disease may altogether disappear?<<
-    = herd immunity
+    >>Quel est le terme technique qui fait référence au fait que, lorsqu'un nombre suffisant de personnes dorment sous une moustiquaire, la maladie peut complètement disparaître ?<<
+    = immunité collective
 
     [explanation]
-    The correct answer is herd immunity. As more and more people use bednets, 
-    the risk of malaria begins to fall for everyone – users and non-users alike. 
-    This can fall to such a low probability that malaria is effectively eradicated 
-    from the group (even when the group does not have 100% bednet coverage).
+    La réponse correcte est : immunité collective. Plus le nombre de personnes utilisant des moustiquaires augmente, plus le risque de paludisme commence à diminuer pour l'ensemble de la population, chez les utilisateurs de moustiquaires et chez les autres. 
+    Le risque peut devenir si faible que le paludisme est alors véritablement éradiqué dans cette population (même si celle-ci ne se protège pas complètement et que l'utilisation de moustiquaires n'est pas systématique).
     [explanation]
 
 =====================
-Advanced Editor
+Éditeur avancé
 =====================
 
-To create this problem in the Advanced Editor, click the **Advanced** tab in the Problem component editor, and then replace the existing code with the following code.
+Pour créer cet exercice dans l'Éditeur avancé, cliquez sur l'onglet **Avancé** dans l'éditeur du composant Exercice, puis remplacez le code existant par le code présenté ci-après.
 
 .. code-block:: xml
 
   <problem>
   <p>
-    <em>This problem is adapted from an exercise that first appeared in MITx's 14.73x The Challenges of Global Poverty course, spring 2013.</em>
+    <em>Ce problème est adapté d'un exercice, publié pour la première fois dans le cours MITx: 14.73x: The Challenges of Global Poverty (printemps 2013).</em>
   </p>
-  <p>What is the technical term that refers to the fact that, when enough people sleep under a bednet, the disease may altogether disappear?</p>
-  <stringresponse answer=".*herd immunity.*" type="ci regexp">
-         <additional_answer>community immunity</additional_answer>
-          <additional_answer>population immunity</additional_answer>
-          <textline size="20" label="What is the technical term that refers to the fact that, when enough people sleep under a bednet, the disease may altogether disappear?"/>
+  <p>Quel est le terme technique qui fait référence au fait que, lorsqu'un nombre suffisant de personnes dorment sous une moustiquaire, la maladie peut complètement disparaître ?</p>
+  <stringresponse answer=".*immunité collective.*" type="ci regexp">
+         <additional_answer>immunité dans une communauté</additional_answer>
+          <additional_answer>immunité dans une population</additional_answer>
+          <textline size="20" label="Quel est le terme technique qui fait référence au fait que, lorsqu'un nombre suffisant de personnes dorment sous une moustiquaire, la maladie peut complètement disparaître ?"/>
           <hintgroup>
               <stringhint answer="contact immunity" type="ci" name="contact_immunity_hint" />
               <hintpart on="contact_immunity_hint">
                   <startouttext />
-                  In contact immunity, a vaccinated individual passes along his immunity to another person through contact with feces or bodily fluids. The answer to the question above refers to the form of immunity that occurs when so many members of a population are protected, an infectious disease is unlikely to spread to the unprotected population.
+                  Dans le cas de l'immunité de contact, une personne vaccinée peut transférer son immunité à une autre personne par simple contact avec les selles ou fluides corporels. La réponse à la question ci-dessus fait référence à la forme d'immunité qui survient lorsque de nombreux membres d'une population donnée sont protégés. Il est alors peu probable qu'une maladie infectieuse se propage aux membres non protégés de cette population.
                   <endouttext />
               </hintpart >
               <stringhint answer="firewall immunity" type="ci" name="firewall_immunity_hint" />
               <hintpart on="firewall_immunity_hint">
                   <startouttext />
-                  Although a firewall provides protection for a population, the term "firewall" is used more in computing and technology than in epidemiology.
+                  L'immunité collective présente un véritable effet pare-feu, qui permet de protéger une population. Bien que pertinent, le terme "pare-feu" est toutefois plus fréquemment utilisé dans les domaines informatique et technologique qu'en épidémiologie.
                   <endouttext />
               </hintpart >
           </hintgroup>
   </stringresponse>
   <solution>
     <div class="detailed-solution">
-      <p>Explanation</p>
-      <p>The correct answer is <b>herd immunity</b>. As more and more people use bednets, the risk of malaria begins to fall for everyone – users and non-users alike. This can fall to such a low probability that malaria is effectively eradicated from the group (even when the group does not have 100% bednet coverage).</p>
+      <p>Explication</p>
+      <p>La réponse correcte est : <b>immunité collective</b>. Plus le nombre de personnes utilisant des moustiquaires augmente, plus le risque de paludisme commence à diminuer pour l'ensemble de la population, chez les utilisateurs de moustiquaires et chez les autres. Le risque peut devenir si faible que le paludisme est alors véritablement éradiqué dans cette population (même si celle-ci ne se protège pas complètement et que l'utilisation de moustiquaires n'est pas systématique).</p>
     </div>
   </solution>
   </problem>
@@ -108,61 +102,57 @@ To create this problem in the Advanced Editor, click the **Advanced** tab in the
 
 
 ******************************************
-Multiple Responses in Text Input Problems
+Réponses multiples dans les exercices avec saisie de texte
 ******************************************
 
-You can specify more than one correct response for text input problems. 
-For example, instead of requiring students to enter exactly "Dr. Martin Luther 
-King, Junior," you can allow answers of "Martin Luther King," "Doctor Martin 
-Luther King," and other variations. To do this, you can use the Simple Editor or the Advanced Editor.
+Vous pouvez spécifier plus d'une réponse correcte pour les exercices avec saisie de texte. 
+Par exemple, plutôt que de demander aux étudiants de saisir exactement "Dr Martin Luther King, Junior", vous pouvez autoriser d'autres réponses : "Martin Luther King", "Docteur Martin Luther King", ainsi que d'autres variantes. Pour ce faire, vous pouvez utiliser l'Éditeur simple ou l'Éditeur avancé.
 
 ==============
-Simple Editor
+Éditeur simple
 ==============
 
-To specify additional correct responses in the Simple Editor, include "or=" (without the quotation marks) before each additional correct response.
+Pour spécifier des réponses correctes supplémentaires dans l'Éditeur simple, incluez "or=" (sans les guillemets) avant chaque réponse correcte supplémentaire.
 
 ::
 
-    >>What African-American led the United States civil rights movement during the 1960s?<<
-    = Dr. Martin Luther King, Jr.
-    or= Dr. Martin Luther King, Junior
-    or= Martin Luther King, Jr.
+    >>Quel leader Afro-américain a dirigé le mouvement des droits civiques aux États-Unis dans les années 1960 ?<<
+    = Dr Martin Luther King, Jr
+    or= Dr Martin Luther King, Junior
+    or= Martin Luther King, Jr
     or= Martin Luther King
 
 =====================
-Advanced Editor
+Éditeur avancé
 =====================
 
-To specify additional correct responses in the Advanced Editor, add an ``<additional_answer>``  for each correct response inside the opening and closing ``<stringresponse>`` tags.
+Pour spécifier des réponses correctes supplémentaires dans l'Éditeur avancé, ajoutez une balise ``<additional_answer>`` pour chaque réponse correcte à l'intérieur des balises ouvrantes et fermantes ``<stringresponse>``.
 
 .. code-block:: xml
 
   <problem>
 
-  <p>What African-American led the United States civil rights movement during the 1960s?</p>
+  <p>Quel leader Afro-américain a dirigé le mouvement des droits civiques aux États-Unis dans les années 1960 ?</p>
     
   <stringresponse answer="Dr. Martin Luther King, Jr." type="ci" >
-    <additional_answer>Dr. Martin Luther King, Junior</additional_answer>
-    <additional_answer>Martin Luther King, Jr.</additional_answer>
+    <additional_answer>Dr Martin Luther King, Junior</additional_answer>
+    <additional_answer>Martin Luther King, Jr</additional_answer>
     <additional_answer>Martin Luther King</additional_answer>
-    <textline label="What African-American led the United States civil rights movement during the 1960s?" size="20"/>
+    <textline label="Quel leader Afro-américain a dirigé le mouvement des droits civiques aux États-Unis dans les années 1960 ?" size="20"/>
   </stringresponse>
 
   </problem>
 
 
 ******************************************
-Case Sensitivity and Text Input Problems
+Sensibilité à la casse et exercices avec saisie de texte
 ******************************************
 
-By default, text input problems do not require a case sensitive response. You can change this
-and require a case sensitive answer.
+Par défaut, les exercices avec saisie de texte ne requièrent pas de réponse sensible à la casse. Vous pouvez modifier cette propriété et activer la sensibilité à la casse.
 
-To make a text input response case sensitive, you must use :ref:`Advanced Editor`.
+Pour rendre la réponse d'un exercice avec saisie de texte sensible à la casse, vous devez utiliser l':ref:`Éditeur avancé`.
 
-In the Advanced Editor, you see that the **type** attribute of the **stringresponse** 
-element equals **ci**, for *case insensitive*. For example:
+Dans l'Éditeur avancé, vous constatez que l'attribut **type** de l'élément **stringresponse** est défini sur **ci** (de l'anglais *case insensitive*, soit : insensible à la casse). Par exemple :
 
 ::
 
@@ -170,7 +160,7 @@ element equals **ci**, for *case insensitive*. For example:
       <textline size="20"/>
     </stringresponse>
 
-To make the response case sensitive, change the value of the **type** attribute to **cs**.
+Pour rendre une réponse sensible à la casse, définissez la valeur de l'attribut **type** sur **cs** (de l'anglais case sensitive, soit : sensible à la casse).
 
 ::
 
@@ -179,216 +169,214 @@ To make the response case sensitive, change the value of the **type** attribute 
     </stringresponse>
 
 *************************************************
-Response Field Length of Text Input Problems
+Longueur des champs de réponse et exercices avec saisie de texte
 *************************************************
 
-By default, the response field for text input problems is 20 characters long. 
+Par défaut, dans les exercices avec saisie de texte, le champ de réponse compte 20 caractères. 
 
-You should preview the unit to ensure that the length of the response input field
-accommodates the correct answer, and provides extra space for possible incorrect answers.
+Nous vous recommandons de prévisualiser l'unité. Vous pourrez ainsi vous assurer que la longueur du champ de saisie de la réponse sera adaptée à la réponse correcte et qu'un espace supplémentaire sera disponible pour les éventuelles réponses incorrectes.
 
-If the default response field length is not sufficient, you can change it using :ref:`Advanced Editor`.
+Si la longueur du champ de réponse par défaut est insuffisante, vous pouvez la modifier en utilisant l':ref:`Éditeur avancé`.
 
-In the advanced editor, in the XML block for the answer, you see that the **size** attribute of the **textline** element equals **20**:
+Dans l'Éditeur avancé, dans le bloc XML de la réponse, vous pouvez voir que l'attribut **size** de l'élément **textline** est égal à **20** :
 
 ::
 
-    <stringresponse answer="Democratic Republic of the Congo" type="ci">
+    <stringresponse answer="République démocratique du Congo" type="ci">
       <textline size="20"/>
     </stringresponse>
 
-To change the response field length, change the value of the **size** attribute:
+Pour modifier la longueur du champ de réponse, modifiez la valeur de l'attribut **size** :
 
 ::
 
-    <stringresponse answer="Democratic Republic of the Congo" type="ci">
+    <stringresponse answer="République démocratique du Congo" type="ci">
       <textline size="40"/>
     </stringresponse>
 
 ********************************************************
-Hints and Regular Expressions in Text Input Problems
+Indices et expressions régulières dans les exercices avec saisie de texte
 ********************************************************
 
-You can provide hints that appear when students enter common incorrect answers in text input problems. You can also set a text input problem to allow a regular expression as an answer. To do this, you'll have to modify the problem's XML in the Advanced Editor. 
+Vous pouvez fournir des indice ; ceux-ci apparaissent alors lorsque les étudiants saisissent des réponses incorrectes courantes dans les exercices avec saisie de texte. Vous pouvez également définir ce type d'exercice pour qu'une expression régulière soit utilisée en tant que réponse. Vous devrez pour cela modifier le code XML de l'exercice dans l'Éditeur avancé. 
 
-The regular expression that the student enters must contain the part of the answer that the instructor specifies. For example, if an instructor has specified  ``<answer=".*example answer.*" type="regexp">``, correct answers include ``example answered``, ``two example answers``, or even ``==example answer==``, but not ``examples`` or ``example anser``.
+L'expression régulière que l'étudiant saisit doit contenir la partie de la réponse spécifiée par l'enseignement. Par exemple, si un enseignant a spécifié ``<answer=".*example answer.*" type="regexp">``, les réponses correctes incluent : ``example answered``, ``two example answers``, voire ``==example answer==``, mais ni ``examples`` ni ``example anser``.
 
-You can add ``regexp`` to the value of the ``type`` attribute, for example: ``type="ci regexp"`` or ``type="regexp"`` or ``type="regexp cs"``. In this case, any answer or hint are treated as regular expressions.
+Vous pouvez ajouter ``regexp`` à la valeur de l'attribut ``type``, par exemple : ``type="ci regexp"``, ``type="regexp"`` ou ``type="regexp cs"``. Dans ce cas, toute réponse ou tout indice est traité comme une expression régulière.
 
 .. _Text Input Problem XML:
 
 ***********************
-Text Input Problem XML
+Exercice avec saisie de texte - Format XML
 ***********************
 
 ==============
-Template
+Modèle
 ==============
 
 .. code-block:: xml
 
   <problem>
-      <p>Problem text</p>
+      <p>Texte de l'exercice</p>
       <stringresponse answer="**.Correct answer 1.**" type="ci regexp">
-          <additional_answer>Correct answer 2</additional_answer>
-          <additional_answer>Correct answer 3</additional_answer>
+          <additional_answer>Réponse correcte 2</additional_answer>
+          <additional_answer>Réponse correcte 3</additional_answer>
           <textline size="20" label="label text"/>
           <hintgroup>
-              <stringhint answer="Incorrect answer A" type="ci" name="hintA" />
+              <stringhint answer="Réponse incorrecte A" type="ci" name="hintA" />
                 <hintpart on="hintA">
-                    <startouttext />Text of hint for incorrect answer A<endouttext />
+                    <startouttext />Texte de l'indice pour la réponse incorrecte A<endouttext />
                 </hintpart >
-              <stringhint answer="Incorrect answer B" type="ci" name="hintB" />
+              <stringhint answer="Réponse incorrecte B" type="ci" name="hintB" />
                 <hintpart on="hintB">
-                    <startouttext />Text of hint for incorrect answer B<endouttext />
+                    <startouttext />Texte de l'indice pour la réponse incorrecte B<endouttext />
                 </hintpart >
-              <stringhint answer="Incorrect answer C" type="ci" name="hintC" />
+              <stringhint answer="Réponse incorrecte C" type="ci" name="hintC" />
                 <hintpart on="hintC">
-                    <startouttext />Text of hint for incorrect answer C<endouttext />
+                    <startouttext />Texte de l'indice pour la réponse incorrecte C<endouttext />
                 </hintpart >
           </hintgroup>
       </stringresponse>
       <solution>
       <div class="detailed-solution">
-      <p>Explanation or Solution Header</p>
-      <p>Explanation or solution text</p>
+      <p>Titre de la solution ou de l'explication</p>
+      <p>Texte de la solution ou de l'explication</p>
       </div>
     </solution>
   </problem>
 
 =======
-Tags
+Balises
 =======
 
-* ``<stringresponse>``: Indicates that the problem is a text input problem. 
-* ``<textline>``: Child of ``<stringresponse>``. Creates a response field in the LMS where the student enters a response.
-* ``<additional_answer>`` (optional): Specifies an additional correct answer for the problem. A problem can contain an unlimited number of additional answers.
-* ``<hintgroup>`` (optional): Indicates that the instructor has provided hints for certain common incorrect answers.
-* ``<stringhint />`` (optional): Child of ``<hintgroup>``. Specifies the text of the incorrect answer to provide the hint for. Contains answer, type, name.
-* ``<hintpart>``: Contains the name from ``<stringhint>``. Associates the incorrect answer with the hint text for that incorrect answer.
-* ``<startouttext />``: Indicates the beginning of the text of the hint.
-* ``<endouttext />``: Indicates the end of the text of the hint.
+* ``<stringresponse>`` : Indique que cet exercice est un exercice avec saisie de texte. 
+* ``<textline>`` : Enfant de ``<stringresponse>``. Crée un champ de réponse dans le LMS. L'étudiant peut y saisir sa réponse.
+* ``<additional_answer>`` (facultatif) : Spécifie une réponse correcte supplémentaire pour l'exercice. Un exercice peut contenir un nombre illimité de réponses supplémentaires.
+* ``<hintgroup>`` (facultatif) : Indique que l'enseignant a fourni des indices pour certaines réponses incorrectes courantes.
+* ``<stringhint />`` (facultatif) : Enfant de ``<hintgroup>``. Spécifie le texte de la réponse incorrecte pour laquelle fournir l'indice. Contient les attributs answer, type, name.
+* ``<hintpart>`` : Contient le nom de ``<stringhint>``. Associe la réponse incorrecte avec le texte de l'indice utilisé pour cette réponse incorrecte.
+* ``<startouttext />`` : Désigne le début du texte de l'indice.
+* ``<endouttext />`` : Désigne la fin du texte de l'indice.
 
-**Tag:** ``<stringresponse>``
+**Balise :** ``<stringresponse>``
 
-Indicates that the problem is a text input problem.
+Indique que cet exercice est un exercice avec saisie de texte.
 
-  Attributes
+  Attributs
 
   .. list-table::
      :widths: 20 80
 
-     * - Attribute
+     * - Attribut
        - Description
-     * - answer (required)
-       - Specifies the correct answer. To designate the answer as a regular expression, add "regexp" to the **type** attribute. If you do not add "regexp" to the **type** attribute, the student's answer must match the value in this attribute exactly.
-     * - type (optional)
-       - Can specify whether the problem is case sensitive and allows regular expressions. If the ``<stringresponse>`` tag includes ``type="ci"``, the problem is not case sensitive. If the tag includes ``type="cs"``, the problem is case sensitive. If the tag includes ``type="regexp"``, the problem allows regular expressions. A **type** attribute in a ``<stringresponse>`` tag can also combine these values. For example, ``<stringresponse type="regexp cs">`` specifies that the prolem allows regular expressions and is case sensitive.
+     * - answer (obligatoire)
+       - Spécifie une réponse correcte. Pour désigner la réponse en tant qu'expression régulière, ajoutez "regexp" à l'attribut **type**. Si vous n'ajoutez pas "regexp" à l'attribut **type**, la réponse de l'étudiant doit correspondre exactement à la valeur de cet attribut.
+     * - type (facultatif)
+       - Peut spécifier si l'exercice est sensible à la casse et s'il accepte les expressions régulières. Si la balise ``<stringresponse>`` inclut ``type="ci"``, l'exercice n'est pas sensible à la casse. Si la balise inclut ``type="cs"``, l'exercice est sensible à la casse. Si la balise inclut ``type="regexp"``, l'exercice accepte les expressions régulières. Un attribut **type** dans une balise ``<stringresponse>`` peut également associer ces valeurs. Par exemple, ``<stringresponse type="regexp cs">`` spécifie que l'exercice accepte les expressions régulières et est sensible à la casse.
 
-  Children
+  Enfants
 
-  * ``<textline />`` (required)
-  * ``<additional_answer>`` (optional)
-  * ``<hintgroup>`` (optional)
+  * ``<textline />`` (obligatoire)
+  * ``<additional_answer>`` (facultatif)
+  * ``<hintgroup>`` (facultatif)
     
-**Tag:** ``<textline />``
+**Balise :** ``<textline />``
  
-Creates a response field in the LMS where the student enters a response.
+Crée un champ de réponse dans le LMS. L'étudiant peut y saisir sa réponse.
 
-  Attributes
-
-  .. list-table::
-     :widths: 20 80
-
-     * - Attribute
-       - Description
-     * - label (required)
-       - Contains the text of the problem.
-     * - size (optional)
-       - Specifies the size, in characters, of the response field in the LMS.
-     * - hidden (optional)
-       - If set to "true", students cannot see the response field.
-     * - correct_answer (optional)
-       - Lists the correct answer to the problem.
-
-  Children
-  
-  (none)
-
-**Tag:** ``<additional_answer>``
-
-Specifies an additional correct answer for the problem. A problem can contain an unlimited number of additional answers.
-
-  Attributes
-
-  (none)
-
-  Children
-
-  (none)
-
-**Tag:** ``<hintgroup>``
-
-Indicates that the instructor has provided hints for certain common incorrect answers.
-
-  Attributes
-
-  (none)
-
-  Children
-  
-  * ``<stringhint>`` (required)
-
-**Tag:** ``<stringhint>``
-
-Specifies a common incorrect answer to the problem.
-
-  Attributes
+  Attributs
 
   .. list-table::
      :widths: 20 80
 
-     * - Attribute
+     * - Attribut
        - Description
-     * - answer (required)
-       - The text of the incorrect answer.
-     * - name (required)
-       - The name of the hint that you want to provide.
+     * - label (obligatoire)
+       - Contient le texte de l'exercice.
+     * - size (facultatif)
+       - Spécifie la taille, en caractères, du champ de réponse dans le LMS.
+     * - hidden (facultatif)
+       - Si la valeur est définie sur "true", les étudiants ne peuvent pas voir le champ de réponse.
+     * - correct_answer (facultatif)
+       - Indique la réponse correcte de l'exercice.
+
+  Enfants
+  
+  (aucun)
+
+**Balise :** ``<additional_answer>``
+
+Spécifie une réponse correcte supplémentaire pour l'exercice. Un exercice peut contenir un nombre illimité de réponses supplémentaires.
+
+  Attributs
+
+  (aucun)
+
+  Enfants
+
+  (aucun)
+
+**Balise :** ``<hintgroup>``
+
+Indique que l'enseignant a fourni des indices pour certaines réponses incorrectes courantes.
+
+  Attributs
+
+  (aucun)
+
+  Enfants
+  
+  * ``<stringhint>`` (obligatoire)
+
+**Balise :** ``<stringhint>``
+
+Spécifie une réponse incorrecte souvent présentée pour cet exercice.
+
+  Attributs
+
+  .. list-table::
+     :widths: 20 80
+
+     * - Attribut
+       - Description
+     * - answer (obligatoire)
+       - Texte de la réponse incorrecte.
+     * - name (obligatoire)
+       - Nom de l'indice que vous souhaitez présenter.
      * - type
-       - Specifies whether the text of the specified incorrect answer is case sensitive. Can be set to "cs" (case sensitive) or "ci" (case insensitive).
+       - Spécifie si le texte de la réponse incorrecte présentée est sensible à la casse. Peut être défini sur "cs" (de l'anglais case sensitive, soit sensible à la casse) ou sur "ci" (de l'anglais case insensitive, soit insensible à la casse).
 
-  Children
+  Enfants
 
-  * ``<hintpart>`` (required)
+  * ``<hintpart>`` (obligatoire)
 
-**Tag:** ``<hintpart>``
+**Balise :** ``<hintpart>``
 
-Associates a common incorrect answer with the hint for that incorrect answer.
+Associe une réponse incorrecte courante avec l'indice utilisé pour cette réponse incorrecte.
 
-  Attributes
+  Attributs
 
   .. list-table::
      :widths: 20 80
 
-     * - Attribute
+     * - Attribut
        - Description
      * - on
-       - The name of the hint. This must be the same as the **name** attribute of the ``<stringhint>`` tag. (The ``<stringhint>`` tag provides the name of the hint and the incorrect answer to associate with the hint. The ``<hintpart>`` tag contains the name of the hint and the text of the hint.)
+       - Nom de l'indice. Doit être identique à l'attribut **name** de la balise ``<stringhint>``. (La balise ``<stringhint>`` présente le nom de l'indice et la réponse incorrecte à associer à l'indice. La balise ``<hintpart>`` contient le nom et le texte de l'indice.)
 
-  Children
+  Enfants
 
-  * ``<startouttext />`` (required)
-  * ``<endouttext />`` (required)
+  * ``<startouttext />`` (obligatoire)
+  * ``<endouttext />`` (obligatoire)
 
-**Tags:** ``<startouttext />`` and ``<endouttext>``
+**Balises :** ``<startouttext />`` et ``<endouttext>``
 
-Surround the text of the hint.
+Encadrent le texte de l'indice.
 
-  Attributes
+  Attributs
   
-  (none)
+  (aucun)
 
-  Children
+  Enfants
   
-  (none)
-
+  (aucun)

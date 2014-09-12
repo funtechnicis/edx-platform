@@ -1,64 +1,64 @@
 .. _Molecule Editor:
 
 #######################
-Molecule Editor Tool
+Éditeur de molécules
 #######################
 
-Students can use the molecule editor to learn how to create molecules. The molecule editor allows students to draw molecules that follow the rules for covalent bond formation and formal charge, even if the molecules are chemically impossible, are unstable, or do not exist in living systems. The molecule editor warns students if they try to submit a structure that is chemically impossible.
+Les étudiants peuvent utiliser l'éditeur de molécules pour apprendre à créer des molécules. L'éditeur de molécules permet aux étudiants de dessiner des molécules qui respectent les règles de formation de liaisons covalentes et de charges formelles, même si ces molécules sont chimiquement impossibles, qu'elles sont instables ou qu'elles n'existent pas dans les organismes vivants. L'éditeur de molécules avertit les étudiants s'ils tentent de soumettre une structure chimiquement impossible.
 
-The molecule editor incorporates two tools: the JSME molecule editor created by Peter Erl and Bruno Bienfait, and JSmol, a JavaScript-based molecular viewer from Jmol. (You don't need to download either of these tools--Studio uses them automatically.) For more information about the JSME molecule editor, see `JSME Molecule Editor <http://peter-ertl.com/jsme/index.html>`_. For more information about JSmol, see `JSmol <http://sourceforge.net/projects/jsmol/>`_.
+L'éditeur de molécules comporte deux outils : l'éditeur de molécules JSME créé par Peter Erl et Bruno Bienfait, et une visionneuse moléculaire JSmol, la version JavaScript de Jmol. (Vous n'avez pas besoin de télécharger l'un ou l'autre de ces outils ; Studio les utilise automatiquement.) Pour plus d'informations sur l'éditeur de molécules JSME, voir `Éditeur de molécules JSME <http://peter-ertl.com/jsme/index.html>`_. Pour plus d'informations sur JSmol, voir `JSmol <http://sourceforge.net/projects/jsmol/>`_.
 
 .. image:: /Images/Molecule_Editor.png
-  :alt: Image of the molecule editor
+  :alt: Image de l'éditeur de molécules
 
 .. _Create the Molecule Editor:
 
 ******************************
-Create the Molecule Editor
+Créer l'éditeur de molécules
 ******************************
 
-To create a molecule editor, you need the following files:
+Pour créer un éditeur de molécules, vous aurez besoin des fichiers suivants :
 
 * MoleculeAnswer.png
 * MoleculeEditor_HTML.png
 * dopamine.mol
 
-To download all of these files in a .zip archive, go to http://files.edx.org/MoleculeEditorFiles.zip.
+Pour télécharger tous ces fichiers dans une archive .zip, rendez-vous sur le site http://files.edx.org/MoleculeEditorFiles.zip.
 
-.. note:: The molecule that appears when the tool starts is a dopamine molecule. To use a different molecule, download the .mol file for that molecule from the `list of molecules <http://www.biotopics.co.uk/jsmol/molecules/>`_ on the `BioTopics <http://www.biotopics.co.uk/>`_ website. Then, upload the .mol file to the **Files & Uploads** page for your course in Studio, and change "dopamine.mol" in the example code to the name of your .mol file.
+.. note:: La molécule qui apparaît lorsque l'outil est lancé est une molécule de dopamine. Pour utiliser une molécule différente, téléchargez le fichier .mol de cette molécule à partir de la `liste de molécules <http://www.biotopics.co.uk/jsmol/molecules/>`_ figurant sur le site Web `BioTopics <http://www.biotopics.co.uk/>`_. Ensuite, chargez le fichier .mol sur la page **Fichiers et uploads** de votre cours dans Studio, puis remplacez "dopamine.mol" dans le code présenté en exemple par le nom de votre fichier .mol.
 
-To create the molecule editor that appears in the image above, you need an HTML component followed by a Problem component.
+Pour créer l'éditeur de molécules qui apparaît dans l'image ci-dessus, vous devrez utiliser un composant HTML, puis un composant Exercice.
 
-#. Upload all of the files listed above to the **Files & Uploads** page in your course.
-#. Create the HTML component.
+#. Chargez tous les fichiers répertoriés ci-dessus sur la page **Fichiers et uploads** dans votre cours.
+#. Créez le composant HTML.
 
-  #. In the unit where you want to create the problem, click **HTML** under **Add New Component**, and then click **HTML**.
-  #. In the component that appears, click **Edit**.
-  #. In the component editor, paste the HTML component code from below.
-  #. Make any changes that you want, and then click **Save**.
+  #. Dans l'unité dans laquelle vous souhaitez créer l'exercice, cliquez sur **HTML** sous **Ajouter un nouveau composant**, puis sur **HTML**.
+  #. Dans le composant qui apparaît, cliquez sur **Éditer**.
+  #. Dans l'éditeur de composant, collez le code du composant HTML présenté ci-après.
+  #. Effectuez les modifications souhaitées, puis cliquez sur **Enregistrer**.
 
-3. Create the Problem component.
+3. Créez le composant Exercice.
 
-  #. Under the HTML component, click **Problem** under **Add New Component**, and then click **Blank Advanced Problem**.
-  #. In the component that appears, click **Edit**.
-  #. In the component editor, paste the Problem component code from below.
-  #. Click **Save**.
+  #. Sous le composant HTML, cliquez sur **Exercice** sous **Ajouter un nouveau composant**, puis sur **Blank Advanced Problem** (Exercice avancé vide).
+  #. Dans le composant qui apparaît, cliquez sur **Éditer**.
+  #. Dans l'éditeur de composant, collez le code du composant Exercice présenté ci-après.
+  #. Cliquez sur **Enregistrer**.
 
 .. _EMC Problem Code:
 
 ========================
-Molecule Editor Code
+Code de l'éditeur de molécules
 ========================
 
-To create the molecule editor, you need an HTML component and a Problem component.
+Pour créer l'éditeur de molécules, vous devrez utiliser un composant HTML et un composant Exercice.
 
-HTML Component Code
+Code du composant HTML
 ***************************
 
 .. code-block:: xml
 
-  <h2>Molecule Editor</h2>
-  <p>The molecule editor makes creating and visualizing molecules easy. A chemistry professor may have you build and submit a molecule as part of an exercise.</p>
+  <h2>Éditeur de molécules</h2>
+  <p>L'éditeur de molécules facilite la création et la visualisation des molécules. Dans le cadre d'un exercice, un professeur de chimie peut vous demander d'élaborer une molécule et de soumettre votre proposition.</p>
   <div>
   <script type="text/javascript">// <![CDATA[
   function toggle2(showHideDiv, switchTextDiv) {
@@ -79,21 +79,21 @@ HTML Component Code
   <style type="text/css"></style>
   </div>
   <div id="headerDiv">
-  <div id="titleText">Using the Molecule Editor<a id="myHeader" href="javascript:toggle2('myContent','myHeader');">+ open </a></div>
+  <div id="titleText">Utilisation de l'éditeur de molécules<a id="myHeader" href="javascript:toggle2('myContent','myHeader');">+ ouvrir </a></div>
   </div>
   <div id="contentDiv">
   <div id="myContent" style="display: none;">
-  <p>In this problem you will edit a molecule using the molecular drawing program shown below:</p>
+  <p>Dans cet exercice, vous devrez modifier une molécule en utilisant le logiciel de dessin de molécules, présenté ci-après :</p>
   <img alt="" src="/static/MoleculeEditor_HTML.png" /></div>
   </div>
   <p>&nbsp;</p>
   <div id="headerDiv">
-  <div id="titleText">Are the molecules I've drawn chemically possible?<a id="IntroductionHeader" href="javascript:toggle2('IntroductionContent','IntroductionHeader');">+ open </a></div>
+  <div id="titleText">Les molécules que j'ai dessinées sont-elles chimiquement possibles ?<a id="IntroductionHeader" href="javascript:toggle2('IntroductionContent','IntroductionHeader');">+ ouvrir </a></div>
   </div>
   <div id="contentDiv">
   <div id="IntroductionContent" style="display: none;">
-  <p>The chemical editor you are using ensures that the structures you draw are correct in one very narrow sense, that they follow the rules for covalent bond formation and formal charge. However, there are many structures that follow these rules that are chemically impossible, unstable, do not exist in living systems, or are beyond the scope of this course. The editor will let you draw them because, in contrast to the rules of formal charge, these properties cannot be easily and reliably predicted from structures.</p>
-  <p>If you submit a structure that includes atoms that are not possible or are beyond the scope of this course, the software will warn you specifically about these parts of your structure and you will be allowed to edit your structure and re-submit. Submitting an improper structure will not count as one of your tries. In general, you should try to use only the atoms most commonly cited in this course: C, H, N, O, P, and S. If you want to learn about formal charge, you can play around with other atoms and unusual configurations and look at the structures that result.</p>
+  <p>L'éditeur chimique que vous utilisez permet de garantir que les structures que vous dessinez sont correctes (au sens strict), et qu'elles respectent les règles de formation de liaisons covalentes et de charges formelles. Toutefois, de nombreuses structures respectent ces règles, mais sont chimiquement impossibles, instables, n'existent pas dans les organismes vivants ou ne s'inscrivent pas dans le cadre de ce cours. L'éditeur vous permettra de les dessiner car, à la différence des règles de charges formelles, ces propriétés ne peuvent pas être prédites facilement et de manière fiable à partir des structures.</p>
+  <p>Si vous soumettez une structure contenant des atomes qui ne sont pas possibles ou qui ne s'inscrivent pas dans le cadre de ce cours, le logiciel vous avertira spécifiquement à propos de ces parties de votre structure. Vous pourrez alors modifier votre structure et la soumettre une nouvelle fois. La soumission d'une structure défectueuse ne sera pas comptabilisée comme l'une de vos tentatives. En général, nous vous recommandons de tenter d'utiliser uniquement les atomes cités le plus fréquemment dans ce cours : C, H, N, O, P et S. Si vous souhaitez avoir plus d'informations sur les charges formelles, vous pouvez vous exercer avec d'autres atomes ou des configurations exceptionnelles, et observer les structures qui en résultent.</p>
   </div>
   </div>
   <div id="ap_listener_added">&nbsp;</div>
@@ -101,14 +101,14 @@ HTML Component Code
 
 
 
-Problem Component Code
+Code du composant Exercice
 ***************************
 
 .. code-block:: xml
 
   <problem>
-  <p>The dopamine molecule, as shown, cannot make ionic bonds. Edit the dopamine molecule so it can make ionic bonds.</p>
-  <p>When you are ready, click Check. If you need to start over, click Reset.</p>
+  <p>La molécule de dopamine, telle que présentée, ne peut pas créer de liaisons ioniques. Modifiez la molécule de dopamine afin qu'elle puisse créer des liaisons ioniques.</p>
+  <p>Lorsque votre réponse vous satisfait, cliquez sur Valider. Si vous devez recommencer, cliquez sur Réinitialiser.</p>
     <script type="loncapa/python">
   def check1(expect, ans):
       import json
@@ -124,12 +124,12 @@ Problem Component Code
     </solution>
   </problem>
 
-**Problem 2**
+**Exercice 2**
 
 ::
 
   <problem>
-  <p>The dopamine molecule, as shown, cannot make strong hydrogen bonds. Edit the dopamine molecule so that it can make strong hydrogen bonds.</p>
+  <p>La molécule de dopamine, telle que présentée, ne peut pas créer de liaisons hydrogène fortes. Modifiez la molécule de dopamine afin qu'elle puisse créer des liaisons hydrogène fortes.</p>
   <script type="loncapa/python">
   def grader_1(expect, ans):
       import json
@@ -142,12 +142,12 @@ Problem Component Code
     </customresponse>
   </problem>
 
-**Problem 3**
+**Exercice 3**
 
 ::
 
   <problem>
-  <p>The dopamine molecule has an intermediate hydrophobicity. Edit the dopamine molecule so that it is more hydrophobic.</p>
+  <p>La molécule de dopamine présente une hydrophobie intermédiaire. Modifiez la molécule de dopamine afin qu'elle soit plus hydrophobe.</p>
   <script type="loncapa/python">
   def grader_2(expect, ans):
       import json

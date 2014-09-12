@@ -1,65 +1,63 @@
 .. _Zooming Image:
 
 ##################
-Zooming Image Tool
+Outil avec zoom d'images
 ##################
 
-You may want to present information to your students as an image. If your image is very large or very detailed, students may not be able to see all the information in the image. You can use the zooming image tool to enlarge areas of your image as the student moves the mouse over the image, as in the example below.
+Vous pouvez, si vous le souhaitez, présenter les informations à vos étudiants sous forme d'images. Toutefois, si vous utilisez une image très grande ou très détaillée, les étudiants risquent de ne pas voir toutes les informations contenues dans l'image. Dans ce cas, l'outil avec zoom d'images peut être utilisé pour agrandir les zones souhaitées. Il suffit à l'étudiant de faire passer la souris au-dessus de l'image, comme dans l'exemple présenté ci-dessous.
 
 .. image:: /Images/Zooming_Image.png
-  :alt: Example zooming image tool showing a chemistry exercise
+  :alt: Exemple d'outil avec zoom d'images présentant un exercice de chimie
 
 ***********************************
-Components of a Zooming Image Tool
+Composants d'un outil avec zoom d'images
 ***********************************
 
-To create a zooming image tool, you need the following files.
+Pour créer un outil avec zoom d'images, vous aurez besoin des fichiers suivants :
 
-* The image that you want students to see when they access the unit.
-* The image that appears in the magnified area when a student clicks the regular image. This image may be larger than the regular image.
-* The **jquery.loupeAndLightbox.js** JavaScript file. Every zooming image tool uses this JavaScript file, and you won't make any changes to it. `To download this file, right-click here <http://files.edx.org/jquery.loupeAndLightbox.js>`_, and then click **Save Link As** to save the file on your computer.
+* Image que vous souhaitez que les étudiants voient lorsqu'ils accèdent à l'unité.
+* Image qui apparaît dans la zone agrandie lorsqu'un étudiant clique sur l'image d'origine. Cette image peut être plus grande que l'image d'origine.
+* Fichier JavaScript **jquery.loupeAndLightbox.js**. Chaque outil avec zoom d'images utilise ce fichier JavaScript. Vous n'y apporterez aucune modification. `Pour télécharger ce fichier, cliquez ici <http://files.edx.org/jquery.loupeAndLightbox.js>`_ avec le bouton droit de la souris, puis cliquez sur **Save Link As** (Enregistrer le lien sous) pour enregistrer le fichier sur votre ordinateur.
 
 ****************************
-Create a Zooming Image Tool
+Créer un outil avec zoom d'images
 ****************************
 
-#. Upload your regular-sized image file, your small image file, and the **jquery.loupeAndLightbox.js** file to the **Files & Uploads** page. For more information about how to do this, see :ref:`Add Files to a Course`.
+#. Chargez votre fichier image de taille normale, votre petit fichier image et le fichier **jquery.loupeAndLightbox.js** sur la page **Fichiers et uploads**. Pour plus d'informations sur le chargement du fichier, voir :ref:`Ajouter des fichiers à un cours`.
 
-#. Under **Add New Component**, click **html**, and then click **Zooming Image**.
+#. Sous **Ajouter un nouveau composant**, cliquez sur **html**, puis sur **Zooming Image** (Zoom d'image).
 
-#. In the new component that appears, click **Edit**.
+#. Dans le nouveau composant qui apparaît, cliquez sur **Éditer**.
 
-#. In the component editor, replace the default problem text with your own text.
+#. Dans l'éditeur de composant, remplacez le texte par défaut de l'exercice par votre propre texte.
 
-#. Switch to the **HTML** tab.
+#. Basculez sur l'onglet **HTML**.
 
-#. Replace the following placeholders with your own content.
+#. Remplacez les espaces réservés ci-après par votre propre contenu.
 
-   - Replace the following file name and path with the name and path of the image that you want to appear magnified when the user hovers over the regular image.
+   - Remplacez le nom et le chemin de fichier suivants par le nom et le chemin de l'image que vous souhaitez agrandir lorsque l'utilisateur fait passer la souris au-dessus de l'image de taille normale.
 
      **https://studio.edx.org/c4x/edX/DemoX/asset/pathways_detail_01.png**
 
-     For example, your file name and path may be **/static/Image1.jpg**.
+     Par exemple, le nom et le chemin de fichier peuvent se présenter comme suit : **/static/Image1.jpg**.
 
-   - Replace the following file name and path with the name and path of the image that you want to appear when the page opens.
+   - Remplacez le nom et le chemin de fichier suivants par le nom et le chemin de l'image que vous souhaitez voir apparaître lorsque la page s'ouvre.
      
      **https://studio.edx.org/c4x/edX/DemoX/asset/pathways_overview_01.png**
 
-     For example, your file name and path may be **/static/Image2.jpg**.
+     Par exemple, le nom et le chemin de fichier peuvent se présenter comme suit : **/static/Image2.jpg**.
 
-   - Replace the following name and file path with the name and path of the JavaScript file for your course.
+   - Remplacez le nom et le chemin de fichier suivants par le nom et le chemin du fichier JavaScript pour votre cours.
 
      **https://studio.edx.org/c4x/edX/DemoX/asset/jquery.loupeAndLightbox.js**
 
-     Because you uploaded the **jquery.loupeAndLightbox.js** file to the **Files & Uploads** page, your file name and path is **/static/jquery.loupeAndLightbox.js**.
+     Comme vous avez chargé le fichier **jquery.loupeAndLightbox.js** sur la page **Fichiers et uploads**, le nom et le chemin de votre fichier apparaît comme suit : **/static/jquery.loupeAndLightbox.js**.
 
-   - (Optional) If you want the magnified area to be larger or smaller, change the **width** and **height** values from 350 to larger or smaller numbers. For example, you can change both numbers to 450. Or, if you want a horizontal oval instead of a circle, you can change the **width** value to a number such as 500 and the **height** value to a number such as 150.
+   - (facultatif) Si vous souhaitez que la zone agrandie soit agrandie (une nouvelle fois) ou réduite, modifiez les valeurs **width** et **height** définies sur 350, et définissez-les sur des chiffres inférieurs ou supérieurs. Par exemple, vous pouvez modifier les deux valeurs et les définir sur 450. Ou, si vous souhaitez présenter une image horizontale, de forme ovale et non plus circulaire, vous pouvez définir la valeur **width** sur 500 et la valeur **height** sur 150, par exemple.
 
-   The HTML in your zooming image tool may resemble the following.
+   Le code HTML de votre outil avec zoom d'images peut se présenter comme suit.
 
    .. image:: /Images/ZoomingImage_Modified.png
-     :alt: Example HTML for a zooming image tool
+     :alt: Exemple de code HTML d'un outil avec zoom d'images
 
-#. Click **Save** to save the HTML component.
-
-
+#. Pour enregistrer le composant HTML, cliquez sur **Enregistrer**.

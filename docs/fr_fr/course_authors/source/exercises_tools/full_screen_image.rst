@@ -1,63 +1,63 @@
 .. _Full Screen Image:
 
 ######################
-Full Screen Image Tool
+Outil d'affichage des images en plein écran
 ######################
 
-Some large images are difficult for students to view in the courseware.  The full screen image tool allows students to enlarge the image, so they can see all the detail in context.
+Certaines images de grande taille sont difficiles à visualiser dans le cours pour les étudiants.  L'outil d'affichage des images en plein écran permet aux étudiants d'agrandir l'image et d'en visualiser tous les détails en contexte.
 
 ****************************************
-The Student View of a Full Screen Image
+Vue par l'étudiant d'une image en plein écran
 ****************************************
 
-The student sees the full screen image in a unit page. When the student hovers the mouse pointer over the image, the **Fullscreen** button appears:
+L'étudiant visualise l'image en plein écran sur une page de l'unité. Lorsque l'étudiant fait passer le pointeur de la souris sur l'image, le bouton **Plein écran** apparaît :
 
 .. image:: /Images/image-modal.png
- :alt: Image of the full screen image tool with the Full Screen button.
+ :alt: Image de l'outil d'affichage des images en plein écran et du bouton Plein écran.
 
-When the student clicks **Fullscreen**, the image opens and expands in the full browser window.  The buttons **Close**, **Zoom In**, and **Zoom Out** appear:
+Lorsque l'étudiant clique sur **Plein écran**, l'image s'ouvre et est affichée en plein écran dans la fenêtre du navigateur.  Les boutons **Proche**, **Zoomer** et **Dézoomer** apparaissent :
 
 .. image:: /Images/image-modal-window.png
- :alt: Image of the Image Modal tool with the Full Screen button.
+ :alt: Image de l'outil d'affichage contextuel des images et du bouton Plein écran.
 
-The student can then zoom in on the image, and drag the image to view the desired part of it:
+L'étudiant peut alors zoomer sur l'image et la faire glisser afin de mieux visualiser la partie souhaitée :
 
 .. image:: /Images/image-modeal-zoomed.png
- :alt: Image of the Image Modal tool with the Full Screen button.
+ :alt: Image de l'outil d'affichage contextuel des images et du bouton Plein écran.
 
 ******************************
-Create a Full Screen Image
+Créer une image en plein écran
 ******************************
 
-#. Upload your image file to the **Files & Uploads** page. For more information about how to do this, see :ref:`Add Files to a Course`.
+#. Chargez votre fichier image sur la page **Fichiers et uploads**. Pour plus d'informations sur le chargement du fichier, voir :ref:`Ajouter des fichiers à un cours`.
 
-#. Under **Add New Component**, click **html**, and then click **Full Screen Image**.
+#. Sous **Ajouter un nouveau composant**, cliquez sur **html**, puis sur **Full Screen Image** (Image en plein écran).
 
-#. In the new component that appears, click **Edit**.
+#. Dans le nouveau composant qui apparaît, cliquez sur **Éditer**.
 
-#. In the component editor, replace the default title, remove the instructional paragraph, and add text as needed.
+#. Dans l'éditeur de composant, remplacez le titre par défaut, retirez le paragraphe d'instruction et ajoutez le texte, le cas échéant.
 
-#. Switch to the **HTML** tab.
+#. Basculez sur l'onglet **HTML**.
 
-#. Replace the following placeholders with your own content.
+#. Remplacez les espaces réservés ci-après par votre propre contenu.
 
-   * Replace the value of the <a> element's href attribute with the path to your image. Do not change the value of the class attribute. For example:
+   * Remplacez la valeur de l'attribut href de l'élément <a>  par le chemin de votre image. Ne modifiez pas la valeur de l'attribut class. Par exemple :
 
      **<a href="/static/Image1.jpg" class="modal-content">**
 
-   * Replace the value of the <img> element's src attribute with the path to your image. For example:
+   * Remplacez la valeur de l'attribut src de l'élément <img> par le chemin de votre image. Par exemple :
      
      **<img alt="Full screen image" src="/static/Image1.jpg"/>**
 
-   * Ensure that the value of the href and src attributes are the same, and that you do not change the class attribute. Your sample code should look like the following:
+   * Assurez-vous que les valeurs des attributs href et src sont identiques. En outre, vous ne devez pas modifier l'attribut class. Le code que vous proposez doit ressembler au code présenté ci-après :
 
    .. code-block:: xml
 
-     <h2>Sample Image Modal</h2>
+     <h2>Exemple d'affichage contextuel d'image</h2>
      <a href="/static/Image1.jpg" class="modal-content">
      <img alt="Full screen image" src="/static/Image1.jpg"/>
      </a>
 
-   .. note:: You can use this same HTML code in any HTML component, not just those components you created as full screen images.
+   .. note:: Vous pouvez utiliser le même code HTML dans tout composant HTML et pas uniquement dans les composants que vous créez en tant qu'images en plein écran.
 
-#. Click **Save** to save the HTML component.
+#. Pour enregistrer le composant HTML, cliquez sur **Enregistrer**.
