@@ -1,12 +1,12 @@
 .. _Checking Student Progress and Issuing Certificates:
 
-###################################################
-Attribuer des notes finales et émettre des certificats
-###################################################
-.. Ce chapitre sera renommé et développé afin d'inclure les activités de synthèse du cours ainsi que les meilleures pratiques.
+######################################################
+Attribuer des notes finales et Ã©mettre des certificats
+######################################################
+.. Ce chapitre sera renommÃ© et dÃ©veloppÃ© afin d'inclure les activitÃ©s de synthÃ¨se du cours ainsi que les meilleures pratiques.
 
-Pour attribuer une note finale à chaque étudiant inscrit à un cours, générez des notes une fois l'**heure** et la **date de fin du cours** passées. Voir :ref:`Access_grades`.
+Pour attribuer une note finale Ã  chaque Ã©tudiant inscrit Ã  un cours, gÃ©nÃ©rez des notes une fois l'**heure** et la **date de fin du cours** passÃ©es. Voir :ref:`Access_grades`.
  
-Les notes finales d'un étudiant ayant participé à un cours et la configuration de notation que vous avez définie dans Studio déterminent l'obtention par l'étudiant d'un certificat de maîtrise pour le cours suivi.
+Les notes finales d'un Ã©tudiant ayant participÃ© Ã  un cours et la configuration de notation que vous avez dÃ©finie dans Studio dÃ©terminent l'obtention par l'Ã©tudiant d'un certificat de maÃ®trise pour le cours suivi.
 
-Le processus d'émission de certificats est complété par la plate-forme edX : contactez votre gestionnaire de programme edX afin de choisir une date d'émission des certificats et de mettre fin à ce processus.
+Le processus d'Ã©mission de certificats est complÃ©tÃ© par la plate-forme edX : contactez votre gestionnaire de programme edX afin de choisir une date d'Ã©mission des certificats et de mettre fin Ã  ce processus.

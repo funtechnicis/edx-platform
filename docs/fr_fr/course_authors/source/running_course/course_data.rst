@@ -1,60 +1,60 @@
 .. _Course Data:
 
-############################
-Données du cours
-############################
+################
+DonnÃ©es du cours
+################
 
-Après avoir créé un cours, vous pouvez accéder aux informations relatives au cours depuis le
-tableau de bord de l'enseignant. Sont notamment présentés :
+AprÃ¨s avoir crÃ©Ã© un cours, vous pouvez accÃ©der aux informations relatives au cours depuis le
+tableau de bord de l'enseignant. Sont notamment prÃ©sentÃ©s :
 
 * des informations d'identification du cours ;
 
-* des informations précisant si le cours a commencé ou s'il est terminé ;
+* des informations prÃ©cisant si le cours a commencÃ© ou s'il est terminÃ© ;
 
-* le seuil de notation défini (réussite/échec).
+* le seuil de notation dÃ©fini (rÃ©ussite/Ã©chec).
 
-*************************************************
-Consulter les données du cours
-*************************************************
+******************************
+Consulter les donnÃ©es du cours
+******************************
 
 Pour afficher les informations relatives au cours :
 
-#. Affichez la version réelle de votre cours.
+#. Affichez la version rÃ©elle de votre cours.
 
-#. Cliquez sur **Instructor** (Enseignant), puis sur **Infos** le cas échéant. 
+#. Cliquez sur **Instructor** (Enseignant), puis sur **Infos** le cas Ã©chÃ©ant. 
 
-   La section **Informations de base relatives au cours** de la page qui s'ouvre répertorie les informations sur le cours.
+   La section **Informations de base relatives au cours** de la page qui s'ouvre rÃ©pertorie les informations sur le cours.
 
     .. image:: ../Images/Instructor_Dash_Course_Info.png
      :alt: Section Informations de base relatives au cours du tableau de bord de l'enseignant 
 
-*************************************************
+************************************************************
 Sources des informations de base relatives au cours - Studio
-*************************************************
+************************************************************
 
-Les données de cours qui apparaissent dans le tableau de bord de l'enseignant sont définies dans Studio ou dérivées de données que vous avez définies dans Studio.
+Les donnÃ©es de cours qui apparaissent dans le tableau de bord de l'enseignant sont dÃ©finies dans Studio ou dÃ©rivÃ©es de donnÃ©es que vous avez dÃ©finies dans Studio.
 
-* **Organisme** : Spécifié dans Studio lorsque vous créez le cours. Est intégré à l'URL du cours et ne peut être modifié.
+* **Organisme** : SpÃ©cifiÃ© dans Studio lorsque vous crÃ©ez le cours. Est intÃ©grÃ© Ã  l'URL du cours et ne peut Ãªtre modifiÃ©.
 
-* **Numéro du cours** : Spécifié dans Studio lorsque vous créez le cours. Est intégré à l'URL du cours et ne peut être modifié.
+* **NumÃ©ro du cours** : SpÃ©cifiÃ© dans Studio lorsque vous crÃ©ez le cours. Est intÃ©grÃ© Ã  l'URL du cours et ne peut Ãªtre modifiÃ©.
 
-* **Nom du cours** : Spécifié dans Studio lorsque vous créez le cours. Est intégré à l'URL du cours et ne peut être modifié. Dans Studio, ce champ est nommé **Cours dispensé**.
+* **Nom du cours** : SpÃ©cifiÃ© dans Studio lorsque vous crÃ©ez le cours. Est intÃ©grÃ© Ã  l'URL du cours et ne peut Ãªtre modifiÃ©. Dans Studio, ce champ est nommÃ© **Cours dispensÃ©**.
 
-* **Nom d'affichage du cours** : Spécifié dans Studio lorsque vous créez le cours. Dans Studio, ce champ est nommé **Nom du cours**. 
+* **Nom d'affichage du cours** : SpÃ©cifiÃ© dans Studio lorsque vous crÃ©ez le cours. Dans Studio, ce champ est nommÃ© **Nom du cours**. 
 
-  Ce nom peut être modifié dans Studio (non recommandé s'il s'agit de la version en cours de votre cours) :
-  Dans le menu **Paramètres**, sélectionnez **Paramètres avancés**. La valeur de la clé de stratégie **Nom d'affichage du cours** définit le nom du cours qui n'apparaît que dans le LMS.
+  Ce nom peut Ãªtre modifiÃ© dans Studio (non recommandÃ© s'il s'agit de la version en cours de votre cours) :
+  Dans le menu **ParamÃ¨tres**, sÃ©lectionnez **ParamÃ¨tres avancÃ©s**. La valeur de la clÃ© de stratÃ©gie **Nom d'affichage du cours** dÃ©finit le nom du cours qui n'apparaÃ®t que dans le LMS.
 
-  L'illustration suivante présente côte à côte les informations recueillies par Studio pour un nouveau cours et les mêmes informations de la section **Informations de base relatives au cours** du tableau de bord de l'enseignant.
+  L'illustration suivante prÃ©sente cÃ´te Ã  cÃ´te les informations recueillies par Studio pour un nouveau cours et les mÃªmes informations de la section **Informations de base relatives au cours** du tableau de bord de l'enseignant.
 
 .. image:: ../Images/Course_Info_Comparison.png
-   :alt: Le nom du cours dans Studio et le nom d'affichage du cours dans le LMS sont encadrés ; le cours dispensé dans Studio et le nom du cours dans le LMS sont entourés d'un cercle
+   :alt: Le nom du cours dans Studio et le nom d'affichage du cours dans le LMS sont encadrÃ©s ; le cours dispensÃ© dans Studio et le nom du cours dans le LMS sont entourÃ©s d'un cercle
    :width: 800
 
-* **Le cours a-t-il commencé ?** : Réponse dérivée de la **date de début du cours** et de la date actuelle. Cette date peut être modifiée dans Studio (non recommandé s'il s'agit de la version réelle de votre cours) : sélectionnez **Paramètres** > **Dates & Détails**.
+* **Le cours a-t-il commencÃ© ?** : RÃ©ponse dÃ©rivÃ©e de la **date de dÃ©but du cours** et de la date actuelle. Cette date peut Ãªtre modifiÃ©e dans Studio (non recommandÃ© s'il s'agit de la version rÃ©elle de votre cours) : sÃ©lectionnez **ParamÃ¨tres** > **Dates & DÃ©tails**.
 
-* **Le cours est-il terminé ?** : Réponse dérivée de la **date de fin du cours** et de la date actuelle. Cette date peut être modifiée dans Studio (non recommandé s'il s'agit de la version réelle de votre cours) : sélectionnez **Paramètres** > **Dates & Détails**.
+* **Le cours est-il terminÃ© ?** : RÃ©ponse dÃ©rivÃ©e de la **date de fin du cours** et de la date actuelle. Cette date peut Ãªtre modifiÃ©e dans Studio (non recommandÃ© s'il s'agit de la version rÃ©elle de votre cours) : sÃ©lectionnez **ParamÃ¨tres** > **Dates & DÃ©tails**.
 
-* **Seuils de notation** : Spécifiés dans Studio lorsque vous définissez le seuil de notation (note de passage). Les étudiants qui obtiennent exactement la note correspondant au seuil de notation valident leur cours (réussite).
-  Cette note peut être modifiée dans Studio (non recommandé s'il s'agit de la version réelle de votre cours) :
-  sélectionnez **Paramètres** > **Évaluation**.
+* **Seuils de notation** : SpÃ©cifiÃ©s dans Studio lorsque vous dÃ©finissez le seuil de notation (note de passage). Les Ã©tudiants qui obtiennent exactement la note correspondant au seuil de notation valident leur cours (rÃ©ussite).
+  Cette note peut Ãªtre modifiÃ©e dans Studio (non recommandÃ© s'il s'agit de la version rÃ©elle de votre cours) :
+  sÃ©lectionnez **ParamÃ¨tres** > **Ã‰valuation**.

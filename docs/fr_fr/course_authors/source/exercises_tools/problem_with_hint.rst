@@ -1,17 +1,17 @@
-.. _Problem with Adaptive Hint:
+.. _Exercice avec indice adaptatif:
 
-################################
+##############################
 Exercice avec indice adaptatif
-################################
+##############################
 
 Lors d'un exercice avec indice adaptatif, la réponse d'un étudiant est évaluée. L'étudiant reçoit alors des commentaires ou un indice en fonction de sa réponse. Cela permet d'augmenter ses chances de répondre correctement à la prochaine tentative. Ces exercices peuvent être des exercices avec saisie de texte.
 
 .. image:: /Images/ProblemWithAdaptiveHintExample.png
  :alt: Image d'un exercice avec indice adaptatif
 
-******************************************
+***************************************
 Créer un exercice avec indice adaptatif
-******************************************
+***************************************
 
 Pour créer l'exercice mentionné ci-dessus :
 
@@ -58,13 +58,13 @@ Pour créer l'exercice mentionné ci-dessus :
 
 .. _Problem with Adaptive Hint XML:
 
-*********************************
+*******************************************
 Exercice avec indice adaptatif - Format XML
-*********************************
+*******************************************
 
-========
+======
 Modèle
-========
+======
 
 .. code-block:: xml
 
@@ -103,9 +103,9 @@ Modèle
 
 .. note:: Si les indices que vous fournissez présentent des caractères, les lettres doivent être des minuscules.
 
-========
+=======
 Balises
-========
+=======
 
 * ``<text>`` : Encadre le script et le texte de l'exercice.
 * ``<customresponse>`` : Indique que la réponse au problème posé par cet exercice est personnalisée.

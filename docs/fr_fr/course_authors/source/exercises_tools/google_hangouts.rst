@@ -1,134 +1,135 @@
-.. _Google Instant Hangout:
+.. _Hangouts (Google):
 
-###########################################
-Outil de messagerie instantanée : Google Hangouts
-###########################################
+#################################################
+Outil de messagerie instantanÃ©e : Google Hangouts
+#################################################
 
-Ce chapitre décrit comment utiliser le système de messagerie instantanée dans votre cours. Sommaire :
+Ce chapitre dÃ©crit comment utiliser le systÃ¨me de messagerie instantanÃ©e dans votre cours. Sommaire :
 
-* :ref:`Présentation de Hangouts`
-* :ref:`Ajouter des conversations instantanées à un cours`
-* :ref:`Participer à une conversation instantanée : le point de vue de l'étudiant`
-* :ref:`Limites`
-* :ref:`Créer une conversation instantanée`
+* :ref:`Hangouts_Overview`
+* :ref:`Instant Hangouts in Your Course`
+* :ref:`The Student Experience`
+* :ref:`Limitations`
+* :ref:`Create the Instant Hangout`
+
 
 .. _Hangouts_Overview:
 
-*****************
-Présentation
-*****************
+************
+PrÃ©sentation
+************
 
-Vous pouvez permettre aux étudiants de participer à des conversations (via Hangouts) directement depuis votre cours.
+Vous pouvez permettre aux Ã©tudiants de participer Ã  des conversations (via Hangouts) directement depuis votre cours.
 
-Avec les conversations instantanées, les étudiants peuvent :
+Avec les conversations instantanÃ©es, les Ã©tudiants peuvent :
 
-* passer des appels audio ou vidéo ;
-* partager leurs écrans et regarder des vidéos ensemble ;
+* passer des appels audio ou vidÃ©o ;
+* partager leurs Ã©crans et regarder des vidÃ©os ensemble ;
 * collaborer sur des documents.
 
-Pour obtenir la liste complète des fonctions relatives aux conversations instantanées, reportez-vous à la `page Google Hangouts <http://www.google.com/+/learnmore/hangouts/>`_.
+Pour obtenir la liste complÃ¨te des fonctions relatives aux conversations instantanÃ©es, reportez-vous Ã  la `page Google Hangouts <http://www.google.com/+/learnmore/hangouts/>`_.
 
-.. note:: Les étudiants qui souhaitent participer à une conversation instantanée doivent avoir un compte Google.  Nous vous recommandons de mentionner ce point dans vos ressources pédagogiques.
+.. note:: Les Ã©tudiants qui souhaitent participer Ã  une conversation instantanÃ©e doivent avoir un compte Google.  Nous vous recommandons de mentionner ce point dans vos ressources pÃ©dagogiques.
 
 .. _Instant Hangouts in Your Course:
 
-**********************************
-Ajouter des conversations instantanées à un cours
-**********************************
+*************************************************
+Ajouter des conversations instantanÃ©es Ã  un cours
+*************************************************
 
-Vous pouvez ajouter une ou plusieurs conversations instantanées à votre cours. Par exemple, vous pouvez ajouter une conversation instantanée :
+Vous pouvez ajouter une ou plusieurs conversations instantanÃ©es Ã  votre cours. Par exemple, vous pouvez ajouter une conversation instantanÃ©e :
 
-* Dans une page : les étudiants pourront ainsi participer à des conversations instantanées tout au long du cours. Pour plus d'informations, voir :ref:`Ajout de pages à un cours`.
+* Dans une page : les Ã©tudiants pourront ainsi participer Ã  des conversations instantanÃ©es tout au long du cours. Pour plus d'informations, voir :ref:`Ajout de pages Ã  un cours`.
 
-* Dans un composant HTML : les étudiants inscrits à cette unité de cours spécifique pourront ainsi participer à des conversations instantanées. Pour plus d'informations sur la création de composants HTML, voir :ref:`Utilisation de composants HTML`.
+* Dans un composant HTML : les Ã©tudiants inscrits Ã  cette unitÃ© de cours spÃ©cifique pourront ainsi participer Ã  des conversations instantanÃ©es. Pour plus d'informations sur la crÃ©ation de composants HTML, voir :ref:`Utilisation de composants HTML`.
 
-Une conversation instantanée est spécifique à la page à partir de laquelle elle est lancée. Ainsi, les étudiants qui se joignent à une conversation depuis une unité de cours particulière interagissent entre eux. Les étudiants qui se joignent à une conversation lancée depuis une autre unité interagissent donc dans une autre conversation.
+Une conversation instantanÃ©e est spÃ©cifique Ã  la page Ã  partir de laquelle elle est lancÃ©e. Ainsi, les Ã©tudiants qui se joignent Ã  une conversation depuis une unitÃ© de cours particuliÃ¨re interagissent entre eux. Les Ã©tudiants qui se joignent Ã  une conversation lancÃ©e depuis une autre unitÃ© interagissent donc dans une autre conversation.
 
 .. _The Student Experience:
 
-*************************
-Participer à une conversation instantanée : le point de vue de l'étudiant
-*************************
+*************************************************************************
+Participer Ã  une conversation instantanÃ©e : le point de vue de l'Ã©tudiant
+*************************************************************************
 
-Lorsque vous ajoutez une conversation instantanée à votre cours, une option dédiée apparaît sur cette page. L'exemple suivant présente l'option telle qu'elle apparaît dans une unité de cours. Avec cette option, l'étudiant peut lancer la conversation et être le premier participant.
+Lorsque vous ajoutez une conversation instantanÃ©e Ã  votre cours, une option dÃ©diÃ©e apparaÃ®t sur cette page. L'exemple suivant prÃ©sente l'option telle qu'elle apparaÃ®t dans une unitÃ© de cours. Avec cette option, l'Ã©tudiant peut lancer la conversation et Ãªtre le premier participant.
 
 .. image:: /Images/hangout_unit.png
- :alt: Image de l'option associée à une conversation instantanée dans une unité
+ :alt: Image de l'option associÃ©e Ã  une conversation instantanÃ©e dans une unitÃ©
 
-Pour lancer la conversation, l'étudiant clique sur **Start the Hangout** (Lancer la conversation). (Lorsque le premier étudiant clique sur **Start the Hangout** [Lancer la conversation], les autres étudiants peuvent accéder au bouton **Join the Hangout** [Se joindre à la conversation].)
+Pour lancer la conversation, l'Ã©tudiant clique sur **Start the Hangout** (Lancer la conversation). (Lorsque le premier Ã©tudiant clique sur **Start the Hangout** [Lancer la conversation], les autres Ã©tudiants peuvent accÃ©der au bouton **Join the Hangout** [Se joindre Ã  la conversation].)
 
-L'exemple suivant présente l'option telle qu'elle apparaît dans une page lorsqu'une conversation a déjà été lancée. Le bouton **Join the Hangout** (Se joindre à la conversation) est affiché. Cela signifie que la conversation a été lancée et qu'un autre étudiant est déjà en ligne.
+L'exemple suivant prÃ©sente l'option telle qu'elle apparaÃ®t dans une page lorsqu'une conversation a dÃ©jÃ  Ã©tÃ© lancÃ©e. Le bouton **Join the Hangout** (Se joindre Ã  la conversation) est affichÃ©. Cela signifie que la conversation a Ã©tÃ© lancÃ©e et qu'un autre Ã©tudiant est dÃ©jÃ  en ligne.
 
 .. image:: /Images/hangout_static_page.png
- :alt: Image de l'option associée à une conversation instantanée dans une page
+ :alt: Image de l'option associÃ©e Ã  une conversation instantanÃ©e dans une page
 
-Pour se joindre à la conversation, l'étudiant clique sur **Join the Hangout** (Se joindre à la conversation).
+Pour se joindre Ã  la conversation, l'Ã©tudiant clique sur **Join the Hangout** (Se joindre Ã  la conversation).
 
-S'il n'est pas déjà connecté, l'étudiant est invité à se connecter à son compte Google :
+S'il n'est pas dÃ©jÃ  connectÃ©, l'Ã©tudiant est invitÃ© Ã  se connecter Ã  son compte Google :
 
 .. image:: /Images/google_login.png
  :alt: Image de la page de connexion Google
 
-Les étudiants qui ne possèdent pas de compte Google peuvent en créer un depuis la page de connexion.
+Les Ã©tudiants qui ne possÃ¨dent pas de compte Google peuvent en crÃ©er un depuis la page de connexion.
 
-Une fois l'étudiant connecté à son compte Google, la conversation commence dans une nouvelle fenêtre du navigateur :
+Une fois l'Ã©tudiant connectÃ© Ã  son compte Google, la conversation commence dans une nouvelle fenÃªtre du navigateur :
 
 .. image:: /Images/GoogleHangout_WithPeople.png
- :alt: Image de la conversation instantanée
+ :alt: Image de la conversation instantanÃ©e
 
 .. _Limitations:
 
-****************
+*******
 Limites
-****************
+*******
 
-Actuellement, seuls dix étudiants peuvent se joindre à une même conversation instantanée. Nous vous recommandons de mentionner ce point dans vos ressources pédagogiques.
+Actuellement, seuls dix Ã©tudiants peuvent se joindre Ã  une mÃªme conversation instantanÃ©e. Nous vous recommandons de mentionner ce point dans vos ressources pÃ©dagogiques.
 
-Les étudiants participant à des conversations lancées à partir de votre cours, mais depuis des pages différentes, sont comptés séparément. Ainsi, les dix étudiants participant à une conversation lancée depuis l'unité à laquelle ils sont inscrits seront comptabilisés à part des dix étudiants participant à une conversation lancée depuis une autre unité.
+Les Ã©tudiants participant Ã  des conversations lancÃ©es Ã  partir de votre cours, mais depuis des pages diffÃ©rentes, sont comptÃ©s sÃ©parÃ©ment. Ainsi, les dix Ã©tudiants participant Ã  une conversation lancÃ©e depuis l'unitÃ© Ã  laquelle ils sont inscrits seront comptabilisÃ©s Ã  part des dix Ã©tudiants participant Ã  une conversation lancÃ©e depuis une autre unitÃ©.
 
 .. _Create the Instant Hangout:
 
-**************************************************
-Créer une conversation instantanée
-**************************************************
+**********************************
+CrÃ©er une conversation instantanÃ©e
+**********************************
 
-Pour créer une conversation instantanée dans votre cours :
+Pour crÃ©er une conversation instantanÃ©e dans votre cours :
 
-#. Téléchargez le `fichier JavaScript de conversation instantanée depuis GitHub <https://raw.github.com/google/instant-hangouts/master/instanthangouts-0.1.0.js>`_.
+#. TÃ©lÃ©chargez le `fichier JavaScript de conversation instantanÃ©e depuis GitHub <https://raw.github.com/google/instant-hangouts/master/instanthangouts-0.1.0.js>`_.
 
-#. Copiez le texte de ce fichier dans un éditeur de texte sur votre ordinateur, puis enregistrez le fichier en tant que fichier JavaScript (en d'autres termes, lorsque vous enregistrez le fichier, remplacez l'extension .txt par .js).
+#. Copiez le texte de ce fichier dans un Ã©diteur de texte sur votre ordinateur, puis enregistrez le fichier en tant que fichier JavaScript (en d'autres termes, lorsque vous enregistrez le fichier, remplacez l'extension .txt par .js).
 
-   .. note::  Assurez-vous de copier le fichier GitHub brut, qui ne contient aucun formatage. Ne copiez pas le fichier mise en forme. Toute mise en forme entraînerait un dysfonctionnement du fichier JavaScript.
+   .. note::  Assurez-vous de copier le fichier GitHub brut, qui ne contient aucun formatage. Ne copiez pas le fichier mise en forme. Toute mise en forme entraÃ®nerait un dysfonctionnement du fichier JavaScript.
 
-#. Chargez le fichier JavaScript sur la page **Fichiers et uploads** dans votre cours. Pour plus d'informations, voir :ref:`Ajouter des fichiers à un cours`.
+#. Chargez le fichier JavaScript sur la page **Fichiers et uploads** dans votre cours. Pour plus d'informations, voir :ref:`Ajouter des fichiers Ã  un cours`.
 
-#. Dans une page ou dans un composant HTML, ouvrez l'éditeur HTML.
+#. Dans une page ou dans un composant HTML, ouvrez l'Ã©diteur HTML.
 
-#. Sur la première ligne, ajoutez le fichier JavaScript que vous avez chargé dans une balise <script> . Par exemple, si votre fichier JavaScript s'appelle **instanthangouts-0.1.0.js**, saisissez ce qui suit :
+#. Sur la premiÃ¨re ligne, ajoutez le fichier JavaScript que vous avez chargÃ© dans une balise <script> . Par exemple, si votre fichier JavaScript s'appelle **instanthangouts-0.1.0.js**, saisissez ce qui suit :
   
     <script src='/static/instanthangouts-0.1.0.js'/>
 
-#. Après la balise <script> , ajoutez :
+#. AprÃ¨s la balise <script> , ajoutez :
   
     <div class='instanthangouts'/>
 
-#. Ajoutez le texte et les balises supplémentaires souhaités.
+#. Ajoutez le texte et les balises supplÃ©mentaires souhaitÃ©s.
 
-   Par exemple, le code HTML complet pourrait être le suivant :
+   Par exemple, le code HTML complet pourrait Ãªtre le suivant :
 
-    <p>Pour vous joindre à une conversation instantanée, cliquez sur le bouton ci-dessous. 
-    Notez que la conversation peut également être transformée en appel vidéo.</p>
+    <p>Pour vous joindre Ã  une conversation instantanÃ©e, cliquez sur le bouton ci-dessous. 
+    Notez que la conversation peut Ã©galement Ãªtre transformÃ©e en appel vidÃ©o.</p>
     <script src='/static/instanthangouts-0.1.0.js'></script>
     <div class='instanthangouts'/>
 
-#. Testez l'outil de conversation instantané dans votre cours.
+#. Testez l'outil de conversation instantanÃ© dans votre cours.
 
-=============================
-Mise à jour du fichier JavaScript
-=============================
+=================================
+Mise Ã  jour du fichier JavaScript
+=================================
 
-Google mettra régulièrement à jour le fichier JavaScript relatif aux conversations instantanées.  Pour recevoir les notifications de mise à jour, accédez à la `page du référentiel relatif aux conversations instantanées <https://github.com/google/instant-hangouts/>`_, puis cliquez sur **Watch** (Consulter) dans le coin supérieur droit de la page. 
+Google mettra rÃ©guliÃ¨rement Ã  jour le fichier JavaScript relatif aux conversations instantanÃ©es.  Pour recevoir les notifications de mise Ã  jour, accÃ©dez Ã  la `page du rÃ©fÃ©rentiel relatif aux conversations instantanÃ©es <https://github.com/google/instant-hangouts/>`_, puis cliquez sur **Watch** (Consulter) dans le coin supÃ©rieur droit de la page. 
 
-Pour utiliser dans votre cours un fichier JavaScript mis à jour, nous vous recommandons de copier le fichier JavaScript depuis le référentiel dans un fichier qui a le même nom que le fichier chargé dans votre cours. Lorsque vous chargez le nouveau fichier, ce dernier remplace l'ancien fichier.
+Pour utiliser dans votre cours un fichier JavaScript mis Ã  jour, nous vous recommandons de copier le fichier JavaScript depuis le rÃ©fÃ©rentiel dans un fichier qui a le mÃªme nom que le fichier chargÃ© dans votre cours. Lorsque vous chargez le nouveau fichier, ce dernier remplace l'ancien fichier.
 
-Avertissement : Si vous insérez des numéros de version dans les noms des fichiers chargés, vous devrez éditer les pages ou composants HTML incluant une option de conversation instantanée lors de chaque mise à jour du fichier JavaScript.
+Avertissement : Si vous insÃ©rez des numÃ©ros de version dans les noms des fichiers chargÃ©s, vous devrez Ã©diter les pages ou composants HTML incluant une option de conversation instantanÃ©e lors de chaque mise Ã  jour du fichier JavaScript.

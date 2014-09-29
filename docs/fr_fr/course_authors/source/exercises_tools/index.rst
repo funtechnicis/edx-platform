@@ -1,8 +1,8 @@
 .. _Exercises and Tools Index:
 
-############################
-Création d'exercices et d'outils
-############################
+################################
+CrÃ©ation d'exercices et d'outils
+################################
 
 .. toctree::
    :maxdepth: 2
@@ -28,7 +28,6 @@ Création d'exercices et d'outils
    multiple_choice
    mult_choice_num_input
    numerical_input
-   open_response_assessment
    periodic_table
    poll
    problem_with_hint

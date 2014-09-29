@@ -1,17 +1,17 @@
-.. _Drag and Drop:
+.. _Glisser-déposer:
 
-##########################
+###########################
 Exercice de glisser-déposer
-##########################
+###########################
 
 Dans les exercices de glisser-déposer, les étudiants répondent à une question en faisant glisser du texte ou des objets vers un emplacement spécifique sur une image.
 
 .. image:: /Images/DragAndDropProblem.png
  :alt: Image d'un exercice de glisser-déposer
 
-*********************************
+************************************
 Créer un exercice de glisser-déposer
-*********************************
+************************************
 
 Pour créer un simple exercice de glisser-déposer dans lequel les étudiants sont amenés à faire glisser des étiquettes sur une image, chargez l'image dans laquelle vous souhaitez que les étudiants fassent glisser des étiquettes, puis créez un composant Exercice.
 
@@ -42,9 +42,9 @@ Pour créer un simple exercice de glisser-déposer dans lequel les étudiants so
     .. note:: Assurez-vous que le code contient une accolade fermante (**}**). 
 #. Cliquez sur **Enregistrer**.
 
-==========================================
+=====================================
 Exemple d'exercice de glisser-déposer
-==========================================
+=====================================
 
 Pour créer l'exercice de glisser-déposer qui apparaît dans l'image ci-dessus, téléchargez deux fichiers depuis edX, chargez ces fichiers sur la page **Fichiers et uploads**, puis ajoutez le code de l'exercice à un composant Exercice.
 
@@ -100,13 +100,13 @@ Pour créer l'exercice de glisser-déposer qui apparaît dans l'image ci-dessus,
 
 .. _Drag and Drop Problem XML:
 
-*********************************
+****************************************
 Exercice de glisser-déposer - Format XML
-*********************************
+****************************************
 
-================================
+=========================
 Modèle de problème simple
-================================
+=========================
 
 .. code-block:: xml
 
@@ -129,9 +129,9 @@ Modèle de problème simple
       </customresponse>
 
 
-================================
+=========================
 Modèle de problème avancé
-================================
+=========================
 
 .. code-block:: xml
 
@@ -160,9 +160,9 @@ Modèle de problème avancé
       </customresponse>
   </problem>
 
-========
+=======
 Balises
-========
+=======
 
 * ``<customresponse>`` : Indique que cet exercice est associé à une réponse personnalisée.
 * ``<drag_and_drop_input/>`` : Indique que cet exercice avec réponse personnalisée est un exercice de glisser-déposer.

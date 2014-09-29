@@ -1,32 +1,32 @@
-.. _Math Expression Input:
+.. _Saisie d'expressions mathÃ©matiques:
 
-####################################
-Exercices avec saisie d'expressions mathématiques
-####################################
+#################################################
+Exercices avec saisie d'expressions mathÃ©matiques
+#################################################
 
-Dans les exercices avec saisie d'expressions mathématiques, les étudiants saisissent dans un champ un texte qui représente une expression mathématique. Ce texte est alors converti en une expression symbolique qui apparaît sous le champ. À la différence des exercices avec saisie de chiffres, qui n'autorisent que les nombres entiers et quelques constantes sélectionnées, les exercices avec saisie d'expressions mathématiques peuvent inclure des variables inconnues et des expressions symboliques plus complexes. 
+Dans les exercices avec saisie d'expressions mathÃ©matiques, les Ã©tudiants saisissent dans un champ un texte qui reprÃ©sente une expression mathÃ©matique. Ce texte est alors converti en une expression symbolique qui apparaÃ®t sous le champ. Ã€ la diffÃ©rence des exercices avec saisie de chiffres, qui n'autorisent que les nombres entiers et quelques constantes sÃ©lectionnÃ©es, les exercices avec saisie d'expressions mathÃ©matiques peuvent inclure des variables inconnues et des expressions symboliques plus complexes. 
 
 .. image:: /Images/MathExpressionInputExample.png
- :alt: Image d'un exercice avec saisie d'expressions mathématiques
+ :alt: Image d'un exercice avec saisie d'expressions mathÃ©matiques
 
-Pour plus d'informations sur les caractères acceptés, voir :ref:`Format des réponses dans les exercices de mathématiques`.
+Pour plus d'informations sur les caractÃ¨res acceptÃ©s, voir :ref:`Format des rÃ©ponses dans les exercices de mathÃ©matiques`.
 
-L'évaluateur se base sur un échantillonnage numérique pour déterminer si la réponse de l'étudiant correspond à l'expression mathématique fournie par l'enseignant et si elle est conforme aux instructions définies en matière de caractères numériques. L'enseignant doit spécifier quelles sont les variables autorisées dans l'expression et indiquer la plage de valeurs associée à chaque variable.
+L'Ã©valuateur se base sur un Ã©chantillonnage numÃ©rique pour dÃ©terminer si la rÃ©ponse de l'Ã©tudiant correspond Ã  l'expression mathÃ©matique fournie par l'enseignant et si elle est conforme aux instructions dÃ©finies en matiÃ¨re de caractÃ¨res numÃ©riques. L'enseignant doit spÃ©cifier quelles sont les variables autorisÃ©es dans l'expression et indiquer la plage de valeurs associÃ©e Ã  chaque variable.
 
-Avertissement : Les exercices avec saisie d'expressions mathématiques ne peuvent actuellement pas inclure de chiffre négatif élevé à une puissance fractionnaire, par exemple : (-1)^(1/2). Les exercices avec saisie d'expressions mathématiques peuvent inclure des nombres complexes élevés à des puissances fractionnaires ou des nombres positifs non complexes élevés à des puissances fractionnaires.
+Avertissement : Les exercices avec saisie d'expressions mathÃ©matiques ne peuvent actuellement pas inclure de chiffre nÃ©gatif Ã©levÃ© Ã  une puissance fractionnaire, par exemple : (-1)^(1/2). Les exercices avec saisie d'expressions mathÃ©matiques peuvent inclure des nombres complexes Ã©levÃ©s Ã  des puissances fractionnaires ou des nombres positifs non complexes Ã©levÃ©s Ã  des puissances fractionnaires.
 
-Lorsque vous créez un exercice avec saisie d'expressions mathématiques dans Studio, vous devrez utiliser `MathJax <http://www.mathjax.org>`_ pour transformer votre texte brut en expression mathématique. Pour plus d'informations sur l'utilisation de MathJax dans Studio, voir :ref:`Introduction à l'utilisation de MathJax dans Studio`.
+Lorsque vous crÃ©ez un exercice avec saisie d'expressions mathÃ©matiques dans Studio, vous devrez utiliser `MathJax <http://www.mathjax.org>`_ pour transformer votre texte brut en expression mathÃ©matique. Pour plus d'informations sur l'utilisation de MathJax dans Studio, voir :ref:`Introduction Ã  l'utilisation de MathJax dans Studio`.
 
-************************************************
-Créer un exercice avec saisie d'expressions mathématiques
-************************************************
+*********************************************************
+CrÃ©er un exercice avec saisie d'expressions mathÃ©matiques
+*********************************************************
 
-Pour créer un exercice avec saisie d'expressions mathématiques :
+Pour crÃ©er un exercice avec saisie d'expressions mathÃ©matiques :
 
-#. Dans l'unité dans laquelle vous souhaitez créer l'exercice, cliquez sur **Exercice** sous **Ajouter un nouveau composant**, puis cliquez sur l'onglet **Avancé**.
-#. Cliquez sur **Math Expression Input** (Saisie d'expressions mathématiques).
-#. Dans le composant qui apparaît, cliquez sur **Éditer**.
-#. Dans l'éditeur de composant, remplacez l'exemple de code par votre propre code. Pour votre exercice, vous pouvez utiliser le code de l'exercice présenté en exemple ci-après.
+#. Dans l'unitÃ© dans laquelle vous souhaitez crÃ©er l'exercice, cliquez sur **Exercice** sous **Ajouter un nouveau composant**, puis cliquez sur l'onglet **AvancÃ©**.
+#. Cliquez sur **Math Expression Input** (Saisie d'expressions mathÃ©matiques).
+#. Dans le composant qui apparaÃ®t, cliquez sur **Ã‰diter**.
+#. Dans l'Ã©diteur de composant, remplacez l'exemple de code par votre propre code. Pour votre exercice, vous pouvez utiliser le code de l'exercice prÃ©sentÃ© en exemple ci-aprÃ¨s.
 #. Cliquez sur **Enregistrer**.
 
 **Exemple de code d'exercice**
@@ -34,21 +34,21 @@ Pour créer un exercice avec saisie d'expressions mathématiques :
 .. code-block:: xml
 
   <problem>
-    <p>Certains exercices font référence à une équation mathématique. Entraînez-vous à créer des expressions mathématiques en répondant aux questions ci-après.</p>
+    <p>Certains exercices font rÃ©fÃ©rence Ã  une Ã©quation mathÃ©matique. EntraÃ®nez-vous Ã  crÃ©er des expressions mathÃ©matiques en rÃ©pondant aux questions ci-aprÃ¨s.</p>
 
-    <p>Écrivez une expression pour le produit de R_1, R_2 et l'inverse de R_3.</p>
+    <p>Ã‰crivez une expression pour le produit de R_1, R_2 et l'inverse de R_3.</p>
     <formularesponse type="ci" samples="R_1,R_2,R_3@1,2,3:3,4,5#10" answer="$VoVi">
       <responseparam type="tolerance" default="0.00001"/>
-      <formulaequationinput size="40" label="Saisissez l'équation"/>
+      <formulaequationinput size="40" label="Saisissez l'Ã©quation"/>
     </formularesponse>
 
   <script type="loncapa/python">
   VoVi = "(R_1*R_2)/R_3"
   </script>
 
-    <p>Supposons que <i>x</i> est la variable et que <i>n</i> est la constante arbitraire. Quelle est la dérivée de <i>x<sup>n</sup></i>?</p>
+    <p>Supposons que <i>x</i> est la variable et que <i>n</i> est la constante arbitraire. Quelle est la dÃ©rivÃ©e de <i>x<sup>n</sup></i>?</p>
   <script type="loncapa/python">
-  dérivée = "n*x^(n-1)"
+  dÃ©rivÃ©e = "n*x^(n-1)"
   </script>
     <formularesponse type="ci" samples="x,n@1,2:3,4#10" answer="$derivative">
       <responseparam type="tolerance" default="0.00001"/>
@@ -65,18 +65,18 @@ Pour créer un exercice avec saisie d'expressions mathématiques :
 
 .. _Math Expression Input Problem XML:
 
-**********************************
-Exercice avec saisie d'expressions mathématiques - Format XML
-**********************************
+*************************************************************
+Exercice avec saisie d'expressions mathÃ©matiques - Format XML
+*************************************************************
 
-============
-Modèles
-============
+=======
+ModÃ¨les
+=======
 
 .. code-block:: xml
 
   <problem>
-    <p>Écrivez une expression pour le produit de R_1, R_2 et l'inverse de R_3.</p>
+    <p>Ã‰crivez une expression pour le produit de R_1, R_2 et l'inverse de R_3.</p>
     <formularesponse type="ci" samples="R_1,R_2,R_3@1,2,3:3,4,5#10" answer="R_1*R_2/R_3">
       <responseparam type="tolerance" default="0.00001"/> 
       <formulaequationinput size="40"  label="Enter the equation" />
@@ -89,7 +89,7 @@ Modèles
     <p>Texte de l'exercice</p>
     <formularesponse type="ci" samples="VARIABLES@LOWER_BOUNDS:UPPER_BOUNDS#NUMBER_OF_SAMPLES" answer="$VoVi">
       <responseparam type="tolerance" default="0.00001"/>
-      <formulaequationinput size="20"  label="Saisissez l'équation" />
+      <formulaequationinput size="20"  label="Saisissez l'Ã©quation" />
     </formularesponse>
 
   <script type="loncapa/python">
@@ -104,9 +104,9 @@ Modèles
     </solution>
   </problem>
 
-====
+=======
 Balises
-====
+=======
 
 * ``<formularesponse>``
 * ``<formulaequationinput />``
@@ -115,26 +115,26 @@ Balises
 
 **Balise :** ``<formularesponse>``
 
-Indique que cet exercice est un exercice avec saisie d'expressions mathématiques. La balise ``<formularesponse>`` est similaire à ``<numericalresponse>`` mais ``<formularesponse>`` accepte les variables inconnues.
+Indique que cet exercice est un exercice avec saisie d'expressions mathÃ©matiques. La balise ``<formularesponse>`` est similaire Ã  ``<numericalresponse>`` mais ``<formularesponse>`` accepte les variables inconnues.
 
   Attributs
 
-  **type** : Peut être "cs" (de l'anglais case sensitive, soit : sensible à la casse ; il s'agit de la valeur par défaut) ou "ci" (de l'anglais case insensitive, soit : insensible à la casse ; il est alors possible d'utiliser indifféremment majuscules ou de minuscules dans les noms de variables).
+  **type** : Peut Ãªtre "cs" (de l'anglais case sensitive, soit : sensible Ã  la casse ; il s'agit de la valeur par dÃ©faut) ou "ci" (de l'anglais case insensitive, soit : insensible Ã  la casse ; il est alors possible d'utiliser indiffÃ©remment majuscules ou de minuscules dans les noms de variables).
 
-  **answer** : Réponse correcte au problème, présentée en tant qu'expression mathématique. Si vous incluez dans l'exercice un nom de variable, précédé d'un signe de dollar ($), vous pouvez inclure (toujours dans l'exercice) un script qui calcule l'expression sur la base de cette variable.
+  **answer** : RÃ©ponse correcte au problÃ¨me, prÃ©sentÃ©e en tant qu'expression mathÃ©matique. Si vous incluez dans l'exercice un nom de variable, prÃ©cÃ©dÃ© d'un signe de dollar ($), vous pouvez inclure (toujours dans l'exercice) un script qui calcule l'expression sur la base de cette variable.
 
-  **samples** : Spécifie des informations importantes sur l'exercice dans quatre listes :
+  **samples** : SpÃ©cifie des informations importantes sur l'exercice dans quatre listes :
 
-    * **variables** : Ensemble de variables que les étudiants peuvent saisir.
-    * **lower_bounds** : Pour chaque variable définie, la limite inférieure à utiliser pour cette variable lors des tests numériques.
-    * **upper_bounds** : Pour chaque variable définie, la limite supérieure à utiliser pour cette variable lors des tests numériques.
-    * **num_samples** : Nombre de fois que l'expression est testée.
+    * **variables** : Ensemble de variables que les Ã©tudiants peuvent saisir.
+    * **lower_bounds** : Pour chaque variable dÃ©finie, la limite infÃ©rieure Ã  utiliser pour cette variable lors des tests numÃ©riques.
+    * **upper_bounds** : Pour chaque variable dÃ©finie, la limite supÃ©rieure Ã  utiliser pour cette variable lors des tests numÃ©riques.
+    * **num_samples** : Nombre de fois que l'expression est testÃ©e.
 
-    Les virgules séparent les éléments dans chacune des quatre listes ; le signe (@), le deux-points (:) et le dièse (#) séparent les quatre listes. Le format est le suivant :
+    Les virgules sÃ©parent les Ã©lÃ©ments dans chacune des quatre listes ; le signe (@), le deux-points (:) et le diÃ¨se (#) sÃ©parent les quatre listes. Le format est le suivant :
 
     ``"variables@lower_bounds:upper_bounds#num_samples``
 
-    Par exemple, une balise ``<formularesponse>`` qui inclut l'attribut **samples** peut ressembler à l'une des balises présentées ci-après.
+    Par exemple, une balise ``<formularesponse>`` qui inclut l'attribut **samples** peut ressembler Ã  l'une des balises prÃ©sentÃ©es ci-aprÃ¨s.
 
     ``<formularesponse samples="x,n@1,2:3,4#10">``
 
@@ -146,7 +146,7 @@ Indique que cet exercice est un exercice avec saisie d'expressions mathématiques
 
 **Balise :** ``<formulaequationinput />``
 
-Crée un champ de réponse dans lequel l'étudiant saisit une réponse en texte brut ; crée également un second champ de réponse sous le champ dans lequel l'étudiant peut voir une version mise en page du texte brut. Un analyseur permet l'affichage de la réponse de l'étudiant, présentée en texte brut, en expression mathématique mise en page. Ce même analyseur évalue la réponse de l'étudiant pour la noter.
+CrÃ©e un champ de rÃ©ponse dans lequel l'Ã©tudiant saisit une rÃ©ponse en texte brut ; crÃ©e Ã©galement un second champ de rÃ©ponse sous le champ dans lequel l'Ã©tudiant peut voir une version mise en page du texte brut. Un analyseur permet l'affichage de la rÃ©ponse de l'Ã©tudiant, prÃ©sentÃ©e en texte brut, en expression mathÃ©matique mise en page. Ce mÃªme analyseur Ã©value la rÃ©ponse de l'Ã©tudiant pour la noter.
 
   Attributs
 
@@ -156,9 +156,9 @@ Crée un champ de réponse dans lequel l'étudiant saisit une réponse en texte brut
      * - Attribut
        - Description
      * - label (obligatoire)
-       - Spécifie le nom du champ de la réponse.
+       - SpÃ©cifie le nom du champ de la rÃ©ponse.
      * - size (facultatif)
-       - Spécifie la largeur, en caractères, du champ de réponse dans lequel les étudiants saisissent leurs réponses.
+       - SpÃ©cifie la largeur, en caractÃ¨res, du champ de rÃ©ponse dans lequel les Ã©tudiants saisissent leurs rÃ©ponses.
 
   Enfants
   
@@ -166,7 +166,7 @@ Crée un champ de réponse dans lequel l'étudiant saisit une réponse en texte brut
 
 **Balise :** ``<responseparam>``
 
-Permet de définir une limite supérieure pour l'écart entre les méthodes numériques utilisées pour réaliser un test d'égalité approximative.
+Permet de dÃ©finir une limite supÃ©rieure pour l'Ã©cart entre les mÃ©thodes numÃ©riques utilisÃ©es pour rÃ©aliser un test d'Ã©galitÃ© approximative.
 
   Attributs
 
@@ -176,9 +176,9 @@ Permet de définir une limite supérieure pour l'écart entre les méthodes numériqu
      * - Attribut
        - Description
      * - default (obligatoire)
-       - Chiffre ou pourcentage indiquant le degré de proximité des expression de l'étudiant et de l'évaluateur. L'incapacité d'inclure une tolérance introduit une vulnérabilité au niveau des expressions : des erreurs d'arrondi inévitables risquent de survenir lors de l'échantillonnage, entraînant alors l'évaluation incorrecte de la réponse d'un étudiant, même si sa réponse est algébriquement équivalente à l'expression de l'évaluateur.
+       - Chiffre ou pourcentage indiquant le degrÃ© de proximitÃ© des expression de l'Ã©tudiant et de l'Ã©valuateur. L'incapacitÃ© d'inclure une tolÃ©rance introduit une vulnÃ©rabilitÃ© au niveau des expressions : des erreurs d'arrondi inÃ©vitables risquent de survenir lors de l'Ã©chantillonnage, entraÃ®nant alors l'Ã©valuation incorrecte de la rÃ©ponse d'un Ã©tudiant, mÃªme si sa rÃ©ponse est algÃ©briquement Ã©quivalente Ã  l'expression de l'Ã©valuateur.
      * - type
-       - "tolerance"--définit une tolérance pour un nombre
+       - "tolerance"--dÃ©finit une tolÃ©rance pour un nombre
 
   Enfants
   

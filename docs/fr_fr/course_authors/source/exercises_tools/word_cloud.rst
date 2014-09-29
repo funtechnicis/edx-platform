@@ -1,29 +1,29 @@
-.. _Word Cloud:
+.. _Nuage de mots:
 
-##################
+#############
 Nuage de mots
-##################
+#############
 
 
-Lorsqu'ils utilisent un nuage de mots, les étudiants saisissent des mots dans un champ afin de répondre à une question ou à une invite. Les mots que tous les étudiants ont saisis apparaissent alors instantanément dans un graphique coloré, les réponses les plus fréquentes étant affichées en plus grands caractères. Le graphique s'agrandit au fur et à mesure que les étudiants soumettent leurs réponses. Les étudiants peuvent à la fois voir les réponses de leurs pairs et partager leurs réflexions avec le groupe.
+Lorsqu'ils utilisent un nuage de mots, les Ã©tudiants saisissent des mots dans un champ afin de rÃ©pondre Ã  une question ou Ã  une invite. Les mots que tous les Ã©tudiants ont saisis apparaissent alors instantanÃ©ment dans un graphique colorÃ©, les rÃ©ponses les plus frÃ©quentes Ã©tant affichÃ©es en plus grands caractÃ¨res. Le graphique s'agrandit au fur et Ã  mesure que les Ã©tudiants soumettent leurs rÃ©ponses. Les Ã©tudiants peuvent Ã  la fois voir les rÃ©ponses de leurs pairs et partager leurs rÃ©flexions avec le groupe.
 
 
-Par exemple, le nuage de mots ci-après a été créé à partir des réponses d'étudiants à une question posée dans le cours HarvardX.
+Par exemple, le nuage de mots ci-aprÃ¨s a Ã©tÃ© crÃ©Ã© Ã  partir des rÃ©ponses d'Ã©tudiants Ã  une question posÃ©e dans le cours HarvardX.
 
 .. image:: /Images/WordCloudExample.png
   :alt: Image d'un exercice avec nuages de mots
 
-****************************
-Créer un nuage de mots
-****************************
+**********************
+CrÃ©er un nuage de mots
+**********************
 
-Pour créer un nuage de mots :
+Pour crÃ©er un nuage de mots :
 
-#. Ajouter le composant avancé Word Cloud (Nuage de mots). 
+#. Ajouter le composant avancÃ© Word Cloud (Nuage de mots). 
 
-    #. Dans le menu **Paramètres**, cliquez sur **Paramètres avancés**.
+    #. Dans le menu **ParamÃ¨tres**, cliquez sur **ParamÃ¨tres avancÃ©s**.
 
-    #. Dans le champ de la clé de la stratégie **Liste des modules avancés**, placez le curseur entre parenthèses.
+    #. Dans le champ de la clÃ© de la stratÃ©gie **Liste des modules avancÃ©s**, placez le curseur entre parenthÃ¨ses.
 
     #. Saisissez la valeur suivante. Assurez-vous d'inclure les guillemets.
 
@@ -31,18 +31,18 @@ Pour créer un nuage de mots :
 
     4. Au bas de la page, cliquez sur **Enregistrer les modifications**.
 
-       La page est actualisée automatiquement. En haut de la page, une notification apparaît, confirmant que vos modifications ont été enregistrées.
+       La page est actualisÃ©e automatiquement. En haut de la page, une notification apparaÃ®t, confirmant que vos modifications ont Ã©tÃ© enregistrÃ©es.
 
-    5. Retournez à l'unité à laquelle vous souhaitez ajouter l'exercice spécialisé. La liste des composants possibles contient désormais un composant avancé.
+    5. Retournez Ã  l'unitÃ© Ã  laquelle vous souhaitez ajouter l'exercice spÃ©cialisÃ©. La liste des composants possibles contient dÃ©sormais un composant avancÃ©.
 
-#. Dans l'unité dans laquelle vous souhaitez créer l'exercice, cliquez sur **Avancé** sous **Ajouter un nouveau composant**.
+#. Dans l'unitÃ© dans laquelle vous souhaitez crÃ©er l'exercice, cliquez sur **AvancÃ©** sous **Ajouter un nouveau composant**.
 #. Dans la liste des types d'exercices, cliquez sur **Word Cloud** (Nuage de mots).
-#. Dans le composant qui apparaît, cliquez sur **Éditer**.
-#. Dans l'éditeur de composant, indiquez les paramètres que vous souhaitez utiliser. Vous pouvez laisser la valeur par défaut pour tous les paramètres, sauf pour **Nom d'affichage**.
+#. Dans le composant qui apparaÃ®t, cliquez sur **Ã‰diter**.
+#. Dans l'Ã©diteur de composant, indiquez les paramÃ¨tres que vous souhaitez utiliser. Vous pouvez laisser la valeur par dÃ©faut pour tous les paramÃ¨tres, sauf pour **Nom d'affichage**.
 
-   -  **Nom d'affichage** : Nom qui apparaît dans le plan du cours et en tant que titre au-dessus de l'exercice.
-   -  **Entrées** : Nom de zones de texte dans lesquelles les étudiants peuvent saisir des mots, des expressions ou des phrases.
-   -  **Nombre maximum de mots** : Nombre maximum de mots affiché dans le nuage de mots. Si les étudiants saisissent 300 mots différents, mais que le nombre maximum de mots est défini sur 250, seuls les 250 mots saisis le plus fréquemment apparaîtront dans le nuage de mots.
-   -  **Afficher le pourcentage** : Le nombre de fois que les étudiants ont saisi un mot donné apparaît en regard de ce mot sous la forme d'un pourcentage de tous les mots saisis.
+   -  **Nom d'affichage** : Nom qui apparaÃ®t dans le plan du cours et en tant que titre au-dessus de l'exercice.
+   -  **EntrÃ©es** : Nom de zones de texte dans lesquelles les Ã©tudiants peuvent saisir des mots, des expressions ou des phrases.
+   -  **Nombre maximum de mots** : Nombre maximum de mots affichÃ© dans le nuage de mots. Si les Ã©tudiants saisissent 300 mots diffÃ©rents, mais que le nombre maximum de mots est dÃ©fini sur 250, seuls les 250 mots saisis le plus frÃ©quemment apparaÃ®tront dans le nuage de mots.
+   -  **Afficher le pourcentage** : Le nombre de fois que les Ã©tudiants ont saisi un mot donnÃ© apparaÃ®t en regard de ce mot sous la forme d'un pourcentage de tous les mots saisis.
 
 #. Cliquez sur **Enregistrer**.

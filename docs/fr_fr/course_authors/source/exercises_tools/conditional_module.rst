@@ -1,70 +1,70 @@
-.. _Conditional Module:
+.. _Module conditionnel:
 
-####################
+###################
 Module conditionnel
-####################
+###################
 
-********************
+*********************
 Description de format
-********************
+*********************
 
-La principale balise de l'entrée du module conditionnel est :
+La principale balise de l'entrÃ©e du module conditionnel est :
 
 .. code-block:: xml
 
     <conditional> ... </conditional>
 
-``conditional`` peut inclure un nombre illimité de balises xmodule (``html``, ``video``, ``poll``, etc.) ou de balises ``show``.
+``conditional`` peut inclure un nombre illimitÃ© de balises xmodule (``html``, ``video``, ``poll``, etc.) ou de balises ``show``.
 
-================
+==================
 Balise conditional
-================
+==================
 
-Conteneur principal d'une seule instance de module conditionnel. Les attributs suivants peuvent être spécifiés pour cette balise :
+Conteneur principal d'une seule instance de module conditionnel. Les attributs suivants peuvent Ãªtre spÃ©cifiÃ©s pour cette balise :
 
 .. code-block:: xml
 
-    sources - ID d'emplacement des modules requis, séparés par ';'
-    [message | ""] - message en cas d'échec. Ici, vous pouvez utiliser une variable {link}, qui génère un lien vers le module requis.
+    sources - ID d'emplacement des modules requis, sÃ©parÃ©s par ';'
+    [message | ""] - message en cas d'Ã©chec. Ici, vous pouvez utiliser une variable {link}, qui gÃ©nÃ¨re un lien vers le module requis.
 
-    [submitted] - mappage vers la méthode de module `is_submitted`.
-    (Si vous appuyez sur le bouton RESET [Réinitialiser], la fonction repasse à la valeur False.)
+    [submitted] - mappage vers la mÃ©thode de module `is_submitted`.
+    (Si vous appuyez sur le bouton RESET [RÃ©initialiser], la fonction repasse Ã  la valeur False.)
 
-    [correct] - mappage vers la méthode de module `is_correct`
-    [attempted] - mappage vers la méthode de module `is_attempted`
+    [correct] - mappage vers la mÃ©thode de module `is_correct`
+    [attempted] - mappage vers la mÃ©thode de module `is_attempted`
     [poll_answer] - mappage vers l'attribut de module `poll_answer`
     [voted] - mappage vers l'attribut de module `voted`
 
-========
+===========
 Balise show
-========
+===========
 
-Symlink vers un ensemble donné de xmodules. Les attributs suivants peuvent être spécifiés pour cette balise :
+Symlink vers un ensemble donnÃ© de xmodules. Les attributs suivants peuvent Ãªtre spÃ©cifiÃ©s pour cette balise :
 
 .. code-block:: xml
 
-    sources - ID d'emplacement de modules, séparés par ';'
+    sources - ID d'emplacement de modules, sÃ©parÃ©s par ';'
 
-*********
+*******
 Exemple
-*********
+*******
 
-========================================
-Exemples de balise conditional dépendant d'un sondage
-========================================
+=====================================================
+Exemples de balise conditional dÃ©pendant d'un sondage
+=====================================================
 
 .. code-block:: xml
 
     <conditional sources="i4x://MITx/0.000x/poll_question/first_real_poll_seq_with_reset" poll_answer="man"
     message="{link} must be answered for this to become visible.">
         <html>
-            <h2>Vous lisez ceci car votre valeur de vote pour la "première question" était "homme"</h2>
+            <h2>Vous lisez ceci car votre valeur de vote pour la "premiÃ¨re question" Ã©tait "homme"</h2>
         </html>
     </conditional>
 
-========================================================
-Exemples de balise conditional dépendant d'un sondage (utiliser la balise <show>)
-========================================================
+=================================================================================
+Exemples de balise conditional dÃ©pendant d'un sondage (utiliser la balise <show>)
+=================================================================================
 
 .. code-block:: xml
 
@@ -75,9 +75,9 @@ Exemples de balise conditional dépendant d'un sondage (utiliser la balise <show>
         </html>
     </conditional>
 
-================================================
-Exemples de balise conditional dépendant d'un exercice
-================================================
+======================================================
+Exemples de balise conditional dÃ©pendant d'un exercice
+======================================================
 
 .. code-block:: xml
 

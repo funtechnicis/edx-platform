@@ -1,55 +1,55 @@
-.. _Full Screen Image:
+.. _Images en plein Ã©cran:
 
-######################
-Outil d'affichage des images en plein écran
-######################
+###########################################
+Outil d'affichage des images en plein Ã©cran
+###########################################
 
-Certaines images de grande taille sont difficiles à visualiser dans le cours pour les étudiants.  L'outil d'affichage des images en plein écran permet aux étudiants d'agrandir l'image et d'en visualiser tous les détails en contexte.
+Certaines images de grande taille sont difficiles Ã  visualiser dans le cours pour les Ã©tudiants.  L'outil d'affichage des images en plein Ã©cran permet aux Ã©tudiants d'agrandir l'image et d'en visualiser tous les dÃ©tails en contexte.
 
-****************************************
-Vue par l'étudiant d'une image en plein écran
-****************************************
+*********************************************
+Vue par l'Ã©tudiant d'une image en plein Ã©cran
+*********************************************
 
-L'étudiant visualise l'image en plein écran sur une page de l'unité. Lorsque l'étudiant fait passer le pointeur de la souris sur l'image, le bouton **Plein écran** apparaît :
+L'Ã©tudiant visualise l'image en plein Ã©cran sur une page de l'unitÃ©. Lorsque l'Ã©tudiant fait passer le pointeur de la souris sur l'image, le bouton **Plein Ã©cran** apparaÃ®t :
 
 .. image:: /Images/image-modal.png
- :alt: Image de l'outil d'affichage des images en plein écran et du bouton Plein écran.
+ :alt: Image de l'outil d'affichage des images en plein Ã©cran et du bouton Plein Ã©cran.
 
-Lorsque l'étudiant clique sur **Plein écran**, l'image s'ouvre et est affichée en plein écran dans la fenêtre du navigateur.  Les boutons **Proche**, **Zoomer** et **Dézoomer** apparaissent :
+Lorsque l'Ã©tudiant clique sur **Plein Ã©cran**, l'image s'ouvre et est affichÃ©e en plein Ã©cran dans la fenÃªtre du navigateur.  Les boutons **Proche**, **Zoomer** et **DÃ©zoomer** apparaissent :
 
 .. image:: /Images/image-modal-window.png
- :alt: Image de l'outil d'affichage contextuel des images et du bouton Plein écran.
+ :alt: Image de l'outil d'affichage contextuel des images et du bouton Plein Ã©cran.
 
-L'étudiant peut alors zoomer sur l'image et la faire glisser afin de mieux visualiser la partie souhaitée :
+L'Ã©tudiant peut alors zoomer sur l'image et la faire glisser afin de mieux visualiser la partie souhaitÃ©e :
 
 .. image:: /Images/image-modeal-zoomed.png
- :alt: Image de l'outil d'affichage contextuel des images et du bouton Plein écran.
+ :alt: Image de l'outil d'affichage contextuel des images et du bouton Plein Ã©cran.
 
 ******************************
-Créer une image en plein écran
+CrÃ©er une image en plein Ã©cran
 ******************************
 
-#. Chargez votre fichier image sur la page **Fichiers et uploads**. Pour plus d'informations sur le chargement du fichier, voir :ref:`Ajouter des fichiers à un cours`.
+#. Chargez votre fichier image sur la page **Fichiers et uploads**. Pour plus d'informations sur le chargement du fichier, voir :ref:`Ajouter des fichiers Ã  un cours`.
 
-#. Sous **Ajouter un nouveau composant**, cliquez sur **html**, puis sur **Full Screen Image** (Image en plein écran).
+#. Sous **Ajouter un nouveau composant**, cliquez sur **html**, puis sur **Full Screen Image** (Image en plein Ã©cran).
 
-#. Dans le nouveau composant qui apparaît, cliquez sur **Éditer**.
+#. Dans le nouveau composant qui apparaÃ®t, cliquez sur **Ã‰diter**.
 
-#. Dans l'éditeur de composant, remplacez le titre par défaut, retirez le paragraphe d'instruction et ajoutez le texte, le cas échéant.
+#. Dans l'Ã©diteur de composant, remplacez le titre par dÃ©faut, retirez le paragraphe d'instruction et ajoutez le texte, le cas Ã©chÃ©ant.
 
 #. Basculez sur l'onglet **HTML**.
 
-#. Remplacez les espaces réservés ci-après par votre propre contenu.
+#. Remplacez les espaces rÃ©servÃ©s ci-aprÃ¨s par votre propre contenu.
 
-   * Remplacez la valeur de l'attribut href de l'élément <a>  par le chemin de votre image. Ne modifiez pas la valeur de l'attribut class. Par exemple :
+   * Remplacez la valeur de l'attribut href de l'Ã©lÃ©ment <a>  par le chemin de votre image. Ne modifiez pas la valeur de l'attribut class. Par exemple :
 
      **<a href="/static/Image1.jpg" class="modal-content">**
 
-   * Remplacez la valeur de l'attribut src de l'élément <img> par le chemin de votre image. Par exemple :
+   * Remplacez la valeur de l'attribut src de l'Ã©lÃ©ment <img> par le chemin de votre image. Par exemple :
      
      **<img alt="Full screen image" src="/static/Image1.jpg"/>**
 
-   * Assurez-vous que les valeurs des attributs href et src sont identiques. En outre, vous ne devez pas modifier l'attribut class. Le code que vous proposez doit ressembler au code présenté ci-après :
+   * Assurez-vous que les valeurs des attributs href et src sont identiques. En outre, vous ne devez pas modifier l'attribut class. Le code que vous proposez doit ressembler au code prÃ©sentÃ© ci-aprÃ¨s :
 
    .. code-block:: xml
 
@@ -58,6 +58,6 @@ Créer une image en plein écran
      <img alt="Full screen image" src="/static/Image1.jpg"/>
      </a>
 
-   .. note:: Vous pouvez utiliser le même code HTML dans tout composant HTML et pas uniquement dans les composants que vous créez en tant qu'images en plein écran.
+   .. note:: Vous pouvez utiliser le mÃªme code HTML dans tout composant HTML et pas uniquement dans les composants que vous crÃ©ez en tant qu'images en plein Ã©cran.
 
 #. Pour enregistrer le composant HTML, cliquez sur **Enregistrer**.

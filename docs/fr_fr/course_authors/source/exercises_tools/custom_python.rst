@@ -1,21 +1,21 @@
-.. _Write Your Own Grader:
+.. _SystÃ¨me d'Ã©valuation personnalisÃ©:
 
-##############################
-Exercice avec élaboration d'un système d'évaluation personnalisé
-##############################
+################################################################
+Exercice avec Ã©laboration d'un systÃ¨me d'Ã©valuation personnalisÃ©
+################################################################
 
-Dans les exercices avec évaluation personnalisée par Python (également appelés exercices avec élaboration d'un système d'évaluation personnalisé), l'évaluateur utilise un script Python que vous créez et intégrez dans l'exercice afin d'évaluer la réponse de l'étudiant ou de fournir des indices. Ces problèmes peuvent être de tout type. Les exercices associant saisie de chiffres et de données sont les exercices intégrant l'élaboration d'un système d'évaluation personnalisé les plus courants.
+Dans les exercices avec Ã©valuation personnalisÃ©e par Python (Ã©galement appelÃ©s exercices avec Ã©laboration d'un systÃ¨me d'Ã©valuation personnalisÃ©), l'Ã©valuateur utilise un script Python que vous crÃ©ez et intÃ©grez dans l'exercice afin d'Ã©valuer la rÃ©ponse de l'Ã©tudiant ou de fournir des indices. Ces problÃ¨mes peuvent Ãªtre de tout type. Les exercices associant saisie de chiffres et de donnÃ©es sont les exercices intÃ©grant l'Ã©laboration d'un systÃ¨me d'Ã©valuation personnalisÃ© les plus courants.
 
 .. image:: /Images/CustomPythonExample.png
- :alt: Image d'un exercice avec élaboration d'un système d'évaluation personnalisé
+ :alt: Image d'un exercice avec Ã©laboration d'un systÃ¨me d'Ã©valuation personnalisÃ©
 
-Les exercices avec évaluation personnalisée par Python peuvent inclure les types d'exercices suivants :
+Les exercices avec Ã©valuation personnalisÃ©e par Python peuvent inclure les types d'exercices suivants :
 
-* :ref:`Équation chimique`
-* :ref:`Code JavaScript personnalisé`
+* :ref:`Ã‰quations chimiques`
+* :ref:`Exercice JavaScript personnalisÃ©`
 * :ref:`Gene Explorer`
-* :ref:`Éditeur de molécules`
-* :ref:`Système d'élaboration de protéines`
+* :ref:`Ã‰diteur de molÃ©cules`
+* :ref:`Ã‰laboration de protÃ©ines`
 
 .. list-table::
    :widths: 20 80
@@ -29,13 +29,13 @@ Les exercices avec évaluation personnalisée par Python peuvent inclure les types
    * - <textline size="10" correct_answer="3"/>
      - Cette balise inclut les attributs ``size``, ``correct_answer`` et ``label``. L'attribut ``correct_answer`` est facultatif.
 
-Vous pouvez créer l'un de ces exercices dans :ref:`Format de balise answer` ou :ref:`Format de balise script`.
+Vous pouvez crÃ©er l'un de ces exercices dans :ref:`Answer Tag Format` ou :ref:`Script Tag Format`.
 
 .. _Answer Tag Format:
 
-**************************
+***********************
 Format de balise answer
-**************************
+***********************
 
 Le format de balise answer englobe le script Python dans une balise ``<answer>`` :
 
@@ -47,30 +47,30 @@ Le format de balise answer englobe le script Python dans une balise ``<answer>``
       overall_message = 'Bon travail !'
   else:
       correct[0] = 'incorrect'
-      messages[0] = 'Cette réponse est incorrecte'
-      overall_message = 'Veuillez réessayer'
+      messages[0] = 'Cette rÃ©ponse est incorrecte'
+      overall_message = 'Veuillez rÃ©essayer'
   </answer>
 
-Important : Python respecte certaines règles d'indentation. Dans la balise ``<answer>``, vous devez commencer votre script sans indentation.
+Important : Python respecte certaines rÃ¨gles d'indentation. Dans la balise ``<answer>``, vous devez commencer votre script sans indentation.
 
 Le script Python interagit avec ces variables dans un contexte global :
 
-* ``answers`` : Liste triée répertoriant les réponses fournies par l'étudiant. Par exemple, si l'étudiant a répondu ``6``, ``answers[0]`` sera égal à ``6``.
+* ``answers`` : Liste triÃ©e rÃ©pertoriant les rÃ©ponses fournies par l'Ã©tudiant. Par exemple, si l'Ã©tudiant a rÃ©pondu ``6``, ``answers[0]`` sera Ã©gal Ã  ``6``.
 * ``expect`` : Valeur de l'attribut ``expect`` de ``<customresponse>`` (si fourni).
-* ``correct`` : Liste triée des chaînes indiquant si l'étudiant a répondu correctement à la question.  Les valeurs valides sont ``"correct"``, ``"incorrect"`` et ``"unknown"``.  Vous pouvez définir ces valeurs dans le script.
-* ``messages`` : Liste triée des messages qui apparaissent sous chaque champ de réponse de l'exercice. Vous pouvez l'utiliser pour donner des indices aux utilisateurs. Par exemple, si vous incluez ``messages[0] = "The capital of California is Sacramento"`` (La capitale de l'État de Californie est Sacramento), ce message apparaît sous le premier champ de réponse de l'exercice.
-* ``overall_message`` : Message qui apparaît sous l'exercice (et non sous un champ de réponse spécifique). Vous pouvez l'utiliser pour donner un indice qui concerne l'exercice dans son ensemble plutôt qu'un champ de réponse particulier.
+* ``correct`` : Liste triÃ©e des chaÃ®nes indiquant si l'Ã©tudiant a rÃ©pondu correctement Ã  la question.  Les valeurs valides sont ``"correct"``, ``"incorrect"`` et ``"unknown"``.  Vous pouvez dÃ©finir ces valeurs dans le script.
+* ``messages`` : Liste triÃ©e des messages qui apparaissent sous chaque champ de rÃ©ponse de l'exercice. Vous pouvez l'utiliser pour donner des indices aux utilisateurs. Par exemple, si vous incluez ``messages[0] = "The capital of California is Sacramento"`` (La capitale de l'Ã‰tat de Californie est Sacramento), ce message apparaÃ®t sous le premier champ de rÃ©ponse de l'exercice.
+* ``overall_message`` : Message qui apparaÃ®t sous l'exercice (et non sous un champ de rÃ©ponse spÃ©cifique). Vous pouvez l'utiliser pour donner un indice qui concerne l'exercice dans son ensemble plutÃ´t qu'un champ de rÃ©ponse particulier.
 
-========================================================================
-Créer un exercice avec évaluation personnalisée par Python au format de balise answer
-========================================================================
+=====================================================================================
+CrÃ©er un exercice avec Ã©valuation personnalisÃ©e par Python au format de balise answer
+=====================================================================================
 
-Pour créer un exercice avec évaluation personnalisée par Python en utilisant une balise ``<answer>`` :
+Pour crÃ©er un exercice avec Ã©valuation personnalisÃ©e par Python en utilisant une balise ``<answer>`` :
 
-#. Dans l'unité dans laquelle vous souhaitez créer l'exercice, cliquez sur **Exercice** sous **Ajouter un nouveau composant**, puis cliquez sur l'onglet **Avancé**.
-#. Cliquez sur **Custom Python-Evaluated Input** (Évaluation personnalisée par Python).
-#. Dans le composant qui apparaît, cliquez sur **Éditer**.
-#. Dans l'éditeur de composant, remplacez l'exemple de code par le code suivant.
+#. Dans l'unitÃ© dans laquelle vous souhaitez crÃ©er l'exercice, cliquez sur **Exercice** sous **Ajouter un nouveau composant**, puis cliquez sur l'onglet **AvancÃ©**.
+#. Cliquez sur **Custom Python-Evaluated Input** (Ã‰valuation personnalisÃ©e par Python).
+#. Dans le composant qui apparaÃ®t, cliquez sur **Ã‰diter**.
+#. Dans l'Ã©diteur de composant, remplacez l'exemple de code par le code suivant.
 #. Cliquez sur **Enregistrer**.
 
 .. code-block:: xml
@@ -88,20 +88,20 @@ Pour créer un exercice avec évaluation personnalisée par Python en utilisant une
         overall_message = 'Bon travail !'
     else:
         correct[0] = 'incorrect'
-        messages[0] = 'Cette réponse est incorrecte'
-        overall_message = 'Veuillez réessayer'
+        messages[0] = 'Cette rÃ©ponse est incorrecte'
+        overall_message = 'Veuillez rÃ©essayer'
         </answer>
     </problem>
 
-Important : Python respecte certaines règles d'indentation. Dans la balise ``<answer>``, vous devez commencer votre script sans indentation.
+Important : Python respecte certaines rÃ¨gles d'indentation. Dans la balise ``<answer>``, vous devez commencer votre script sans indentation.
 
 .. _Script Tag Format:
 
-**************************
+***********************
 Format de balise script
-**************************
+***********************
 
-Le format de balise script englobe un script Python qui contient une "fonction de vérification" dans une balise ``<script>`` et ajoute l'attribut ``cfn`` de la balise ``<customresponse>`` afin de référencer cette fonction :
+Le format de balise script englobe un script Python qui contient une "fonction de vÃ©rification" dans une balise ``<script>`` et ajoute l'attribut ``cfn`` de la balise ``<customresponse>`` afin de rÃ©fÃ©rencer cette fonction :
 
 .. code-block:: xml
 
@@ -122,7 +122,7 @@ Le format de balise script englobe un script Python qui contient une "fonction d
 
   </script>
 
-  <p>Saisissez deux nombres entiers dont la somme est égale à 10. </p>
+  <p>Saisissez deux nombres entiers dont la somme est Ã©gale Ã  10. </p>
   <customresponse cfn="test_add_to_ten">
           <textline size="10"/><br/>
           <textline size="10/>
@@ -130,22 +130,22 @@ Le format de balise script englobe un script Python qui contient une "fonction d
 
     </problem>
 
-**Important** : Python respecte certaines règles d'indentation. Dans la balise ``<script>``, la ligne ``def check_func(expect, ans):`` ne doit contenir aucune indentation.
+**Important** : Python respecte certaines rÃ¨gles d'indentation. Dans la balise ``<script>``, la ligne ``def check_func(expect, ans):`` ne doit contenir aucune indentation.
 
-La fonction de **vérification** accepte deux arguments :
+La fonction de **vÃ©rification** accepte deux arguments :
 
-* ``expect`` correspond à la valeur de l'attribut ``expect`` de ``<customresponse>`` (si fourni)
-* ``answer`` peut correspondre à :
+* ``expect`` correspond Ã  la valeur de l'attribut ``expect`` de ``<customresponse>`` (si fourni)
+* ``answer`` peut correspondre Ã  :
 
-    * La valeur de la réponse de l'étudiant, si l'exercice ne dispose que d'un champ de réponse.
-    * La liste triée répertoriant les réponses de l'étudiant, si l'exercice comporte plusieurs champs de réponse.
+    * La valeur de la rÃ©ponse de l'Ã©tudiant, si l'exercice ne dispose que d'un champ de rÃ©ponse.
+    * La liste triÃ©e rÃ©pertoriant les rÃ©ponses de l'Ã©tudiant, si l'exercice comporte plusieurs champs de rÃ©ponse.
 
-La fonction de **vérification** peut renvoyer l'une ou l'autre des valeurs ci-après afin d'indiquer si la réponse de l'étudiant est correcte :
+La fonction de **vÃ©rification** peut renvoyer l'une ou l'autre des valeurs ci-aprÃ¨s afin d'indiquer si la rÃ©ponse de l'Ã©tudiant est correcte :
 
-* ``True`` : Indique que l'étudiant a inséré une réponse correcte dans tous les champs de réponse.
-* ``False`` : Indique que l'étudiant n'a pas répondu correctement. Tous les champs de réponse sont marqués comme étant incorrects.
+* ``True`` : Indique que l'Ã©tudiant a insÃ©rÃ© une rÃ©ponse correcte dans tous les champs de rÃ©ponse.
+* ``False`` : Indique que l'Ã©tudiant n'a pas rÃ©pondu correctement. Tous les champs de rÃ©ponse sont marquÃ©s comme Ã©tant incorrects.
 * Un dictionnaire du type : ``{ 'ok': True, 'msg': 'Message' }``
-  Si la valeur du dictionnaire pour ``ok`` est définie sur ``True``, tous les champs de réponse sont marqués comme étant corrects ; si elle est définie sur ``False``, tous les champs de réponse sont marqués comme étant incorrects. La valeur ``msg`` est affichée sous tous les champs de réponse et peut contenir des balises XHTML.
+  Si la valeur du dictionnaire pour ``ok`` est dÃ©finie sur ``True``, tous les champs de rÃ©ponse sont marquÃ©s comme Ã©tant corrects ; si elle est dÃ©finie sur ``False``, tous les champs de rÃ©ponse sont marquÃ©s comme Ã©tant incorrects. La valeur ``msg`` est affichÃ©e sous tous les champs de rÃ©ponse et peut contenir des balises XHTML.
 * Un dictionnaire du type 
 
 .. code-block:: xml
@@ -157,9 +157,9 @@ La fonction de **vérification** peut renvoyer l'une ou l'autre des valeurs ci-ap
             { 'ok': False, 'msg': 'Feedback for input 2'},
             ... ] }
 
-Le dernier type est utile pour les réponses qui contiennent plusieurs champs de réponse. Vous pouvez ainsi présenter des commentaires pour chaque champ de réponse, individuellement, mais également envoyer un message qui s'applique à la réponse dans son ensemble.
+Le dernier type est utile pour les rÃ©ponses qui contiennent plusieurs champs de rÃ©ponse. Vous pouvez ainsi prÃ©senter des commentaires pour chaque champ de rÃ©ponse, individuellement, mais Ã©galement envoyer un message qui s'applique Ã  la rÃ©ponse dans son ensemble.
 
-Exemple d'une fonction de vérification :
+Exemple d'une fonction de vÃ©rification :
 
 .. code-block:: python
 
@@ -173,18 +173,18 @@ Exemple d'une fonction de vérification :
                         { 'ok': check2, 'msg': 'Feedback 2'},
                         { 'ok': check3, 'msg': 'Feedback 3'} ] }
 
-La fonction vérifie que l'utilisateur a entré ``1`` lors de la première saisie, ``2`` lors de la deuxième saisie et ``3`` lors de la troisième saisie. Elle présente des messages de commentaires pour chaque saisie individuelle, et permet également d'afficher un message sous l'exercice dans son ensemble.
+La fonction vÃ©rifie que l'utilisateur a entrÃ© ``1`` lors de la premiÃ¨re saisie, ``2`` lors de la deuxiÃ¨me saisie et ``3`` lors de la troisiÃ¨me saisie. Elle prÃ©sente des messages de commentaires pour chaque saisie individuelle, et permet Ã©galement d'afficher un message sous l'exercice dans son ensemble.
 
-========================================================================
-Créer un exercice avec évaluation personnalisée par Python au format de balise script
-========================================================================
+=====================================================================================
+CrÃ©er un exercice avec Ã©valuation personnalisÃ©e par Python au format de balise script
+=====================================================================================
 
-Pour créer un exercice avec évaluation personnalisée par Python en utilisant une balise ``<script>`` :
+Pour crÃ©er un exercice avec Ã©valuation personnalisÃ©e par Python en utilisant une balise ``<script>`` :
 
-#. Dans l'unité dans laquelle vous souhaitez créer l'exercice, cliquez sur **Exercice** sous **Ajouter un nouveau composant**, puis cliquez sur l'onglet **Avancé**.
-#. Cliquez sur **Custom Python-Evaluated Input** (Évaluation personnalisée par Python).
-#. Dans le composant qui apparaît, cliquez sur **Éditer**.
-#. Dans l'éditeur de composant, remplacez l'exemple de code par le code suivant.
+#. Dans l'unitÃ© dans laquelle vous souhaitez crÃ©er l'exercice, cliquez sur **Exercice** sous **Ajouter un nouveau composant**, puis cliquez sur l'onglet **AvancÃ©**.
+#. Cliquez sur **Custom Python-Evaluated Input** (Ã‰valuation personnalisÃ©e par Python).
+#. Dans le composant qui apparaÃ®t, cliquez sur **Ã‰diter**.
+#. Dans l'Ã©diteur de composant, remplacez l'exemple de code par le code suivant.
 #. Cliquez sur **Enregistrer**.
 
 **Code d'exercice** :
@@ -209,13 +209,13 @@ Pour créer un exercice avec évaluation personnalisée par Python en utilisant une
 
   </script>
 
-  <p>Partie 1 : Saisissez deux nombres entiers dont la somme est égale à 10. </p>
+  <p>Partie 1 : Saisissez deux nombres entiers dont la somme est Ã©gale Ã  10. </p>
   <customresponse cfn="test_add_to_ten">
           <textline size="10" correct_answer="3" label="Integer #1"/><br/>
           <textline size="10" correct_answer="7" label="Integer #2"/>
   </customresponse>
 
-  <p>Partie 2 : Saisissez deux nombres entiers dont la somme est égale à 20. </p>
+  <p>Partie 2 : Saisissez deux nombres entiers dont la somme est Ã©gale Ã  20. </p>
   <customresponse cfn="test_add" expect="20">
           <textline size="10" label="Integer #1"/><br/>
           <textline size="10" label="Integer #2"/>
@@ -224,15 +224,15 @@ Pour créer un exercice avec évaluation personnalisée par Python en utilisant une
   <solution>
       <div class="detailed-solution">
           <p>Explication</p>
-          <p>Pour la partie 1, deux nombres (quels qu'ils soient) de type <i>n</i> et <i>10-n</i>, où <i>n</i> est un nombre entier (n'importe lequel), sont acceptés. Une réponse possible serait constituée par la paire 0 et 10.</p>
-          <p>Pour la partie 2, toute paire <i>x</i> et <i>20-x</i>, où <i>x</i> est un nombre réel (n'importe lequel) avec une représentation décimale finie, est acceptée. Les deux nombres doivent être saisis soit via une notation décimale standard soit via une notation exponentielle scientifique. Une réponse possible serait constituée par la paire 0,5 et 19,5. Une autre façon d'écrire cette réponse serait : 5e-1 et 1.95e1.</p>
+          <p>Pour la partie 1, deux nombres (quels qu'ils soient) de type <i>n</i> et <i>10-n</i>, oÃ¹ <i>n</i> est un nombre entier (n'importe lequel), sont acceptÃ©s. Une rÃ©ponse possible serait constituÃ©e par la paire 0 et 10.</p>
+          <p>Pour la partie 2, toute paire <i>x</i> et <i>20-x</i>, oÃ¹ <i>x</i> est un nombre rÃ©el (n'importe lequel) avec une reprÃ©sentation dÃ©cimale finie, est acceptÃ©e. Les deux nombres doivent Ãªtre saisis soit via une notation dÃ©cimale standard soit via une notation exponentielle scientifique. Une rÃ©ponse possible serait constituÃ©e par la paire 0,5 et 19,5. Une autre faÃ§on d'Ã©crire cette rÃ©ponse serait : 5e-1 et 1.95e1.</p>
       </div>
   </solution>
   </problem>
 
-**Modèles**
+**ModÃ¨les**
 
-Le modèle suivant inclut les réponses qui apparaissent lorsque l'étudiant clique sur **Afficher la réponse**. 
+Le modÃ¨le suivant inclut les rÃ©ponses qui apparaissent lorsque l'Ã©tudiant clique sur **Afficher la rÃ©ponse**. 
 
 .. code-block:: xml
 
@@ -259,7 +259,7 @@ Le modèle suivant inclut les réponses qui apparaissent lorsque l'étudiant clique
       </solution>
   </problem>
 
-Le modèle suivant ne renvoie pas de réponses lorsque l'étudiant clique sur **Afficher la réponse**. Si votre exercice n'inclut pas de réponses que l'étudiant puisse visualiser, assurez-vous de définir **Afficher la réponse** sur **Jamais** dans le composant Exercice.
+Le modÃ¨le suivant ne renvoie pas de rÃ©ponses lorsque l'Ã©tudiant clique sur **Afficher la rÃ©ponse**. Si votre exercice n'inclut pas de rÃ©ponses que l'Ã©tudiant puisse visualiser, assurez-vous de dÃ©finir **Afficher la rÃ©ponse** sur **Jamais** dans le composant Exercice.
 
 .. code-block:: xml
 
@@ -272,7 +272,7 @@ Le modèle suivant ne renvoie pas de réponses lorsque l'étudiant clique sur **Aff
     return (a1+a2)== float(expect)
   </script>
 
-  <p>Saisissez deux nombres entiers dont la somme est égale à 20 : </p>
+  <p>Saisissez deux nombres entiers dont la somme est Ã©gale Ã  20 : </p>
   <customresponse cfn="test_add" expect="20">
           <textline size="10"  label="Integer #1"/><br/>
           <textline size="10"  label="Integer #2"/>

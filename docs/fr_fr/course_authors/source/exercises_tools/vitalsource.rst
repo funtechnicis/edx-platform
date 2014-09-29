@@ -1,8 +1,8 @@
 .. _VitalSource:
 
-#########################
+####################
 Liseuse VitalSource
-#########################
+####################
 
 La liseuse VitalSource Bookshelf permet aux étudiants d'accéder facilement aux e-books. Les étudiants peuvent prendre connaissance de textes, parcourir le contenu de documents et y effectuer des recherches (non seulement dans le texte mais également dans les illustrations et les notes). Lors de leurs travaux, les étudiants pourront utiliser différents surligneurs, créer et gérer des notes, et les copier dans des documents externes.
 
@@ -14,9 +14,9 @@ Pour plus d'informations sur VitalSource et ses fonctions, rendez-vous sur le `s
 
 .. note:: Avant d'ajouter la liseuse VitalSource Bookshelf à votre cours, travaillez avec VitalSource afin de vous assurer que le contenu dont vous avez besoin figure déjà dans l'inventaire VitalSource. Si ce contenu n'est pas encore disponible, VitalSource collaborera avec l'éditeur de l'e-book pour créer un e-book conforme aux spécifications de VitalSource Bookshelf. **L'ensemble du processus peut durer quatre mois.** Pour les étapes présentées ci-après, il est supposé que l'e-book que vous souhaitez utiliser fait déjà partie de l'inventaire VitalSource.
 
-**************************
+*******************************
 Ajouter une liseuse VitalSource
-**************************
+*******************************
 
 Pour ajouter une liseuse VitalSource Bookshelf, plusieurs étapes sont nécessaires :
 
@@ -28,9 +28,9 @@ Pour ajouter une liseuse VitalSource Bookshelf, plusieurs étapes sont nécessai
 
 .. _VS Obtain VS Info:
 
-===========================================
+================================================
 Étape 1. Obtenir des informations de VitalSource
-===========================================
+================================================
 
 Pour créer une liseuse VitalSource Bookshelf, vous devez obtenir de VitalSource les informations suivantes :
 
@@ -43,9 +43,9 @@ Pour obtenir ces informations, l'équipe pédagogique sélectionne une personne 
 
 .. _VS Modify Advanced Settings:
 
-=============================================
+=================================================
 Étape 2. Modifier les paramètres avancés du cours
-=============================================
+=================================================
 
 Au cours de cette deuxième étape, vous devez modifier les paramètres avancés du cours. Vous pourrez ainsi créer un composant LTI et ajouter la clé de stratégie **Passeports LTI** de VitalSource.
 
@@ -76,9 +76,9 @@ La page est actualisée automatiquement. En haut de la page, une notification ap
 
 .. _VS Add VS EReader:
 
-==============================================================
+=============================================================
 Étape 3. Ajouter la liseuse VitalSource Bookshelf à une unité
-==============================================================
+=============================================================
 
 Pour ajouter la liseuse VitalSource Bookshelf à une unité, vous devez créer un composant LTI, puis configurez plusieurs paramètres dans le composant.
 
@@ -110,9 +110,9 @@ Pour ajouter la liseuse VitalSource Bookshelf à une unité, vous devez créer u
 
 9. Cliquez sur **Enregistrer**.
 
-**************************
+****************************************
 Informations à l'attention des étudiants
-**************************
+****************************************
 
 Le responsable de compte VitalSource de chaque établissement formera le MPP à l'utilisation de la liseuse VitalSource Bookshelf. Il fournira par ailleurs la documentation pertinente, nécessaire à la mise en route. Toutefois, afin d'améliorer l'expérience d'apprentissage, nous vous recommandons de donner à vos étudiants quelques informations sur la liseuse et d'indiquer notamment que :
 

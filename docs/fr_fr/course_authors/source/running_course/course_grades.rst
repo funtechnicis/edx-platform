@@ -1,8 +1,8 @@
 .. _Grades:
 
-############################
+#################################
 Évaluation et notes des étudiants
-############################
+#################################
 
 Après la création du cours, vous pouvez revoir les informations sur la configuration de la notation de votre cours et accéder aux notes des étudiants à tout moment. Vous pouvez également ajuster les notes des étudiants obtenues lors d'un exercice donné, pour un seul étudiant ou pour tous les étudiants. Pour plus d'informations sur les données de notation auxquelles vous pouvez accéder et sur les modifications que vous pouvez effectuer, reportez-vous aux rubriques suivantes :
 
@@ -26,9 +26,9 @@ Important : Si vous apportez des modifications à votre politique de notation ap
 
 .. _Review_grades:
 
-********************************************************
+*****************************************************
 Revoir la configuration de la notation de votre cours
-********************************************************
+*****************************************************
 
 Vous pouvez revoir les types de travaux que vous avez notés et leurs coefficients respectifs dans le tableau de bord de l'enseignant.
 
@@ -52,9 +52,9 @@ Lorsque vous créez votre cours dans Studio, vous établissez sa politique de no
 
 .. _Access_grades:
 
-********************************************************
+**************************************************************
 Générer des notes pour les étudiants inscrits (tous les cours)
-********************************************************
+**************************************************************
 
 Pour tout cours, vous pouvez générer des notes, puis télécharger un fichier incluant les résultats de chaque étudiant inscrit. 
 
@@ -74,9 +74,9 @@ Pour générer le rapport de notes pour les étudiants actuellement inscrits à 
 
 4. Pour suivre la progression du processus de notation, rechargez la page dans votre navigateur et faites défiler vers le bas jusqu'à la section **Tâches Enseignant en attente**.
 
-==========================================
+============================================
 Télécharger les notes des étudiants inscrits
-==========================================
+============================================
 
 Lorsque vous demandez un rapport de notes pour vos étudiants, vous obtenez un fichier horodaté. Ce fichier inclut les colonnes permettant d'identifier chaque étudiant : identifiant, e-mail et nom d'utilisateur. Il présente également une colonne pour chaque travail inclus dans votre configuration de notation : chaque devoir, exercice, examen de mi-semestre, examen final, et tout autre type de travail que vous aurez ajouté à votre cours. 
 
@@ -94,9 +94,9 @@ Pour télécharger le fichier de notes d'un étudiant :
 
 .. _Interpret the Grade Report:
 
-=====================================
+===============================
 Interpréter le rapport de notes
-=====================================
+===============================
 
 Les rapports de notes offrent un aperçu des notes cumulées lors du cours, par travail, pour chaque étudiant actuellement inscrit. 
 
@@ -119,9 +119,9 @@ Le fichier CSV contient une ligne de données pour chaque étudiant ainsi que de
 
 .. _gradebook:
 
-********************************************************
+*********************************************************
 Consulter les notes des étudiants inscrits (petits cours)
-********************************************************
+*********************************************************
 
 Pour les cours comptant jusqu'à 200 inscrits, vous pouvez consulter un bulletin de notes dans le tableau de bord de l'enseignant. 
 
@@ -152,15 +152,15 @@ Le bulletin de notes inclut les fonctions suivantes.
 
 .. _check_student_progress:
 
-****************************************
+*************************************
 Vérifier la progression d'un étudiant
-****************************************
+*************************************
 
 Afin de vérifier la progression d'un étudiant donné, vous pouvez identifier la ligne spécifique dans le rapport de notes ou consulter la page **Progression** de l'étudiant. Le page **Progression** inclut notamment un diagramme : les notes de l'étudiant obtenues pour tous les travaux notés y sont relevées, ainsi que la note globale établie à la date du jour. Sous le diagramme, chaque travail et note obtenue sont indiqués.
 
 Pour consulter la page **Progression** d'un étudiant, vous devez fournir une adresse e-mail ou un nom d'utilisateur. Vous pouvez vérifier la progression des étudiants inscrits au cours ou de ceux qui se sont désinscrits.
 
-Lorsqu'ils sont connectés au cours, les étudiants peuvent afficher un diagramme similaire et la liste des travaux (associés à leur propre progression uniquement). Voir :ref:`Vue Étudiant`.
+Lorsqu'ils sont connectés au cours, les étudiants peuvent afficher un diagramme similaire et la liste des travaux (associés à leur propre progression uniquement). Voir :ref:`A Students View`.
 
 Pour afficher la page **Progression** d'un étudiant :
 
@@ -216,9 +216,9 @@ Le diagramme sur la page **Progression** présente des étiquettes sur l'axe des
 
 .. _A Students View:
 
-=============================================
+=================================================
 Vue de la progression dans le cours d'un étudiant
-=============================================
+=================================================
 
 
 Les étudiants peuvent suivre leur progression. Il leur suffit de cliquer sur **Progression** dans la barre de navigation du cours. La progression de l'étudiant, mesurée par le biais des notes obtenues dans le cadre du cours, s'affiche en haut de cette page, au-dessus des notes de sous-section. La progression est visualisée sous la forme d'un diagramme : y figurent les entrées de tous les travaux, la note totale actuelle (exprimée en pourcentage) obtenue jusqu'à présent et la note (pourcentage) devant être obtenue pour chaque seuil de notation. Vous trouverez ci-après l'exemple d'une progression (edX101).
@@ -240,9 +240,9 @@ Remarque : Les notes en points des sections notés sont appelées "Scores aux ex
 
 .. _Adjust_grades:
 
-***********************************
+*****************
 Ajuster des notes
-***********************************
+*****************
 
 Vous pouvez ajuster les notes d'un étudiant à la fois ou de tous les étudiants inscrits au cours. Par exemple, les bêta-testeurs de votre cours peuvent évaluer les nombreuses réponses différentes, correctes et incorrectes, afin de vérifier que vous cours a été configuré comme vous le souhaitez. Les étudiants peuvent également rapporter des erreurs après publication du cours.
 Lorsqu'une erreur est identifiée ou corrigée, ou si vous décidez que vous devez modifier un exercice après que des étudiants ou des bêta-testeurs ont tenté d'y répondre, vous pouvez :
@@ -257,9 +257,9 @@ Une autre technique d'ajustement de la note consiste à supprimer définitivemen
 
 .. _find_URL:
 
-==================================================
+=========================================================
 Rechercher l'identifiant de position unique d'un exercice
-==================================================
+=========================================================
 
 Lorsque vous créez les exercices d'un cours, edX affecte à chacun une position unique. Pour ajuster la note obtenue à un exercice ou pour en afficher les données, vous devez spécifier la position de l'exercice.
 
@@ -282,16 +282,16 @@ Pour fermer la visionneuse Débogage équipe pédagogique, cliquez sur la page d
 
 .. _rescore:
 
-===================================================
+=====================================================
 Réévaluer les soumissions d'un exercice d'un étudiant
-===================================================
+=====================================================
 
 Chaque exercice que vous définissez pour votre cours inclut une réponse correcte. Il peut également inclure une tolérance ou d'autres options acceptables. Si vous décidez de modifier ces valeurs, vous pouvez réévaluer les réponses déjà soumises. Pour un exercice spécifié, vous pouvez réévaluer les travaux soumis par un seul étudiant ou les soumissions de chaque étudiant inscrit.
 
 .. note:: Vous ne pouvez réévaluer que les exercices pour lesquels une réponse correcte a été saisie dans edX Studio. Cette procédure ne peut pas être utilisée pour réévaluer des exercices notés par un évaluateur externe.
 
 Réévaluer la soumission d'un étudiant
------------------------------------------------
+-------------------------------------
 
 Pour réévaluer l'exercice d'un seul étudiant, vous devez utiliser le nom d'utilisateur ou l'adresse e-mail de cet étudiant.
 
@@ -306,7 +306,7 @@ Pour réévaluer l'exercice d'un seul étudiant, vous devez utiliser le nom d'ut
 #. Pour fermer la visionneuse Débogage équipe pédagogique, cliquez sur la page du navigateur en dehors de la visionneuse.
 
 Réévaluer les soumissions de tous les étudiants
-------------------------------------
+-----------------------------------------------
 
 Pour spécifier quel exercice réévaluer, vous devez indiquer son identifiant de position.
 Voir :ref:`find_URL`. Pour réévaluer un exercice :
@@ -330,16 +330,16 @@ Voir :ref:`find_URL`. Pour réévaluer un exercice :
 
 .. _reset_attempts:
 
-===================================================
+=============================================================
 Réinitialiser les essais d'un étudiant pour un exercice donné
-===================================================
+=============================================================
 
 Lorsque vous créez un exercice, vous pouvez limiter le nombre d'essais qu'un étudiant peut effectuer pour répondre correctement à cet exercice. En cas de problèmes inattendus pour un exercice, vous pouvez réinitialiser le nombre d'essais d'un étudiant donné afin que ce dernier puisse recommencer. Si un comportement inattendu affecte tous les étudiants de votre cours, vous pouvez réinitialiser le nombre d'essais pour tous les étudiants. 
 
 Pour plus d'informations sur la modification d'un exercice publié, notamment sur les solutions, voir :ref:`Modification d'un exercice publié`.
 
 Réinitialiser les essais d'un étudiant
----------------------------------------------
+--------------------------------------
 
 Pour réinitialiser le nombre d'essais d'un étudiant, vous devez utiliser le nom d'utilisateur ou l'adresse e-mail de cet étudiant.
 
@@ -354,7 +354,7 @@ Pour réinitialiser le nombre d'essais d'un étudiant, vous devez utiliser le no
 #. Pour fermer la visionneuse Débogage équipe pédagogique, cliquez sur la page du navigateur en dehors de la visionneuse.
 
 Réinitialiser les essais de tous les étudiants
-------------------------------------
+----------------------------------------------
 
 Pour réinitialiser le nombre d'essais dont les étudiants bénéficient pour un problème donné, vous devez utiliser l'identifiant unique de l'exercice. Voir :ref:`find_URL`. Pour réinitialiser les essais de tous les étudiants :
 
@@ -376,9 +376,9 @@ Pour réinitialiser le nombre d'essais dont les étudiants bénéficient pour un
 
 .. _delete_state:
 
-=============================================
+====================================================
 Supprimer l'état de l'étudiant associé à un exercice
-=============================================
+====================================================
 
 Pour supprimer de la base de données la totalité de l'historique d'un étudiant pour un exercice donné, vous devez utiliser le nom d'utilisateur ou l'adresse e-mail de cet étudiant. 
 

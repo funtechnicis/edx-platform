@@ -1,37 +1,37 @@
-.. _Chemical Equation:
+.. _Ã‰quations chimiques:
 
-################################
-Exercice avec équations chimiques
-################################
+#################################
+Exercice avec Ã©quations chimiques
+#################################
 
-Dans l'exercice avec équations chimiques, l'étudiant peut saisir, dans une zone dédiée, un texte qui représente une équation chimique. Le système convertit alors ce texte en une équation chimique et l'insère sous la zone de texte. L'évaluateur évalue la réponse de l'étudiant en utilisant un script Python que vous créez et intégrez dans l'exercice.
+Dans l'exercice avec Ã©quations chimiques, l'Ã©tudiant peut saisir, dans une zone dÃ©diÃ©e, un texte qui reprÃ©sente une Ã©quation chimique. Le systÃ¨me convertit alors ce texte en une Ã©quation chimique et l'insÃ¨re sous la zone de texte. L'Ã©valuateur Ã©value la rÃ©ponse de l'Ã©tudiant en utilisant un script Python que vous crÃ©ez et intÃ©grez dans l'exercice.
 
 .. image:: /Images/ChemicalEquationExample.png
- :alt: Image d'un exercice avec équations chimiques
+ :alt: Image d'un exercice avec Ã©quations chimiques
 
-************************************
-Créer un exercice avec équations chimiques
-************************************
+******************************************
+CrÃ©er un exercice avec Ã©quations chimiques
+******************************************
 
-Les exercices impliquant des équations chimiques utilisent MathJax pour créer des formules. Pour plus d'informations sur l'utilisation de MathJax dans Studio, voir :ref:`Introduction à l'utilisation de MathJax dans Studio`.
+Les exercices impliquant des Ã©quations chimiques utilisent MathJax pour crÃ©er des formules. Pour plus d'informations sur l'utilisation de MathJax dans Studio, voir :ref:`Introduction Ã  l'utilisation de MathJax dans Studio`.
 
-Pour créer l'exercice avec équations chimiques mentionné ci-dessus :
+Pour crÃ©er l'exercice avec Ã©quations chimiques mentionnÃ© ci-dessus :
 
-#. Dans l'unité dans laquelle vous souhaitez créer l'exercice, cliquez sur **Exercice** sous **Ajouter un nouveau composant**, puis cliquez sur l'onglet **Avancé**.
-#. Cliquez sur **Blank Advanced Problem** (Exercice avancé vide).
-#. Dans le composant qui apparaît, cliquez sur **Éditer**.
-#. Dans l'éditeur de composant, collez le code présenté ci-après.
+#. Dans l'unitÃ© dans laquelle vous souhaitez crÃ©er l'exercice, cliquez sur **Exercice** sous **Ajouter un nouveau composant**, puis cliquez sur l'onglet **AvancÃ©**.
+#. Cliquez sur **Blank Advanced Problem** (Exercice avancÃ© vide).
+#. Dans le composant qui apparaÃ®t, cliquez sur **Ã‰diter**.
+#. Dans l'Ã©diteur de composant, collez le code prÃ©sentÃ© ci-aprÃ¨s.
 #. Cliquez sur **Enregistrer**.
 
-==========================================
-Exemple de code pour un exercice avec équations chimiques
-==========================================
+=========================================================
+Exemple de code pour un exercice avec Ã©quations chimiques
+=========================================================
 
 .. code-block:: xml
 
   <problem>
     <startouttext/>
-    <p>Certains exercices font référence à une équation chimique particulière. Entraînez-vous en écrivant la réaction suivante dans la zone ci-dessous.</p>
+    <p>Certains exercices font rÃ©fÃ©rence Ã  une Ã©quation chimique particuliÃ¨re. EntraÃ®nez-vous en Ã©crivant la rÃ©action suivante dans la zone ci-dessous.</p>
     
   \( \text{H}_2\text{SO}_4 \longrightarrow \text { H}^+ + \text{ HSO}_4^-\)
 
@@ -48,10 +48,10 @@ Exemple de code pour un exercice avec équations chimiques
     </customresponse>
     <p>Quelques astuces :</p>
     <ul>
-    <li>Utilisez les symboles d'éléments réels.</li>
-    <li>Créez des indices en utilisant un texte brut..</li>
-    <li>Créez des exposants en utilisant un signe insertion (caret). (^).</li>
-    <li>Créez la flèche de la réaction (\(\longrightarrow\)) en utilisant "->".</li>
+    <li>Utilisez les symboles d'Ã©lÃ©ments rÃ©els.</li>
+    <li>CrÃ©ez des indices en utilisant un texte brut..</li>
+    <li>CrÃ©ez des exposants en utilisant un signe insertion (caret). (^).</li>
+    <li>CrÃ©ez la flÃ¨che de la rÃ©action (\(\longrightarrow\)) en utilisant "->".</li>
     </ul>
 
     <endouttext/>
@@ -59,21 +59,21 @@ Exemple de code pour un exercice avec équations chimiques
    <solution>
    <div class="detailed-solution">
    <p>Solution</p>
-   <p>Pour créer cette équation, saisissez :</p>
+   <p>Pour crÃ©er cette Ã©quation, saisissez :</p>
      <p>H2SO4 -> H^+ + HSO4^-</p>
    </div>
    </solution>
   </problem>
 
-.. _Chemical Equation Problem XML:
+.. _Exercice avec Ã©quations chimiques - Format XML:
 
-************************************
-Exercice avec équations chimiques - Format XML
-************************************
+**********************************************
+Exercice avec Ã©quations chimiques - Format XML
+**********************************************
 
-============
-Modèle
-============
+======
+ModÃ¨le
+======
 
 .. code-block:: xml
 
@@ -103,17 +103,17 @@ Modèle
    </solution>
   </problem>
 
-======
+=======
 Balises
-======
+=======
 
-* ``<customresponse>`` : Indique que la réponse au problème posé par cet exercice est personnalisée. 
-* ``<chemicalequationinput>`` : Spécifie que la réponse de cet exercice est une équation chimique. 
+* ``<customresponse>`` : Indique que la rÃ©ponse au problÃ¨me posÃ© par cet exercice est personnalisÃ©e. 
+* ``<chemicalequationinput>`` : SpÃ©cifie que la rÃ©ponse de cet exercice est une Ã©quation chimique. 
 * ``<answer type=loncapa/python>`` : Contient le script Python qui permet de noter l'exercice.
 
 **Balise :** ``<customresponse>``
 
-Indique que la réponse au problème posé par cet exercice est personnalisée. Les balises ``<customresponse>`` doivent encadrer les balises ``<chemicalequation>``.
+Indique que la rÃ©ponse au problÃ¨me posÃ© par cet exercice est personnalisÃ©e. Les balises ``<customresponse>`` doivent encadrer les balises ``<chemicalequation>``.
 
   Attributs
 
@@ -126,7 +126,7 @@ Indique que la réponse au problème posé par cet exercice est personnalisée. Les 
 
 **Balise :** ``<chemicalequationinput>``
 
-Indique que la réponse de cet exercice est une équation chimique et crée un champ de réponse dans lequel l'étudiant saisit sa réponse.
+Indique que la rÃ©ponse de cet exercice est une Ã©quation chimique et crÃ©e un champ de rÃ©ponse dans lequel l'Ã©tudiant saisit sa rÃ©ponse.
 
   Attributs
 
@@ -136,7 +136,7 @@ Indique que la réponse de cet exercice est une équation chimique et crée un cham
      * - Attribut
        - Description
      * - size 
-       - Spécifie la taille du champ de la réponse (nombre de caractères).
+       - SpÃ©cifie la taille du champ de la rÃ©ponse (nombre de caractÃ¨res).
      * - label (obligatoire)
        - Contient le texte de la question principale de l'exercice.
 
@@ -156,7 +156,7 @@ Contient le script Python qui permet de noter l'exercice.
      * - Attribut
        - Description
      * - type (obligatoire) 
-       - Doit être "loncapa/python".
+       - Doit Ãªtre "loncapa/python".
 
   Enfants
   

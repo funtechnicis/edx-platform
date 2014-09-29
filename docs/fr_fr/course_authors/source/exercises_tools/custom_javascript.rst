@@ -1,8 +1,8 @@
-.. _Custom JavaScript:
+.. _Exercice JavaScript personnalisé:
 
-###########################
+################################
 Exercice JavaScript personnalisé
-###########################
+################################
 
 Les exercices d'évaluation et d'affichage en code JavaScript personnalisé (également appelés *exercices en JavaScript personnalisé* ou *exercices en JS*) vous permettent de créer un exercice ou un outil personnalisé qui utilise JavaScript. Vous pourrez alors ajouter directement l'exercice ou l'outil dans Studio. Lorsque vous créez un exercice en JS, Studio intègre l'exercice dans un cadre en ligne (IFrame) afin que vos étudiants puissent l'effectuer dans le LMS. Vous pouvez noter les travaux de vos étudiants en utilisant JavaScript et les bases du langage Python. La note est intégrée dans le système d'évaluation edX.
 
@@ -11,9 +11,9 @@ L'exercice en JS que vous créez doit utiliser les langages HTML, JavaScript et 
 .. image:: /Images/JavaScriptInputExample.png
  :alt: Image d'un exercice en JavaScript
 
-************************************************************
+*****************************************************************************
 Créer un exercice d'évaluation et d'affichage en code JavaScript personnalisé
-************************************************************
+*****************************************************************************
 
 #. Créez votre application JavaScript, puis chargez tous les fichiers associés à cette application sur la page **Fichiers et uploads**.
 #. Dans l'unité dans laquelle vous souhaitez créer l'exercice, cliquez sur **Exercice** sous **Ajouter un nouveau composant**, puis cliquez sur l'onglet **Avancé**.
@@ -24,13 +24,13 @@ Créer un exercice d'évaluation et d'affichage en code JavaScript personnalisé
    - Tous les exercices sont associés à plus d'un élément. La plupart des exercices sont conformes au mécanisme de la règle d'origine commune (SOP ou same-origin policy), ce qui signifie que tous les éléments ont les mêmes protocole, hôte et port.
      Par exemple, **http**://**store.company.com**:**81**/subdirectory_1/JSInputElement.html et **http**://**store.company.com**:**81**/subdirectory_2/JSInputElement.js sont associés aux mêmes protocole (http), hôte (store.company.com) et port (81).
 
-     Si un ou plusieurs éléments de votre exercice utilisent un protocole, un hôte ou un port différent, vous devrez contourner le SOP. Par exemple, **https**://**info.company.com**/JSInputElement2.html utilise un protocole, un hôte et un port différents. Pour contourner le SOP, remplacez **sop="false"** à la ligne 8 de l'exemple de code par **sop="true"**. Pour plus d'informations, reportez-vous à la page relative au mécanisme SOP, intitulée Same-Origin Policy, sur le `Mozilla Developer Network <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Same_origin_policy_for_JavaScript>`_ ou consultez la page `Wikipedia <http://en.wikipedia.org/wiki/Same_origin_policy>`_consacrée à ce thème.
+     Si un ou plusieurs éléments de votre exercice utilisent un protocole, un hôte ou un port différent, vous devrez contourner le SOP. Par exemple, **https**://**info.company.com**/JSInputElement2.html utilise un protocole, un hôte et un port différents. Pour contourner le SOP, remplacez **sop="false"** à la ligne 8 de l'exemple de code par **sop="true"**. Pour plus d'informations, reportez-vous à la page relative au mécanisme SOP, intitulée Same-Origin Policy, sur le `Mozilla Developer Network <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Same_origin_policy_for_JavaScript>`_ ou consultez la page `Wikipedia <http://en.wikipedia.org/wiki/Same_origin_policy>`_ consacrée à ce thème.
 #. Si vous souhaitez que votre exercice soit doté d'un bouton **Enregistrer**, cliquez sur l'onglet **Paramètres**, puis définissez **Nombre d'essais maximum** comme étant supérieur à zéro.
 #. Cliquez sur **Enregistrer**.
 
-================================
+==================
 Recréer l'exercice
-================================
+==================
 
 Pour recréer l'exercice donné en exemple ci-dessus, vous aurez besoin des fichiers suivants.
 
@@ -108,17 +108,17 @@ Code d'un exercice en JavaScript
 
 .. _JS Input Problem XML:
 
-******************************
+***********************************
 Exercice en JavaScript - Format XML 
-******************************
+***********************************
 
 JSInput permet aux auteurs d'exercices de transformer des fichiers HTML autonomes en exercices qui peuvent être intégrés à la plate-forme edX. Étant donné que JSInput a pour objectif d'améliorer la flexibilité, il peut être considéré comme l'équivalent côté client et entrée de **CustomResponse**.
 
 Un exercice JSInput crée un cadre IFrame sur une page HTML statique et transmet la valeur renvoyée des fonctions spécifiées par l'auteur au type de réponse englobante (généralement **CustomResponse**). JSInput peut également stocker et récupérer les données relatives à l'état.
 
-========
+======
 Modèle
-========
+======
 
 Le format présenté ci-après est le format de base d'un exercice JSInput :
 
@@ -139,20 +139,20 @@ Le format présenté ci-après est le format de base d'un exercice JSInput :
 
 Les attributs acceptés sont :
 
-==============  ==============  =========  ==========
-Nom de l'attribut   Type de valeur     Obligatoire   Valeur par défaut
-==============  ==============  =========  ==========
-html_file        Chaîne URL     Oui        Aucune
-gradefn          Nom de fonction  Oui        `gradefn`
-set_statefn      Nom de fonction   Non         Aucune
-get_statefn      Nom de fonction  Non         Aucune
-height           Nombre entier        Non         `500`
-width            Nombre entier        Non         `400`
-==============  ==============  =========  ==========
+=================  ===============  ===========  =================
+Nom de l'attribut  Type de valeur   Obligatoire  Valeur par défaut
+=================  ===============  ===========  =================
+html_file          Chaîne URL       Oui          Aucune
+gradefn            Nom de fonction  Oui          `gradefn`
+set_statefn        Nom de fonction  Non          Aucune
+get_statefn        Nom de fonction  Non          Aucune
+height             Nombre entier    Non          `500`
+width              Nombre entier    Non          `400`
+=================  ===============  ===========  =================
 
-========================
+======================
 Attributs obligatoires
-========================
+======================
 
 * **html_file**
 
@@ -172,9 +172,9 @@ Attributs obligatoires
 
   Important : Afin d'être sur que la dernière réponse de l'étudiant a été transmise correctement, assurez-vous que la fonction **gradefn** n'est pas asynchrone. En outre, assurez-vous que la fonction renvoie rapidement une réponse. Actuellement, l'étudiant ne dispose d'aucune information lui indiquant que sa réponse est traitée ou notée.
 
-========================
+=====================
 Attributs facultatifs
-========================
+=====================
 
 * **set_statefn**
 

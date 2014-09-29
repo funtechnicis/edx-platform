@@ -1,33 +1,33 @@
-.. _Problem Written in LaTeX:
+.. _Exercice Ã©crit en langage LaTeX:
 
-############################
-Exercice écrit en langage LaTeX
-############################
+###############################
+Exercice Ã©crit en langage LaTeX
+###############################
 
-Avertissement : Ce type d'exercice reste un prototype et pourrait ne pas être pris en charge à l'avenir. Par défaut, la fonction permettant de créer ces exercices n'est pas activée dans Studio. Pour pouvoir créer des exercices avec LaTex, vous devez modifier les paramètres avancés dans votre cours. Par conséquent, utilisez ce type d'exercice avec circonspection.
+Avertissement : Ce type d'exercice reste un prototype et pourrait ne pas Ãªtre pris en charge Ã  l'avenir. Par dÃ©faut, la fonction permettant de crÃ©er ces exercices n'est pas activÃ©e dans Studio. Pour pouvoir crÃ©er des exercices avec LaTex, vous devez modifier les paramÃ¨tres avancÃ©s dans votre cours. Par consÃ©quent, utilisez ce type d'exercice avec circonspection.
 
-Si vous disposez d'un exercice qui a déjà été écrit en LaTeX, vous pouvez utiliser ce type d'exercice afin de convertir facilement votre code en XML. Après avoir collé votre code dans l'éditeur LaTeX, vous n'aurez plus qu'à effectuer quelques ajustements mineurs. 
+Si vous disposez d'un exercice qui a dÃ©jÃ  Ã©tÃ© Ã©crit en LaTeX, vous pouvez utiliser ce type d'exercice afin de convertir facilement votre code en XML. AprÃ¨s avoir collÃ© votre code dans l'Ã©diteur LaTeX, vous n'aurez plus qu'Ã  effectuer quelques ajustements mineurs. 
 
-.. note:: Si vous souhaitez utiliser le langage LaTeX afin de mettre en page des expressions mathématiques dans les exercices que vous n'avez pas encore rédigés, utilisez l'un des modèles d'exercice avec `MathJax <http://www.mathjax.org>`_. Pour plus d'informations sur la création d'expressions mathématiques dans Studio à l'aide de MathJax, voir *Introduction à l'utilisation de MathJax dans Studio*.
+.. note:: Si vous souhaitez utiliser le langage LaTeX afin de mettre en page des expressions mathÃ©matiques dans les exercices que vous n'avez pas encore rÃ©digÃ©s, utilisez l'un des modÃ¨les d'exercice avec `MathJax <http://www.mathjax.org>`_. Pour plus d'informations sur la crÃ©ation d'expressions mathÃ©matiques dans Studio Ã  l'aide de MathJax, voir *Introduction Ã  l'utilisation de MathJax dans Studio*.
 
 .. image:: /Images/ProblemWrittenInLaTeX.png
- :alt: Image d'un exercice écrit en langage LaTeX
+ :alt: Image d'un exercice Ã©crit en langage LaTeX
 
-************************************
-Créer un exercice écrit en langage LaTeX
-************************************
+****************************************
+CrÃ©er un exercice Ã©crit en langage LaTeX
+****************************************
 
-Pour créer un exercice écrit en langage LaTeX :
+Pour crÃ©er un exercice Ã©crit en langage LaTeX :
 
-#. Activez la clé de stratégie dans votre cours.
+#. Activez la clÃ© de stratÃ©gie dans votre cours.
 
-   #. Dans Studio, cliquez sur **Paramètres**, puis sur **Paramètres avancés**.
-   #. Dans le champ de la clé de stratégie **Autoriser le compilateur LaTeX**, remplacez **false** par **true**.
+   #. Dans Studio, cliquez sur **ParamÃ¨tres**, puis sur **ParamÃ¨tres avancÃ©s**.
+   #. Dans le champ de la clÃ© de stratÃ©gie **Autoriser le compilateur LaTeX**, remplacez **false** par **true**.
    #. Au bas de la page, cliquez sur **Enregistrer les modifications**.
    
-#. Dans l'unité dans laquelle vous souhaitez créer l'exercice, cliquez sur **Exercice** sous **Ajouter un nouveau composant**, puis cliquez sur l'onglet **Avancé**.
-#. Cliquez sur **Problem Written in LaTeX** (Exercice écrit en langage LaTex).
-#. Dans l'éditeur de composant qui apparaît, cliquez sur **Éditer**.
-#. Dans le coin inférieur gauche de l'éditeur de composant, cliquez sur **Exécuter le compilateur Latex**.
-#. Remplacez le code utilisé dans l'exemple par votre propre code. Vous pouvez également charger un fichier Latex dans l'éditeur depuis votre ordinateur. Il vous suffit de cliquer sur le bouton **Charger**, situé dans le coin inférieur droit.
-#. Dans le coin inférieur gauche du compilateur LaTeX, cliquez sur **Save & Compile to edX XML** (Enregistrer et compiler en code edX XML).
+#. Dans l'unitÃ© dans laquelle vous souhaitez crÃ©er l'exercice, cliquez sur **Exercice** sous **Ajouter un nouveau composant**, puis cliquez sur l'onglet **AvancÃ©**.
+#. Cliquez sur **Problem Written in LaTeX** (Exercice Ã©crit en langage LaTex).
+#. Dans l'Ã©diteur de composant qui apparaÃ®t, cliquez sur **Ã‰diter**.
+#. Dans le coin infÃ©rieur gauche de l'Ã©diteur de composant, cliquez sur **ExÃ©cuter le compilateur Latex**.
+#. Remplacez le code utilisÃ© dans l'exemple par votre propre code. Vous pouvez Ã©galement charger un fichier Latex dans l'Ã©diteur depuis votre ordinateur. Il vous suffit de cliquer sur le bouton **Charger**, situÃ© dans le coin infÃ©rieur droit.
+#. Dans le coin infÃ©rieur gauche du compilateur LaTeX, cliquez sur **Save & Compile to edX XML** (Enregistrer et compiler en code edX XML).

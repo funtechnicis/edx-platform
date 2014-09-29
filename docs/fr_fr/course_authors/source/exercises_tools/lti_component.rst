@@ -1,10 +1,10 @@
-.. _LTI Component:
+.. _Composant LTI:
 
-###############
+#############
 Composant LTI
-###############
+#############
 
-Avez-vous découvert ou développé une application didactique externe que vous souhaitez ajouter à votre cours en ligne ? Disposez-vous d'une version numérique de votre manuel qui utilise un format autre que le format PDF ? Vous pouvez ajouter des applications didactiques externes ou des manuels dans Studio en utilisant un composant LTI (Learning Tools Interoperability). Le composant LTI est basé sur les spécifications `IMS Global Learning Tools Interoperability <http://www.imsglobal.org/LTI/v1p1p1/ltiIMGv1p1p1.html>`_version 1.1.1.
+Avez-vous découvert ou développé une application didactique externe que vous souhaitez ajouter à votre cours en ligne ? Disposez-vous d'une version numérique de votre manuel qui utilise un format autre que le format PDF ? Vous pouvez ajouter des applications didactiques externes ou des manuels dans Studio en utilisant un composant LTI (Learning Tools Interoperability). Le composant LTI est basé sur les spécifications `IMS Global Learning Tools Interoperability <http://www.imsglobal.org/LTI/v1p1p1/ltiIMGv1p1p1.html>`_ version 1.1.1.
 
 Pour ajouter un composant LTI, vous pouvez procéder de plusieurs façons.
 
@@ -21,9 +21,9 @@ Par exemple, le composant LTI suivant incorpore un outil Cerego avec lequel les 
 
 .. _LTI Information:
 
-************************
+****************************
 Obtenir des informations LTI
-************************
+****************************
 
 Pour créer un composant LTI dans une unité depuis un fournisseur LTI externe, vous aurez besoin des informations suivantes.
 
@@ -49,9 +49,9 @@ Pour créer un composant LTI dans une unité depuis un fournisseur LTI externe, 
 
   ``book_lti_provider_from_new_york:b289378-f88d-2929-ctools.company.com:yt4984yr8``
 
-************************
+**********************
 Créer un composant LTI
-************************
+**********************
 
 Le processus de création d'un composant LTI dans votre cours compte trois étapes.
 
@@ -59,9 +59,9 @@ Le processus de création d'un composant LTI dans votre cours compte trois étap
 #. Enregistrez le fournisseur LTI.
 #. Créez le composant LTI dans une unité individuelle.
 
-======================================================
+========================================================================
 Étape 1. Ajouter LTI à la clé de stratégie **Liste des modules avancés**
-======================================================
+========================================================================
 
 #. Dans le menu **Paramètres**, cliquez sur **Paramètres avancés**.
 
@@ -77,9 +77,9 @@ Le processus de création d'un composant LTI dans votre cours compte trois étap
 
 La page est actualisée automatiquement. En haut de la page, une notification apparaît, confirmant que vos modifications ont été enregistrées.
 
-==========================================
+===============================================
 Étape 2. Enregistrer le fournisseur LTI externe
-==========================================
+===============================================
 
 Pour enregistrer le fournisseur LTI externe, ajoutez la clé de stratégie **Passeports LTI** aux paramètres avancés du cours.
 
@@ -105,9 +105,9 @@ Pour enregistrer le fournisseur LTI externe, ajoutez la clé de stratégie **Pas
 
 La page est actualisée automatiquement. En haut de la page, une notification apparaît, indiquant que vos modifications ont été enregistrées. Vous pouvez alors voir les entrées de la clé de stratégie **Passeports LTI**.
 
-==========================================
+=============================================
 Étape 3. Ajouter le composant LTI à une unité
-==========================================
+=============================================
 
 #. Dans l'unité dans laquelle vous souhaitez créer l'exercice, cliquez sur **Avancé** sous **Ajouter un nouveau composant**, puis cliquez sur **LTI**.
 #. Dans le composant qui apparaît, cliquez sur **Éditer**.
@@ -116,9 +116,9 @@ La page est actualisée automatiquement. En haut de la page, une notification ap
 
 .. _LTI Component settings:
 
-**********************
+***************************
 Paramètres du composant LTI
-**********************
+***************************
 
 .. list-table::
    :widths: 10 80

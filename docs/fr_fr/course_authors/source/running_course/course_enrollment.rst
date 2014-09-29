@@ -1,12 +1,12 @@
 .. _Enrollment:
 
-##########################
+############
 Inscriptions
-##########################
+############
 
-Les auteurs du cours et les enseignants peuvent inscrire des étudiants à un cours, vérifier le nombre d'inscrits et, si nécessaire, désinscrire des étudiants.
+Les auteurs du cours et les enseignants peuvent inscrire des Ã©tudiants Ã  un cours, vÃ©rifier le nombre d'inscrits et, si nÃ©cessaire, dÃ©sinscrire des Ã©tudiants.
 
-Les étudiants peuvent également s'inscrire par eux-mêmes à un cours pendant la période d'inscription définie. Les inscriptions aux cours ``www.edx.org`` sont ouvertes à toute personne ouvrant un compte edX. Pour d'autres cours, comme ceux présentés sur le site ``edge.edx.org``, les inscriptions sont limitées aux étudiants qui connaissent l'URL du cours et à ceux que vous avez inscrits.
+Les Ã©tudiants peuvent Ã©galement s'inscrire par eux-mÃªmes Ã  un cours pendant la pÃ©riode d'inscription dÃ©finie. Les inscriptions aux cours ``www.edx.org`` sont ouvertes Ã  toute personne ouvrant un compte edX. Pour d'autres cours, comme ceux prÃ©sentÃ©s sur le site ``edge.edx.org``, les inscriptions sont limitÃ©es aux Ã©tudiants qui connaissent l'URL du cours et Ã  ceux que vous avez inscrits.
 
 * :ref:`registration_enrollment`
 
@@ -18,104 +18,104 @@ Les étudiants peuvent également s'inscrire par eux-mêmes à un cours pendant la p
 
 .. _registration_enrollment:
 
-*********************************
+************
 Inscriptions
-*********************************
+************
 
-Avant de pouvoir s'inscrire à un cours, un étudiant doit effectuer les opérations suivantes :
+Avant de pouvoir s'inscrire Ã  un cours, un Ã©tudiant doit effectuer les opÃ©rations suivantes :
 
-#. Créer un compte utilisateur sur ``www.edx.org`` ou ``edge.edx.org``, ce qui implique de fournir une adresse e-mail valide ou de mettre en œuvre la plate-forme edX. Chaque plate-forme requiert un compte utilisateur distinct.
+#. CrÃ©er un compte utilisateur sur ``www.edx.org`` ou ``edge.edx.org``, ce qui implique de fournir une adresse e-mail valide ou de mettre en Âœuvre la plate-forme edX. Chaque plate-forme requiert un compte utilisateur distinct.
 
-#. Activer le compte créé en suivant les instructions envoyées par e-mail.
+#. Activer le compte crÃ©Ã© en suivant les instructions envoyÃ©es par e-mail.
 
-Tant que la **date de fin d'inscription** du cours n'est pas passée, les étudiants qui ont créé leur compte utilisateur sur le site et l'ont activé peuvent s'inscrire eux-mêmes aux cours ``www.edx.org`` ou à d'autres cours s'ils connaissent les URL correspondantes.
-Pour une description plus détaillée du processus d'inscription du point de vue de l'étudiant, voir :ref:`Sample Student Login Guide` (page en anglais).
+Tant que la **date de fin d'inscription** du cours n'est pas passÃ©e, les Ã©tudiants qui ont crÃ©Ã© leur compte utilisateur sur le site et l'ont activÃ© peuvent s'inscrire eux-mÃªmes aux cours ``www.edx.org`` ou Ã  d'autres cours s'ils connaissent les URL correspondantes.
+Pour une description plus dÃ©taillÃ©e du processus d'inscription du point de vue de l'Ã©tudiant, voir :ref:`Sample Student Login Guide` (page en anglais).
 
-Les auteurs du cours et les enseignants peuvent toutefois inscrire les étudiants à un cours avant ou après la création par les étudiants de leurs comptes utilisateur.
+Les auteurs du cours et les enseignants peuvent toutefois inscrire les Ã©tudiants Ã  un cours avant ou aprÃ¨s la crÃ©ation par les Ã©tudiants de leurs comptes utilisateur.
 
-Pour intervenir sur un cours, tous les membres de l'équipe pédagogique doivent également avoir créé et activé un compte utilisateur, et être inscrits au cours.
+Pour intervenir sur un cours, tous les membres de l'Ã©quipe pÃ©dagogique doivent Ã©galement avoir crÃ©Ã© et activÃ© un compte utilisateur, et Ãªtre inscrits au cours.
 
 .. _enroll_student:
 
 *********************************
-Inscrire des étudiants à un cours
+Inscrire des Ã©tudiants Ã  un cours
 *********************************
 
-Pour inscrire des étudiants à votre cours, ainsi que d'autres membres de l'équipe pédagogique, vous devez utiliser leur adresse e-mail. Une fois la **date de fin d'inscription** d'un cours passée, les étudiants ne peuvent plus s'inscrire ; toutefois, vous pouvez toujours inscrire les étudiants.
+Pour inscrire des Ã©tudiants Ã  votre cours, ainsi que d'autres membres de l'Ã©quipe pÃ©dagogique, vous devez utiliser leur adresse e-mail. Une fois la **date de fin d'inscription** d'un cours passÃ©e, les Ã©tudiants ne peuvent plus s'inscrire ; toutefois, vous pouvez toujours inscrire les Ã©tudiants.
 
-Lorsque vous inscrivez des personnes à un cours, vous pouvez procéder comme suit :
+Lorsque vous inscrivez des personnes Ã  un cours, vous pouvez procÃ©der comme suit :
 
-* **Inscription automatique**. Lorsque vous sélectionnez cette option, les personnes que vous inscrivez n'ont pas besoin de passer par le processus d'inscription classique. Pour procéder à l'inscription, vous fournissez une liste d'adresses e-mail. Les utilisateurs des adresses qui correspondent à un compte utilisateur déjà créé sont sélectionnés immédiatement et inscrits au cours. Lors de la connexion, votre cours s'affiche alors sur les tableaux de bord. Les utilisateurs des adresses e-mail de la liste qui ne correspondent à aucun compte utilisateur existant sont inscrits dès que leur compte est créé et activé.
+* **Inscription automatique**. Lorsque vous sÃ©lectionnez cette option, les personnes que vous inscrivez n'ont pas besoin de passer par le processus d'inscription classique. Pour procÃ©der Ã  l'inscription, vous fournissez une liste d'adresses e-mail. Les utilisateurs des adresses qui correspondent Ã  un compte utilisateur dÃ©jÃ  crÃ©Ã© sont sÃ©lectionnÃ©s immÃ©diatement et inscrits au cours. Lors de la connexion, votre cours s'affiche alors sur les tableaux de bord. Les utilisateurs des adresses e-mail de la liste qui ne correspondent Ã  aucun compte utilisateur existant sont inscrits dÃ¨s que leur compte est crÃ©Ã© et activÃ©.
 
-  Si vous ne sélectionnez pas l'option **Inscription automatique**, les personnes que vous inscrivez doivent alors rechercher activement votre cours et s'y inscrire par elles-mêmes. Après s'être inscrits, ces étudiants voient apparaître le cours sur leurs tableaux de bord respectifs.
+  Si vous ne sÃ©lectionnez pas l'option **Inscription automatique**, les personnes que vous inscrivez doivent alors rechercher activement votre cours et s'y inscrire par elles-mÃªmes. AprÃ¨s s'Ãªtre inscrits, ces Ã©tudiants voient apparaÃ®tre le cours sur leurs tableaux de bord respectifs.
 
-* **Notifier les étudiants par email**. Lorsque vous sélectionnez cette option, un e-mail est envoyé automatiquement à chacune des adresses e-mail que vous fournissez. Le message inclut le titre du cours et, pour les étudiants qui ne sont pas encore inscrits, un rappel soulignant que la même adresse e-mail doit être utilisée pour l'inscription.
+* **Notifier les Ã©tudiants par email**. Lorsque vous sÃ©lectionnez cette option, un e-mail est envoyÃ© automatiquement Ã  chacune des adresses e-mail que vous fournissez. Le message inclut le titre du cours et, pour les Ã©tudiants qui ne sont pas encore inscrits, un rappel soulignant que la mÃªme adresse e-mail doit Ãªtre utilisÃ©e pour l'inscription.
 
-  Vous trouverez ci-après un exemple d'e-mail qu'un étudiant a reçu lorsque cette option a été sélectionnée pour son inscription. Dans cet exemple, l'étudiant a déjà créé et activé un compte edx.org. Les deux options **Inscription automatique** et **Notifier les étudiants par email** ont été sélectionnées.
+  Vous trouverez ci-aprÃ¨s un exemple d'e-mail qu'un Ã©tudiant a reÃ§u lorsque cette option a Ã©tÃ© sÃ©lectionnÃ©e pour son inscription. Dans cet exemple, l'Ã©tudiant a dÃ©jÃ  crÃ©Ã© et activÃ© un compte edx.org. Les deux options **Inscription automatique** et **Notifier les Ã©tudiants par email** ont Ã©tÃ© sÃ©lectionnÃ©es.
 
   .. image:: ../Images/Course_Enrollment_Email.png
-        :alt: E-mail invitant un étudiant à s'inscrire à un cours edx.org
+        :alt: E-mail invitant un Ã©tudiant Ã  s'inscrire Ã  un cours edx.org
 
-Pour inscrire des étudiants ou des membres de l'équipe pédagogique :
+Pour inscrire des Ã©tudiants ou des membres de l'Ã©quipe pÃ©dagogique :
 
-#. Affichez la version réelle de votre cours.
+#. Affichez la version rÃ©elle de votre cours.
 
 #. Cliquez sur **Instructor** (Enseignant), puis cliquez sur **Inscription**. 
 
-#. Dans la section **Inscription automatique** de la page, saisissez le nom d'utilisateur ou l'adresse e-mail de l'étudiant. Vous pouvez également saisir plusieurs noms ou adresses séparés par des virgules ou des retours à la ligne.
+#. Dans la section **Inscription automatique** de la page, saisissez le nom d'utilisateur ou l'adresse e-mail de l'Ã©tudiant. Vous pouvez Ã©galement saisir plusieurs noms ou adresses sÃ©parÃ©s par des virgules ou des retours Ã  la ligne.
 
-  Vous pouvez copier et coller les données d'un fichier CSV d'adresses e-mail. Notez toutefois que cette fonction est plus adaptée aux cours présentant un nombre d'inscrits raisonnable plutôt qu'aux cours comptant de très nombreux étudiants.
+  Vous pouvez copier et coller les donnÃ©es d'un fichier CSV d'adresses e-mail. Notez toutefois que cette fonction est plus adaptÃ©e aux cours prÃ©sentant un nombre d'inscrits raisonnable plutÃ´t qu'aux cours comptant de trÃ¨s nombreux Ã©tudiants.
 
-4. Afin de simplifier le processus d'inscription au cours, laissez l'option **Inscription automatique** sélectionnée.
+4. Afin de simplifier le processus d'inscription au cours, laissez l'option **Inscription automatique** sÃ©lectionnÃ©e.
 
-#. Pour envoyer un e-mail à des étudiants, laissez l'option **Notifier les étudiants par email** sélectionnée.
+#. Pour envoyer un e-mail Ã  des Ã©tudiants, laissez l'option **Notifier les Ã©tudiants par email** sÃ©lectionnÃ©e.
 
 #. Cliquez sur **S'inscrire**.
 
 .. _view_enrollment_count:
 
-***************************
+*****************************
 Afficher le nombre d'inscrits
-***************************
+*****************************
 
-Après avoir créé un cours, vous pouvez visualiser le nombre total de personnes inscrites. Lorsque vous affichez ce nombre, notez les points suivants :
+AprÃ¨s avoir crÃ©Ã© un cours, vous pouvez visualiser le nombre total de personnes inscrites. Lorsque vous affichez ce nombre, notez les points suivants :
 
-* Outre les étudiants, le nombre d'inscrits inclut également l'auteur du cours, les membres de l'équipe pédagogique, les enseignants et d'autres intervenants associés au cours. (Pour utiliser un cours dans Studio ou le LMS, vous devez être inscrit dans ce cours.)
+* Outre les Ã©tudiants, le nombre d'inscrits inclut Ã©galement l'auteur du cours, les membres de l'Ã©quipe pÃ©dagogique, les enseignants et d'autres intervenants associÃ©s au cours. (Pour utiliser un cours dans Studio ou le LMS, vous devez Ãªtre inscrit dans ce cours.)
 
-* Les étudiants peuvent se désinscrire des cours. Les auteurs des cours ainsi que les enseignants peuvent également désinscrire des étudiants, le cas échéant.
+* Les Ã©tudiants peuvent se dÃ©sinscrire des cours. Les auteurs des cours ainsi que les enseignants peuvent Ã©galement dÃ©sinscrire des Ã©tudiants, le cas Ã©chÃ©ant.
 
-  **Remarque** : Le nombre d'inscrits correspond au nombre d'étudiants et de membres de l'équipe pédagogique actuellement inscrits. Il ne s'agit pas d'un dénombrement historique de toutes les personnes qui ont été inscrites dans le cours.
+  **Remarque** : Le nombre d'inscrits correspond au nombre d'Ã©tudiants et de membres de l'Ã©quipe pÃ©dagogique actuellement inscrits. Il ne s'agit pas d'un dÃ©nombrement historique de toutes les personnes qui ont Ã©tÃ© inscrites dans le cours.
 
-Pour afficher le nombre d'inscrits à un cours :
+Pour afficher le nombre d'inscrits Ã  un cours :
 
-#. Affichez la version réelle de votre cours.
+#. Affichez la version rÃ©elle de votre cours.
 
-#. Cliquez sur **Instructor** (Enseignant), puis sur **Infos** le cas échéant. 
+#. Cliquez sur **Instructor** (Enseignant), puis sur **Infos** le cas Ã©chÃ©ant. 
 
-  La section **Information d'inscription** de la page qui s'ouvre présente le nombre total de personnes actuellement inscrites.
+  La section **Information d'inscription** de la page qui s'ouvre prÃ©sente le nombre total de personnes actuellement inscrites.
 
-Vous pouvez également afficher ou télécharger la liste des personnes inscrites au cours. Voir :ref:`Données des étudiants`.
+Vous pouvez Ã©galement afficher ou tÃ©lÃ©charger la liste des personnes inscrites au cours. Voir :ref:`DonnÃ©es des Ã©tudiants`.
 
 .. _unenroll_student:
 
-*********************************
-Désinscrire des étudiants d'un cours
-*********************************
+************************************
+DÃ©sinscrire des Ã©tudiants d'un cours
+************************************
 
-Vous pouvez retirer les étudiants d'un cours. Il vous suffit de les désinscrire. Pour empêcher les étudiants de se réinscrire, les inscriptions au cours doivent également être closes. Utilisez Studio afin de définir la **date de fin d'inscription** d'un cours sur une date passée. Voir :ref:`Définir les dates importantes de votre cours`.
+Vous pouvez retirer les Ã©tudiants d'un cours. Il vous suffit de les dÃ©sinscrire. Pour empÃªcher les Ã©tudiants de se rÃ©inscrire, les inscriptions au cours doivent Ã©galement Ãªtre closes. Utilisez Studio afin de dÃ©finir la **date de fin d'inscription** d'un cours sur une date passÃ©e. Voir :ref:`DÃ©finir les dates importantes de votre cours`.
 
-**Remarque** : La désinscription ne supprime pas les données d'un étudiant. L'état d'un étudiant désinscrit demeure dans la base de données et est réactivé si l'étudiant se réinscrit.
+**Remarque** : La dÃ©sinscription ne supprime pas les donnÃ©es d'un Ã©tudiant. L'Ã©tat d'un Ã©tudiant dÃ©sinscrit demeure dans la base de donnÃ©es et est rÃ©activÃ© si l'Ã©tudiant se rÃ©inscrit.
 
-Pour désinscrire des étudiants, vous devez fournir les adresses e-mail des étudiants inscrits. 
+Pour dÃ©sinscrire des Ã©tudiants, vous devez fournir les adresses e-mail des Ã©tudiants inscrits. 
 
-#. Affichez la version réelle de votre cours.
+#. Affichez la version rÃ©elle de votre cours.
 
 #. Cliquez sur **Inscription**. 
 
-#. Dans la section **Inscription automatique** de la page, saisissez un nom d'utilisateur ou une adresse e-mail. Vous pouvez également saisir plusieurs noms ou adresses séparés par des virgules ou des retours à la ligne.
+#. Dans la section **Inscription automatique** de la page, saisissez un nom d'utilisateur ou une adresse e-mail. Vous pouvez Ã©galement saisir plusieurs noms ou adresses sÃ©parÃ©s par des virgules ou des retours Ã  la ligne.
 
-#. Pour envoyer un e-mail à des étudiants, laissez l'option **Notifier les étudiants par email** sélectionnée.
+#. Pour envoyer un e-mail Ã  des Ã©tudiants, laissez l'option **Notifier les Ã©tudiants par email** sÃ©lectionnÃ©e.
 
-.. note:: L'option **Inscription automatique** est inactive lorsque vous cliquez sur **Se désinscrire**.
+.. note:: L'option **Inscription automatique** est inactive lorsque vous cliquez sur **Se dÃ©sinscrire**.
 
-5. Cliquez sur **Se désinscrire**. Le cours n'est alors plus répertorié dans les tableaux de bord des étudiants. Les étudiants ne peuvent plus participer aux discussions, contribuer aux pages wiki ou accéder au contenu du cours.
+5. Cliquez sur **Se dÃ©sinscrire**. Le cours n'est alors plus rÃ©pertoriÃ© dans les tableaux de bord des Ã©tudiants. Les Ã©tudiants ne peuvent plus participer aux discussions, contribuer aux pages wiki ou accÃ©der au contenu du cours.

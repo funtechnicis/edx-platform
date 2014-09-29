@@ -1,27 +1,27 @@
-––.. _Establish a Grading Policy:
+––.. _Définition d'une politique de notation:
 
-##############################
+######################################
 Définition d'une politique de notation  
-##############################
+######################################
 
-*******************
+************
 Présentation
-*******************
+************
 
 La définition d'une politique de notation comporte plusieurs étapes. Vous devez :
 
-#. :ref:`définir la plage d'évaluation ;`
-#. :ref:`définir le délai supplémentaire ;`
-#. :ref:`configurer les types de travaux ;`
-#. :ref:`définir le type des travaux des sous-sections notées ;`
-#. :ref:`définir la vue Étudiant des notes.`
+#. :ref:`Définir la plage d'évaluation`
+#. :ref:`Définir le délai supplémentaire`
+#. :ref:`Configurer les types de travaux`
+#. :ref:`Définir le type des travaux des sous-sections notées`
+#. :ref:`Définir la vue Étudiant des notes`
 
 
-.. _Set the Grade Range:
+.. _Définir la plage d'évaluation:
 
-*******************
+*****************************
 Définir la plage d'évaluation
-*******************
+*****************************
 
 Vous devez définir la plage d'évaluation du cours.  Votre cours peut, par exemple, être sanctionné par un examen final. En cas de résultats satisfaisants, le cours est validé. En cas de résultats insatisfaisants, le cours n'est pas validé. Votre cours peut également faire l'objet d'une notation (lettres A à F).
 
@@ -61,11 +61,11 @@ Pour modifier ces paramètres, vous devez utiliser l'option de la plage d'évalu
 Après avoir effectué une ou plusieurs modifications dans la plage d'évaluation, cliquez sur l'option **Enregistrer les modifications**, située au bas de la page.
 
 
-.. _Set the Grace Period:
+.. _Définir le délai supplémentaire:
 
-*************************
+*******************************
 Définir le délai supplémentaire 
-*************************
+*******************************
     
 Vous pouvez définir un délai supplémentaire et ainsi repousser la date d'échéance des travaux de vos étudiants. 
 
@@ -73,11 +73,11 @@ Vous pouvez définir un délai supplémentaire et ainsi repousser la date d'éch
   
 Sur la page Évaluation, sous **Règles de notation**, saisissez une valeur dans le champ **Délai supplémentaire après la date limite**. Saisissez la valeur au format Heures:Minutes.
 
-.. _Configure the Assignment Types:
+.. _Configurer les types de travaux:
 
-******************************
+*******************************
 Configurer les types de travaux
-******************************
+*******************************
 
 Vous devez créer des types de travaux pour votre cours et définir ce que représente chaque type de travail (en pourcentage) dans la note totale de l'étudiant.
 
@@ -98,9 +98,9 @@ Vous pouvez utiliser ces types de travaux, les modifier ou les supprimer, et en 
 
 Pour créer un type de travail, au bas de la page Évaluation, cliquez sur **Nouveau type de travail**, puis configurez les champs décrits ci-après.
 
-==========================
+====================================
 Champs relatifs aux types de travaux
-==========================
+====================================
 Pour chaque type de travail, vous devez configurer les champs suivants :
     
 * **Nom du type de travail :** 
@@ -136,11 +136,11 @@ Pour chaque type de travail, vous devez configurer les champs suivants :
   Nombre de travaux de ce type dont l'évaluateur ne tiendra pas compte. L'évaluateur écartera avant tout les travaux pour lesquels les résultats obtenus sont les plus faibles.
 
 
-.. _Set the Assignment Type for Graded Subsections:
+.. _Définir le type des travaux des sous-sections notées:
 
-**********************************************
+****************************************************
 Définir le type des travaux des sous-sections notées
-**********************************************
+****************************************************
 Après avoir configuré les types de travaux, lorsque vous organisez votre cours, définissez le type de travail pour les sous-sections contenant des exercices qui seront notés.
 
 Chaque sous-section qui contient des exercices devant être notés ne peut inclure qu'un seul type de travail. Pour plus d'informations, voir :ref:`Sous-sections`.
@@ -157,11 +157,11 @@ Par exemple, si vous souhaitez créer un devoir (à la maison) et un exercice en
 
 Pour obtenir des instructions sur la création d'exercices, voir :ref:`Utilisation de composants Exercice`. 
 
-.. _Set the Grading Policy:
+.. _Définir la politique de notation:
 
-=======================
+================================
 Définir la politique de notation
-=======================
+================================
 
 Vous pouvez définir une sous-section comme l'un des types de travaux spécifiés dans la politique de notation.
 
@@ -183,9 +183,9 @@ Depuis la page d'une sous-section donnée, cliquez sur le texte en regard de l'�
 Pour plus d'informations, voir :ref:`Définition d'une politique de notation`.
 
 
-==================
+==========================
 Définir la date d'échéance
-==================
+==========================
 
 Vous pouvez définir une date d'échéance pour les sous-sections qui contiennent des exercices notés. Les étudiants doivent compléter les exercices de la sous-section avant la date d'échéance afin que leurs résultats soient pris en compte.
 Tous les exercices d'une sous-section donnée présentent la même date d'échéance.
@@ -209,11 +209,11 @@ Cette sous-section contient plusieurs exercices. Tous doivent être remis le 3 n
 
 
 
-.. _The Student View of Grades:
+.. _Définir la vue Étudiant des notes:
 
-**************************
+*********************************
 Définir la vue Étudiant des notes
-**************************
+*********************************
 Une fois la politique de notation en place, les étudiants peuvent visualiser à la fois les notes obtenues aux exercices et le pourcentage effectué, ainsi que la note actuelle, dans l'onglet **Progression** du cours.
   
   .. image:: ../Images/Progress_tab.png

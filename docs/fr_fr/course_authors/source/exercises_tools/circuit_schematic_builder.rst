@@ -1,32 +1,32 @@
-.. _Circuit Schematic Builder:
+.. _Conception de schÃ©ma de circuit:
 
-##################################
-Exercice avec logiciel de conception de schéma de circuit
-##################################
+#########################################################
+Exercice avec logiciel de conception de schÃ©ma de circuit
+#########################################################
 
-Dans les exercices avec logiciel de conception de schéma de circuit, les étudiants peuvent organiser les éléments d'un circuit sur une grille interactive : sources de tension, condensateurs, résistances et MOSFET. Ils soumettent ensuite au système une analyse en courant continu (CC) ou en courant alternatif (CA), ou une analyse transitoire de leur circuit pour évaluation.
+Dans les exercices avec logiciel de conception de schÃ©ma de circuit, les Ã©tudiants peuvent organiser les Ã©lÃ©ments d'un circuit sur une grille interactive : sources de tension, condensateurs, rÃ©sistances et MOSFET. Ils soumettent ensuite au systÃ¨me une analyse en courant continu (CC) ou en courant alternatif (CA), ou une analyse transitoire de leur circuit pour Ã©valuation.
 
 .. image:: /Images/CircuitSchematicExample.png
- :alt: Image d'un logiciel de conception de schéma de circuit
+ :alt: Image d'un logiciel de conception de schÃ©ma de circuit
 
-*********************************************
-Créer un exercice avec un logiciel de conception de schéma de circuit
-*********************************************
+*********************************************************************
+CrÃ©er un exercice avec un logiciel de conception de schÃ©ma de circuit
+*********************************************************************
 
-#. Dans l'unité dans laquelle vous souhaitez créer l'exercice, cliquez sur **Exercice** sous **Ajouter un nouveau composant**, puis cliquez sur l'onglet **Avancé**.
-#. Cliquez sur **Circuit Schematic Builder** (Logiciel de conception de schéma de circuit).
-#. Dans le composant qui apparaît, cliquez sur **Éditer**.
-#. Dans l'éditeur de composant, remplacez l'exemple de code par votre propre code.
+#. Dans l'unitÃ© dans laquelle vous souhaitez crÃ©er l'exercice, cliquez sur **Exercice** sous **Ajouter un nouveau composant**, puis cliquez sur l'onglet **AvancÃ©**.
+#. Cliquez sur **Circuit Schematic Builder** (Logiciel de conception de schÃ©ma de circuit).
+#. Dans le composant qui apparaÃ®t, cliquez sur **Ã‰diter**.
+#. Dans l'Ã©diteur de composant, remplacez l'exemple de code par votre propre code.
 #. Cliquez sur **Enregistrer**.
 
 **Code d'exercice**
 
-Pour créer l'exercice présenté dans l'image ci-dessus, collez le code ci-après dans l'Éditeur avancé.
+Pour crÃ©er l'exercice prÃ©sentÃ© dans l'image ci-dessus, collez le code ci-aprÃ¨s dans l'Ã‰diteur avancÃ©.
 
 .. code-block:: xml
 
  <problem>
-    <p>Créez un diviseur de tension qui divise en parts égales la tension fournie.</p>
+    <p>CrÃ©ez un diviseur de tension qui divise en parts Ã©gales la tension fournie.</p>
       <schematicresponse>
       <center>
       <schematic height="500" width="600" parts="g,r" analyses="dc"
@@ -70,9 +70,9 @@ Pour créer l'exercice présenté dans l'image ci-dessus, collez le code ci-après d
         <solution>
             <div class="detailed-solution">
                 <p>Explication</p>
-                <p>Pour obtenir un diviseur de tension qui divise en parts égales la tension d'entrée, utilisez deux résistances de même valeur, la tension échantillonnée étant prise entre les deux résistances.</p>
+                <p>Pour obtenir un diviseur de tension qui divise en parts Ã©gales la tension d'entrÃ©e, utilisez deux rÃ©sistances de mÃªme valeur, la tension Ã©chantillonnÃ©e Ã©tant prise entre les deux rÃ©sistances.</p>
                 <p><img src="/c4x/edX/edX101/asset/images_voltage_divider.png"/></p>
-                <p>Pour monter un filtre passe-haut sans d'autres contraintes, placez simplement une résistance en série avec un condensateur. Pour respecter les contraintes de l'exercice, les valeurs réelles des composants importent peu.</p>
+                <p>Pour monter un filtre passe-haut sans d'autres contraintes, placez simplement une rÃ©sistance en sÃ©rie avec un condensateur. Pour respecter les contraintes de l'exercice, les valeurs rÃ©elles des composants importent peu.</p>
                 <p><img src="/c4x/edX/edX101/asset/images_high_pass_filter.png"/></p>
             </div>
         </solution>

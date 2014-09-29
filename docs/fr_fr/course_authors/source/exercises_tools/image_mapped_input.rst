@@ -1,24 +1,24 @@
-.. _Image Mapped Input:
+.. _Images mappÃ©es:
 
-###########################
-Exercice d'insertion d'images mappées
-###########################
+#####################################
+Exercice d'insertion d'images mappÃ©es
+#####################################
 
-Dans un exercice d'insertion d'images mappées, les étudiants cliquent dans une zone définie à l'intérieur d'une image. Pour définir cette zone, incluez des coordonnées dans le corps de l'exercice.
+Dans un exercice d'insertion d'images mappÃ©es, les Ã©tudiants cliquent dans une zone dÃ©finie Ã  l'intÃ©rieur d'une image. Pour dÃ©finir cette zone, incluez des coordonnÃ©es dans le corps de l'exercice.
 
 .. image:: /Images/ImageMappedInputExample.png
- :alt: Image d'un exercice d'insertion d'images mappées
+ :alt: Image d'un exercice d'insertion d'images mappÃ©es
 
-****************************************
-Créer un exercice d'insertion d'images mappées
-****************************************
+**********************************************
+CrÃ©er un exercice d'insertion d'images mappÃ©es
+**********************************************
 
-Pour créer un exercice d'insertion d'images mappées :
+Pour crÃ©er un exercice d'insertion d'images mappÃ©es :
 
-#. Dans l'unité dans laquelle vous souhaitez créer l'exercice, cliquez sur **Exercice** sous **Ajouter un nouveau composant**, puis cliquez sur l'onglet **Avancé**.
-#. Cliquez sur **Image Mapped Input** (Insertion d'images mappées).
-#. Dans le composant qui apparaît, cliquez sur **Éditer**.
-#. Dans l'éditeur de composant, remplacez l'exemple de code par votre propre code.
+#. Dans l'unitÃ© dans laquelle vous souhaitez crÃ©er l'exercice, cliquez sur **Exercice** sous **Ajouter un nouveau composant**, puis cliquez sur l'onglet **AvancÃ©**.
+#. Cliquez sur **Image Mapped Input** (Insertion d'images mappÃ©es).
+#. Dans le composant qui apparaÃ®t, cliquez sur **Ã‰diter**.
+#. Dans l'Ã©diteur de composant, remplacez l'exemple de code par votre propre code.
 #. Cliquez sur **Enregistrer**.
 
 **Code d'exercice** :
@@ -28,7 +28,7 @@ Pour créer un exercice d'insertion d'images mappées :
   <problem>
     <p><b>Exemple d'exercice</b></p>
      <startouttext/>
-      <p>Dans l'image ci-après, cliquez sur le triangle.</p>
+      <p>Dans l'image ci-aprÃ¨s, cliquez sur le triangle.</p>
       <endouttext/>
       <imageresponse>
       <imageinput src="/static/threeshapes.png" width="220" height="150" rectangle="(80,40)-(130,90)" />
@@ -38,35 +38,35 @@ Pour créer un exercice d'insertion d'images mappées :
 
 .. _Image Mapped Input Problem XML:
 
-******************************
-Exercice d'insertion d'images mappées - Format XML 
-******************************
+**************************************************
+Exercice d'insertion d'images mappÃ©es - Format XML 
+**************************************************
 
-==========
-Modèle
-==========
+======
+ModÃ¨le
+======
 
 .. code-block:: xml
 
   <problem>
     <startouttext/>
-      <p>Dans l'image ci-après, cliquez sur le triangle.</p>
+      <p>Dans l'image ci-aprÃ¨s, cliquez sur le triangle.</p>
     <endouttext/>
         <imageresponse>
          <imageinput src="IMAGE FILE PATH" width="NUMBER" height="NUMBER" rectangle="(X-AXIS,Y-AXIS)-(X-AXIS,Y-AXIS)" />
         </imageresponse>
   </problem>
 
-=====
+=======
 Balises
-=====
+=======
 
-* ``<imageresponse>`` : Indique que cet exercice est un exercice d'insertion d'images mappées.
-* ``<imageinput>`` : Spécifie le fichier image et la zone du fichier dans laquelle l'étudiant doit cliquer.
+* ``<imageresponse>`` : Indique que cet exercice est un exercice d'insertion d'images mappÃ©es.
+* ``<imageinput>`` : SpÃ©cifie le fichier image et la zone du fichier dans laquelle l'Ã©tudiant doit cliquer.
 
 **Balise :** ``<imageresponse>``
 
-Indique que cet exercice est un exercice d'insertion d'images mappées.
+Indique que cet exercice est un exercice d'insertion d'images mappÃ©es.
 
   Attributs
 
@@ -78,7 +78,7 @@ Indique que cet exercice est un exercice d'insertion d'images mappées.
 
 **Balise :** ``<imageinput>``
 
-Spécifie le fichier image et la zone du fichier dans laquelle l'étudiant doit cliquer.
+SpÃ©cifie le fichier image et la zone du fichier dans laquelle l'Ã©tudiant doit cliquer.
 
   Attributs
 
@@ -90,11 +90,11 @@ Spécifie le fichier image et la zone du fichier dans laquelle l'étudiant doit cl
       * - src (obligatoire)
         - URL de l'image
       * - height (obligatoire)
-        - Hauteur de l'image, exprimée en pixels
+        - Hauteur de l'image, exprimÃ©e en pixels
       * - width (obligatoire)
-        - Largeur de l'image, exprimée en pixels
+        - Largeur de l'image, exprimÃ©e en pixels
       * - rectangle (obligatoire)
-        - Attribut avec quatre valeurs intégrées au format (<start_width>,<start_height>)-(<end_width>,<end-height>) Toutes les coordonnées commencent par (0,0) dans le coin supérieur gauche. Les valeurs augmentent au fur et à mesure de la progression vers le coin inférieur droit. Cette évolution est très similaire au sens de lecture du français. Les deux coordonnées définies constituent les deux coins opposés d'une zone dans laquelle un étudiant peut cliquer.
+        - Attribut avec quatre valeurs intÃ©grÃ©es au format (<start_width>,<start_height>)-(<end_width>,<end-height>) Toutes les coordonnÃ©es commencent par (0,0) dans le coin supÃ©rieur gauche. Les valeurs augmentent au fur et Ã  mesure de la progression vers le coin infÃ©rieur droit. Cette Ã©volution est trÃ¨s similaire au sens de lecture du franÃ§ais. Les deux coordonnÃ©es dÃ©finies constituent les deux coins opposÃ©s d'une zone dans laquelle un Ã©tudiant peut cliquer.
 
   Enfants
   

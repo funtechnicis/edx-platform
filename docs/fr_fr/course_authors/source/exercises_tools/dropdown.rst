@@ -1,67 +1,67 @@
-.. _Dropdown:
+.. _Menu dÃ©roulant:
 
-#####################
-QCM avec menu déroulant
-#####################
+#######################
+QCM avec menu dÃ©roulant
+#######################
 
-Les QCM avec menu déroulant permettent à l'étudiant d'effectuer son choix parmi une série de réponses, présentées dans une liste déroulante. À la différence des autres types de QCM, dans lesquels les réponses sont toujours visibles directement sous la question, les QCM avec menu déroulant n'affichent les différentes possibilités de réponses que lorsque l'étudiant clique sur la flèche du menu déroulant.
+Les QCM avec menu dÃ©roulant permettent Ã  l'Ã©tudiant d'effectuer son choix parmi une sÃ©rie de rÃ©ponses, prÃ©sentÃ©es dans une liste dÃ©roulante. Ã€ la diffÃ©rence des autres types de QCM, dans lesquels les rÃ©ponses sont toujours visibles directement sous la question, les QCM avec menu dÃ©roulant n'affichent les diffÃ©rentes possibilitÃ©s de rÃ©ponses que lorsque l'Ã©tudiant clique sur la flÃ¨che du menu dÃ©roulant.
 
 .. image:: /Images/DropdownExample.png
- :alt: Image d'un QCM avec menu déroulant
+ :alt: Image d'un QCM avec menu dÃ©roulant
 
 ********************************
-Créer un QCM avec menu déroulant
+CrÃ©er un QCM avec menu dÃ©roulant
 ********************************
 
-Vous pouvez créer des QCM avec menu déroulant en utilisant l'Éditeur simple ou l'Éditeur avancé.
+Vous pouvez crÃ©er des QCM avec menu dÃ©roulant en utilisant l'Ã‰diteur simple ou l'Ã‰diteur avancÃ©.
 
-.. note:: Tous les exercices doivent inclure des étiquettes afin de garantir l'accessibilité. L'étiquette comprend généralement le texte de la question principale de l'exercice. Pour ajouter une étiquette à un exercice courant, entourez le texte de l'étiquette avec des crochets pointus, orientés vers le texte (>>texte de l'étiquette<<).
+.. note:: Tous les exercices doivent inclure des Ã©tiquettes afin de garantir l'accessibilitÃ©. L'Ã©tiquette comprend gÃ©nÃ©ralement le texte de la question principale de l'exercice. Pour ajouter une Ã©tiquette Ã  un exercice courant, entourez le texte de l'Ã©tiquette avec des crochets pointus, orientÃ©s vers le texte (>>texte de l'Ã©tiquette<<).
 
-================
-Éditeur simple
-================
+==============
+Ã‰diteur simple
+==============
 
-Pour créer un QCM avec menu déroulant, procédez comme suit.
+Pour crÃ©er un QCM avec menu dÃ©roulant, procÃ©dez comme suit.
 
 #. Sous **Ajouter un nouveau composant**, cliquez sur **Exercice**.
-#. Dans l'écran **Select Problem Component Type** (Sélectionner le type du composant Exercice), cliquez sur **Liste déroulante** dans l'onglet **Types d'exercices classiques**.
-#. Dans le nouveau composant Exercice qui apparaît, cliquez sur **Éditer**.
-#. Remplacez le texte par défaut par le texte de votre exercice. Saisissez chacune des réponses possibles sur la même ligne. Les différentes réponses doivent être séparées par des virgules.
-#. Choisissez le texte de l'exercice à utiliser en tant qu'étiquette, puis placez ce texte entre deux paires de crochets pointus (>><<).
-#. Sélectionnez toutes les réponses, puis cliquez le bouton Menu déroulant. 
+#. Dans l'Ã©cran **Select Problem Component Type** (SÃ©lectionner le type du composant Exercice), cliquez sur **Liste dÃ©roulante** dans l'onglet **Types d'exercices classiques**.
+#. Dans le nouveau composant Exercice qui apparaÃ®t, cliquez sur **Ã‰diter**.
+#. Remplacez le texte par dÃ©faut par le texte de votre exercice. Saisissez chacune des rÃ©ponses possibles sur la mÃªme ligne. Les diffÃ©rentes rÃ©ponses doivent Ãªtre sÃ©parÃ©es par des virgules.
+#. Choisissez le texte de l'exercice Ã  utiliser en tant qu'Ã©tiquette, puis placez ce texte entre deux paires de crochets pointus (>><<).
+#. SÃ©lectionnez toutes les rÃ©ponses, puis cliquez le bouton Menu dÃ©roulant. 
       
    .. image:: /Images/ProbCompButton_Dropdown.png
-    :alt: Image du bouton Menu déroulant
+    :alt: Image du bouton Menu dÃ©roulant
       
-   Lorsque vous effectuez cette opération, une double série de crochets ([[ ]]) apparaît et encadre les réponses possibles.
+   Lorsque vous effectuez cette opÃ©ration, une double sÃ©rie de crochets ([[ ]]) apparaÃ®t et encadre les rÃ©ponses possibles.
       
-#. Entre les crochets, placez la réponse correcte entre parenthèses.
-#. Dans l'éditeur de composant, sélectionnez le texte de l'explication, puis cliquez sur le bouton associé afin d'insérer les balises correspondantes autour du texte.
+#. Entre les crochets, placez la rÃ©ponse correcte entre parenthÃ¨ses.
+#. Dans l'Ã©diteur de composant, sÃ©lectionnez le texte de l'explication, puis cliquez sur le bouton associÃ© afin d'insÃ©rer les balises correspondantes autour du texte.
 
    .. image:: /Images/ProbCompButton_Explanation.png
     :alt: Image du bouton Explication
 
-#. Dans l'onglet **Paramètres**, indiquez les paramètres que vous souhaitez utiliser. 
+#. Dans l'onglet **ParamÃ¨tres**, indiquez les paramÃ¨tres que vous souhaitez utiliser. 
 #. Cliquez sur **Enregistrer**.
 
-Pour l'exemple d'exercice présenté ci-dessus, le texte dans le composant Exercice est le suivant.
+Pour l'exemple d'exercice prÃ©sentÃ© ci-dessus, le texte dans le composant Exercice est le suivant.
 
 ::
 
-    >>À quel type les données suivantes appartiennent-elles ?<<
+    >>Ã€ quel type les donnÃ©es suivantes appartiennent-elles ?<<
 
-    Âge :
+    Ã‚ge :
     [[Nominal, Discret, (Continu)]]
-    Âge, arrondi à l'année la plus proche :
+    Ã‚ge, arrondi Ã  l'annÃ©e la plus proche :
     [[Nominal, (Discret), Continu]]
-    Période de la vie - Première enfance, enfance et âge adulte :
+    PÃ©riode de la vie - PremiÃ¨re enfance, enfance et Ã¢ge adulte :
     [[(Nominal), Discret, Continu]]
 
-================
-Éditeur avancé
-================
+==============
+Ã‰diteur avancÃ©
+==============
 
-Pour créer cet exercice dans l'Éditeur avancé, cliquez sur l'onglet **Avancé** dans l'éditeur du composant Exercice, puis remplacez le code existant par le code présenté ci-après.
+Pour crÃ©er cet exercice dans l'Ã‰diteur avancÃ©, cliquez sur l'onglet **AvancÃ©** dans l'Ã©diteur du composant Exercice, puis remplacez le code existant par le code prÃ©sentÃ© ci-aprÃ¨s.
 
 **Code d'exercice :**
 
@@ -69,18 +69,18 @@ Pour créer cet exercice dans l'Éditeur avancé, cliquez sur l'onglet **Avancé** d
 
   <problem>
   <p>
-    <em>Cet exercice a été publié pour la première fois sur le site de HarvardX, via le document PH207x Health in Numbers: Quantitative Methods in Clinical & Public Health Research course (automne 2012).</em>
+    <em>Cet exercice a Ã©tÃ© publiÃ© pour la premiÃ¨re fois sur le site de HarvardX, via le document PH207x Health in Numbers: Quantitative Methods in Clinical & Public Health Research course (automne 2012).</em>
   </p>
-  <p>À quel type les données suivantes appartiennent-elles ?</p>
-  <p>Âge :</p>
+  <p>Ã€ quel type les donnÃ©es suivantes appartiennent-elles ?</p>
+  <p>Ã‚ge :</p>
   <optionresponse>
     <optioninput options="('Nominal','Discrete','Continuous')" correct="Continuous" label="Age"/>
   </optionresponse>
-  <p>Âge, arrondi à l'année la plus proche :</p>
+  <p>Ã‚ge, arrondi Ã  l'annÃ©e la plus proche :</p>
   <optionresponse>
     <optioninput options="('Nominal','Discrete','Continuous')" correct="Discrete" label="Age, rounded to the nearest year"/>
   </optionresponse>
-  <p>Période de la vie - Première enfance, enfance et âge adulte :</p>
+  <p>PÃ©riode de la vie - PremiÃ¨re enfance, enfance et Ã¢ge adulte :</p>
   <optionresponse>
     <optioninput options="('Nominal','Discrete','Continuous')" correct="Nominal" label="Life stage"/>
   </optionresponse>
@@ -88,13 +88,13 @@ Pour créer cet exercice dans l'Éditeur avancé, cliquez sur l'onglet **Avancé** d
 
 .. _Dropdown Problem XML:
 
-************************
-QCM avec menu déroulant - Format XML
-************************
+************************************
+QCM avec menu dÃ©roulant - Format XML
+************************************
 
-========
-Modèle
-========
+======
+ModÃ¨le
+======
 
 .. code-block:: xml
 
@@ -130,16 +130,16 @@ Modèle
     </solution>
   </problem>
 
-========
+=======
 Balises
-========
+=======
 
-* ``<optionresponse>`` (obligatoire) : Indique que cet exercice est un QCM avec menu déroulant.
-* ``<optioninput>`` (obligatoire) : Répertorie les réponses possibles.
+* ``<optionresponse>`` (obligatoire) : Indique que cet exercice est un QCM avec menu dÃ©roulant.
+* ``<optioninput>`` (obligatoire) : RÃ©pertorie les rÃ©ponses possibles.
 
 **Balise :** ``<optionresponse>``
 
-Indique que cet exercice est un QCM avec menu déroulant.
+Indique que cet exercice est un QCM avec menu dÃ©roulant.
 
   Attributs
 
@@ -151,7 +151,7 @@ Indique que cet exercice est un QCM avec menu déroulant.
 
 **Balise :** ``<optioninput>``
 
-Répertorie les réponses possibles.
+RÃ©pertorie les rÃ©ponses possibles.
 
   Attributs
 
@@ -161,11 +161,11 @@ Répertorie les réponses possibles.
      * - Attribut
        - Description
      * - options (obligatoire)
-       - Répertorie les réponses possibles. La liste de toutes les réponses possibles est placée entre parenthèses. Les réponses possibles individuelles sont placées entre des guillemets simples (') et séparées par des virgules (,).
+       - RÃ©pertorie les rÃ©ponses possibles. La liste de toutes les rÃ©ponses possibles est placÃ©e entre parenthÃ¨ses. Les rÃ©ponses possibles individuelles sont placÃ©es entre des guillemets simples (') et sÃ©parÃ©es par des virgules (,).
      * - correct (obligatoire)
-       - Indique si une réponse est correcte. Les valeurs possibles sont "true" et "false". Seul un attribut **correct** peut être défini sur "true".
+       - Indique si une rÃ©ponse est correcte. Les valeurs possibles sont "true" et "false". Seul un attribut **correct** peut Ãªtre dÃ©fini sur "true".
      * - label (obligatoire)
-       - Spécifie le nom du champ de la réponse.
+       - SpÃ©cifie le nom du champ de la rÃ©ponse.
   
   Enfants
 

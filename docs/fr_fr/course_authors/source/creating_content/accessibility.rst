@@ -1,8 +1,8 @@
 .. _Guidelines for Creating Accessible Content:
 
-###################################################
+###########################################################
 Création d'un contenu accessible : instructions et conseils
-###################################################
+###########################################################
 
  
 EdX souhaite créer une plate-forme innovante d'apprentissage en ligne, accessible à tous, y compris aux étudiants présentant un handicap. 
@@ -20,16 +20,16 @@ En raison de l'émergence continue d'améliorations technologiques et des progr�
 
 Pour plus d'informations, reportez-vous aux sections suivantes :
 
-* :ref:`Prise en charge d'étudiants : des besoins divers`
-* :ref:`Accessibilité : présentation des meilleures pratiques`
+* :ref:`Prise en charge d'étudiants avec des besoins divers`
+* :ref:`Accessibility Best Practices`
 * :ref:`Conclusion`
 
 
-.. _Supporting Learners with Diverse Needs:
+.. _Prise en charge d'étudiants avec des besoins divers:
 
-************************************************************
-Prise en charge d'étudiants : des besoins divers
-************************************************************
+***************************************************
+Prise en charge d'étudiants avec des besoins divers
+***************************************************
 
 Près d'un cinquième de la population mondiale présente une forme de handicap. 
 Les cours en ligne peuvent permettre de surmonter de nombreux obstacles et favoriser l'accès à l'éducation des étudiants handicapés en offrant un accès à un contenu pédagogique depuis n'importe quelle région du monde, à toute heure du jour ou de la nuit, grâce à l'utilisation de technologies d'assistance.
@@ -65,24 +65,24 @@ Nous vous encourageons à élaborer un plan adapté afin d'être à même de ré
 
 .. _Accessibility Best Practices:
 
-************************************************************
+*****************************************************
 Accessibilité : présentation des meilleures pratiques
-************************************************************
+*****************************************************
 
-* :ref:`Conception universelle de l'apprentissage : présentation des meilleures pratiques`
-* :ref:`Lisibilité des documents : présentation des meilleures pratiques`
-* :ref:`Accessibilité des documents PDF : présentation des meilleures pratiques`
-* :ref:`Types de contenus personnalisés : présentation des meilleures pratiques`
-* :ref:`Description d'images : présentation des meilleures pratiques`
-* :ref:`Accessibilité des médias : présentation des meilleures pratiques`
-* :ref:`Langage HTML : présentation des meilleures pratiques`
+* :ref:`Conception universelle de l'apprentissage`
+* :ref:`Lisibilité des documents`
+* :ref:`Accessibilité des documents PDF`
+* :ref:`Types de contenus personnalisés`
+* :ref:`Description d'images`
+* :ref:`Accessibilité des médias`
+* :ref:`Langage HTML`
 
 
-.. _Best Practices for Universal Design for Learning:
+.. _Conception universelle de l'apprentissage:
 
-====================================================
+=================================================================================
 Conception universelle de l'apprentissage : présentation des meilleures pratiques
-====================================================
+=================================================================================
 
 La conception universelle de l'apprentissage s'attache à présenter les cours dans un format donné, afin que le plus grand nombre d'étudiants possible puisse utiliser de manière satisfaisante les ressources pédagogiques et les activités proposées, sans que la qualité pédagogique et la rigueur de l'enseignement ne soient compromises.
 
@@ -113,11 +113,11 @@ Les enseignants peuvent appliquer ces principes à la conception de leurs cours 
   http://www.udlcenter.org/implementation/postsecondary
 
 
-.. _Best Practices for Readability:
+.. _Lisibilité des documents:
 
-====================================================
+================================================================
 Lisibilité des documents : présentation des meilleures pratiques
-====================================================
+================================================================
 
 Les cours EdX touchent un public international d'une très grande diversité. 
 Les étudiants accéderont plus facilement aux concepts du contenu que vous avez élaboré si ce dernier est bien structuré et que le langage utilisé est clair et sans ambiguïté. 
@@ -134,7 +134,7 @@ Pour produire un contenu plus lisible par tous les étudiants :
 
 * Lors de la création de ressources pédagogiques écrites, divisez le texte en sections en utilisant des éléments HTML, comme les titres, les paragraphes et les listes. 
   Pour la plupart des lecteurs, les longs blocs ininterrompus de texte constituent un sérieux obstacle à la lecture d'un document. Le contenu segmenté est plus attractif. Il est plus facile de le parcourir et d'y effectuer des recherches. 
-  Pour obtenir des instructions sur la création d'un document HTML accessible, voir :ref:`Langage HTML : présentation des meilleures pratiques`.
+  Pour obtenir des instructions sur la création d'un document HTML accessible, voir :ref:`Langage HTML`.
 
 * Évitez le jargon. Si des termes ou des expressions peu usités sont pertinents et doivent être utilisés, expliquez-les lors de leur première utilisation et ajoutez un glossaire aux ressources didactiques du cours. 
   Lorsque vous utilisez une abréviation ou un acronyme, utilisez la forme développée à la première occurrence. Ainsi, pour l'Agence spatiale américaine, vous utiliserez “National Aeronautics and Space Administration (NASA)”.
@@ -147,19 +147,19 @@ Pour produire un contenu plus lisible par tous les étudiants :
 * L'organisation Center for Plain Language offre des ressources détaillées expliquant comment rédiger un texte de manière claire et concise, avec une terminologie et un niveau de langue adaptés au contenu et à l'audience cible : 
   http://centerforplainlanguage.org/about-plain-language/checklist/
 
-.. _Best Practices for Accessible PDFs:
+.. _Accessibilité des documents PDF:
 
-====================================================
+=======================================================================
 Accessibilité des documents PDF : présentation des meilleures pratiques
-====================================================
+=======================================================================
 
 Le format PDF est souvent utilisé pour les ressources didactiques des cours, notamment pour les manuels fournis par les éditeurs. 
 Toutefois, la conversion de documents au format PDF peut nuire à l'accessibilité du contenu, notamment pour les étudiants présentant une déficience visuelle. 
 Afin d'améliorer l'accessibilité du vos documents PDF, passez en revue les instructions présentées ci-après sur la préparation des documents à convertir, l'utilisation d'Adobe Acrobat Professional, et l'utilisation de documents fournis par des tiers.
 
-+++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++
 Conversion de documents Microsoft Office en PDF
-+++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++
 Les documents pédagogiques que vous souhaitez convertir au format PDF peuvent être dans différents formats. Par exemple, votre syllabus peut être un document Word, vos diapositives de présentation peuvent être au format PowerPoint et vos manuels peuvent utiliser un format PDF fourni par les éditeurs. 
 Utilisez les outils disponibles dans le logiciel applicable pour créer des documents source bien structurés. 
 Cette étape préalable permet de minimiser les problèmes qu'il serait par la suite difficile, voire impossible, de résoudre lors du processus de conversion.
@@ -170,7 +170,7 @@ Cette étape préalable permet de minimiser les problèmes qu'il serait par la s
   N'ajoutez pas d'éléments inutiles : retraits, règles, colonnes, lignes vierges et variations typographiques. Plus la mise en forme est simple, plus le document PDF sera facilement accessible.
 
 * Pour mettre en forme le texte, utilisez des styles, tels que Normal, Titre 1 et Titre 2, au lieu de mettre en forme manuellement le texte en utilisant le gras et les retraits. 
-  Ajoutez des textes de remplacement pour décrire les images (Voir :ref:`Description d'images : présentation des meilleures pratiques`), à l'aide des options de formatage des images de Word.
+  Ajoutez des textes de remplacement pour décrire les images (Voir :ref:`Description d'images`), à l'aide des options de formatage des images de Word.
 
 **Préparation de documents PowerPoint**
 
@@ -187,7 +187,7 @@ Cette étape préalable permet de minimiser les problèmes qu'il serait par la s
 
 * Utilisez un titre unique et informatif pour chaque onglet de feuille de calcul.
 
-* Ajoutez des textes de remplacement pour décrire les images (voir :ref:`Description d'images : présentation des meilleures pratiques`), à l'aide des options de formatage des images d'Excel.
+* Ajoutez des textes de remplacement pour décrire les images (voir :ref:`Description d'images`), à l'aide des options de formatage des images d'Excel.
 
 * À l'aide des options de formatage des tableaux d'Excel, identifiez les en-têtes de colonne (Tableaux > Options du tableau > Ligne d'en-tête) et incluez dans chaque cellule d'en-tête un texte informatif décrivant les données présentées dans la colonne associée.
 
@@ -201,9 +201,9 @@ Pour générer des documents PDF à partir de documents Microsoft Office, utilis
 Assurez-vous que l'option **Balises de structure de document pour l'accessibilité** est sélectionnée (pour plus d'informations, consultez la documentation de votre logiciel). 
 Remarque : les documents PDF générés à partir de versions Microsoft Office pour Windows seront plus accessibles que les documents générés à partir de versions pour Mac OS.
 
-+++++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++
 Utilisation de PDF fournis par des tiers
-+++++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++
 
 Lorsque vous contrôlez la création d'un document PDF, vous disposez d'un meilleur contrôle sur l'accessibilité du document. 
 Si vous utilisez des documents PDF fournis par des tiers, notamment des manuels fournis par des éditeurs, l'accessibilité des documents peut ne pas être connue.
@@ -218,9 +218,9 @@ Lorsque vous en avez la possibilité, demandez au fournisseur du PDF si le docum
 * Tous les médias incluent-ils des équivalents texte ?
 * Le document inclut-il des aides à la navigation, comme une table des matières, un index, des titres et des signets ?
 
-+++++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Mise à jour de documents PDF pour une accessibilité optimale
-+++++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 La mise à jour de ressources pédagogiques existantes, déjà au format PDF, peut s'avérer nécessaire afin d'améliorer l'accessibilité de ces documents. Il peut s'agir de documents PDF :
 
@@ -255,17 +255,17 @@ La procédure vérifie les documents et recherche les obstacles liés à l'acces
 * Le site de l'Accessible Digital Office Document (ADOD) Project propose des conseils pour créer des documents Microsoft Office accessibles : 
   http://adod.idrc.ocad.ca/
 
-.. _Best Practices for Custom Content Types:
+.. _Types de contenus personnalisés:
 
-====================================================
+=======================================================================
 Types de contenus personnalisés : présentation des meilleures pratiques
-====================================================
+=======================================================================
 L'utilisation de différents types de contenus peut améliorer sensiblement l'expérience d'apprentissage. 
 Dans les sections ci-après, nous découvrirons comment concevoir plusieurs types de contenus personnalisés afin que ceux-ci soient accessibles aux étudiants présentant un handicap.
 
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Résumés graphiques (graphiques, diagrammes, illustrations)
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 Les images permettent de communiquer très clairement concepts et informations. Toutefois, elles représentent une véritable difficulté pour les personnes souffrant de déficience visuelle. 
 Par exemple, un graphique qui ne peut être appréhendé qu'avec la perception des couleurs ou un diagramme comportant de petites étiquettes et annotations seront difficiles à comprendre pour les étudiants daltoniens ou malvoyants. 
@@ -276,11 +276,11 @@ Les recommandations ci-après constituent les meilleures pratiques à suivre afi
 * Évitez de n'utiliser que des couleurs pour différencier des caractéristiques importantes de l'image. Par exemple, sur un graphique linéaire simple, outre des couleurs, utilisez des symboles différents afin de différencier les éléments de données.
 * Si possible, utilisez un format d'image, comme le format SVG, qui prend en charge la mise à l'échelle. Privilégiez l'utilisation d'une version haute résolution pour les graphiques complexes qui incluent des détails essentiels de petite taille.
 * Fournissez un texte de remplacement qui décrit les informations présentes dans le graphique. Pour les graphiques, le texte de remplacement peut se présenter sous la forme d'un tableau affichant les mêmes données. 
-  Pour plus d'informations sur l'ajout de textes de remplacement pour les images, voir :ref:`Description d'images : présentation des meilleures pratiques`.
+  Pour plus d'informations sur l'ajout de textes de remplacement pour les images, voir :ref:`Description d'images`.
 
-+++++++++++++++++++++++++++++++++++++++++++
++++++++++++++
 Mathématiques
-+++++++++++++++++++++++++++++++++++++++++++
++++++++++++++
 
 Dans les cours en ligne, les données mathématiques sont difficiles à présenter de manière accessible aux étudiants souffrant d'une déficience visuelle. 
 Les enseignants créent souvent des équations sous forme d'image plutôt que sous forme de texte. 
@@ -291,9 +291,9 @@ Nous vous recommandons d'utiliser MathJax pour restituer les formules mathémati
 Pour en savoir plus sur l'utilisation de MathJax, consultez la documentation MathJax relative à l'accessibilité (voir le lien dans la section “Ressources” ci-après). 
 Nous mettrons à jour ces instructions avec les améliorations apportées à MathJax.
 
-++++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++
 Simulations et modules interactifs
-++++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++
 
 Les simulations, notamment le contenu animé ou “ludifié”, peuvent améliorer l'expérience d'apprentissage. 
 Elles s'avèrent ainsi particulièrement efficaces pour les étudiants ayant des difficultés à apprendre par la lecture et le traitement des seuls contenus textuels. 
@@ -318,9 +318,9 @@ En outre, si les composants visuels d'une simulation jouent un rôle aussi centr
 
 Les meilleures pratiques de ce domaine sont toujours en cours de définition. Nous serons donc amenés à mettre ces instructions à jour ultérieurement.
 
-++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++
 Exercices et évaluations en ligne
-++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++
 
 Pour les activités et les évaluations, vous devez tenir compte des difficultés que les étudiants sont susceptibles de rencontrer lorsqu'ils réalisent une activité. N'hésitez pas à utiliser plusieurs modes d'évaluation, car certains utilisateurs finaux risquent de présenter un handicap. 
 Privilégiez les activités que les étudiants peuvent effectuer facilement et pour lesquelles ils peuvent rendre leurs travaux sans difficulté.
@@ -334,14 +334,14 @@ Certains types de questions présentées dans le cadre d'exercices en ligne peuv
 
 * Des stimuli visuels marqués, comme les nuages de mots, peuvent ne pas être accessibles aux étudiants présentant une déficience visuelle. Fournissez un texte de remplacement qui communique les mêmes informations, comme une liste triée des mots du nuage.
 
-++++++++++++++++++++++++++++++++++++++++++++    
++++++++++++++++++++++++++++
 Contenu fourni par un tiers
-++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++
 
 Lors de l'insertion de liens vers un contenu fourni par un tiers dans votre cours, gardez à l'esprit que ces ressources tierces peuvent ne pas être accessibles aux étudiants présentant un handicap. Nous vous recommandons donc de tester les éventuels liens avant de les partager avec les utilisateurs.
 
 Vous pouvez utiliser l'outil eReader ou vous reporter aux instructions relatives à l'ajout de fichiers à un cours (voir :ref:`Ajouter des fichiers à un cours`) pour incorporer à votre cours des manuels et d'autres publications fournis par des tiers et présentés au format PDF. Vous pouvez également incorporer ce type de ressource à votre cours, au format HTML. 
-Pour obtenir des instructions sur l'utilisation de documents PDF fournis par des tiers, voir :ref:`Accessibilité des documents PDF : présentation des meilleures pratiques`. Pour obtenir des instructions sur la création de documents accessibles au format HTML, voir :ref:`Langage HTML : présentation des meilleures pratiques`.
+Pour obtenir des instructions sur l'utilisation de documents PDF fournis par des tiers, voir :ref:`Accessibilité des documents PDF`. Pour obtenir des instructions sur la création de documents accessibles au format HTML, voir :ref:`Langage HTML`.
 
 
 **Ressources**
@@ -361,11 +361,11 @@ Pour obtenir des instructions sur l'utilisation de documents PDF fournis par des
 * MathJax fournit des indications et instructions sur la création de pages accessibles avec le moteur d'affichage : 
   http://www.mathjax.org/resources/articles-and-presentations/accessible-pages-with-mathjax/
 
-.. _Best Practices for Describing Images:
+.. _Description d'images:
 
-====================================================
+============================================================
 Description d'images : présentation des meilleures pratiques
-====================================================
+============================================================
 
 Les photos, diagrammes, cartes, graphiques et icônes peuvent permettre de présenter clairement des informations. 
 Toutefois, certains étudiants souffrant d'une déficience visuelle, notamment les utilisateurs de logiciels de lecture d'écran, auront besoin d'un texte de remplacement pour comprendre les informations transmises par ces images. 
@@ -415,20 +415,20 @@ Respectez les instructions ci-après lorsque vous incluez des images dans votre 
 * Le DIAGRAM Center, fondé par le ministère américain de l'Éducation (U.S. Department of Education - Office of Special Education Programs), offre des indications et instructions pour créer de manière plus simple, plus rapide et plus rentable des images accessibles, et pour les utiliser : 
   http://www.diagramcenter.org/webinars.html
 
-.. _Best Practices for Accessible Media:
+.. _Accessibilité des médias:
 
-====================================================
+================================================================
 Accessibilité des médias : présentation des meilleures pratiques
-====================================================
+================================================================
 
 Les ressources pédagogiques reposant sur des médias permettent de présenter des concepts et d'animer les informations du cours. 
 Tous les cours edX doivent utiliser des vidéos avec des transcriptions interactives, accessibles par lecteur d'écran. 
 Ce mécanisme intégré de conception universelle permet d'améliorer l'accessibilité de votre cours. 
 Lorsque vous créez votre cours, vous devez prendre en compte le temps et les ressources nécessaires à la création de ces transcriptions.
 
-++++++++++++++++++++++++++++++++++++++++++++  
+++++++++++++++++++++
 Transcriptions audio
-++++++++++++++++++++++++++++++++++++++++++++  
+++++++++++++++++++++
 
 Les transcriptions audio sont essentielles pour présenter des contenus sonores aux étudiants sourds. Elles s'avèrent par ailleurs extrêmement utiles aux étudiants dont le français n'est pas la langue maternelle. 
 Les transcriptions synchronisées permettent aux étudiants sourds de suivre la vidéo. Pour atteindre une section spécifique de la vidéo, il leur suffit de cliquer sur le texte de la transcription. 
@@ -445,17 +445,17 @@ Lorsque vous intégrez un fichier vidéo à la plate-forme, il est recommandé d
 Pour des informations détaillées sur l'ajout de transcriptions chronométrées, voir :ref:`Utilisation de composants vidéo`.
 
 
-++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++
 Description vidéo
-++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++
 
 Lors de la création de segments vidéo, tentez de déterminer comment transmettre l'information à des étudiants non voyants. 
 Pour de nombreux sujets, vous pouvez traiter les concepts dans leur intégralité lors de la présentation orale. 
 Vous pouvez parfois également décrire les informations visuelles, par exemple, en les présentant à l'oral tout en écrivant sur une tablette.
 
-++++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++
 Transcriptions téléchargeables
-++++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++
 
 Pour les transcriptions audio et vidéo, vous pouvez envisager d'inclure un fichier texte que les étudiants peuvent télécharger et consulter en utilisant des outils comme un logiciel de traitement de texte, un lecteur d'écran ou un logiciel d'alphabétisation. 
 La transcription téléchargeable ne devrait inclure que du texte, sans codes temps.
@@ -466,7 +466,7 @@ La transcription téléchargeable ne devrait inclure que du texte, sans codes te
   http://ncam.wgbh.org/invent_build/web_multimedia/accessible-digital-media-guide
 
 
-.. _Best Practices for HTML Markup:
+.. _Langage HTML:
 
 ====================================================
 Langage HTML : présentation des meilleures pratiques
@@ -506,9 +506,9 @@ Lorsque vous créez du contenu HTML, vous devez tenir compte des indications et 
 
 .. _Conclusion:
 
-************************************************************
+**********
 Conclusion
-************************************************************
+**********
 
 edX a pour vocation d'offrir un accès global à un enseignement de haut niveau, simplement à l'aide d'un ordinateur et d'une connexion Internet. 
 La plate-forme que nous avons conçue permet aux créateurs de cours d'atteindre des milliers d'étudiants, parmi lesquels certains n'ont parfois accès ni à l'environnement ni aux ressources dont bénéficient les résidents qui suivent des cours classiques sur les campus universitaires. 

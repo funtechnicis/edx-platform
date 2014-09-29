@@ -1,23 +1,23 @@
-.. _MathJax in Studio:
+.. _Introduction Ã  l'utilisation de MathJax dans Studio:
 
-############################################
-Introduction à l'utilisation de MathJax dans Studio
-############################################
+###################################################
+Introduction Ã  l'utilisation de MathJax dans Studio
+###################################################
 
-Pour écrire des équations et symboles clairs et de qualité professionnelle, nous utilisons un langage de type LaTeX appelé `MathJax. <http://www.google.com/url?q=http%3A%2F%2Fwww.mathjax.org%2F&sa=D&sntz=1&usg=AFQjCNGef2H-mZCdmCo7-kWHfu9fUGVCfg>`_.
-Vos équations MathJax peuvent apparaître avec un autre type de texte dans le paragraphe (équations en ligne) ou sur leur propre ligne (équations d'affichage).
+Pour Ã©crire des Ã©quations et symboles clairs et de qualitÃ© professionnelle, nous utilisons un langage de type LaTeX appelÃ© `MathJax. <http://www.google.com/url?q=http%3A%2F%2Fwww.mathjax.org%2F&sa=D&sntz=1&usg=AFQjCNGef2H-mZCdmCo7-kWHfu9fUGVCfg>`_.
+Vos Ã©quations MathJax peuvent apparaÃ®tre avec un autre type de texte dans le paragraphe (Ã©quations en ligne) ou sur leur propre ligne (Ã©quations d'affichage).
 
-- Pour les équations en ligne, vous pouvez procéder selon l'une des méthodes suivantes.
+- Pour les Ã©quations en ligne, vous pouvez procÃ©der selon l'une des mÃ©thodes suivantes.
 
-  - Encadrez votre expression Mathjax de barres obliques inverses et de **parenthèses**.
+  - Encadrez votre expression Mathjax de barres obliques inverses et de **parenthÃ¨ses**.
     
-    ``\( équation \)``
+    ``\( Ã©quation \)``
 
   - Encadrez votre expression Mathjax de balises [mathjaxinline]. Notez que ces balises utilisent des crochets ([]).
 
-    [mathjaxinline] équation [/mathjaxinline]
+    [mathjaxinline] Ã©quation [/mathjaxinline]
     
-- Pour les équations d'affichage, vous pouvez procéder selon l'une des méthodes suivantes.
+- Pour les Ã©quations d'affichage, vous pouvez procÃ©der selon l'une des mÃ©thodes suivantes.
 
   - Encadrez votre expression Mathjax de barres obliques inverses et de **crochets**.
 
@@ -25,28 +25,28 @@ Vos équations MathJax peuvent apparaître avec un autre type de texte dans le par
 
   - Encadrez votre expression Mathjax de balises [mathjax]. Notez que ces balises utilisent des crochets ([]).
 
-    [mathjax] équation [/mathjax]
+    [mathjax] Ã©quation [/mathjax]
 
 Vous pouvez utiliser MathJax dans des composants HTML (texte) et dans des composants Exercice.
 
-.. note:: La documentation MathJax complète (ainsi qu'un outil de test) est disponible à l'adresse suivante : `http://www.onemathematicalcat.org/MathJaxDocumentation/TeXSyntax.htm <http://www.google.com/url?q=http%3A%2F%2Fwww.onemathematicalcat.org%2FMathJaxDocumentation%2FTeXSyntax.htm&sa=D&sntz=1&usg=AFQjCNEV8PtCX6Csp0lW7lDKOLIKCOCkHg>`_.
+.. note:: La documentation MathJax complÃ¨te (ainsi qu'un outil de test) est disponible Ã  l'adresse suivante : `http://www.onemathematicalcat.org/MathJaxDocumentation/TeXSyntax.htm <http://www.google.com/url?q=http%3A%2F%2Fwww.onemathematicalcat.org%2FMathJaxDocumentation%2FTeXSyntax.htm&sa=D&sntz=1&usg=AFQjCNEV8PtCX6Csp0lW7lDKOLIKCOCkHg>`_.
 
-****************************
+***********************
 Composants HTML (texte)
-****************************
+***********************
 
-Dans l'éditeur de composant HTML, vous pouvez utiliser MathJax dans la vue Visuel et dans la vue HTML.
+Dans l'Ã©diteur de composant HTML, vous pouvez utiliser MathJax dans la vue Visuel et dans la vue HTML.
 
 .. image:: /Images/MathJax_HTML.png
  :alt: Image d'un composant HTML avec MathJax dans la vue Visuel et dans la vue HTML
 
-*********************
+*******************
 Composants Exercice
-*********************
+*******************
 
-Dans l'éditeur de composant Exercice, vous pouvez utiliser MathJax dans l'Éditeur simple et dans l'Éditeur avancé.
+Dans l'Ã©diteur de composant Exercice, vous pouvez utiliser MathJax dans l'Ã‰diteur simple et dans l'Ã‰diteur avancÃ©.
 
-Dans l'exercice présenté ci-après, notez que l'équation d'Einstein de l'explication est encadrée de barres obliques inverses et de parenthèses. L'équation apparaît en ligne avec le texte. L'équation de Navier-Stokes est encadrée de barres obliques inverses et de crochets. L'équation apparaît sur sa propre ligne.
+Dans l'exercice prÃ©sentÃ© ci-aprÃ¨s, notez que l'Ã©quation d'Einstein de l'explication est encadrÃ©e de barres obliques inverses et de parenthÃ¨ses. L'Ã©quation apparaÃ®t en ligne avec le texte. L'Ã©quation de Navier-Stokes est encadrÃ©e de barres obliques inverses et de crochets. L'Ã©quation apparaÃ®t sur sa propre ligne.
 
 .. image:: /Images/MathJax_Problem.png
  :alt: Image d'un composant Exercice avec MathJax dans la vue Visuel et dans la vue HTML

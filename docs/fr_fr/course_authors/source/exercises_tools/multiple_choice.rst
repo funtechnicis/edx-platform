@@ -1,319 +1,319 @@
-.. _Multiple Choice:
+.. _Choix multiples:
 
-########################
-Exercice à choix multiples
-########################
+##########################
+Exercice Ã  choix multiples
+##########################
 
-Dans des exercices à choix multiples, les étudiants peuvent sélectionner une option dans une liste de réponses possibles. À la différence des exercices avec menu déroulant, dans lesquels les réponses possibles n'apparaissent que lorsque l'étudiant clique sur la flèche du menu déroulant, les exercices à choix multiples affichent toujours les réponses possibles sous la question.
+Dans des exercices Ã  choix multiples, les Ã©tudiants peuvent sÃ©lectionner une option dans une liste de rÃ©ponses possibles. Ã€ la diffÃ©rence des exercices avec menu dÃ©roulant, dans lesquels les rÃ©ponses possibles n'apparaissent que lorsque l'Ã©tudiant clique sur la flÃ¨che du menu dÃ©roulant, les exercices Ã  choix multiples affichent toujours les rÃ©ponses possibles sous la question.
 
 .. image:: /Images/MultipleChoiceExample.png
- :alt: Image d'un exercice à choix multiples
+ :alt: Image d'un exercice Ã  choix multiples
 
-Les exercices à choix multiples présentent également plusieurs options avancées, comme la présentation à chaque étudiant d'une série aléatoire d'options. Pour plus d'informations sur ces options, voir :ref:`Options avancées des exercices à choix multiples`.
+Les exercices Ã  choix multiples prÃ©sentent Ã©galement plusieurs options avancÃ©es, comme la prÃ©sentation Ã  chaque Ã©tudiant d'une sÃ©rie alÃ©atoire d'options. Pour plus d'informations sur ces options, voir :ref:`Options avancÃ©es des exercices Ã  choix multiples`.
 
-****************************************
-Créer un exercice à choix multiples
-****************************************
+***********************************
+CrÃ©er un exercice Ã  choix multiples
+***********************************
 
-Vous pouvez créer des exercices à choix multiples en utilisant l'Éditeur simple ou l'Éditeur avancé.
+Vous pouvez crÃ©er des exercices Ã  choix multiples en utilisant l'Ã‰diteur simple ou l'Ã‰diteur avancÃ©.
 
-.. note:: Tous les exercices doivent inclure des étiquettes afin de garantir l'accessibilité. L'étiquette comprend généralement le texte de la question principale de l'exercice. Pour ajouter une étiquette à un exercice courant, entourez le texte de l'étiquette avec des crochets pointus, orientés vers le texte (>>texte de l'étiquette<<).
+.. note:: Tous les exercices doivent inclure des Ã©tiquettes afin de garantir l'accessibilitÃ©. L'Ã©tiquette comprend gÃ©nÃ©ralement le texte de la question principale de l'exercice. Pour ajouter une Ã©tiquette Ã  un exercice courant, entourez le texte de l'Ã©tiquette avec des crochets pointus, orientÃ©s vers le texte (>>texte de l'Ã©tiquette<<).
 
-================
-Éditeur simple
-================
+==============
+Ã‰diteur simple
+==============
 
 #. Sous **Ajouter un nouveau composant**, cliquez sur **Exercice**.
-#. Dans l'écran **Select Problem Component Type** (Sélectionner le type du composant Exercice), cliquez sur **Multiple Choice** (Choix multiples) dans l'onglet **Types d'exercices classiques**.
-#. Lorsque le nouveau composant Exercice apparaît, cliquez sur **Éditer**.
-#. Dans l'éditeur de composant, remplacez le texte de l'exercice présenté en exemple par le texte de votre exercice. Saisissez chaque réponse possible sur la ligne appropriée.
-#. Choisissez le texte de l'exercice à utiliser en tant qu'étiquette, puis placez ce texte entre deux paires de crochets pointus (>><<).
-#. Sélectionnez toutes les réponses, puis cliquez sur le bouton Choix multiples. 
+#. Dans l'Ã©cran **Select Problem Component Type** (SÃ©lectionner le type du composant Exercice), cliquez sur **Multiple Choice** (Choix multiples) dans l'onglet **Types d'exercices classiques**.
+#. Lorsque le nouveau composant Exercice apparaÃ®t, cliquez sur **Ã‰diter**.
+#. Dans l'Ã©diteur de composant, remplacez le texte de l'exercice prÃ©sentÃ© en exemple par le texte de votre exercice. Saisissez chaque rÃ©ponse possible sur la ligne appropriÃ©e.
+#. Choisissez le texte de l'exercice Ã  utiliser en tant qu'Ã©tiquette, puis placez ce texte entre deux paires de crochets pointus (>><<).
+#. SÃ©lectionnez toutes les rÃ©ponses, puis cliquez sur le bouton Choix multiples. 
    
    .. image:: /Images/ProbCompButton_MultChoice.png
     :alt: Image du bouton Choix multiples
    
-   Une fois ces différentes étapes effectuées, l'éditeur de composant ajoute une paire de parenthèses à côté de chaque réponse possible.
+   Une fois ces diffÃ©rentes Ã©tapes effectuÃ©es, l'Ã©diteur de composant ajoute une paire de parenthÃ¨ses Ã  cÃ´tÃ© de chaque rÃ©ponse possible.
    
-#. Ajoutez une croix ("x") entre les parenthèses, à côté de chaque réponse correcte.
+#. Ajoutez une croix ("x") entre les parenthÃ¨ses, Ã  cÃ´tÃ© de chaque rÃ©ponse correcte.
    
-#. Dans l'éditeur de composant, sélectionnez le texte de l'explication, puis cliquez sur le bouton associé afin d'insérer les balises correspondantes autour du texte.
+#. Dans l'Ã©diteur de composant, sÃ©lectionnez le texte de l'explication, puis cliquez sur le bouton associÃ© afin d'insÃ©rer les balises correspondantes autour du texte.
 
    .. image:: /Images/ProbCompButton_Explanation.png
     :alt: Image du bouton Explication
 
-#. Dans l'onglet **Paramètres**, indiquez les paramètres que vous souhaitez utiliser. 
+#. Dans l'onglet **ParamÃ¨tres**, indiquez les paramÃ¨tres que vous souhaitez utiliser. 
 #. Cliquez sur **Enregistrer**.
 
-Pour l'exemple d'exercice présenté ci-dessus, le texte dans le composant Exercice est le suivant.
+Pour l'exemple d'exercice prÃ©sentÃ© ci-dessus, le texte dans le composant Exercice est le suivant.
 
 ::
 
-    >>Inhibition latérale, observée et identifiée pour la première fois chez la limule (crabe en fer à cheval) :<<
+    >>Inhibition latÃ©rale, observÃ©e et identifiÃ©e pour la premiÃ¨re fois chez la limule (crabe en fer Ã  cheval) :<<
 
-    ( ) est une propriété tactile : elle fait référence à la capacité des crabes à détecter les prédateurs à proximité.
-    ( ) est une propriété auditive : elle fait référence à la capacité des crabes à détecter des bruits basse fréquence.
-    (x) est une propriété visuelle : elle fait référence à la capacité visuelle d'amélioration des contrastes observée chez les crabes.
-    ( ) fait référence à la capacité des crabes à utiliser un sonar pour détecter la présence d'autres crabes en fer à cheval situés à proximité.
-    ( ) fait référence au système de pondération du squelette des crabes. Ce système leur permet de conserver leur équilibre dans une mer agitée.
+    ( ) est une propriÃ©tÃ© tactile : elle fait rÃ©fÃ©rence Ã  la capacitÃ© des crabes Ã  dÃ©tecter les prÃ©dateurs Ã  proximitÃ©.
+    ( ) est une propriÃ©tÃ© auditive : elle fait rÃ©fÃ©rence Ã  la capacitÃ© des crabes Ã  dÃ©tecter des bruits basse frÃ©quence.
+    (x) est une propriÃ©tÃ© visuelle : elle fait rÃ©fÃ©rence Ã  la capacitÃ© visuelle d'amÃ©lioration des contrastes observÃ©e chez les crabes.
+    ( ) fait rÃ©fÃ©rence Ã  la capacitÃ© des crabes Ã  utiliser un sonar pour dÃ©tecter la prÃ©sence d'autres crabes en fer Ã  cheval situÃ©s Ã  proximitÃ©.
+    ( ) fait rÃ©fÃ©rence au systÃ¨me de pondÃ©ration du squelette des crabes. Ce systÃ¨me leur permet de conserver leur Ã©quilibre dans une mer agitÃ©e.
 
     [Explication]
-    Les limules (ou crabes en fer à cheval) ont joué un rôle essentiel dans la découverte de l'inhibition latérale. Cette propriété visuelle, observée chez les limules et les êtres humains, permet d'améliorer le contraste au niveau des contours d'objets, comme démontré en classe. En 1967, Haldan Hartline a reçu le prix Nobel pour ses travaux sur les mécanismes de la vision et, en particulier, pour ses recherches sur l'inhibition latérale chez les limules.
+    Les limules (ou crabes en fer Ã  cheval) ont jouÃ© un rÃ´le essentiel dans la dÃ©couverte de l'inhibition latÃ©rale. Cette propriÃ©tÃ© visuelle, observÃ©e chez les limules et les Ãªtres humains, permet d'amÃ©liorer le contraste au niveau des contours d'objets, comme dÃ©montrÃ© en classe. En 1967, Haldan Hartline a reÃ§u le prix Nobel pour ses travaux sur les mÃ©canismes de la vision et, en particulier, pour ses recherches sur l'inhibition latÃ©rale chez les limules.
     [Explication]
 
-================
-Éditeur avancé
-================
+==============
+Ã‰diteur avancÃ©
+==============
 
-Pour créer cet exercice dans l'Éditeur avancé, cliquez sur l'onglet **Avancé** dans l'éditeur du composant Exercice, puis remplacez le code existant par le code présenté ci-après.
+Pour crÃ©er cet exercice dans l'Ã‰diteur avancÃ©, cliquez sur l'onglet **AvancÃ©** dans l'Ã©diteur du composant Exercice, puis remplacez le code existant par le code prÃ©sentÃ© ci-aprÃ¨s.
 
 .. code-block:: xml
 
   <problem>
-  <p>Inhibition latérale, observée et identifiée pour la première fois chez la limule (crabe en fer à cheval)...</p>
+  <p>Inhibition latÃ©rale, observÃ©e et identifiÃ©e pour la premiÃ¨re fois chez la limule (crabe en fer Ã  cheval)...</p>
   <multiplechoiceresponse>
     <choicegroup type="MultipleChoice" label="Lateral inhibition, as was first discovered in the horsehoe crab">
-      <choice correct="false">est une propriété tactile : elle fait référence à la capacité des crabes à détecter les prédateurs à proximité.</choice>
-      <choice correct="false">est une propriété auditive : elle fait référence à la capacité des crabes à détecter des bruits basse fréquence.</choice>
-      <choice correct="false">est une propriété visuelle : elle fait référence à la capacité des yeux des crabes d'améliorer les contrastes.</choice>
-      <choice correct="true">fait référence à la capacité des crabes à utiliser un sonar pour détecter la présence d'autres crabes en fer à cheval situés à proximité.</choice>
-      <choice correct="false">fait référence au système de pondération du squelette des crabes. Ce système leur permet de conserver leur équilibre dans une mer agitée.</choice>
+      <choice correct="false">est une propriÃ©tÃ© tactile : elle fait rÃ©fÃ©rence Ã  la capacitÃ© des crabes Ã  dÃ©tecter les prÃ©dateurs Ã  proximitÃ©.</choice>
+      <choice correct="false">est une propriÃ©tÃ© auditive : elle fait rÃ©fÃ©rence Ã  la capacitÃ© des crabes Ã  dÃ©tecter des bruits basse frÃ©quence.</choice>
+      <choice correct="false">est une propriÃ©tÃ© visuelle : elle fait rÃ©fÃ©rence Ã  la capacitÃ© des yeux des crabes d'amÃ©liorer les contrastes.</choice>
+      <choice correct="true">fait rÃ©fÃ©rence Ã  la capacitÃ© des crabes Ã  utiliser un sonar pour dÃ©tecter la prÃ©sence d'autres crabes en fer Ã  cheval situÃ©s Ã  proximitÃ©.</choice>
+      <choice correct="false">fait rÃ©fÃ©rence au systÃ¨me de pondÃ©ration du squelette des crabes. Ce systÃ¨me leur permet de conserver leur Ã©quilibre dans une mer agitÃ©e.</choice>
     </choicegroup>
   </multiplechoiceresponse>
   <solution>
     <div class="detailed-solution">
       <p>Explication</p>
-      <p>Les limules (ou crabes en fer à cheval) ont joué un rôle essentiel dans la découverte de l'inhibition latérale. Cette propriété visuelle, observée chez les limules et les êtres humains, permet d'améliorer le contraste au niveau des contours d'objets, comme démontré en classe. En 1967, Haldan Hartline a reçu le prix Nobel pour ses travaux sur les mécanismes de la vision et, en particulier, pour ses recherches sur l'inhibition latérale chez les limules.</p>
+      <p>Les limules (ou crabes en fer Ã  cheval) ont jouÃ© un rÃ´le essentiel dans la dÃ©couverte de l'inhibition latÃ©rale. Cette propriÃ©tÃ© visuelle, observÃ©e chez les limules et les Ãªtres humains, permet d'amÃ©liorer le contraste au niveau des contours d'objets, comme dÃ©montrÃ© en classe. En 1967, Haldan Hartline a reÃ§u le prix Nobel pour ses travaux sur les mÃ©canismes de la vision et, en particulier, pour ses recherches sur l'inhibition latÃ©rale chez les limules.</p>
     </div>
   </solution>
   </problem>
 
 .. _Multiple Choice Advanced Options:
 
-*********************************************
-Options avancées pour les exercices à choix multiples
-*********************************************
+*****************************************************
+Options avancÃ©es pour les exercices Ã  choix multiples
+*****************************************************
 
-Les exercices à choix multiples présentent plusieurs options avancées. Vous pouvez modifier l'ordre des réponses dans l'exercice, inclure des explications afin qu'elles apparaissent lorsqu'un étudiant sélectionne une réponse incorrecte spécifique, ou présenter une série aléatoire de réponses possibles à chaque étudiant. Pour plus d'informations, reportez-vous aux sections suivantes :
+Les exercices Ã  choix multiples prÃ©sentent plusieurs options avancÃ©es. Vous pouvez modifier l'ordre des rÃ©ponses dans l'exercice, inclure des explications afin qu'elles apparaissent lorsqu'un Ã©tudiant sÃ©lectionne une rÃ©ponse incorrecte spÃ©cifique, ou prÃ©senter une sÃ©rie alÃ©atoire de rÃ©ponses possibles Ã  chaque Ã©tudiant. Pour plus d'informations, reportez-vous aux sections suivantes :
 
 
-* :ref:`Activer la présentation aléatoire des réponses d'un exercice à choix multiples`
-* :ref:`Commentaires ciblés dans un exercice à choix multiples`
-* :ref:`Séries de réponses dans un exercice à choix multiples`
+* :ref:`Activer la prÃ©sentation alÃ©atoire des rÃ©ponses d'un exercice Ã  choix multiples`
+* :ref:`Commentaires ciblÃ©s dans un exercice Ã  choix multiples`
+* :ref:`SÃ©ries de rÃ©ponses dans un exercice Ã  choix multiples`
 
 .. _Shuffle Answers in a Multiple Choice Problem:
 
-=============================================
-Activer la présentation aléatoire des réponses d'un exercice à choix multiples
-============================================= 
+==============================================================================
+Activer la prÃ©sentation alÃ©atoire des rÃ©ponses d'un exercice Ã  choix multiples
+==============================================================================
 
-Vous pouvez, si vous le souhaitez, configurer un exercice à choix multiples afin qu'il propose une présentation aléatoire des réponses possibles.
+Vous pouvez, si vous le souhaitez, configurer un exercice Ã  choix multiples afin qu'il propose une prÃ©sentation alÃ©atoire des rÃ©ponses possibles.
 
-Par exemple, l'exercice pourrait se présenter comme suit :
+Par exemple, l'exercice pourrait se prÃ©senter comme suit :
 
 .. image:: ../Images/multiple-choice-shuffle-1.png
- :alt: Image d'un exercice à choix multiples
+ :alt: Image d'un exercice Ã  choix multiples
 
-Le même exercice pourrait se présenter différemment, pour un autre étudiant ou pour le même étudiant visualisant une autre vue de l'unité. Par exemple :
+Le mÃªme exercice pourrait se prÃ©senter diffÃ©remment, pour un autre Ã©tudiant ou pour le mÃªme Ã©tudiant visualisant une autre vue de l'unitÃ©. Par exemple :
 
 .. image:: ../Images/multiple-choice-shuffle-2.png
- :alt: Image d'un exercice à choix multiples avec réponses mélangées
+ :alt: Image d'un exercice Ã  choix multiples avec rÃ©ponses mÃ©langÃ©es
 
-Il est également possible de proposer une présentation aléatoire de certaines réponses (sans inclure toutes les réponses). Par exemple, vous pouvez souhaiter que la réponse "Toutes les réponses susmentionnées" figure toujours en fin de liste, mais activer une présentation aléatoire des autres réponses.
+Il est Ã©galement possible de proposer une prÃ©sentation alÃ©atoire de certaines rÃ©ponses (sans inclure toutes les rÃ©ponses). Par exemple, vous pouvez souhaiter que la rÃ©ponse "Toutes les rÃ©ponses susmentionnÃ©es" figure toujours en fin de liste, mais activer une prÃ©sentation alÃ©atoire des autres rÃ©ponses.
 
-Vous pouvez configurer l'exercice afin de proposer une présentation aléatoire des réponses via l':ref:`Éditeur simple` ou l':ref:`Éditeur avancé`.
+Vous pouvez configurer l'exercice afin de proposer une prÃ©sentation alÃ©atoire des rÃ©ponses via l':ref:`Ã‰diteur simple` ou l':ref:`Ã‰diteur avancÃ©`.
 
 
-Utiliser l'Éditeur simple pour proposer une présentation aléatoire des réponses
-*********************************************
+Utiliser l'Ã‰diteur simple pour proposer une prÃ©sentation alÃ©atoire des rÃ©ponses
+*******************************************************************************
 
-Vous pouvez configurer l'exercice pour proposer une présentation aléatoire des réponses dans l':ref:`Éditeur simple`.
+Vous pouvez configurer l'exercice pour proposer une prÃ©sentation alÃ©atoire des rÃ©ponses dans l':ref:`Ã‰diteur simple`.
 
-Par exemple, le texte ci-après définit un exercice à choix multiples, avant l'activation de la lecture aléatoire. La croix ``(x)`` indique la réponse correcte :
+Par exemple, le texte ci-aprÃ¨s dÃ©finit un exercice Ã  choix multiples, avant l'activation de la lecture alÃ©atoire. La croix ``(x)`` indique la rÃ©ponse correcte :
 
- >>Quel appareil Apple a été en concurrence avec le lecteur CD portable ?<<
+ >>Quel appareil Apple a Ã©tÃ© en concurrence avec le lecteur CD portable ?<<
      ( ) L'iPad
      ( ) Napster
      (x) L'iPod
-     ( ) L'éplucheur de légumes
+     ( ) L'Ã©plucheur de lÃ©gumes
 
-Pour permettre une présentation aléatoire des réponses de cet exercice, ajoutez ``!`` entre les parenthèses de la première réponse :
+Pour permettre une prÃ©sentation alÃ©atoire des rÃ©ponses de cet exercice, ajoutez ``!`` entre les parenthÃ¨ses de la premiÃ¨re rÃ©ponse :
 
- >>Quel appareil Apple a été en concurrence avec le lecteur CD portable ?<<
+ >>Quel appareil Apple a Ã©tÃ© en concurrence avec le lecteur CD portable ?<<
      (!) L'iPad
      ( ) Napster
      (x) L'iPod
-     ( ) L'éplucheur de légumes
+     ( ) L'Ã©plucheur de lÃ©gumes
 
-Pour figer l'emplacement d'une réponse dans la liste, ajoutez ``@`` entre les parenthèses de cette réponse :
+Pour figer l'emplacement d'une rÃ©ponse dans la liste, ajoutez ``@`` entre les parenthÃ¨ses de cette rÃ©ponse :
 
- >>Quel appareil Apple a été en concurrence avec le lecteur CD portable ?<<
+ >>Quel appareil Apple a Ã©tÃ© en concurrence avec le lecteur CD portable ?<<
      (!) L'iPad
      ( ) Napster
      (x) L'iPod
-     ( ) L'éplucheur de légumes
-     (@) Toutes les réponses susmentionnées
+     ( ) L'Ã©plucheur de lÃ©gumes
+     (@) Toutes les rÃ©ponses susmentionnÃ©es
 
-Vous pouvez associer les symboles entre parenthèses, le cas échéant. Par exemple, pour afficher la réponse correcte à un emplacement fixe, vous pourriez utiliser :
+Vous pouvez associer les symboles entre parenthÃ¨ses, le cas Ã©chÃ©ant. Par exemple, pour afficher la rÃ©ponse correcte Ã  un emplacement fixe, vous pourriez utiliser :
  
   (x@) L'iPod
 
-Utiliser l'Éditeur avancé pour une présentation aléatoire des réponses
-*********************************************
+Utiliser l'Ã‰diteur avancÃ© pour une prÃ©sentation alÃ©atoire des rÃ©ponses
+**********************************************************************
 
-Vous pouvez configurer l'exercice pour proposer une présentation aléatoire des réponses au format XML dans l':ref:`Éditeur avancé`.
+Vous pouvez configurer l'exercice pour proposer une prÃ©sentation alÃ©atoire des rÃ©ponses au format XML dans l':ref:`Ã‰diteur avancÃ©`.
 
-Par exemple, le code XML ci-après définit un exercice à choix multiples, avant l'activation d'une présentation aléatoire :
+Par exemple, le code XML ci-aprÃ¨s dÃ©finit un exercice Ã  choix multiples, avant l'activation d'une prÃ©sentation alÃ©atoire :
 
 .. code-block:: xml
 
- <p>Quel appareil Apple a été en concurrence avec le lecteur CD portable ?</p>
+ <p>Quel appareil Apple a Ã©tÃ© en concurrence avec le lecteur CD portable ?</p>
  <multiplechoiceresponse>
   <choicegroup type="MultipleChoice">
     <choice correct="false">L'iPad</choice>
     <choice correct="false">Napster</choice>
     <choice correct="true">L'iPod</choice>
-    <choice correct="false">L'éplucheur de légumes</choice>
+    <choice correct="false">L'Ã©plucheur de lÃ©gumes</choice>
   </choicegroup>
  </multiplechoiceresponse>
 
 
-Pour activer une présentation aléatoire des réponses de cet exercice, ajoutez ``shuffle="true"`` à l'élément ``<choicegroup>`` :
+Pour activer une prÃ©sentation alÃ©atoire des rÃ©ponses de cet exercice, ajoutez ``shuffle="true"`` Ã  l'Ã©lÃ©ment ``<choicegroup>`` :
 
 .. code-block:: xml
 
- <p>Quel appareil Apple a été en concurrence avec le lecteur CD portable ?</p>
+ <p>Quel appareil Apple a Ã©tÃ© en concurrence avec le lecteur CD portable ?</p>
  <multiplechoiceresponse>
   <choicegroup type="MultipleChoice" shuffle="true">
     <choice correct="false">L'iPad</choice>
     <choice correct="false">Napster</choice>
     <choice correct="true">L'iPod</choice>
-    <choice correct="false">L'éplucheur de légumes</choice>
+    <choice correct="false">L'Ã©plucheur de lÃ©gumes</choice>
   </choicegroup>
  </multiplechoiceresponse>
 
-Pour figer l'emplacement d'une réponse dans la liste, ajoutez ``fixed="true"`` à l'élément ``choice`` de cette réponse :
+Pour figer l'emplacement d'une rÃ©ponse dans la liste, ajoutez ``fixed="true"`` Ã  l'Ã©lÃ©ment ``choice`` de cette rÃ©ponse :
 
 .. code-block:: xml
 
- <p>Quel appareil Apple a été en concurrence avec le lecteur CD portable ?</p>
+ <p>Quel appareil Apple a Ã©tÃ© en concurrence avec le lecteur CD portable ?</p>
  <multiplechoiceresponse>
   <choicegroup type="MultipleChoice" shuffle="true">
     <choice correct="false">L'iPad</choice>
     <choice correct="false">Napster</choice>
     <choice correct="true">L'iPod</choice>
-    <choice correct="false">L'éplucheur de légumes</choice>
-    <choice correct="false" fixed="true">Toutes les réponses susmentionnées</choice>
+    <choice correct="false">L'Ã©plucheur de lÃ©gumes</choice>
+    <choice correct="false" fixed="true">Toutes les rÃ©ponses susmentionnÃ©es</choice>
   </choicegroup>
  </multiplechoiceresponse>
 
 
 .. _Targeted Feedback in a Multiple Choice Problem:
 
-===============================================
-Commentaires ciblés dans un exercice à choix multiples
-===============================================
+======================================================
+Commentaires ciblÃ©s dans un exercice Ã  choix multiples
+======================================================
 
-Vous pouvez configurer un exercice à choix multiples afin que les explications associées aux réponses incorrectes soient présentées automatiquement aux étudiants. Vous pouvez utiliser ces explications pour orienter les étudiants vers la réponse correcte. Les commentaires ciblés sont donc particulièrement utiles pour les exercices à choix multiples, lorsque plusieurs tentatives sont autorisées.
+Vous pouvez configurer un exercice Ã  choix multiples afin que les explications associÃ©es aux rÃ©ponses incorrectes soient prÃ©sentÃ©es automatiquement aux Ã©tudiants. Vous pouvez utiliser ces explications pour orienter les Ã©tudiants vers la rÃ©ponse correcte. Les commentaires ciblÃ©s sont donc particuliÃ¨rement utiles pour les exercices Ã  choix multiples, lorsque plusieurs tentatives sont autorisÃ©es.
 
 
-Utiliser l'Éditeur avancé pour configurer les commentaires ciblés
-********************************************************
+Utiliser l'Ã‰diteur avancÃ© pour configurer les commentaires ciblÃ©s
+*****************************************************************
 
-Vous pouvez configurer l'exercice afin de proposer des commentaires ciblés au format XML dans l':ref:`Éditeur avancé`.
+Vous pouvez configurer l'exercice afin de proposer des commentaires ciblÃ©s au format XML dans l':ref:`Ã‰diteur avancÃ©`.
 
-Suivez les instructions XML ci-après :
+Suivez les instructions XML ci-aprÃ¨s :
 
-* Ajoutez un attribut ``targeted-feedback`` à l'élément ``<multiplechoiceresponse>``, sans lui attribuer de valeur : ``<multiplechoiceresponse targeted-feedback="">``
-* Ajoutez un élément ``<targetedfeedbackset>`` avant l'élément ``<solution>``.
-* Dans ``<targetedfeedbackset>``, ajoutez un ou plusieurs éléments ``<targetedfeedback>``.
-* Dans chaque élément ``<targetedfeedback>``, saisissez l'explication associée à la réponse incorrecte au format HTML, comme décrit ci-dessous.
-* Associez l'élément ``<targetedfeedback>`` à une réponse incorrecte spécifique. Attribuez, pour chaque réponse incorrecte, la même valeur à l'attribut ``explanation-id``.
-* Utilisez l'élément ``<solution>`` pour la réponse correcte. Utilisez la même valeur pour l'attribut ``explanation-id`` que l'élément ``<choice>`` correct.
+* Ajoutez un attribut ``targeted-feedback`` Ã  l'Ã©lÃ©ment ``<multiplechoiceresponse>``, sans lui attribuer de valeur : ``<multiplechoiceresponse targeted-feedback="">``
+* Ajoutez un Ã©lÃ©ment ``<targetedfeedbackset>`` avant l'Ã©lÃ©ment ``<solution>``.
+* Dans ``<targetedfeedbackset>``, ajoutez un ou plusieurs Ã©lÃ©ments ``<targetedfeedback>``.
+* Dans chaque Ã©lÃ©ment ``<targetedfeedback>``, saisissez l'explication associÃ©e Ã  la rÃ©ponse incorrecte au format HTML, comme dÃ©crit ci-dessous.
+* Associez l'Ã©lÃ©ment ``<targetedfeedback>`` Ã  une rÃ©ponse incorrecte spÃ©cifique. Attribuez, pour chaque rÃ©ponse incorrecte, la mÃªme valeur Ã  l'attribut ``explanation-id``.
+* Utilisez l'Ã©lÃ©ment ``<solution>`` pour la rÃ©ponse correcte. Utilisez la mÃªme valeur pour l'attribut ``explanation-id`` que l'Ã©lÃ©ment ``<choice>`` correct.
 
-Par exemple, le code XML pour l'exercice à choix multiples peut se présenter comme suit :
+Par exemple, le code XML pour l'exercice Ã  choix multiples peut se prÃ©senter comme suit :
 
 .. code-block:: xml
 
-   <p>Quel appareil Apple a été en concurrence avec le lecteur CD portable ?</p>
+   <p>Quel appareil Apple a Ã©tÃ© en concurrence avec le lecteur CD portable ?</p>
    <multiplechoiceresponse targeted-feedback="">
     <choicegroup type="MultipleChoice">
       <choice correct="false" explanation-id="feedback1">L'iPad</choice>
       <choice correct="false" explanation-id="feedback2">Napster</choice>
       <choice correct="true" explanation-id="correct">L'iPod</choice>
-      <choice correct="false" explanation-id="feedback3">L'éplucheur de légumes</choice>
+      <choice correct="false" explanation-id="feedback3">L'Ã©plucheur de lÃ©gumes</choice>
     </choicegroup>
    </multiplechoiceresponse>
  
-Ce code est suivi par le code XML qui définit les commentaires ciblés :
+Ce code est suivi par le code XML qui dÃ©finit les commentaires ciblÃ©s :
 
 .. code-block:: xml
 
    <targetedfeedbackset>
      <targetedfeedback explanation-id="feedback1">
        <div class="detailed-targeted-feedback">
-         <p>Commentaires ciblés</p>
-         <p>L'iPad a été développé ultérieurement et n'a pas été en concurrence directe avec les lecteurs CD portables.</p>
+         <p>Commentaires ciblÃ©s</p>
+         <p>L'iPad a Ã©tÃ© dÃ©veloppÃ© ultÃ©rieurement et n'a pas Ã©tÃ© en concurrence directe avec les lecteurs CD portables.</p>
        </div>
      </targetedfeedback>
      <targetedfeedback explanation-id="feedback2">
        <div class="detailed-targeted-feedback">
-         <p>Commentaires ciblés</p>
-         <p>Napster n'était pas un produit Apple.</p>
+         <p>Commentaires ciblÃ©s</p>
+         <p>Napster n'Ã©tait pas un produit Apple.</p>
        </div>
      </targetedfeedback>
      <targetedfeedback explanation-id="feedback3">
        <div class="detailed-targeted-feedback">
-         <p>Commentaires ciblés</p>
-         <p>Les éplucheurs de légumes ne permettent pas d'écouter de la musique.</p>
+         <p>Commentaires ciblÃ©s</p>
+         <p>Les Ã©plucheurs de lÃ©gumes ne permettent pas d'Ã©couter de la musique.</p>
        </div>
      </targetedfeedback>
     </targetedfeedbackset>
 
     <solution explanation-id="correct">
      <div class="detailed-solution">
-      <p>L'iPod a été en concurrence directe avec les lecteurs CD portables.</p>
+      <p>L'iPod a Ã©tÃ© en concurrence directe avec les lecteurs CD portables.</p>
      </div>
     </solution>
 
 
 .. _Answer Pools in a Multiple Choice Problem:
 
-=============================================
-Séries de réponses dans un exercice à choix multiples
-=============================================
+=====================================================
+SÃ©ries de rÃ©ponses dans un exercice Ã  choix multiples
+=====================================================
 
-Vous pouvez configurer un exercice à choix multiples afin qu'un sous-ensemble aléatoire de réponses possibles soit présenté automatiquement à chaque étudiant. Par exemple, vous pouvez ajouter 10 réponses possibles à l'exercice et chaque étudiant visualisera une série de cinq réponses.
+Vous pouvez configurer un exercice Ã  choix multiples afin qu'un sous-ensemble alÃ©atoire de rÃ©ponses possibles soit prÃ©sentÃ© automatiquement Ã  chaque Ã©tudiant. Par exemple, vous pouvez ajouter 10 rÃ©ponses possibles Ã  l'exercice et chaque Ã©tudiant visualisera une sÃ©rie de cinq rÃ©ponses.
 
-La série de réponses doit comporter au moins une réponse correcte. Elle peut inclure plus d'une réponse correcte. Dans chaque série de réponses possibles présentées à l'étudiant, une réponse correcte est incluse. Par exemple, vous pouvez configurer deux réponses correctes dans la série de 10 réponses. L'une des deux réponses correctes est incluse dans la série de réponses que l'étudiant visualisera.
+La sÃ©rie de rÃ©ponses doit comporter au moins une rÃ©ponse correcte. Elle peut inclure plus d'une rÃ©ponse correcte. Dans chaque sÃ©rie de rÃ©ponses possibles prÃ©sentÃ©es Ã  l'Ã©tudiant, une rÃ©ponse correcte est incluse. Par exemple, vous pouvez configurer deux rÃ©ponses correctes dans la sÃ©rie de 10 rÃ©ponses. L'une des deux rÃ©ponses correctes est incluse dans la sÃ©rie de rÃ©ponses que l'Ã©tudiant visualisera.
 
-Utiliser l'Éditeur avancé pour configurer des séries de réponses
-**************************************************
+Utiliser l'Ã‰diteur avancÃ© pour configurer des sÃ©ries de rÃ©ponses
+****************************************************************
 
-Vous pouvez configurer l'exercice afin de proposer des séries de réponses au format XML dans l':ref:`Éditeur avancé`.
+Vous pouvez configurer l'exercice afin de proposer des sÃ©ries de rÃ©ponses au format XML dans l':ref:`Ã‰diteur avancÃ©`.
 
-Suivez les instructions XML ci-après :
+Suivez les instructions XML ci-aprÃ¨s :
 
-* Dans l'élément ``<choicegroup>``, ajoutez l'attribut ``answer-pool`` ; le chiffre utilisé indique le nombre de réponses possibles dans la série. Par exemple, ``<choicegroup answer-pool="4">``.
+* Dans l'Ã©lÃ©ment ``<choicegroup>``, ajoutez l'attribut ``answer-pool`` ; le chiffre utilisÃ© indique le nombre de rÃ©ponses possibles dans la sÃ©rie. Par exemple, ``<choicegroup answer-pool="4">``.
 
-* Pour chaque réponse correcte, ajoutez une valeur et un attribut ``explanation-id`` à l'élément ``<choice>`` qui soient mappés à une solution. Par exemple, ``<choice correct="true" explanation-id="iPod">l'iPod</choice>``.
+* Pour chaque rÃ©ponse correcte, ajoutez une valeur et un attribut ``explanation-id`` Ã  l'Ã©lÃ©ment ``<choice>`` qui soient mappÃ©s Ã  une solution. Par exemple, ``<choice correct="true" explanation-id="iPod">l'iPod</choice>``.
 
-* Pour chaque élément ``<solution>``, ajoutez une valeur et un attribut ``explanation-id`` qui soient mappés à une réponse correcte. Par exemple, ``<solution explanation-id="iPod">``.
+* Pour chaque Ã©lÃ©ment ``<solution>``, ajoutez une valeur et un attribut ``explanation-id`` qui soient mappÃ©s Ã  une rÃ©ponse correcte. Par exemple, ``<solution explanation-id="iPod">``.
 
-.. note:: Si les réponses possibles n'incluent qu'une seule réponse correcte, vous n'avez pas à utiliser l'attribut ``explanation-id`` dans l'élément ``choice`` ou ``<solution>``. Vous devez toutefois toujours utiliser l'élément ``<solutionset>`` pour encadrer l'élément ``<solution>``.
+.. note:: Si les rÃ©ponses possibles n'incluent qu'une seule rÃ©ponse correcte, vous n'avez pas Ã  utiliser l'attribut ``explanation-id`` dans l'Ã©lÃ©ment ``choice`` ou ``<solution>``. Vous devez toutefois toujours utiliser l'Ã©lÃ©ment ``<solutionset>`` pour encadrer l'Ã©lÃ©ment ``<solution>``.
 
-Par exemple, pour l'exercice à choix multiples présenté ci-après, un étudiant pourra visualiser quatre réponses possibles. Chaque série de réponses inclura l'une des deux réponses correctes. L'explication associée à la réponse correcte présente le même identifiant d'explication.
+Par exemple, pour l'exercice Ã  choix multiples prÃ©sentÃ© ci-aprÃ¨s, un Ã©tudiant pourra visualiser quatre rÃ©ponses possibles. Chaque sÃ©rie de rÃ©ponses inclura l'une des deux rÃ©ponses correctes. L'explication associÃ©e Ã  la rÃ©ponse correcte prÃ©sente le mÃªme identifiant d'explication.
 
 .. code-block:: xml
 
  <problem>
-   <p>Quels appareils Apple vous permettent d'emporter votre musicothèque numérique dans votre poche ?</p>
+   <p>Quels appareils Apple vous permettent d'emporter votre musicothÃ¨que numÃ©rique dans votre poche ?</p>
    <multiplechoiceresponse>
     <choicegroup type="MultipleChoice" answer-pool="4">
       <choice correct="false">L'iPad</choice>
       <choice correct="false">Napster</choice>
       <choice correct="true" explanation-id="iPod">L'iPod</choice>
-      <choice correct="false">L'éplucheur de légumes</choice>
+      <choice correct="false">L'Ã©plucheur de lÃ©gumes</choice>
       <choice correct="false">L'iMac</choice>
       <choice correct="true" explanation-id="iPhone">L'iPhone</choice>
     </choicegroup>
@@ -323,13 +323,13 @@ Par exemple, pour l'exercice à choix multiples présenté ci-après, un étudiant po
         <solution explanation-id="iPod">
         <div class="detailed-solution">
             <p>Explication</p>
-            <p>Oui, l'iPod est un lecteur de musique numérique portable développé par Apple.</p>
+            <p>Oui, l'iPod est un lecteur de musique numÃ©rique portable dÃ©veloppÃ© par Apple.</p>
         </div>
         </solution>
         <solution explanation-id="iPhone">
         <div class="detailed-solution">
             <p>Explication</p>
-            <p>L'iPhone est non seulement un téléphone portable, mais il peut également stocker et d'écouter de la musique.</p>
+            <p>L'iPhone est non seulement un tÃ©lÃ©phone portable, mais il peut Ã©galement stocker et d'Ã©couter de la musique.</p>
         </div>
         </solution>
     </solutionset>
@@ -338,13 +338,13 @@ Par exemple, pour l'exercice à choix multiples présenté ci-après, un étudiant po
 
 .. _Multiple Choice Problem XML:
 
-******************************
-Exercice à choix multiples - Format XML 
-******************************
+***************************************
+Exercice Ã  choix multiples - Format XML 
+***************************************
 
-================
-Modèle
-================
+======
+ModÃ¨le
+======
 
 .. code-block:: xml
 
@@ -365,17 +365,17 @@ Modèle
   </solution>
   </problem>
 
-================
+=======
 Balises
-================
+=======
 
-* ``<multiplechoiceresponse>`` (obligatoire) : Indique que cet exercice est un exercice à choix multiples.
-* ``<choicegroup>`` (obligatoire) : Désigne le début de la liste des réponses possibles. 
-* ``<choice>`` (obligatoire) : Indique une réponse possible.
+* ``<multiplechoiceresponse>`` (obligatoire) : Indique que cet exercice est un exercice Ã  choix multiples.
+* ``<choicegroup>`` (obligatoire) : DÃ©signe le dÃ©but de la liste des rÃ©ponses possibles. 
+* ``<choice>`` (obligatoire) : Indique une rÃ©ponse possible.
 
 **Balise :** ``<multiplechoiceresponse>``
 
-Indique que cet exercice est un exercice à choix multiples.
+Indique que cet exercice est un exercice Ã  choix multiples.
 
   Attributs
 
@@ -384,11 +384,11 @@ Indique que cet exercice est un exercice à choix multiples.
   Enfants
 
   * ``<choicegroup>``
-  * Toutes les balises HTML standard (peuvent être utilisées pour formater du texte)
+  * Toutes les balises HTML standard (peuvent Ãªtre utilisÃ©es pour formater du texte)
 
 **Balise :** ``<choicegroup>``
 
-Désigne le début de la liste des réponses possibles.
+DÃ©signe le dÃ©but de la liste des rÃ©ponses possibles.
 
   Attributs
 
@@ -398,9 +398,9 @@ Désigne le début de la liste des réponses possibles.
      * - Attribut
        - Description
      * - label (obligatoire)
-       - Spécifie le nom du champ de la réponse.
+       - SpÃ©cifie le nom du champ de la rÃ©ponse.
      * - type (obligatoire)
-       - Doit être défini sur "MultipleChoice".
+       - Doit Ãªtre dÃ©fini sur "MultipleChoice".
 
   Enfants
 
@@ -408,7 +408,7 @@ Désigne le début de la liste des réponses possibles.
 
 **Balise :** ``<choice>``
 
-Indique une réponse possible. 
+Indique une rÃ©ponse possible. 
 
   Attributs
 
@@ -418,9 +418,9 @@ Indique une réponse possible.
      * - Attribut
        - Description
      * - correct (au moins un requis)
-       - Indique une réponse correcte ou incorrecte. Lorsque l'attribut est défini sur "true", la réponse est correcte. Lorsque l'attribut est défini sur "false", la réponse est incorrecte. Une seule réponse peut être correcte.
+       - Indique une rÃ©ponse correcte ou incorrecte. Lorsque l'attribut est dÃ©fini sur "true", la rÃ©ponse est correcte. Lorsque l'attribut est dÃ©fini sur "false", la rÃ©ponse est incorrecte. Une seule rÃ©ponse peut Ãªtre correcte.
      * - name
-       - Un nom unique que le serveur principal utilise pour faire référence à la réponse possible.
+       - Un nom unique que le serveur principal utilise pour faire rÃ©fÃ©rence Ã  la rÃ©ponse possible.
 
   Enfants
   

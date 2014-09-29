@@ -1,99 +1,99 @@
-.. _Checkbox:
+.. _Case Ã  cocher:
 
-##################
-QCM avec cases à cocher
-##################
+#######################
+QCM avec cases Ã  cocher
+#######################
 
-Dans un QCM avec cases à cocher, l'étudiant sélectionne une ou plusieurs options dans une liste de réponses possibles. Pour répondre correctement aux questions posées lors de l'exercice, l'étudiant doit sélectionner toutes les réponses pertinentes. Chaque QCM avec cases à cocher doit inclure au moins une réponse correcte.
+Dans un QCM avec cases Ã  cocher, l'Ã©tudiant sÃ©lectionne une ou plusieurs options dans une liste de rÃ©ponses possibles. Pour rÃ©pondre correctement aux questions posÃ©es lors de l'exercice, l'Ã©tudiant doit sÃ©lectionner toutes les rÃ©ponses pertinentes. Chaque QCM avec cases Ã  cocher doit inclure au moins une rÃ©ponse correcte.
 
 .. image:: /Images/CheckboxExample.png
- :alt: Image d'un QCM avec cases à cocher
+ :alt: Image d'un QCM avec cases Ã  cocher
 
-****************************
-Créer un QCM avec cases à cocher
-****************************
+********************************
+CrÃ©er un QCM avec cases Ã  cocher
+********************************
 
-Vous pouvez créer des QCM avec cases à cocher en utilisant l'Éditeur simple ou l'Éditeur avancé.
+Vous pouvez crÃ©er des QCM avec cases Ã  cocher en utilisant l'Ã‰diteur simple ou l'Ã‰diteur avancÃ©.
 
-.. note:: Tous les exercices doivent inclure des étiquettes afin de garantir l'accessibilité. L'étiquette comprend généralement le texte de la question principale de l'exercice. Pour ajouter une étiquette à un exercice courant, entourez le texte de l'étiquette avec des crochets pointus, orientés vers le texte (>>texte de l'étiquette<<).
+.. note:: Tous les exercices doivent inclure des Ã©tiquettes afin de garantir l'accessibilitÃ©. L'Ã©tiquette comprend gÃ©nÃ©ralement le texte de la question principale de l'exercice. Pour ajouter une Ã©tiquette Ã  un exercice courant, entourez le texte de l'Ã©tiquette avec des crochets pointus, orientÃ©s vers le texte (>>texte de l'Ã©tiquette<<).
 
-==================
-Éditeur simple
-==================
+==============
+Ã‰diteur simple
+==============
 
 #. Sous **Ajouter un nouveau composant**, cliquez sur **Exercice**.
-#. Dans l'écran **Select Problem Component Type** (Sélectionner le type du composant Exercice), cliquez sur **Cases à cocher** dans l'onglet **Types d'exercices classiques**.
-#. Dans le composant Exercice qui apparaît, cliquez sur **Éditer**.
-#. Dans l'éditeur de composant, remplacez le texte par défaut par le texte de votre exercice. Saisissez chaque réponse possible sur la ligne appropriée.
-#. Choisissez le texte de l'exercice à utiliser en tant qu'étiquette, puis placez ce texte entre deux paires de crochets pointus (>><<).
-#. Sélectionnez toutes les réponses possibles, puis cliquez sur le bouton Case à cocher. 
+#. Dans l'Ã©cran **Select Problem Component Type** (SÃ©lectionner le type du composant Exercice), cliquez sur **Cases Ã  cocher** dans l'onglet **Types d'exercices classiques**.
+#. Dans le composant Exercice qui apparaÃ®t, cliquez sur **Ã‰diter**.
+#. Dans l'Ã©diteur de composant, remplacez le texte par dÃ©faut par le texte de votre exercice. Saisissez chaque rÃ©ponse possible sur la ligne appropriÃ©e.
+#. Choisissez le texte de l'exercice Ã  utiliser en tant qu'Ã©tiquette, puis placez ce texte entre deux paires de crochets pointus (>><<).
+#. SÃ©lectionnez toutes les rÃ©ponses possibles, puis cliquez sur le bouton Case Ã  cocher. 
 
    .. image:: /Images/ProbComponent_CheckboxIcon.png
-    :alt: Image du bouton Case à cocher
+    :alt: Image du bouton Case Ã  cocher
    
-   Ensuite, des crochets apparaissent en regard de chaque réponse.
+   Ensuite, des crochets apparaissent en regard de chaque rÃ©ponse.
 
-#. Insérez un **x** entre les crochets pour désigner la ou les réponses correctes.
-#. Dans l'éditeur de composant, sélectionnez le texte de l'explication, puis cliquez sur le bouton associé afin d'insérer les balises correspondantes autour du texte.
+#. InsÃ©rez un **x** entre les crochets pour dÃ©signer la ou les rÃ©ponses correctes.
+#. Dans l'Ã©diteur de composant, sÃ©lectionnez le texte de l'explication, puis cliquez sur le bouton associÃ© afin d'insÃ©rer les balises correspondantes autour du texte.
 
    .. image:: /Images/ProbCompButton_Explanation.png
     :alt: Image du bouton Explication
 
-#. Dans l'onglet **Paramètres**, indiquez les paramètres que vous souhaitez utiliser. 
+#. Dans l'onglet **ParamÃ¨tres**, indiquez les paramÃ¨tres que vous souhaitez utiliser. 
 #. Cliquez sur **Enregistrer**.
 
-Pour l'exemple d'exercice présenté ci-dessus, le texte dans le composant Exercice est le suivant.
+Pour l'exemple d'exercice prÃ©sentÃ© ci-dessus, le texte dans le composant Exercice est le suivant.
 
 .. code-block:: xml
 
-    Il peut être particulièrement difficile d'identifier les bénéfices des soins préventifs. >>Ci-dessous, sélectionnez toutes les raisons justifiant cette affirmation.<<
+    Il peut Ãªtre particuliÃ¨rement difficile d'identifier les bÃ©nÃ©fices des soins prÃ©ventifs. >>Ci-dessous, sÃ©lectionnez toutes les raisons justifiant cette affirmation.<<
 
-    [x] Un délai considérable s'écoule entre la prise d'une mesure préventive et l'obtention de résultats. 
-    [ ] Les personnes non vaccinées tomberont systématiquement malades. 
-    [x] Si d'autres personnes sont vaccinées, le nombre de personnes tombant malades diminuera, indépendamment de la décision d'un individu particulier de se faire vacciner ou non. 
-    [x] La confiance accordée aux professionnels de santé et fonctionnaires ou représentants du gouvernement est fragile. 
+    [x] Un dÃ©lai considÃ©rable s'Ã©coule entre la prise d'une mesure prÃ©ventive et l'obtention de rÃ©sultats. 
+    [ ] Les personnes non vaccinÃ©es tomberont systÃ©matiquement malades. 
+    [x] Si d'autres personnes sont vaccinÃ©es, le nombre de personnes tombant malades diminuera, indÃ©pendamment de la dÃ©cision d'un individu particulier de se faire vacciner ou non. 
+    [x] La confiance accordÃ©e aux professionnels de santÃ© et fonctionnaires ou reprÃ©sentants du gouvernement est fragile. 
 
     [explication]
-    Les personnes qui ne sont pas vaccinées contre une maladie peuvent ne pas tomber malades. Si une personne tente d'évaluer l'efficacité de mesures préventives contre une maladie donnée, elle pourrait conclure, au vu de la bonne santé des personnes non vaccinées, que la vaccination ne joue aucun rôle. Elle serait donc amenée à croire que la vaccination (ou toute autre mesure préventive) ne présente que peu de bénéfices, voire aucun, alors qu'en réalité la vaccination et les autres mesures de prévention jouent un rôle essentiel.
+    Les personnes qui ne sont pas vaccinÃ©es contre une maladie peuvent ne pas tomber malades. Si une personne tente d'Ã©valuer l'efficacitÃ© de mesures prÃ©ventives contre une maladie donnÃ©e, elle pourrait conclure, au vu de la bonne santÃ© des personnes non vaccinÃ©es, que la vaccination ne joue aucun rÃ´le. Elle serait donc amenÃ©e Ã  croire que la vaccination (ou toute autre mesure prÃ©ventive) ne prÃ©sente que peu de bÃ©nÃ©fices, voire aucun, alors qu'en rÃ©alitÃ© la vaccination et les autres mesures de prÃ©vention jouent un rÃ´le essentiel.
     [explication]
 
-==================
-Éditeur avancé
-==================
+==============
+Ã‰diteur avancÃ©
+==============
 
-Pour créer cet exercice dans l'Éditeur avancé, cliquez sur l'onglet **Avancé** dans l'éditeur du composant Exercice, puis remplacez le code existant par le code présenté ci-après.
+Pour crÃ©er cet exercice dans l'Ã‰diteur avancÃ©, cliquez sur l'onglet **AvancÃ©** dans l'Ã©diteur du composant Exercice, puis remplacez le code existant par le code prÃ©sentÃ© ci-aprÃ¨s.
 
 .. code-block:: xml
 
   <problem>
-    <p>Il peut être particulièrement difficile d'identifier les bénéfices des soins préventifs. Ci-dessous, sélectionnez toutes les raisons justifiant cette affirmation.</p>
+    <p>Il peut Ãªtre particuliÃ¨rement difficile d'identifier les bÃ©nÃ©fices des soins prÃ©ventifs. Ci-dessous, sÃ©lectionnez toutes les raisons justifiant cette affirmation.</p>
 
   <choiceresponse>
     <checkboxgroup direction="vertical" label="Check all of the reasons below why this may be the case">
-      <choice correct="true"><text>Un délai considérable s'écoule entre la prise d'une mesure préventive et l'obtention de résultats..</text></choice>
-      <choice correct="false"><text>Les personnes non vaccinées tomberont systématiquement malades.</text></choice>
-      <choice correct="true"><text>Si d'autres personnes sont vaccinées, le nombre de personnes tombant malades diminuera, indépendamment de la décision d'un individu particulier de se faire vacciner ou non.</text></choice>
-      <choice correct="true"><text>La confiance accordée aux professionnels de santé et fonctionnaires ou représentants du gouvernement est fragile.</text></choice>
+      <choice correct="true"><text>Un dÃ©lai considÃ©rable s'Ã©coule entre la prise d'une mesure prÃ©ventive et l'obtention de rÃ©sultats..</text></choice>
+      <choice correct="false"><text>Les personnes non vaccinÃ©es tomberont systÃ©matiquement malades.</text></choice>
+      <choice correct="true"><text>Si d'autres personnes sont vaccinÃ©es, le nombre de personnes tombant malades diminuera, indÃ©pendamment de la dÃ©cision d'un individu particulier de se faire vacciner ou non.</text></choice>
+      <choice correct="true"><text>La confiance accordÃ©e aux professionnels de santÃ© et fonctionnaires ou reprÃ©sentants du gouvernement est fragile.</text></choice>
     </checkboxgroup>
   </choiceresponse>
 
    <solution>
    <div class="detailed-solution">
    <p>Explication</p>
-   <p>Les personnes qui ne sont pas vaccinées contre une maladie peuvent ne pas tomber malades. Si une personne tente d'évaluer l'efficacité de mesures préventives contre une maladie donnée, elle pourrait conclure, au vu de la bonne santé des personnes non vaccinées, que la vaccination ne joue aucun rôle. Elle serait donc amenée à croire que la vaccination (ou toute autre mesure préventive) ne présente que peu de bénéfices, voire aucun, alors qu'en réalité la vaccination et les autres mesures de prévention jouent un rôle essentiel.</p>
+   <p>Les personnes qui ne sont pas vaccinÃ©es contre une maladie peuvent ne pas tomber malades. Si une personne tente d'Ã©valuer l'efficacitÃ© de mesures prÃ©ventives contre une maladie donnÃ©e, elle pourrait conclure, au vu de la bonne santÃ© des personnes non vaccinÃ©es, que la vaccination ne joue aucun rÃ´le. Elle serait donc amenÃ©e Ã  croire que la vaccination (ou toute autre mesure prÃ©ventive) ne prÃ©sente que peu de bÃ©nÃ©fices, voire aucun, alors qu'en rÃ©alitÃ© la vaccination et les autres mesures de prÃ©vention jouent un rÃ´le essentiel.</p>
    </div>
    </solution>
   </problem>
 
 .. _Checkbox Problem XML:
 
-****************************
-QCM avec cases à cocher - Format XML 
-****************************
+************************************
+QCM avec cases Ã  cocher - Format XML 
+************************************
 
-============
-Modèle
-============
+======
+ModÃ¨le
+======
 
 .. code-block:: xml
 
@@ -103,8 +103,8 @@ Modèle
   <choiceresponse>
 
   <checkboxgroup direction="vertical" label="label text">
-  <choice correct="false"><text>Réponse 1 (incorrecte)</text></choice>
-  <choice correct="true"><text>Réponse 2 (correcte)</text></choice>
+  <choice correct="false"><text>RÃ©ponse 1 (incorrecte)</text></choice>
+  <choice correct="true"><text>RÃ©ponse 2 (correcte)</text></choice>
   </checkboxgroup>
   </choiceresponse>
 
@@ -117,17 +117,17 @@ Modèle
 
   </problem>
 
-======
+=======
 Balises
-======
+=======
 
-* ``<choiceresponse>`` (obligatoire) : Indique que l'exercice contient des réponses parmi lesquelles les étudiants doivent choisir.
-* ``<checkboxgroup>`` (obligatoire) : Indique que l'exercice est un QCM avec cases à cocher.
-* ``<choice>`` (obligatoire) : Désigne une réponse.
+* ``<choiceresponse>`` (obligatoire) : Indique que l'exercice contient des rÃ©ponses parmi lesquelles les Ã©tudiants doivent choisir.
+* ``<checkboxgroup>`` (obligatoire) : Indique que l'exercice est un QCM avec cases Ã  cocher.
+* ``<choice>`` (obligatoire) : DÃ©signe une rÃ©ponse.
 
 **Balise :** ``<choiceresponse>``
 
-Indique que l'exercice contient des réponses parmi lesquelles les étudiants doivent choisir.
+Indique que l'exercice contient des rÃ©ponses parmi lesquelles les Ã©tudiants doivent choisir.
 
   Attributs
 
@@ -139,7 +139,7 @@ Indique que l'exercice contient des réponses parmi lesquelles les étudiants doiv
 
 **Balise :** ``<checkboxgroup>``
 
-Indique que l'exercice est un QCM avec cases à cocher.
+Indique que l'exercice est un QCM avec cases Ã  cocher.
 
   Attributs
 
@@ -149,9 +149,9 @@ Indique que l'exercice est un QCM avec cases à cocher.
      * - Attribut
        - Description
      * - direction (facultatif)
-       - Indique l'orientation de la liste de réponses. L'orientation par défaut est verticale.
+       - Indique l'orientation de la liste de rÃ©ponses. L'orientation par dÃ©faut est verticale.
      * - label (obligatoire)
-       - Spécifie le nom du champ de la réponse.
+       - SpÃ©cifie le nom du champ de la rÃ©ponse.
 
   Enfants
 
@@ -159,7 +159,7 @@ Indique que l'exercice est un QCM avec cases à cocher.
 
 **Balise :** ``<choice>``
 
-Désigne une réponse.
+DÃ©signe une rÃ©ponse.
 
   Attributs
 
@@ -169,9 +169,9 @@ Désigne une réponse.
      * - Attribut
        - Description
      * - true (l'exercice doit en comporter au moins un)
-       - Indique une réponse correcte. Pour les QCM avec cases à cocher, une ou plusieurs balises ``<choice>`` peuvent contenir une réponse correcte.
+       - Indique une rÃ©ponse correcte. Pour les QCM avec cases Ã  cocher, une ou plusieurs balises ``<choice>`` peuvent contenir une rÃ©ponse correcte.
      * - false (l'exercice doit en comporter au moins un)
-       - Indique une réponse incorrecte.
+       - Indique une rÃ©ponse incorrecte.
 
   Enfants
   

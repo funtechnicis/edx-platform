@@ -1,6 +1,6 @@
-======================
+================
 Fuseaux horaires
-======================
+================
 
     **Présentation**
     Les ressources pédagogiques publiées deviennent accessibles à tous les étudiants, simultanément. Les travaux avec une date d'échéance devront également être rendus simultanément par tous les étudiants, à l'heure spécifiée par le paramètre. Toutefois, un certain nombre de sections sur la plate-forme edX et Studio présentent un paramètre horaire sans spécifier de fuseau horaire. Sauf mention contraire, la plupart des dates et heures mentionnées dans Studio et edX correspondent à l'échelle de temps UTC. Elles ne sont pas indiquées dans le fuseau horaire de votre zone géographique ! Lorsque vous spécifiez des paramètres de date et d'heure sans étiquette de fuseau horaire, vous devez convertir les valeurs en valeurs UTC.  Vous devez également vous assurer que la présentation des paramètres horaires de votre cours est claire et sans ambigüité, et qu'elle ne prête pas à confusion, que ce soit pour les étudiants ou les enseignants.

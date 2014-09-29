@@ -1,8 +1,8 @@
-.. _Text Input:
+.. _Saisie de texte:
 
-########################
+#############################
 Exercice avec saisie de texte
-########################
+#############################
 
 
 
@@ -11,9 +11,9 @@ Dans les exercices avec saisie de texte, les étudiants saisissent du texte dans
 .. image:: /Images/TextInputExample.png
  :alt: Image d'un exercice avec saisie de texte
 
-****************************
+**************************************
 Créer un exercice avec saisie de texte
-****************************
+**************************************
 
 Vous pouvez créer des exercices avec saisie de texte en utilisant l'Éditeur simple ou l'Éditeur avancé.
 
@@ -58,9 +58,9 @@ Pour l'exemple d'exercice présenté ci-dessus, le texte dans le composant Exerc
     Le risque peut devenir si faible que le paludisme est alors véritablement éradiqué dans cette population (même si celle-ci ne se protège pas complètement et que l'utilisation de moustiquaires n'est pas systématique).
     [explanation]
 
-=====================
+==============
 Éditeur avancé
-=====================
+==============
 
 Pour créer cet exercice dans l'Éditeur avancé, cliquez sur l'onglet **Avancé** dans l'éditeur du composant Exercice, puis remplacez le code existant par le code présenté ci-après.
 
@@ -101,9 +101,9 @@ Pour créer cet exercice dans l'Éditeur avancé, cliquez sur l'onglet **Avancé
 
 
 
-******************************************
+**********************************************************
 Réponses multiples dans les exercices avec saisie de texte
-******************************************
+**********************************************************
 
 Vous pouvez spécifier plus d'une réponse correcte pour les exercices avec saisie de texte. 
 Par exemple, plutôt que de demander aux étudiants de saisir exactement "Dr Martin Luther King, Junior", vous pouvez autoriser d'autres réponses : "Martin Luther King", "Docteur Martin Luther King", ainsi que d'autres variantes. Pour ce faire, vous pouvez utiliser l'Éditeur simple ou l'Éditeur avancé.
@@ -122,9 +122,9 @@ Pour spécifier des réponses correctes supplémentaires dans l'Éditeur simple,
     or= Martin Luther King, Jr
     or= Martin Luther King
 
-=====================
+==============
 Éditeur avancé
-=====================
+==============
 
 Pour spécifier des réponses correctes supplémentaires dans l'Éditeur avancé, ajoutez une balise ``<additional_answer>`` pour chaque réponse correcte à l'intérieur des balises ouvrantes et fermantes ``<stringresponse>``.
 
@@ -144,9 +144,9 @@ Pour spécifier des réponses correctes supplémentaires dans l'Éditeur avancé
   </problem>
 
 
-******************************************
+********************************************************
 Sensibilité à la casse et exercices avec saisie de texte
-******************************************
+********************************************************
 
 Par défaut, les exercices avec saisie de texte ne requièrent pas de réponse sensible à la casse. Vous pouvez modifier cette propriété et activer la sensibilité à la casse.
 
@@ -168,9 +168,9 @@ Pour rendre une réponse sensible à la casse, définissez la valeur de l'attrib
       <textline size="20"/>
     </stringresponse>
 
-*************************************************
+****************************************************************
 Longueur des champs de réponse et exercices avec saisie de texte
-*************************************************
+****************************************************************
 
 Par défaut, dans les exercices avec saisie de texte, le champ de réponse compte 20 caractères. 
 
@@ -194,9 +194,9 @@ Pour modifier la longueur du champ de réponse, modifiez la valeur de l'attribut
       <textline size="40"/>
     </stringresponse>
 
-********************************************************
+*************************************************************************
 Indices et expressions régulières dans les exercices avec saisie de texte
-********************************************************
+*************************************************************************
 
 Vous pouvez fournir des indice ; ceux-ci apparaissent alors lorsque les étudiants saisissent des réponses incorrectes courantes dans les exercices avec saisie de texte. Vous pouvez également définir ce type d'exercice pour qu'une expression régulière soit utilisée en tant que réponse. Vous devrez pour cela modifier le code XML de l'exercice dans l'Éditeur avancé. 
 
@@ -206,13 +206,13 @@ Vous pouvez ajouter ``regexp`` à la valeur de l'attribut ``type``, par exemple 
 
 .. _Text Input Problem XML:
 
-***********************
+******************************************
 Exercice avec saisie de texte - Format XML
-***********************
+******************************************
 
-==============
+======
 Modèle
-==============
+======
 
 .. code-block:: xml
 

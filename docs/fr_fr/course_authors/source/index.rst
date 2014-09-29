@@ -4,8 +4,8 @@
    contain the root `toctree` directive.
 
 
-Building and Running an edX Course
-========================================
+Créer et mener un cours edX
+===========================
 
 .. toctree::
    :numbered:

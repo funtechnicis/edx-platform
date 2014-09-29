@@ -1,39 +1,39 @@
-.. _Protein Builder:
+.. _Ã‰laboration de protÃ©ines:
 
-############################
-Système d'élaboration de protéines Protex
-############################
+#########################################
+SystÃ¨me d'Ã©laboration de protÃ©ines Protex
+#########################################
 
-Le système d'élaboration de protéines Protex invite les étudiants à créer des formes protéiques spécifiées en associant différents acides aminés. Dans l'exemple ci-après, la forme protéique cible est une simple ligne. 
+Le systÃ¨me d'Ã©laboration de protÃ©ines Protex invite les Ã©tudiants Ã  crÃ©er des formes protÃ©iques spÃ©cifiÃ©es en associant diffÃ©rents acides aminÃ©s. Dans l'exemple ci-aprÃ¨s, la forme protÃ©ique cible est une simple ligne. 
 
 
 .. image:: /Images/ProteinBuilder.png
-  :alt: Image d'un système d'élaboration de protéines
+  :alt: Image d'un systÃ¨me d'Ã©laboration de protÃ©ines
 
 .. _Create the Protein Builder:
 
-********************************
-Créer un système d'élaboration de protéines
-********************************
+*******************************************
+CrÃ©er un systÃ¨me d'Ã©laboration de protÃ©ines
+*******************************************
 
-Pour créer un système d'élaboration de protéines :
+Pour crÃ©er un systÃ¨me d'Ã©laboration de protÃ©ines :
 
-#. Sous **Ajouter un nouveau composant**, cliquez sur **Exercice**, puis sur **Blank Advanced Problem** (Exercice avancé vide).
-#. Dans le composant qui apparaît, cliquez sur **Éditer**.
-#. Dans l'éditeur de composant, collez le code du composant Exercice présenté ci-après.
-#. Effectuez les modifications souhaitées, puis cliquez sur **Enregistrer**.
+#. Sous **Ajouter un nouveau composant**, cliquez sur **Exercice**, puis sur **Blank Advanced Problem** (Exercice avancÃ© vide).
+#. Dans le composant qui apparaÃ®t, cliquez sur **Ã‰diter**.
+#. Dans l'Ã©diteur de composant, collez le code du composant Exercice prÃ©sentÃ© ci-aprÃ¨s.
+#. Effectuez les modifications souhaitÃ©es, puis cliquez sur **Enregistrer**.
 
 .. _Protein Builder Code:
 
-*************************
-Code du système d'élaboration de protéines
-*************************
+******************************************
+Code du systÃ¨me d'Ã©laboration de protÃ©ines
+******************************************
 
 .. code-block:: xml
 
   <problem>
-      <p>Le système d'élaboration de protéines vous permet de rassembler en une chaîne les éléments constitutifs des protéines, les acides aminés. Vous pourrez ainsi visualiser comment cette chaîne se constitue et devient une structure. Le système vous présente une forme protéique cible. Votre tâche consiste à la recréer. Dans l'exemple ci-dessous, la forme que vous êtes invité à constituer est une simple ligne.</p> 
-     <p>Cliquez sur "Fold" (Plier) afin de plier votre protéine. Cliquez ensuite sur "Valider".</p>
+      <p>Le systÃ¨me d'Ã©laboration de protÃ©ines vous permet de rassembler en une chaÃ®ne les Ã©lÃ©ments constitutifs des protÃ©ines, les acides aminÃ©s. Vous pourrez ainsi visualiser comment cette chaÃ®ne se constitue et devient une structure. Le systÃ¨me vous prÃ©sente une forme protÃ©ique cible. Votre tÃ¢che consiste Ã  la recrÃ©er. Dans l'exemple ci-dessous, la forme que vous Ãªtes invitÃ© Ã  constituer est une simple ligne.</p> 
+     <p>Cliquez sur "Fold" (Plier) afin de plier votre protÃ©ine. Cliquez ensuite sur "Valider".</p>
 
   <script type="loncapa/python">
 
@@ -41,7 +41,7 @@ Code du système d'élaboration de protéines
     import json
     ans=json.loads(ans)
     if "ERROR" in ans["protex_answer"]:
-      raise ValueError("Protex n'a pas compris votre réponse. Tentez de plier la protéine.")
+      raise ValueError("Protex n'a pas compris votre rÃ©ponse. Tentez de plier la protÃ©ine.")
     return ans["protex_answer"]=="CORRECT"
 
   </script>
@@ -53,11 +53,11 @@ Code du système d'élaboration de protéines
     </text>
     <solution>
       <p>
-        De nombreuses séquences de protéines, comme la séquence présentée dans l'exemple suivant, sont pliées selon une ligne droite. Vous pouvez, si vous le souhaitez, vous exercer à manipuler le système d'élaboration de protéines.
+        De nombreuses sÃ©quences de protÃ©ines, comme la sÃ©quence prÃ©sentÃ©e dans l'exemple suivant, sont pliÃ©es selon une ligne droite. Vous pouvez, si vous le souhaitez, vous exercer Ã  manipuler le systÃ¨me d'Ã©laboration de protÃ©ines.
       </p>
       <ul>
         <li>
-            Forme en bâton : RRRRRRR
+            Forme en bÃ¢ton : RRRRRRR
         </li>
       </ul>
     </solution>
@@ -65,8 +65,8 @@ Code du système d'élaboration de protéines
 
 Dans ce code :
  
-* **width** et **height** spécifient les dimensions de l'application (en pixels).
-* **target_shape** répertorie les acides aminés qui, rassemblés dans l'ordre spécifié, créent la forme que vous avez demandé aux étudiants de créer. La liste ne peut inclure que les lettres suivantes, qui correspondent au code à une lettre de chaque acide aminé. (Cette liste apparaît dans le coin supérieur gauche du système d'élaboration de protéines.)
+* **width** et **height** spÃ©cifient les dimensions de l'application (en pixels).
+* **target_shape** rÃ©pertorie les acides aminÃ©s qui, rassemblÃ©s dans l'ordre spÃ©cifiÃ©, crÃ©ent la forme que vous avez demandÃ© aux Ã©tudiants de crÃ©er. La liste ne peut inclure que les lettres suivantes, qui correspondent au code Ã  une lettre de chaque acide aminÃ©. (Cette liste apparaÃ®t dans le coin supÃ©rieur gauche du systÃ¨me d'Ã©laboration de protÃ©ines.)
 
   .. list-table::
      :widths: 15 15 15 15

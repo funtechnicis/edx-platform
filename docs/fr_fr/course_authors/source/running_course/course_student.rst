@@ -1,12 +1,12 @@
 .. _Student Data:
 
-############################
-Données des étudiants
-############################
+#####################
+DonnÃ©es des Ã©tudiants
+#####################
 
-Une fois votre cours créé, vous pouvez à tout instant accéder aux données des étudiants inscrits.
+Une fois votre cours crÃ©Ã©, vous pouvez Ã  tout instant accÃ©der aux donnÃ©es des Ã©tudiants inscrits.
 
-Pour plus d'informations sur les données des étudiants, reportez-vous aux rubriques suivantes :
+Pour plus d'informations sur les donnÃ©es des Ã©tudiants, reportez-vous aux rubriques suivantes :
 
 * :ref:`PII`
 
@@ -16,144 +16,144 @@ Pour plus d'informations sur les données des étudiants, reportez-vous aux rubriq
   
 * :ref:`Track Student Activity`
 
-Pour les exercices notés, vous pouvez également consulter des diagrammes incluant certaines données démographiques des étudiants.
-Voir :ref:`Notes`.
+Pour les exercices notÃ©s, vous pouvez Ã©galement consulter des diagrammes incluant certaines donnÃ©es dÃ©mographiques des Ã©tudiants.
+Voir :ref:`Access_student_data`.
 
 .. _PII:
 
-***************************************************************
+**********************************************************
 Instructions sur l'utilisation d'informations personnelles
-***************************************************************
+**********************************************************
 
-Les informations que la plate-forme edX recueille sur les étudiants inscrits sur le site incluent des informations personnelles susceptibles d'être utilisées pour identifier, contacter et localiser ces personnes. Ces informations peuvent être consultées par les auteurs des cours auxquels les étudiants sont inscrits.
+Les informations que la plate-forme edX recueille sur les Ã©tudiants inscrits sur le site incluent des informations personnelles susceptibles d'Ãªtre utilisÃ©es pour identifier, contacter et localiser ces personnes. Ces informations peuvent Ãªtre consultÃ©es par les auteurs des cours auxquels les Ã©tudiants sont inscrits.
 
-L'équipe pédagogique doit respecter les procédures définies par l'établissement dont elle dépend et se conformer aux lois et réglementations en vigueur afin d'empêcher toute divulgation ou tout usage inapproprié de ces informations.
+L'Ã©quipe pÃ©dagogique doit respecter les procÃ©dures dÃ©finies par l'Ã©tablissement dont elle dÃ©pend et se conformer aux lois et rÃ©glementations en vigueur afin d'empÃªcher toute divulgation ou tout usage inappropriÃ© de ces informations.
 
 .. **Question** :   
 
 .. _Access_student_data:
 
-****************************
-Accéder aux données des étudiants
-****************************
+*********************************
+AccÃ©der aux donnÃ©es des Ã©tudiants
+*********************************
 
-Vous pouvez télécharger les données des étudiants actuellement inscrits à votre cours dans un fichier CSV (de l'anglais comma-separated values, renvoyant à un fichier de valeurs séparées par des virgules). Pour les cours comptant moins de 200 inscrits, vous pouvez également afficher les données des étudiants inscrits dans le tableau de bord de l'enseignant.
+Vous pouvez tÃ©lÃ©charger les donnÃ©es des Ã©tudiants actuellement inscrits Ã  votre cours dans un fichier CSV (de l'anglais comma-separated values, renvoyant Ã  un fichier de valeurs sÃ©parÃ©es par des virgules). Pour les cours comptant moins de 200 inscrits, vous pouvez Ã©galement afficher les donnÃ©es des Ã©tudiants inscrits dans le tableau de bord de l'enseignant.
 
-======================
-Données rapportées par les étudiants
-======================
+====================================
+DonnÃ©es rapportÃ©es par les Ã©tudiants
+====================================
 
-Lorsque les étudiants s'inscrivent via edX, ils sélectionnent un nom d'utilisateur public et fournissent des informations personnelles. La plupart de ces informations sont facultatives. Certains étudiants inscrits à votre cours ne les fournissent donc pas.
+Lorsque les Ã©tudiants s'inscrivent via edX, ils sÃ©lectionnent un nom d'utilisateur public et fournissent des informations personnelles. La plupart de ces informations sont facultatives. Certains Ã©tudiants inscrits Ã  votre cours ne les fournissent donc pas.
 
  .. image:: ../Images/Registration_page.png
-   :alt: Champs utilisés par les étudiants pour la saisie d'informations lors de leur inscription
+   :alt: Champs utilisÃ©s par les Ã©tudiants pour la saisie d'informations lors de leur inscription
 
-Les étudiants s'inscrivent aux cours individuels souhaités. La saisie des informations requises permet leur inscription dans chacun des cours sélectionnés.
+Les Ã©tudiants s'inscrivent aux cours individuels souhaitÃ©s. La saisie des informations requises permet leur inscription dans chacun des cours sÃ©lectionnÃ©s.
 
-Vous pouvez accéder aux informations auto-rapportées de tous les étudiants inscrits à votre cours :
+Vous pouvez accÃ©der aux informations auto-rapportÃ©es de tous les Ã©tudiants inscrits Ã  votre cours :
 
 * e-mail
 * nom d'utilisateur
 * nom
-* niveau d'éducation
+* niveau d'Ã©ducation
 * sexe
-* année de naissance
+* annÃ©e de naissance
 * adresse postale
 * objectifs
 
-Les données des étudiants accessibles aux équipes pédagogiques reflètent toujours les inscriptions actuelles. Les étudiants peuvent s'inscrire à votre cours lors de la période d'inscription définie. Ils peuvent également se désinscrire d'un cours à tout instant. Les étudiants peuvent également modifier leur adresse e-mail et leur nom complet quand ils le souhaitent. Vous souhaiterez donc peut-être télécharger régulièrement les données des étudiants afin d'avoir une vision relativement précise de la population estudiantine dans le temps.
+Les donnÃ©es des Ã©tudiants accessibles aux Ã©quipes pÃ©dagogiques reflÃ¨tent toujours les inscriptions actuelles. Les Ã©tudiants peuvent s'inscrire Ã  votre cours lors de la pÃ©riode d'inscription dÃ©finie. Ils peuvent Ã©galement se dÃ©sinscrire d'un cours Ã  tout instant. Les Ã©tudiants peuvent Ã©galement modifier leur adresse e-mail et leur nom complet quand ils le souhaitent. Vous souhaiterez donc peut-Ãªtre tÃ©lÃ©charger rÃ©guliÃ¨rement les donnÃ©es des Ã©tudiants afin d'avoir une vision relativement prÃ©cise de la population estudiantine dans le temps.
 
-.. note:: À l'avenir, le système edX demandera peut-être également aux étudiants de sélectionner une langue et une région. Actuellement, ces données ne sont pas recueillies.
+.. note:: Ã€ l'avenir, le systÃ¨me edX demandera peut-Ãªtre Ã©galement aux Ã©tudiants de sÃ©lectionner une langue et une rÃ©gion. Actuellement, ces donnÃ©es ne sont pas recueillies.
 
 .. _View and download student data:
 
-==========================================
-Télécharger ou afficher les données des étudiants
-==========================================
+=================================================
+TÃ©lÃ©charger ou afficher les donnÃ©es des Ã©tudiants
+=================================================
 
-Vous pouvez télécharger les données des étudiants afin d'avoir une idée précise des caractéristiques démographiques de cette population à une période donnée. Vous pouvez également comparer des données téléchargées à différentes périodes et définir des tendances dans cette population.
+Vous pouvez tÃ©lÃ©charger les donnÃ©es des Ã©tudiants afin d'avoir une idÃ©e prÃ©cise des caractÃ©ristiques dÃ©mographiques de cette population Ã  une pÃ©riode donnÃ©e. Vous pouvez Ã©galement comparer des donnÃ©es tÃ©lÃ©chargÃ©es Ã  diffÃ©rentes pÃ©riodes et dÃ©finir des tendances dans cette population.
 
-Outre les données des étudiants inscrits, les données de l'équipe pédagogique sont incluses dans le fichier ou affichées.
+Outre les donnÃ©es des Ã©tudiants inscrits, les donnÃ©es de l'Ã©quipe pÃ©dagogique sont incluses dans le fichier ou affichÃ©es.
 
-Important : Vous devez rester sur cette page pendant la préparation des données. Plus le nombre d'inscrits à votre cours est important, plus le processus de création et de génération des données est long. 
+Important : Vous devez rester sur cette page pendant la prÃ©paration des donnÃ©es. Plus le nombre d'inscrits Ã  votre cours est important, plus le processus de crÃ©ation et de gÃ©nÃ©ration des donnÃ©es est long. 
 
-Pour les cours comptant un nombre d'inscrits moins important, vous pouvez consulter les données des étudiants dans le tableau de bord de l'enseignant.
+Pour les cours comptant un nombre d'inscrits moins important, vous pouvez consulter les donnÃ©es des Ã©tudiants dans le tableau de bord de l'enseignant.
 
-Pour télécharger ou afficher les données des étudiants :
+Pour tÃ©lÃ©charger ou afficher les donnÃ©es des Ã©tudiants :
 
-#. Affichez la version réelle de votre cours.
+#. Affichez la version rÃ©elle de votre cours.
 
-#. Cliquez sur **Instructor** (Enseignant), puis sur **Téléchargement des données**.
+#. Cliquez sur **Instructor** (Enseignant), puis sur **TÃ©lÃ©chargement des donnÃ©es**.
 
-#. Pour télécharger les données sur les étudiants inscrits dans un fichier CSV, cliquez sur **Télécharger les informations de profil au format CSV**.
+#. Pour tÃ©lÃ©charger les donnÃ©es sur les Ã©tudiants inscrits dans un fichier CSV, cliquez sur **TÃ©lÃ©charger les informations de profil au format CSV**.
 
-   Vous êtes invité à ouvrir ou enregistrer le fichier enrolled_profiles.csv. Toutes les données fournies par les étudiants sont incluses sans troncature.
+   Vous Ãªtes invitÃ© Ã  ouvrir ou enregistrer le fichier enrolled_profiles.csv. Toutes les donnÃ©es fournies par les Ã©tudiants sont incluses sans troncature.
 
-#. Pour afficher les données sur les étudiants inscrits, cliquez sur **Lister les informations de profil des étudiants inscrits**. (Cette option est disponible uniquement pour les cours comptant moins de 200 inscrits.)
+#. Pour afficher les donnÃ©es sur les Ã©tudiants inscrits, cliquez sur **Lister les informations de profil des Ã©tudiants inscrits**. (Cette option est disponible uniquement pour les cours comptant moins de 200 inscrits.)
 
-   Un tableau apparaît, incluant les données des étudiants, avec une ligne pour chaque étudiant inscrit. Les valeurs plus longues, comme les objectifs des étudiants, sont tronquées.
+   Un tableau apparaÃ®t, incluant les donnÃ©es des Ã©tudiants, avec une ligne pour chaque Ã©tudiant inscrit. Les valeurs plus longues, comme les objectifs des Ã©tudiants, sont tronquÃ©es.
 
  .. image:: ../Images/StudentData_Table.png
-  :alt: Tableau avec colonnes pour les points de données recueillis et lignes pour chaque étudiant sur le tableau de bord de l'enseignant
+  :alt: Tableau avec colonnes pour les points de donnÃ©es recueillis et lignes pour chaque Ã©tudiant sur le tableau de bord de l'enseignant
 
-.. note:: Les colonnes relatives à la langue et à la région sont incluses dans ce rapport pour la comptabilité descendante uniquement. Ces données ne sont plus recueillies lors de l'inscription des étudiants.
+.. note:: Les colonnes relatives Ã  la langue et Ã  la rÃ©gion sont incluses dans ce rapport pour la comptabilitÃ© descendante uniquement. Ces donnÃ©es ne sont plus recueillies lors de l'inscription des Ã©tudiants.
 
-==========================================
-Afficher les distributions de données démographiques
-==========================================
+====================================================
+Afficher les distributions de donnÃ©es dÃ©mographiques
+====================================================
 
-Vous pouvez afficher un résumé (établi à partir de l'ensemble du cours) présentant les distributions de certaines données démographiques des étudiants actuellement inscrits. Le nombre total de chaque valeur rapportée, relative au sexe et au niveau d'éducation, est affiché dans le tableau de bord de l'enseignant. Comme ces données sont facultatives, les totaux pour chacune de ces valeurs auto-rapportées seront vraisemblablement inférieurs au nombre total des inscrits à votre cours. Vous pouvez également afficher une pyramide des âges de tous les étudiants actuellement inscrits.
+Vous pouvez afficher un rÃ©sumÃ© (Ã©tabli Ã  partir de l'ensemble du cours) prÃ©sentant les distributions de certaines donnÃ©es dÃ©mographiques des Ã©tudiants actuellement inscrits. Le nombre total de chaque valeur rapportÃ©e, relative au sexe et au niveau d'Ã©ducation, est affichÃ© dans le tableau de bord de l'enseignant. Comme ces donnÃ©es sont facultatives, les totaux pour chacune de ces valeurs auto-rapportÃ©es seront vraisemblablement infÃ©rieurs au nombre total des inscrits Ã  votre cours. Vous pouvez Ã©galement afficher une pyramide des Ã¢ges de tous les Ã©tudiants actuellement inscrits.
 
-Pour afficher les données démographiques de vos étudiants :
+Pour afficher les donnÃ©es dÃ©mographiques de vos Ã©tudiants :
 
-#. Affichez la version réelle de votre cours.
+#. Affichez la version rÃ©elle de votre cours.
 
 #. Cliquez sur **Instructor** (Enseignant), puis cliquez sur **Analyses**. 
 
-   * La section Année de naissance présente un diagramme des étudiants inscrits organisé en fonction de l'année de naissance.
+   * La section AnnÃ©e de naissance prÃ©sente un diagramme des Ã©tudiants inscrits organisÃ© en fonction de l'annÃ©e de naissance.
 
-   * Les sections Répartition selon le sexe et Niveau de formation présentent des tableaux incluant les nombres de réponses soumises par les étudiants inscrits.
+   * Les sections RÃ©partition selon le sexe et Niveau de formation prÃ©sentent des tableaux incluant les nombres de rÃ©ponses soumises par les Ã©tudiants inscrits.
 
    .. image:: ../Images/Distribution_Education.png
-    :alt: Tableau avec colonnes pour les différentes valeurs possibles pour le niveau d'éducation acquis et le nombre total rapporté pour chaque valeur
+    :alt: Tableau avec colonnes pour les diffÃ©rentes valeurs possibles pour le niveau d'Ã©ducation acquis et le nombre total rapportÃ© pour chaque valeur
 
    .. image:: ../Images/Distribution_Gender.png
-    :alt: Tableau avec colonnes pour les différentes valeurs possibles pour le sexe et le nombre total rapporté pour chaque valeur
+    :alt: Tableau avec colonnes pour les diffÃ©rentes valeurs possibles pour le sexe et le nombre total rapportÃ© pour chaque valeur
 
-   La ligne "No Data" (Aucune donnée) correspond au nombre d'étudiants pour lesquels aucune valeur n'existe pour la donnée démographique concernée.
+   La ligne "No Data" (Aucune donnÃ©e) correspond au nombre d'Ã©tudiants pour lesquels aucune valeur n'existe pour la donnÃ©e dÃ©mographique concernÃ©e.
 
-  Les données des étudiants individuels ne sont pas affichées. En outre, vous ne pouvez pas les télécharger directement depuis cette page. Voir :ref:`Afficher et télécharger les données des étudiants`.
+  Les donnÃ©es des Ã©tudiants individuels ne sont pas affichÃ©es. En outre, vous ne pouvez pas les tÃ©lÃ©charger directement depuis cette page. Voir :ref:`View and download student data`.
 
 .. _Access_anonymized:
 
-********************************
-Accéder aux ID anonymisés des étudiants
-********************************
+***************************************
+AccÃ©der aux ID anonymisÃ©s des Ã©tudiants
+***************************************
 
-Certains des outils associés à la plate-forme edX, notamment les sondages et évaluateurs externes, utilisent les données anonymisées des étudiants. Si vous devez lever l'anonymat de données anonymisées, vous pouvez télécharger un fichier CSV que vous utiliserez pour cette opération.
+Certains des outils associÃ©s Ã  la plate-forme edX, notamment les sondages et Ã©valuateurs externes, utilisent les donnÃ©es anonymisÃ©es des Ã©tudiants. Si vous devez lever l'anonymat de donnÃ©es anonymisÃ©es, vous pouvez tÃ©lÃ©charger un fichier CSV que vous utiliserez pour cette opÃ©ration.
 
-Pour télécharger un fichier contenant les ID affectés aux utilisateurs et les ID utilisateur anonymisés :
+Pour tÃ©lÃ©charger un fichier contenant les ID affectÃ©s aux utilisateurs et les ID utilisateur anonymisÃ©s :
 
-#. Affichez la version réelle de votre cours.
+#. Affichez la version rÃ©elle de votre cours.
 
-#. Cliquez sur **Instructor** (Enseignant), puis sur **Téléchargement des données**.
+#. Cliquez sur **Instructor** (Enseignant), puis sur **TÃ©lÃ©chargement des donnÃ©es**.
 
-#. Cliquez sur **Obtenir le CSV des IDs anonymes des étudiants**.
+#. Cliquez sur **Obtenir le CSV des IDs anonymes des Ã©tudiants**.
 
-Vous êtes invité à ouvrir ou enregistrer le fichier {course-id}-anon-id.csv pour votre cours. Ce fichier contient l'ID utilisateur affecté à chaque étudiant lors de son inscription, l'ID utilisateur anonymisé edX correspondant et l'ID utilisateur anonymisé spécifique du cours. Les valeurs sont incluses pour chaque étudiant qui s'est inscrit à votre cours.
+Vous Ãªtes invitÃ© Ã  ouvrir ou enregistrer le fichier {course-id}-anon-id.csv pour votre cours. Ce fichier contient l'ID utilisateur affectÃ© Ã  chaque Ã©tudiant lors de son inscription, l'ID utilisateur anonymisÃ© edX correspondant et l'ID utilisateur anonymisÃ© spÃ©cifique du cours. Les valeurs sont incluses pour chaque Ã©tudiant qui s'est inscrit Ã  votre cours.
 
-Pour effectuer des recherches dans les données des étudiants et effectuer une levée d'anonymat, vous pouvez utiliser ce fichier ainsi que le fichier enrolled_profile.csv, qui inclut les données des étudiants, ou le fichier {course_id}_grade_report_{date}.csv, qui inclut les notes obtenues.
+Pour effectuer des recherches dans les donnÃ©es des Ã©tudiants et effectuer une levÃ©e d'anonymat, vous pouvez utiliser ce fichier ainsi que le fichier enrolled_profile.csv, qui inclut les donnÃ©es des Ã©tudiants, ou le fichier {course_id}_grade_report_{date}.csv, qui inclut les notes obtenues.
 
 .. _Track Student Activity:
 
-******************************
-Suivre les activités des étudiants
-******************************
+**********************************
+Suivre les activitÃ©s des Ã©tudiants
+**********************************
 
-Pour suivre les activités des étudiants lors de votre cours, vous pouvez revoir le nombre d'étudiants qui, chaque semaine, ont interagi avec votre cours. Pour être considérés comme actifs, les étudiants doivent consulter des pages du cours, voir des vidéos, se joindre à des discussions, soumettre des réponses à des exercices ou effectuer d'autres activités du cours. Le nombre d'étudiants actifs est mis à jour chaque semaine.
+Pour suivre les activitÃ©s des Ã©tudiants lors de votre cours, vous pouvez revoir le nombre d'Ã©tudiants qui, chaque semaine, ont interagi avec votre cours. Pour Ãªtre considÃ©rÃ©s comme actifs, les Ã©tudiants doivent consulter des pages du cours, voir des vidÃ©os, se joindre Ã  des discussions, soumettre des rÃ©ponses Ã  des exercices ou effectuer d'autres activitÃ©s du cours. Le nombre d'Ã©tudiants actifs est mis Ã  jour chaque semaine.
 
-Pour afficher le nombre d'étudiants actifs :
+Pour afficher le nombre d'Ã©tudiants actifs :
 
-#. Affichez la version réelle de votre cours.
+#. Affichez la version rÃ©elle de votre cours.
 
-#. Cliquez sur **Instructor** (Enseignant), puis cliquez sur **Analyses**. Le nombre d'étudiants actifs apparaît en haut de la page.
+#. Cliquez sur **Instructor** (Enseignant), puis cliquez sur **Analyses**. Le nombre d'Ã©tudiants actifs apparaÃ®t en haut de la page.

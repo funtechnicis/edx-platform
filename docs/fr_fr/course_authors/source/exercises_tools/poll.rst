@@ -1,21 +1,20 @@
+.. _Sondage:
 
-.. _Poll:
-
-##########
+################
 Outil de sondage
-##########
+################
 
-Vous pouvez réaliser des sondages dans vos cours afin que vos étudiants échangent leurs points de vue sur différentes questions.
+Vous pouvez rÃ©aliser des sondages dans vos cours afin que vos Ã©tudiants Ã©changent leurs points de vue sur diffÃ©rentes questions.
 
 .. image:: /Images/PollExample.png
 
-.. note:: Pour créer un sondage, vous devez exporter votre cours, modifier certains des fichiers XML de votre cours dans un éditeur de texte, puis ré-importer votre cours. Nous vous recommandons de créer une copie de sauvegarde de votre cours avant de créer le sondage. Pour effectuer des modifications dans l'éditeur de texte sur les fichiers qui contiendront des sondages, il est recommandé d'avoir de très solides connaissances en édition de fichiers XML. 
+.. note:: Pour crÃ©er un sondage, vous devez exporter votre cours, modifier certains des fichiers XML de votre cours dans un Ã©diteur de texte, puis rÃ©-importer votre cours. Nous vous recommandons de crÃ©er une copie de sauvegarde de votre cours avant de crÃ©er le sondage. Pour effectuer des modifications dans l'Ã©diteur de texte sur les fichiers qui contiendront des sondages, il est recommandÃ© d'avoir de trÃ¨s solides connaissances en Ã©dition de fichiers XML. 
 
-**************
+************
 Terminologie
-**************
+************
 
-Les sections, sous-sections, unités et composants ont des noms différents dans la vue **Plan du cours** et dans la liste de fichiers que vous visualisez après avoir exporté votre cours et ouvert les fichiers .xml à éditer. Le tableau suivant répertorie les noms de ces éléments dans la vue **Plan du cours**, ainsi que dans une liste de fichiers.
+Les sections, sous-sections, unitÃ©s et composants ont des noms diffÃ©rents dans la vue **Plan du cours** et dans la liste de fichiers que vous visualisez aprÃ¨s avoir exportÃ© votre cours et ouvert les fichiers .xml Ã  Ã©diter. Le tableau suivant rÃ©pertorie les noms de ces Ã©lÃ©ments dans la vue **Plan du cours**, ainsi que dans une liste de fichiers.
 
 .. list-table::
    :widths: 15 15
@@ -26,37 +25,37 @@ Les sections, sous-sections, unités et composants ont des noms différents dans l
    * - Section
      - Chapitre
    * - Sous-section
-     - Séquentiel
-   * - Unité
+     - SÃ©quentiel
+   * - UnitÃ©
      - Vertical
    * - Composant
-     - Discussion, HTML, Exercice ou vidéo
+     - Discussion, HTML, Exercice ou vidÃ©o
 
-Pour exemple, si vous recherchez une section spécifique dans votre cours, vous devrez consulter le dossier **Chapitre** lorsque vous ouvrez la liste des fichiers que votre cours contient. Pour rechercher une unité, ouvrez le dossier **Vertical**.
+Pour exemple, si vous recherchez une section spÃ©cifique dans votre cours, vous devrez consulter le dossier **Chapitre** lorsque vous ouvrez la liste des fichiers que votre cours contient. Pour rechercher une unitÃ©, ouvrez le dossier **Vertical**.
 
 .. _Create a Poll:
 
-**************
-Créer un sondage
-**************
+****************
+CrÃ©er un sondage
+****************
 
-#. Dans l'unité dans laquelle vous souhaitez créer le sondage, créez des composants qui contiennent l'intégralité du contenu souhaité *sauf* le sondage. Notez l'identifiant de l'unité de 32 caractères qui apparaît dans le champ **Identifiant d'unité** sous **Position de l'unité**.
+#. Dans l'unitÃ© dans laquelle vous souhaitez crÃ©er le sondage, crÃ©ez des composants qui contiennent l'intÃ©gralitÃ© du contenu souhaitÃ© *sauf* le sondage. Notez l'identifiant de l'unitÃ© de 32 caractÃ¨res qui apparaÃ®t dans le champ **Identifiant d'unitÃ©** sous **Position de l'unitÃ©**.
 
-#. Exportez votre cours. Pour plus d'informations sur l'exportation d'un cours, voir :ref:`Exportation et importation d'un cours`. Enregistrez le fichier .tar.gz qui contient votre cours dans un emplacement facile à retenir. Vous pourrez ainsi le retrouver sans difficulté.
+#. Exportez votre cours. Pour plus d'informations sur l'exportation d'un cours, voir :ref:`Exportation et importation d'un cours`. Enregistrez le fichier .tar.gz qui contient votre cours dans un emplacement facile Ã  retenir. Vous pourrez ainsi le retrouver sans difficultÃ©.
 
-#. Localisez le fichier .tar.gz qui contient votre cours, puis décompressez le fichier .tar.gz afin de pouvoir accéder à son contenu dans une liste de dossiers et de fichiers.
+#. Localisez le fichier .tar.gz qui contient votre cours, puis dÃ©compressez le fichier .tar.gz afin de pouvoir accÃ©der Ã  son contenu dans une liste de dossiers et de fichiers.
 
-   - Pour effectuer cette opération sur un ordinateur Windows, vous devrez télécharger un programme tiers. Pour plus d'informations, reportez-vous aux pages Web `How to Unpack a tar File in Windows <http://www.haskell.org/haskellwiki/How_to_unpack_a_tar_file_in_Windows>`_ (Comment décompresser un fichier tar dans Windows), `How to Extract a Gz File <http://www.wikihow.com/Extract-a-Gz-File>`_ (Comment extraire un fichier Gz), `The gzip Home Page <http://www.gzip.org/>`_ (Page d'accueil gzip), ou à la section `Windows <http://www.ofzenandcomputing.com/how-to-open-tar-gz-files/#windows>`_ de la page `How to Open .tar.gz Files <http://www.ofzenandcomputing.com/how-to-open-tar-gz-files/>`_ (Comment ouvrir des fichiers .tar.gz).
+   - Pour effectuer cette opÃ©ration sur un ordinateur Windows, vous devrez tÃ©lÃ©charger un programme tiers. Pour plus d'informations, reportez-vous aux pages Web `How to Unpack a tar File in Windows <http://www.haskell.org/haskellwiki/How_to_unpack_a_tar_file_in_Windows>`_ (Comment dÃ©compresser un fichier tar dans Windows), `How to Extract a Gz File <http://www.wikihow.com/Extract-a-Gz-File>`_ (Comment extraire un fichier Gz), `The gzip Home Page <http://www.gzip.org/>`_ (Page d'accueil gzip), ou Ã  la section `Windows <http://www.ofzenandcomputing.com/how-to-open-tar-gz-files/#windows>`_ de la page `How to Open .tar.gz Files <http://www.ofzenandcomputing.com/how-to-open-tar-gz-files/>`_ (Comment ouvrir des fichiers .tar.gz).
 
-   - Pour plus d'informations sur la procédure à suivre pour un Mac, reportez-vous à la section `Mac OS X <http://www.ofzenandcomputing.com/how-to-open-tar-gz-files/#mac-os-x>`_ de la page `How to Open .tar.gz Files <http://www.ofzenandcomputing.com/how-to-open-tar-gz-files/>`_ (Comment ouvrir des fichiers .tar.gz).
+   - Pour plus d'informations sur la procÃ©dure Ã  suivre pour un Mac, reportez-vous Ã  la section `Mac OS X <http://www.ofzenandcomputing.com/how-to-open-tar-gz-files/#mac-os-x>`_ de la page `How to Open .tar.gz Files <http://www.ofzenandcomputing.com/how-to-open-tar-gz-files/>`_ (Comment ouvrir des fichiers .tar.gz).
 
 #. Dans la liste des dossiers et des fichiers, ouvrez le dossier **Vertical**. 
 
-   .. note:: Si votre unité n'est pas publiée, ouvrez le dossier **Brouillons**, puis le dossier **Vertical** dans le dossier **Brouillons**.
+   .. note:: Si votre unitÃ© n'est pas publiÃ©e, ouvrez le dossier **Brouillons**, puis le dossier **Vertical** dans le dossier **Brouillons**.
 
-#. Dans le dossier **Vertical**, localisez le fichier .xml portant le même nom que l'identifiant de l'unité, noté à l'étape 1, puis ouvrez le fichier dans un éditeur de texte comme Sublime Text 2. Par exemple, si l'identifiant de l'unité est e461de7fe2b84ebeabe1a97683360d31, vous devrez ouvrir le fichier e461de7fe2b84ebeabe1a97683360d31.xml.
+#. Dans le dossier **Vertical**, localisez le fichier .xml portant le mÃªme nom que l'identifiant de l'unitÃ©, notÃ© Ã  l'Ã©tape 1, puis ouvrez le fichier dans un Ã©diteur de texte comme Sublime Text 2. Par exemple, si l'identifiant de l'unitÃ© est e461de7fe2b84ebeabe1a97683360d31, vous devrez ouvrir le fichier e461de7fe2b84ebeabe1a97683360d31.xml.
 
-   Le fichier contient la liste de tous les composants de l'unité, ainsi que les noms d'URL des composants. Par exemple, le fichier suivant contient un composant HTML, suivi d'un composant Discussion.
+   Le fichier contient la liste de tous les composants de l'unitÃ©, ainsi que les noms d'URL des composants. Par exemple, le fichier suivant contient un composant HTML, suivi d'un composant Discussion.
 
    .. code-block:: xml
      
@@ -65,7 +64,7 @@ Créer un sondage
         <discussion url_name="8320c3d511484f3b96bdedfd4a44ac8b"/>
        </vertical>
 
-#. Placez le code de sondage ci-après à l'emplacement où vous souhaitez enregistrer le sondage. Remplacez le texte de l'invite par le texte que vous souhaitez utiliser.
+#. Placez le code de sondage ci-aprÃ¨s Ã  l'emplacement oÃ¹ vous souhaitez enregistrer le sondage. Remplacez le texte de l'invite par le texte que vous souhaitez utiliser.
 
    .. code-block:: xml
       
@@ -75,7 +74,7 @@ Créer un sondage
       <answer id="no">Non</answer>
     </poll_question>
 
-   Dans l'exemple ci-dessus, si vous souhaitez que votre sondage apparaisse entre le composant HTML et le composant Discussion dans l'unité, votre code doit ressembler au code présenté ci-après.
+   Dans l'exemple ci-dessus, si vous souhaitez que votre sondage apparaisse entre le composant HTML et le composant Discussion dans l'unitÃ©, votre code doit ressembler au code prÃ©sentÃ© ci-aprÃ¨s.
 
    .. code-block:: xml
 
@@ -89,54 +88,54 @@ Créer un sondage
       <discussion url_name="8320c3d511484f3b96bdedfd4a44ac8b"/>
      </vertical>
 
-#. Après avoir ajouté le code du sondage, enregistrez et fermez le fichier .xml.
+#. AprÃ¨s avoir ajoutÃ© le code du sondage, enregistrez et fermez le fichier .xml.
 
 #. Recompressez votre cours en tant que fichier .tar.gz.
 
-   * Pour plus d'informations sur la procédure à suivre sur un Mac, reportez-vous à la page Web `How to Create a Tar GZip File from the Command Line (Comment créer un fichier Tar GZip à partir de la ligne de commande). <http://osxdaily.com/2012/04/05/create-tar-gzip/>`_.
+   * Pour plus d'informations sur la procÃ©dure Ã  suivre sur un Mac, reportez-vous Ã  la page Web `How to Create a Tar GZip File from the Command Line (Comment crÃ©er un fichier Tar GZip Ã  partir de la ligne de commande). <http://osxdaily.com/2012/04/05/create-tar-gzip/>`_.
 
-   * Pour plus d'informations sur la procédure à suivre pour un ordinateur Windows, reportez-vous à la page Web `How to Make a .tar.gz on Windows (Comment créer un fichier Tar GZip sur Windows). <http://stackoverflow.com/questions/12774707/how-to-make-a-tar-gz-on-windows>`_.
+   * Pour plus d'informations sur la procÃ©dure Ã  suivre pour un ordinateur Windows, reportez-vous Ã  la page Web `How to Make a .tar.gz on Windows (Comment crÃ©er un fichier Tar GZip sur Windows). <http://stackoverflow.com/questions/12774707/how-to-make-a-tar-gz-on-windows>`_.
 
-#. Dans Studio, ré-importez votre cours. Vous pouvez revoir la question du sondage et les réponses que vous avez ajoutées dans Studio.
+#. Dans Studio, rÃ©-importez votre cours. Vous pouvez revoir la question du sondage et les rÃ©ponses que vous avez ajoutÃ©es dans Studio.
 
 .. note::
 
-  * Bien que les sondages s'affichent correctement dans Studio, vous ne pouvez pas les éditer dans Studio. Pour modifier vos sondages, vous devrez suivre les instructions relatives à l'exportation/l'importation présentées ci-dessus.
+  * Bien que les sondages s'affichent correctement dans Studio, vous ne pouvez pas les Ã©diter dans Studio. Pour modifier vos sondages, vous devrez suivre les instructions relatives Ã  l'exportation/l'importation prÃ©sentÃ©es ci-dessus.
   
-  * Un fichier .csv qui contient les réponses saisies par les étudiants pour cet exercice n'est pas disponible actuellement pour les sondages. Toutefois, vous pouvez obtenir les données agrégées directement dans l'exercice.  
+  * Un fichier .csv qui contient les rÃ©ponses saisies par les Ã©tudiants pour cet exercice n'est pas disponible actuellement pour les sondages. Toutefois, vous pouvez obtenir les donnÃ©es agrÃ©gÃ©es directement dans l'exercice.  
 
 *********************
 Description de format
 *********************
 
-La principale balise de l'entrée du module de sondage est :
+La principale balise de l'entrÃ©e du module de sondage est :
 
 .. code-block:: xml
 
     <poll_question> ... </poll_question>
 
-``poll_question`` peut inclure un nombre illimité des balises ci-après :
-tout code xml et toute balise ``answer``. Nous appelons "question" tout code XML interne, à l'exception des balises ``answer``.
+``poll_question`` peut inclure un nombre illimitÃ© des balises ci-aprÃ¨s :
+tout code xml et toute balise ``answer``. Nous appelons "question" tout code XML interne, Ã  l'exception des balises ``answer``.
 
-==================
+====================
 Balise poll_question
-==================
+====================
 
-Xmodule pour la création de la fonctionnalité de sondage - le système de vote. Les attributs suivants peuvent être spécifiés pour cette balise :
+Xmodule pour la crÃ©ation de la fonctionnalitÃ© de sondage - le systÃ¨me de vote. Les attributs suivants peuvent Ãªtre spÃ©cifiÃ©s pour cette balise :
 
     name - Nom du xmodule.
-    [display_name| AUTOGENERATE] - Nom d'affichage du xmodule. Lorsque cet attribut n'est pas défini - Le nom d'affichage se génère automatiquement avec hachage.
-    [reset | False] - Nombreuses réinitialisations/votes possibles (valeur = True/False)
+    [display_name| AUTOGENERATE] - Nom d'affichage du xmodule. Lorsque cet attribut n'est pas dÃ©fini - Le nom d'affichage se gÃ©nÃ¨re automatiquement avec hachage.
+    [reset | False] - Nombreuses rÃ©initialisations/votes possibles (valeur = True/False)
 
-============
+=============
 Balise answer
-============
+=============
 
-Définit l'une des réponses possibles pour le module de sondage. Les attributs suivants peuvent être spécifiés pour cette balise :
+DÃ©finit l'une des rÃ©ponses possibles pour le module de sondage. Les attributs suivants peuvent Ãªtre spÃ©cifiÃ©s pour cette balise :
 
-    id - Identifiant unique (utilisé pour identifier les différentes réponses)
+    id - Identifiant unique (utilisÃ© pour identifier les diffÃ©rentes rÃ©ponses)
 
-Inner text - Texte d'affichage pour une réponse possible.
+Inner text - Texte d'affichage pour une rÃ©ponse possible.
 
 ***********
 Exemple
@@ -149,23 +148,23 @@ Exemple de sondage
 .. code-block:: xml
 
     <poll_question name="second_question" display_name="Second question">
-        <h3>Âge</h3>
-        <p>Quel âge avez-vous ?</p>
+        <h3>Ã‚ge</h3>
+        <p>Quel Ã¢ge avez-vous ?</p>
         <answer id="less18">&lt; 18</answer>
-        <answer id="10_25">de 10 à 25</answer>
+        <answer id="10_25">de 10 Ã  25</answer>
         <answer id="more25">&gt; 25</answer>
     </poll_question>
 
-================================================
-Exemple de sondage avec fonction de réinitialisation désactivée
-================================================
+===============================================================
+Exemple de sondage avec fonction de rÃ©initialisation dÃ©sactivÃ©e
+===============================================================
 
 .. code-block:: xml
 
-    <poll_question name="first_question_with_reset" display_name="Première question avec réinitialisation"
+    <poll_question name="first_question_with_reset" display_name="PremiÃ¨re question avec rÃ©initialisation"
         reset="True">
         <h3>Votre sexe</h3>
-        <p>Êtes-vous de sexe masculin ou féminin ?</p>
+        <p>ÃŠtes-vous de sexe masculin ou fÃ©minin ?</p>
         <answer id="man">Masculin</answer>
-        <answer id="woman">Féminin</answer>
+        <answer id="woman">FÃ©minin</answer>
     </poll_question>
